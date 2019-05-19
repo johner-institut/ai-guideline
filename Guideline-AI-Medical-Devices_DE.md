@@ -284,10 +284,15 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl der Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
+
 [^C.3.a.2]: z.B. demographische Daten (Alter, Geschlecht), körperliche Parameter (Größe, Gewicht, Rasse), Erkrankungen, Vitalparameter, Laborparameter, Vorhandensein weitere Untersuchungen, Anamnese.
-[^C.3.a.3]: **Beispiel 1**: Patienten, die wegen eines Herzschrittmachers oder einer Lungen-OP ausgeschlossen werden müssen, weil die Bilder nicht ausgewertet werden können oder zu Fehlklassifikation führen könnten. **Beispiel 2**: Formate und technischen Parameter wie Bildgrößen, Auflösungen, Helligkeit und Kontraste, Farbkodierung, Kompression, Aufnahmerichtungen, Aufnahmeverfahren (z.B. CT versus MRT), mit ohne Kontrastmittel, Zoom. **Beispiel 3**: Vollständigkeit von Meta-Daten.
+
+[^C.3.a.3]: Beispiele: **Beispiel 1**: Patienten, die wegen eines Herzschrittmachers oder einer Lungen-OP ausgeschlossen werden müssen, weil die Bilder nicht ausgewertet werden können oder zu Fehlklassifikation führen könnten. **Beispiel 2**: Formate und technischen Parameter wie Bildgrößen, Auflösungen, Helligkeit und Kontraste, Farbkodierung, Kompression, Aufnahmerichtungen, Aufnahmeverfahren (z.B. CT versus MRT), mit ohne Kontrastmittel, Zoom. **Beispiel 3**: Vollständigkeit von Meta-Daten.
+
 [^C.3.a.4]: Übliche sind die Berechnung von Verteilungen (Histogrammen), Mittelwerten, Quartilen, ggf. "Joint Distribution of Features". Auch die Korrelation von Daten untereinander sollte untersucht sein. Weitere Beispiele finden sich in der in der [Publikation von Sarah Holland et al.](https://arxiv.org/pdf/1805.03677.pdf) (z.B. in der Tabelle 1)
+
 [^C.3.a.5]: Beispiele: Einfluss von verschiedenen Messgeräte, Befragungen, Policies (z.B. ein Klinik nimmt Laborparameter nur im Notfall, eine andere routinemäßig. Frequenz und Anlass, mit der Patienten untersucht werden), Art der Klinik (z.B. kleines Krankenhaus, aus dem alle schweren Fälle verlegt werden versus Maximalversorger > Survivor Bis), Self-Selection Bis (z.B. arabische Patienten möchten lieber in Krankenhaus mit arabischem Arzt), Art der Studie (prospektiv versus retrospektiv)
+
 [^C.3.a.6]: Das sind Daten, bei denen Informationen über das Label in den Daten steckt z.B. in der Sortierung  (z.B. erst die Daten von Gesunden, dann die von Kranken ), im Krankenhaus (von einem stammen die schweren Fälle), im Bild (z.B. bei Hautkrebs ist immer noch ein Lineal zu sehen). Ein weiteres Beispiel wären mehrere CT-Bilder eines Patienten, bei denen das Modell anhand des Patienten und nicht der Krankheit lernt. Das könnte z.B. passieren, wenn auf mehreren Bildern mit Krebs auch ein Rippenbruch zu erkennen ist. 
 
 #### b) Labeling von Daten
@@ -304,7 +309,9 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Test-Datensätze erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
 
 [^C.3.b.1]: Wenn beispielsweise die Klassifizierung in gesunde und kranken Patienten erfolgen soll, muss der Hersteller die Kriterien für die spezifische Fragestellung bzw. Zweckbestimmung ableiten, wann ein Patient als gesund und als krank zu klassifizieren ist.
+
 [^C.3.a.2]: Der "Ground Truth" ist das präziseste Referenzverfahren ("Stand der Wissenschaft"), mit dem ein Größe der Klasse bestimmt ist. Für die Bestimmung einer arteriellen Hypertonie kann es z.B. eine invasive Blutdruck-Messung die genausten Ergebnisse und damit den "Ground Truth" bilden. 
+
 [^C.3.b.3]: Das Labeling Dutzender Datensätze ist anstrengend. Eine Bezahlung pro Datensatz kann falsche Motivationsanreize setzen.
 
 #### c) Verfahren zur (Vor-)Verarbeitung von Daten 
@@ -323,10 +330,15 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 
 
 [^C.3.c.0]: Zu den Möglichkeiten der Überprüfung zählen Software-Tests und redundante bzw. alternative Berechnungen z.B. mit Excel.
+
 [^C.3.c.1]: Zu den Optionen der Verarbeitung zählen, den Datensatz zu löschen, Ersetzen durch den Mittelwert anderer Datensätze, neuer Wert "missing" (bei kategoriellen Werten)
+
 [^C.3.c.2]: Ein Beispiel für "missing not at random" sind zu hohe Laborwerte, die abgeschnitten werden.
+
 [^C.3.c.3]: Zu den Optionen der Verarbeitung zählen, den Datensatz zu löschen, den Wert zu korrigieren, den Wert auf einen festgelegten Wert (Min/Max) zu setzen.
+
 [^C.3.c.4]: Diese Begründung ist bei Regressionsverfahren wichtiger als bei Baum-Verfahren.
+
 [^C.3.c.5]: Beispiele sind Röntgenbilder mangelnder Qualität, Patienten, die nicht den Inklusionskriterien entsprechen.
 
 #### d) Dokumentation und Versionskontrolle
@@ -337,8 +349,6 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
 | Der Hersteller hat Daten (Rohdaten, ggf. Zwischenergebnisse, Trainings- und Testdaten) unter Versionskontrolle. |                                                              |
-#### e) Risikomanagement
-
 ### 4. Modellentwicklung
 
 #### a) Vorbereitung
@@ -355,6 +365,7 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
+
 [^C.4.a.2]: Beispiele dafür sind Normalisierung, Wahl von Klassen-Labels (z.B. 0 oder 1), Wahl von Spaltennamen, Aufteilung von kategoriellen Werten auf mehrere Spalten.
 
 #### b) Training
@@ -368,6 +379,7 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat mehrere Modelle mit mehreren Hyperparametern trainiert (darunter auch einfachere und interpretierbare Modell). |                                                              |
 
 [^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
+
 [^C.4.b.2]: Die Learning Curves gibt es beispielsweise für neuronale Netzwerke und Boosting-Verfahren, nicht aber für Modelle mit numerischer Lösung (z.B. lineare Regression) oder bei einem einzigen Baum.
 
 #### c) Bewertung
@@ -387,8 +399,11 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat das Modell mit Zufallswerten geprüft.     |                                                              |
 
 [^C.4.c.1]: Bei Klassifikationsaufgaben ist sich das Modell bei Wahrscheinlichkeiten um die 0,5 besonders unsicher.
+
 [^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.
+
 [^C.4.c.3]: Beispiele sind Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)
+
 [^C.4.c.4]: Beispiele siehe http://yosinski.com/deepvis
 
 #### d) Dokumentation 
@@ -471,11 +486,10 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat einen Post-Market Surveillance Plan erstellt (s.u.). |                               |
 
 [^C.6.1]: Anhand von Beispielen prüfen, dass die Wirksamkeit von Risikokontrollmaßnahmen geprüft wurde, dass es eine Traceability von Risiken zu Risikokontrollmaßnahmen gibt.
-[^C.6.2]: Änderungen können betreffen die Zweckbestimmung, die Input Daten, die klinische und analytische Leistungsfähigkeit.
-[^C.6.3]: Das Vorgehensmodell muss z.B. eingehen auf den Umgang mit Daten, auf das Re-Training, auf die Leistungsbewertung und auf die Updates.
-[^]: 
 
-[^]: 
+[^C.6.2]: Änderungen können betreffen die Zweckbestimmung, die Input Daten, die klinische und analytische Leistungsfähigkeit.
+
+[^C.6.3]: Das Vorgehensmodell muss z.B. eingehen auf den Umgang mit Daten, auf das Re-Training, auf die Leistungsbewertung und auf die Updates.
 
 ## D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 
@@ -506,11 +520,17 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgt.||
 
 [^D.2.1]: Beispiele für diese Feedback-Loops: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Die wiederum beinflusst das Reiseverhalten. Eine Algorithmus gibt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher...
+
 [^D.2.2]: Beispiele 1 (Kriminalistik): Algorithmus schlägt Polizei Stellen vor, an denen sie kontrollieren soll. Wo viel kontrolliert wird, wird viel gefunden. Beispiel 2 (Medizin): Viele Patienten, die man in die Diagnostik schickt, werden zu viel Diagnosen führen. Daher wäre es hilfreich, im Post-Market die Daten/Objekte testen, die nicht vorgeschlagen wurden.
+
 [^D.2.3]: Beispiel: Radiologen verlassen sich auf die Software und schauen sich die Bilder nicht mehr an, weshalb sie Befunde übersehen.
+
 [^D.2.4]: Beispiele wären ethische Herausforderungen wie beispielsweise, der YouTube-Algorithmus, der zwar das Ziel erreicht, die Klick-Zahl bzw. die Nutzungsdauer zu maximieren, dabei aber Gewalt- und Verschwörungsvideos promotet.
+
 [^D.2.5]: Man spricht von einem Distribution Shift bzw. von einer Data Drift.
+
 [^D.2.6:]: Der Hersteller sollte Schwellwerte für Feature oder für die Varianz / Kovarianz über die Zeit festlegen. Dies lässt sich insbesondere bei nicht-normaverteilten Daten über den Vergleich von Histogrammen oder Kerndichteschätzern visualisieren bzw. quantifizieren.
+
 [^D.2.7]: Sich vom Hersteller beispielsweise den Prozess erklären lassen, wie er sich systematisch über neue Entwicklungen im Machine Learning informiert, wie der diese Entwicklungen bewertet sowie darauf reagiert.
 
 ## E) Anhänge
