@@ -1,5 +1,7 @@
 # Leitfaden zur KI bei Medizinprodukten
 
+> Hinweis: Dieser Leitfaden befindet sich noch in der Entwicklung!
+
 ## A) Metainformationen
 
 ### 1. Ziele des Leitfadens
@@ -225,7 +227,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Der Hersteller hat festgelegt, wie schnell das System die Outputs erzeugen muss.|Diese Festlegung kann ggf. abhängig von der Größe und Menge der Daten erfolgen.|
 |Der Hersteller hat die Verfügbarkeit des Medizinprodukts spezifiziert.|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
 
-[^C.2.a.1]: **Beispiel 1**: Die Stakeholder-Anforderungen lautet, dass 95% der Radiologen einen Krebsfall mit dem Produkt erkennen können müssen. Die Anforderung an den Algorithmus lautet, dass er eine Sensitivität von 97% aufweisen muss. **Beispiel 2**: Die Stakeholder-Anforderungen lautet, dass Arterienverkalkungen mit einer Sensitivität von 92% erkannt werden müssen. Die Anforderungen an den Algorithmus lautet, dass er die Stärke der Plaques im Blutgemäß auf 0,2mm genau vorhersagen muss.
+[^C.2.a.1]: Beispiele:  **Beispiel 1**: Die Stakeholder-Anforderungen lautet, dass 95% der Radiologen einen Krebsfall mit dem Produkt erkennen können müssen. Die Anforderung an den Algorithmus lautet, dass er eine Sensitivität von 97% aufweisen muss. **Beispiel 2**: Die Stakeholder-Anforderungen lautet, dass Arterienverkalkungen mit einer Sensitivität von 92% erkannt werden müssen. Die Anforderungen an den Algorithmus lautet, dass er die Stärke der Plaques im Blutgemäß auf 0,2mm genau vorhersagen muss.
+
 [^C.2.a.2]:  Beispiele: unvollständige Datensätze, fehlende Datensätze, falsche Datenformate, zu große Datenmengen, Daten außerhalb spezifizierter Wertebereiche, falsche zeitliche Abfolge von Daten.
 
 #### b) User Interface
