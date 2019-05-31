@@ -267,7 +267,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 ### 3. Datenmanagement
 
-Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesprochen wird.
+In diesem Kapitel sind Trainings-, Validierungs- und Testdaten gemeint, wenn von Daten gesprochen wird.
 
 #### a) Sammlung der Daten
 
@@ -296,7 +296,7 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 
 [^C.3.a.5]: Beispiele: Einfluss von verschiedenen Messgeräten, Befragungen, Policies (z.B. ein Klinik nimmt Laborparameter nur im Notfall, eine andere routinemäßig. Frequenz und Anlass, mit der Patienten untersucht werden), Art der Klinik (z.B. kleines Krankenhaus, aus dem alle schweren Fälle verlegt werden versus Maximalversorger > Survivor Bias), Self-Selection Bias (z.B. Patienten mit diversen Vorerkrankungen gehen eher in ein Krankenhaus statt in eine Arztpraxis), Art der Studie (prospektiv versus retrospektiv)
 
-[^C.3.a.6]: Das sind Daten, bei denen nicht-kausale Informationen über das Label in den Daten stecken z.B. in der Sortierung (z.B. erst die Daten von Gesunden, dann die von Kranken ), im Krankenhaus (von einem stammen die schweren Fälle), im Bild (z.B. bei Hautkrebs ist immer noch ein Lineal zu sehen). Ein weiteres Beispiel wären mehrere CT-Bilder eines Patienten, bei denen das Modell anhand des Patienten und nicht der Krankheit lernt. Das könnte z.B. passieren, wenn auf mehreren Bildern mit Krebs auch ein Rippenbruch zu erkennen ist. 
+[^C.3.a.6]: Das sind Daten, bei denen nicht-kausale Informationen über das Label in den Daten stecken z.B. in der Sortierung (z.B. erst die Daten von Gesunden, dann die von Kranken), im Krankenhaus (von einem stammen die schweren Fälle), im Bild (z.B. bei Hautkrebs ist immer noch ein Lineal zu sehen). Ein weiteres Beispiel wären mehrere CT-Bilder eines Patienten, bei denen das Modell anhand des Patienten und nicht der Krankheit lernt. Das könnte z.B. passieren, wenn auf mehreren Bildern mit Krebs auch ein Rippenbruch zu erkennen ist. 
 
 #### b) Labeling von Daten
 
@@ -306,10 +306,10 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
 | Dieses Verfahren spezifiziert die Anforderungen an die Anzahl, Ausbildung und Kompetenz der für das Labeling verantwortlichen Personen. |                                                              |
-| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von Test-Datensätzen erfolgen.  |
+| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen.  |
 | Dieses Verfahren legt fest, wie die für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung überprüft wird. |                                                              |
 | Dieses Verfahren legt fest, wie die Korrektheit der Labels systematisch überprüft wird. Die Wahl dieser Begründung hat der Hersteller dokumentiert. | Der Hersteller kann identische Datensätzen mehreren Personen zum Labeling vorlegen und die Übereinstimmung der Ergebnisse bewerten. |
-| Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Test-Datensätze erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
+| Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Datensätze mit bereits bekanntem Label erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
 
 [^C.3.b.1]: Wenn beispielsweise die Klassifizierung in gesunde und kranken Patienten erfolgen soll, muss der Hersteller die Kriterien für die spezifische Fragestellung bzw. Zweckbestimmung ableiten, wann ein Patient als gesund und als krank zu klassifizieren ist.
 
@@ -351,7 +351,7 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
-| Der Hersteller hat Daten (Rohdaten, ggf. Zwischenergebnisse, Trainings- und Testdaten) unter Versionskontrolle. |                                                              |
+| Der Hersteller hat Daten (Rohdaten, ggf. Zwischenergebnisse, Trainings-, Validierungs- und Testdaten) unter Versionskontrolle. |                                                              |
 ### 4. Modellentwicklung
 
 #### a) Vorbereitung
@@ -361,10 +361,10 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. |                                                              |
 | Der Hersteller hat die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. |
 | Der Hersteller hat sichergestellt, dass er das Modell nur mit Daten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
-| Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Test- und Validierungsdaten aufteilt. |                                                              |
-| Der Hersteller hat dokumentiert, nach welcher Stratefizierung er die Daten in Trainings-, Test- und Validierungsdaten aufteilt[^C.4.a.1]. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Test- bzw. Validierungdaten) sind. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugriff zu den Validierungsdaten bekommen. |                                                              |
+| Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
+| Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
+| Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
+| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugriff zu den Testdaten bekommen. |                                                              |
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
@@ -375,9 +375,9 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller führt eine Kreuzvalidierung ausschließlich mit den Trainings- und Testdaten vor. |                                                              |
-| Der Hersteller hat die Wahl Hyperparameter dokumentiert und begründet[^C.4.b.1]. |                                                              |
-| Der Hersteller hat die Wahl der Epochen dokumentiert und begründet[^C.4.b.2]. | Wo möglich, anhand von Learning Curves zeigen lassen.        |
+| Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. |                                                              |
+| Der Hersteller hat die Wahl der Hyperparameter dokumentiert und begründet[^C.4.b.1]. |                                                              |
+| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert und begründet[^C.4.b.2]. | Wo möglich, anhand von Learning Curves zeigen lassen.        |
 | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
 | Der Hersteller hat mehrere Modelle mit mehreren Hyperparametern trainiert (darunter auch einfachere und interpretierbare Modell). |                                                              |
 
@@ -419,7 +419,7 @@ Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten ges
 | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | 
   |
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
-| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Validierungsdaten. |
+| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
 | Der Hersteller hat die Trainingsdaten einschließlich deren Feature beschrieben und statistisch ausgewertet. | z.B. mit ["Data Nutrition Labels"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. |                                                              |
 
