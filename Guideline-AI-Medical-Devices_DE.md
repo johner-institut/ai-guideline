@@ -22,7 +22,7 @@ Dieser Leitfaden ist nur für Medizinprodukten anwendbar, die Verfahren der KI, 
 
 - Hersteller dieser Produkte
 - deren Dienstleister (z.B. Entwicklungsdienstleister)
-- Personen und Organisation, die die Sicherheit dieser Produkte bewerten müssen, wie beispielsweise Auditoren, Behörden und benannte Stellen.
+- Personen und Organisation, die die Sicherheit dieser Produkte bewerten müssen, wie beispielsweise Auditoren, Behörden und Benannte Stellen.
 
 ### 3. Hinweise zur Verwendung
 
@@ -75,8 +75,8 @@ Anschließend sollten die Personen den Leitfaden nutzen, die für die folgende A
 Für diese Aufgaben sind üblicherweise die folgenden Rollen zuständig:
 
 -  Qualitätsmanagementbeauftragte
-- Externe und interne Auditoren (einschließlich benannte Stellen)
-- Interne und externe Prüfer von technischen Dokumentationen (einschließlich benannte Stellen und Behörden)
+- Externe und interne Auditoren (einschließlich Benannte Stellen)
+- Interne und externe Prüfer von technischen Dokumentationen (einschließlich Benannte Stellen und Behörden)
 - Tester
 - Data Scientists
 - Clinical Affairs Spezialisten
@@ -98,8 +98,6 @@ Die Kommentare enthalten beispielsweise:
 - Tipps für Auditor, wie die Erfüllung des Kriteriums geprüft werden kann
 - Hinweise zur Verbindlichkeit und Anwendbarkeit und Einschränkungen
 
-Der Leitfaden enthält zu den meisten Anforderungen "Kommentare". Diese Kommentare umfassen Begründungen, Referenzen, Anmerkungen und v.a. Tipps für Auditoren und Reviewer.
-
 ### 4. Autoren und Nutzungsrechte
 
 Diesen Leitfaden haben die folgenden Autoren verfasst:
@@ -120,7 +118,7 @@ Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform 
 
 Die Versionshistorie einschließlich der jeweiligen Autoren kann der Dokumentenhistorie entnommen werden.
 
-Die freigegebenen Versionen sind über ein Tag im Repository als solche gekennzeichnet. Versionen ohne Tag sind Dokumente im Entwurfsstadium.
+Die freigegebenen Versionen sind über einen Tag im Repository als solche gekennzeichnet. Versionen ohne Tag sind Dokumente im Entwurfsstadium.
 
 ## B) Allgemeine Anforderungen
 
