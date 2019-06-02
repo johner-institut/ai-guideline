@@ -147,7 +147,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |:--|:--|
 |Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||
 |Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|
-|Der Hersteller hat an gemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
+|Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
 |Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|Anforderung der ISO 13485:2016|
 
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
@@ -168,7 +168,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|
 |:--|:--|
-|Der Hersteller hat festgelegt, bei welchem medizinischen Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt unterstützen soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
+|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
 |Die Zweckbestimmung lässt erkennen, ob das Produkt der Klassifikation oder der Regression dient.|Klassifikation und Regression sind die typischen Ziele von Verfahren des maschinellen Lernens.|
