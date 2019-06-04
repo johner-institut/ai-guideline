@@ -265,7 +265,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 ### 3. Datenmanagement
 
-Wenn in diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesprochen wird.
+In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesprochen wird.
 
 #### a) Sammlung der Daten
 
