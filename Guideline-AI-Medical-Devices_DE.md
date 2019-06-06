@@ -464,8 +464,8 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 
 | Anforderung                                                  | Kommentar |
 | ------------------------------------------------------------ | --------- |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob sich die Nutzer die Gebrauchsanweisung verstehen. |           |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder den Ergebnisse misstrauen. |           |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. |           |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |           |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. |           |
 
 #### c) Klinische Bewertung 
