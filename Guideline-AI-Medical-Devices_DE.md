@@ -508,21 +508,21 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 |Anforderung|Kommentare|
 |:--|:--|
 |Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.||
-|Der Hersteller hat in diesem PMS-Plan, die Daten spezifiziert, die er sammeln und auswerten will.||
-|Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Schwellwerten er eine Handlung insbesondere eine Neu-Bewertung des Nutzen-Risikoverhältnisses für notwendig erachtet.||
-|Der Hersteller hat beim Festlegen dieser Schwellwerte analysiert, welche Feedback-Loops die Schwellwerte selbst beeinflussen können[^D.2.1].||
-|Der Hersteller hat beim Festlegen dieser Schwellwerte analysiert, welche Self-fullfilling Prophecies die Schwellwerte selbst beeinflussen können[^D.2.2].||
+|Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.||
+|Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.||
+|Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Feedback-Loops die Schwellenwerte selbst beeinflussen können[^D.2.1].||
+|Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Self-Fullfilling-Prophecies die Schwellenwerte selbst beeinflussen können[^D.2.2].||
 |De Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu unerwünschten medizinischen Nebenwirkungen sammelt und bewertet.||
-|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu (unerwünschten) Verhaltensänderungen bzw. (vorhersagbarem) Missbrauch sammelt bewertet[^D.2.3]||
-|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu weiteren "unerwünschten Nebenwirkungen" sammelt bewertet[^D.2.4].||
-|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen sammelt, um bewerten zu können, ob die Daten im Feld den erwarteten Daten bzw. den Trainingsdaten entspricht[^D.2.5].|Hinweis für Auditoren[^D.2.6]|
+|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu (unerwünschten) Verhaltensänderungen bzw. (vorhersagbarem) Missbrauch sammelt und bewertet[^D.2.3]||
+|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu weiteren "unerwünschten Nebenwirkungen" sammelt und bewertet[^D.2.4].||
+|Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen sammelt, um bewerten zu können, ob die Daten im Feld den erwarteten Daten bzw. den Trainingsdaten entsprechen[^D.2.5].|Hinweis für Auditoren[^D.2.6]|
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob das Produkt noch dem State-of-the-Art genügt.|Hinweis für Auditoren[^D.2.7]|
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell sind.||
-|Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgt.||
+|Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgen.||
 
 [^D.2.1]: Beispiele für diese Feedback-Loops: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Die wiederum beinflusst das Reiseverhalten. Eine Algorithmus gibt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher...
 
-[^D.2.2]: Beispiele 1 (Kriminalistik): Algorithmus schlägt Polizei Stellen vor, an denen sie kontrollieren soll. Wo viel kontrolliert wird, wird viel gefunden. Beispiel 2 (Medizin): Viele Patienten, die man in die Diagnostik schickt, werden zu viel Diagnosen führen. Daher wäre es hilfreich, im Post-Market die Daten/Objekte testen, die nicht vorgeschlagen wurden.
+[^D.2.2]: Beispiele 1 (Kriminalistik): Algorithmus schlägt Polizei Orte vor, an denen sie kontrollieren soll. Wo viel kontrolliert wird, wird viel gefunden. Beispiel 2 (Medizin): Viele Patienten, die man in die Diagnostik schickt, werden zu viel Diagnosen führen. Daher wäre es hilfreich, im Post-Market die Daten/Objekte testen, die nicht vorgeschlagen wurden.
 
 [^D.2.3]: Beispiel: Radiologen verlassen sich auf die Software und schauen sich die Bilder nicht mehr an, weshalb sie Befunde übersehen.
 
