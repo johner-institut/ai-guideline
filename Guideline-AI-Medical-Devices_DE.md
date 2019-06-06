@@ -257,11 +257,11 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Der Hersteller hat die Folgen bewertet, wenn das System sozial inakzeptable Outputs liefert (z.B. diskriminierend). | Diese "Folgen" sind nicht notwendigerweise Risiken im Sinne der ISO 14971. |
 | Der Hersteller hat die Risiken bewertet, wenn das System nicht verfügbar ist. |                                                              |
 | Falls der Hersteller Selbsttests verwendet, hat er dargelegt, welche der spezifizierten Gütekriterien damit überprüft werden und welche Risiken dadurch beherrscht sind. |                                                              |
-| Bei Continuous Learning Systems hat der Hersteller die Option, das System auf einen bekannten Zustand zurückzusetzen erwogen. | In der Risikotabelle zeigen lassen.                          |
-| Bei Continuous Learning Systems hat der Hersteller quantitativ dargelegt, weshalb der Nutzen-Risiko-Verhältnis besser als bei nicht kontinuierliche lernenden Systemen ist. |                                                              |
+| Bei Continuous Learning Systems hat der Hersteller die Option, das System auf einen bekannten Zustand zurückzusetzen, erwogen. | In der Risikotabelle zeigen lassen.                          |
+| Bei Continuous Learning Systems hat der Hersteller quantitativ dargelegt, weshalb das Nutzen-Risiko-Verhältnis besser als bei nicht kontinuierliche lernenden Systemen ist. |                                                              |
 
 
-[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Stand der Wissenschaft und damit dem Goldstandard ("Ground Truth"). D.h. dass die Anforderungen an das System geringer sind als bei einem Goldstandard. Das wäre inbesondere der Fall, wenn der Goldstandard ein invasives oder sehr kostenintensives Verfahren bedingt.
+[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Stand der Wissenschaft und damit dem Goldstandard ("Ground Truth"). D.h. dass die Anforderungen an das System geringer sind als bei einem Goldstandard. Das ist inbesondere wahrscheinlich, insofern der Goldstandard ein invasives oder sehr kostenintensives Verfahren bedingt.
 
 ### 3. Datenmanagement
 
