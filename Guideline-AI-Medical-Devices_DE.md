@@ -474,7 +474,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | ------------------------------------------------------------ | --------- |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen dem Stand der Technik entspricht. |           |
-| Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob das Modell gegen "Ground Truth" bewertet wurde. |           |
+| Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob das Modell gegen den "Ground Truth" bewertet wurde. |           |
 
 ### 6. Produktfreigabe
 
@@ -482,13 +482,13 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | ------------------------------------------------------------ | ----------------------------- |
 | Der Hersteller hat das Modell anhand der in Kapitel 5.b) genannten Kriterien dokumentiert. |                               |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1] |
-| Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in einer "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                               |
-| Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                               |
+| Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                               |
+| Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, im Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                               |
 | Der Hersteller hat einen Post-Market Surveillance Plan erstellt (s.u.). |                               |
 
 [^C.6.1]: Anhand von Beispielen prüfen, dass die Wirksamkeit von Risikokontrollmaßnahmen geprüft wurde, dass es eine Traceability von Risiken zu Risikokontrollmaßnahmen gibt.
 
-[^C.6.2]: Änderungen können betreffen die Zweckbestimmung, die Input Daten, die klinische und analytische Leistungsfähigkeit.
+[^C.6.2]: Änderungen können die Zweckbestimmung, Dateninput, die klinische und analytische Leistungsfähigkeit betreffen.
 
 [^C.6.3]: Das Vorgehensmodell muss z.B. eingehen auf den Umgang mit Daten, auf das Re-Training, auf die Leistungsbewertung und auf die Updates.
 
