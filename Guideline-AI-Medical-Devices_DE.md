@@ -520,7 +520,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell sind.||
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgen.||
 
-[^D.2.1]: Beispiele für diese Feedback-Loops: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Die wiederum beinflusst das Reiseverhalten. Eine Algorithmus gibt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher...
+[^D.2.1]: Beispiel für Feedback-Loops: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Diese wiederum beeinflusst das Reiseverhalten. Ein Algorithmus stellt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher.
 
 [^D.2.2]: Beispiele 1 (Kriminalistik): Algorithmus schlägt Polizei Orte vor, an denen sie kontrollieren soll. Wo viel kontrolliert wird, wird viel gefunden. Beispiel 2 (Medizin): Viele Patienten, die man in die Diagnostik schickt, werden zu viel Diagnosen führen. Daher wäre es hilfreich, im Post-Market die Daten/Objekte testen, die nicht vorgeschlagen wurden.
 
