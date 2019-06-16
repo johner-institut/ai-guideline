@@ -18,7 +18,7 @@ Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens f�
 
 ### 2. Anwendungsbereich und Zielgruppe
 
-Dieser Leitfaden ist nur für Medizinprodukten anwendbar, die Verfahren der KI, insbesondere des maschinellen Lernens verwenden. Der Leitfaden wendet sich insbesondere an 
+Dieser Leitfaden ist nur für Medizinprodukte anwendbar, die Verfahren der KI, insbesondere des maschinellen Lernens verwenden. Der Leitfaden wendet sich insbesondere an 
 
 - Hersteller dieser Produkte
 - deren Dienstleister (z.B. Entwicklungsdienstleister)
@@ -158,7 +158,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 Die Hersteller sollten den Nachweis führen können, die relevanten Anforderungen dieser Leitlinie beachtet zu haben. Es gibt keine spezifischen Anforderungen an die Dokumentation und "Objective Evidence".
 
-Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten zur speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
+Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
 
 ## C) Anforderungen an die Produktentwicklung
 
@@ -170,7 +170,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |:--|:--|
 |Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
-|Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
+|Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
 |Die Zweckbestimmung lässt erkennen, ob das Produkt der Klassifikation oder der Regression dient.|Klassifikation und Regression sind die typischen Ziele von Verfahren des maschinellen Lernens.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
@@ -217,7 +217,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Anforderung|Kommentare|
 |:--|:--|
 |Der Hersteller hat aus der Zweckbestimmung nachvollziehbar quantitative Gütekriterien bzw. Anforderungen an die Software oder/und den Algorithmus abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich mit einer Traceability-Matrix besonders gut  darstellen.|
-|Diese quantitiven Gütekriterien bzw. Anforderungen schließen soweit anwendbar ein: Genauigkeit (Accuracy) positiver prädikativer Werte (Precision), Spezifität, Sensitivität, sowie Mean Absoute Error oder Mean Square Error.|Die Wahl der Gütekriterien hängen von der Art der Aufgabenstellung (Klassifikation, Regression) ab.|
+|Diese quantitiven Gütekriterien bzw. Anforderungen schließen ein: Für Klassifikationsprobleme Genauigkeit (Mean oder Balanced Accuracy), positiver prädikativer Wert (Precision), Spezifität und Sensitivität; für Regressionsprobleme Mean Absoute Error und Mean Square Error.| Bei unbalancierten Daten, d.h. wenn Labels sehr unterschiedlich häufig vorkommen, sollte Balanced statt Mean Accuracy verwendet werden.|
 |Der Hersteller hat die erwarteten Wertebereiche der Outputs spezifiziert.||
 |Der Hersteller hat die Anforderungen bezüglich der Wiederholbarkeit und Reproduzierbarkeit von Anforderungen spezifiziert.|Dies ist besonders bei "Continuous Learning Systems" relevant.|
 |Der Hersteller hat festgelegt wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
@@ -265,7 +265,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 ### 3. Datenmanagement
 
-In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesprochen wird.
+In diesem Kapitel sind Trainings-, Validierungs- und Testdaten gemeint, wenn von Daten gesprochen wird.
 
 #### a) Sammlung der Daten
 
@@ -277,7 +277,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Verfahren schließt eine Software-gestützte Bewertung mit ein. Diese Software ist zu validieren. |
 | Der Hersteller hat die gesammelten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/). |
-| Der Hersteller hat begründet, wo er die Daten sammeln und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik oder von Registern verglichen. |                                                              |
+| Der Hersteller hat begründet, wo er die Daten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik oder von Registern verglichen. |                                                              |
 | Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Daten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisierten bzw. pseudonymisiert werden. |                                                              |
@@ -286,28 +286,28 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl der Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
 
-[^C.3.a.2]: z.B. demographische Daten (Alter, Geschlecht), körperliche Parameter (Größe, Gewicht, Rasse), Erkrankungen, Vitalparameter, Laborparameter, Vorhandensein weitere Untersuchungen, Anamnese.
+[^C.3.a.2]: z.B. demographische Daten (Alter, Geschlecht), körperliche Parameter (Größe, Gewicht), Erkrankungen, Vitalparameter, Laborparameter, Vorhandensein weitere Untersuchungen, Anamnese.
 
 [^C.3.a.3]: Beispiele: **Beispiel 1**: Patienten, die wegen eines Herzschrittmachers oder einer Lungen-OP ausgeschlossen werden müssen, weil die Bilder nicht ausgewertet werden können oder zu Fehlklassifikation führen könnten. **Beispiel 2**: Formate und technischen Parameter wie Bildgrößen, Auflösungen, Helligkeit und Kontraste, Farbkodierung, Kompression, Aufnahmerichtungen, Aufnahmeverfahren (z.B. CT versus MRT), mit ohne Kontrastmittel, Zoom. **Beispiel 3**: Vollständigkeit von Meta-Daten.
 
 [^C.3.a.4]: Übliche sind die Berechnung von Verteilungen (Histogrammen), Mittelwerten, Quartilen, ggf. "Joint Distribution of Features". Auch die Korrelation von Daten untereinander sollte untersucht sein. Weitere Beispiele finden sich in der in der [Publikation von Sarah Holland et al.](https://arxiv.org/pdf/1805.03677.pdf) (z.B. in der Tabelle 1)
 
-[^C.3.a.5]: Beispiele: Einfluss von verschiedenen Messgeräte, Befragungen, Policies (z.B. ein Klinik nimmt Laborparameter nur im Notfall, eine andere routinemäßig. Frequenz und Anlass, mit der Patienten untersucht werden), Art der Klinik (z.B. kleines Krankenhaus, aus dem alle schweren Fälle verlegt werden versus Maximalversorger > Survivor Bis), Self-Selection Bis (z.B. arabische Patienten möchten lieber in Krankenhaus mit arabischem Arzt), Art der Studie (prospektiv versus retrospektiv)
+[^C.3.a.5]: Beispiele: Einfluss von verschiedenen Messgeräten, Befragungen, Policies (z.B. ein Klinik nimmt Laborparameter nur im Notfall, eine andere routinemäßig. Frequenz und Anlass, mit der Patienten untersucht werden), Art der Klinik (z.B. kleines Krankenhaus, aus dem alle schweren Fälle verlegt werden versus Maximalversorger > Survivor Bias), Self-Selection Bias (z.B. Patienten mit diversen Vorerkrankungen gehen eher in ein Krankenhaus statt in eine Arztpraxis), Art der Studie (prospektiv versus retrospektiv)
 
-[^C.3.a.6]: Das sind Daten, bei denen Informationen über das Label in den Daten steckt z.B. in der Sortierung  (z.B. erst die Daten von Gesunden, dann die von Kranken ), im Krankenhaus (von einem stammen die schweren Fälle), im Bild (z.B. bei Hautkrebs ist immer noch ein Lineal zu sehen). Ein weiteres Beispiel wären mehrere CT-Bilder eines Patienten, bei denen das Modell anhand des Patienten und nicht der Krankheit lernt. Das könnte z.B. passieren, wenn auf mehreren Bildern mit Krebs auch ein Rippenbruch zu erkennen ist. 
+[^C.3.a.6]: Das sind Daten, bei denen nicht-kausale Informationen über das Label in den Daten stecken z.B. in der Sortierung (z.B. erst die Daten von Gesunden, dann die von Kranken), im Krankenhaus (von einem stammen die schweren Fälle), im Bild (z.B. bei Hautkrebs ist immer noch ein Lineal zu sehen). Ein weiteres Beispiel wären mehrere CT-Bilder eines Patienten, bei denen das Modell anhand des Patienten und nicht der Krankheit lernt. Das könnte z.B. passieren, wenn auf mehreren Bildern mit Krebs auch ein Rippenbruch zu erkennen ist. 
 
 #### b) Labeling von Daten
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten verstehen werden.und diese Wahl begründet. |                                                              |
-| Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt. |                                                              |
+| Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten verstehen werden und diese Wahl begründet. |                                                              |
+| Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
 | Dieses Verfahren spezifiziert die Anforderungen an die Anzahl, Ausbildung und Kompetenz der für das Labeling verantwortlichen Personen. |                                                              |
-| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von Test-Datensätzen erfolgen.  |
+| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen.  |
 | Dieses Verfahren legt fest, wie die für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung überprüft wird. |                                                              |
 | Dieses Verfahren legt fest, wie die Korrektheit der Labels systematisch überprüft wird. Die Wahl dieser Begründung hat der Hersteller dokumentiert. | Der Hersteller kann identische Datensätzen mehreren Personen zum Labeling vorlegen und die Übereinstimmung der Ergebnisse bewerten. |
-| Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Test-Datensätze erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
+| Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Datensätze mit bereits bekanntem Label erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
 
 [^C.3.b.1]: Wenn beispielsweise die Klassifizierung in gesunde und kranken Patienten erfolgen soll, muss der Hersteller die Kriterien für die spezifische Fragestellung bzw. Zweckbestimmung ableiten, wann ein Patient als gesund und als krank zu klassifizieren ist.
 
@@ -349,7 +349,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
-| Der Hersteller hat Daten (Rohdaten, ggf. Zwischenergebnisse, Trainings- und Testdaten) unter Versionskontrolle. |                                                              |
+| Der Hersteller hat Daten (Rohdaten, ggf. Zwischenergebnisse, Trainings-, Validierungs- und Testdaten) unter Versionskontrolle. |                                                              |
 ### 4. Modellentwicklung
 
 #### a) Vorbereitung
@@ -357,12 +357,12 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. |                                                              |
-| Der Hersteller hat die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAC) hilft bei der Visualisierung. |
-| Der Hersteller hat sichergestellt, dass er das Modell nur mit Daten trainiert, die im "Feld" tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
-| Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Test- und Validierungsdaten aufteilt. |                                                              |
-| Der Hersteller hat dokumentiert, nach welcher Stratefizierung er die Daten in Trainings-, Test- und Validierungsdaten aufteilt[^C.4.a.1]. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Test- bzw. Validierungdaten) sind. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugriff zu den Validierungsdaten bekommen. |                                                              |
+| Der Hersteller hat die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. |
+| Der Hersteller hat sichergestellt, dass er das Modell nur mit Daten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
+| Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
+| Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
+| Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
+| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugriff zu den Testdaten bekommen. |                                                              |
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
@@ -373,9 +373,9 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller führt eine Kreuzvalidierung ausschließlich mit den Trainings- und Testdaten vor. |                                                              |
-| Der Hersteller hat die Wahl Hyperparameter dokumentiert und begründet[^C.4.b.1]. |                                                              |
-| Der Hersteller hat die Wahl der Epochen dokumentiert und begründet[^C.4.b.2]. | Wo möglich, anhand von Learning Curves zeigen lassen.        |
+| Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. |                                                              |
+| Der Hersteller hat die Wahl der Hyperparameter dokumentiert und begründet[^C.4.b.1]. |                                                              |
+| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert und begründet[^C.4.b.2]. | Wo möglich, anhand von Learning Curves zeigen lassen.        |
 | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
 | Der Hersteller hat mehrere Modelle mit mehreren Hyperparametern trainiert (darunter auch einfachere und interpretierbare Modell). |                                                              |
 
@@ -387,7 +387,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
+| Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
 | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
 | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
 | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
@@ -414,10 +414,10 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 | Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
 | Der Hersteller hat die Trainingsdaten, die Testergebnisse und deren Bewertung unter Versionskontrolle. |                                                              |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | Eine gutes Format zur Dokumentation bilden die [Model Cards](https://arxiv.org/abs/1810.03993
-). |
+| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | 
+  |
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
-| Der Hersteller hat die Gütemaße dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Validierungsdaten. |
+| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
 | Der Hersteller hat die Trainingsdaten einschließlich deren Feature beschrieben und statistisch ausgewertet. | z.B. mit ["Data Nutrition Labels"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. |                                                              |
 
@@ -498,7 +498,7 @@ In diesem Kapitel sind Test- und Trainingsdaten gemeint, wenn von Daten gesproch
 
 |Anforderung|Stufe|Kommentare|
 |:--|:--:|:--|
-|Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|1|hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
+|Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|1|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|2|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|1|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|1|Bei unkritischen Produkten ist die Stufe 2 vertretbar|
