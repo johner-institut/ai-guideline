@@ -219,7 +219,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Anforderung|Kommentare|
 |:--|:--|
 |Der Hersteller hat aus der Zweckbestimmung nachvollziehbar quantitative Gütekriterien bzw. Anforderungen an die Software oder/und den Algorithmus abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich mit einer Traceability-Matrix besonders gut  darstellen.|
-|Diese quantitiven Gütekriterien bzw. Anforderungen schließen soweit anwendbar ein: Genauigkeit (Accuracy), positiver prädikativer Werte (Precision), Spezifität, Sensitivität, sowie Mean Absoute Error oder Mean Square Error.|Die Wahl der Gütekriterien hängen von der Art der Aufgabenstellung (Klassifikation, Regression) ab.|
+|Diese quantitiven Gütekriterien bzw. Anforderungen schließen ein: Für Klassifikationsprobleme Genauigkeit (Mean oder Balanced Accuracy), positiver prädikativer Wert (Precision), Spezifität und Sensitivität; für Regressionsprobleme Mean Absoute Error und Mean Square Error.| Bei unbalancierten Daten, d.h. wenn Labels sehr unterschiedlich häufig vorkommen, sollte Balanced statt Mean Accuracy verwendet werden.|
 |Der Hersteller hat die erwarteten Wertebereiche der Outputs spezifiziert.||
 |Der Hersteller hat die Anforderungen bezüglich der Wiederholbarkeit und Reproduzierbarkeit von Anforderungen spezifiziert.|Dies ist besonders bei "Continuous Learning Systems" relevant.|
 |Der Hersteller hat festgelegt wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
