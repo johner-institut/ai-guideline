@@ -171,7 +171,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
-|Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen und ob maschinelles Lernen online oder offline erfolgen soll.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens.|
+|Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
@@ -186,9 +186,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Der Hersteller hat die in der Zweckbestimmung genannten Ziele mit quantitativen Werten operationalisiert [^C.1.c.1]. | Es ist nicht unüblich, dass diese Werte im Lauf der Entwicklung ergänzt und angepasst werden. |
 | Der Hersteller hat die Laufzeitumgebung des Produkts bezüglich Hardware (Bildschirmgröße, Bildschirmauflösung, Speicher, Netzwerkanbindung etc.) und Software (z.B. Betriebssystem, Browser, Run-time Environments wie Java Run-time Environment oder .NET) bestimmt. | Bei Apps kann es sein, dass diese Charakterisierung für die App und für den Server-Teil erfolgen muss. |
-| Der Hersteller hat die Datenschnittstellen anhand der Ebenen des  [Interoperabilitätsmodells](https://www.johner-institut.de/blog/tag/interoperabilitat/) spezifiziert und dabei auch die Formate und bei Bildern deren spezifischen Eigenschaften (Größe, Auflösung, Farbkodierung) festgelegt. | Diese wird auch gemäß IEC 62304 Kapitel 5.2.2 benötigt. |
 | Der Hersteller hat alle Märkte und alle dort relevanten regulatorischen Anforderungen festgelegt. | Diese Liste sich zeigen lassen.                              |
-| Der Hersteller hat festgelegt, ob das System nach der Inverkehrbringung weiter dazulernen soll. Falls dies der Fall ist, hat der Hersteller dargelegt, ob diese kontinuierliche Training global/zentral, oder dezentral z.B. pro Produkt oder pro Krankenhaus erfolgt. |                                                              |
+| Der Hersteller hat festgelegt, ob das System nach der Inverkehrbringung weiter dazulernen soll und ob Verfahren des maschinellen Lernens online oder offline zum Einsatz kommen. Falls dies der Fall ist, hat der Hersteller dargelegt, ob diese kontinuierliche Training global/zentral, oder dezentral z.B. pro Produkt oder pro Krankenhaus erfolgt. |                                                              |
 
 [^C.1.c.1]: **Beispiel**: Zweck: Die Software unterstützt Radiologen beim Diagnostizieren von Krebserkrankungen anhand CT-Bilder des Schädels. Quantitativer Wert: 95% der Radiologen, die mit der Software arbeiten, erkennen den Krebs. 
 
