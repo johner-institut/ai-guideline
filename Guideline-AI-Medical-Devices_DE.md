@@ -171,7 +171,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
-|Die Zweckbestimmung lässt erkennen, ob das Produkt der Klassifikation oder der Regression dient.|Klassifikation und Regression sind die typischen Ziele von Verfahren des maschinellen Lernens.|
+|Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernen verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
