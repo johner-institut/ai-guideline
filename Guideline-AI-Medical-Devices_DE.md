@@ -239,7 +239,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                          |
 | :----------------------------------------------------------- | :-------------------------------------------------- |
 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um Fehlverhalten feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein. |
-| Der Hersteller hat geprüft, dass Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sind, die ausschließlich auf automatischer Datenverarbeitung beruhen. | Anforderung des Art. 22 der DSGVO.                  |
+| Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechen Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                  |
 
 
 
