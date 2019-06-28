@@ -50,9 +50,9 @@ Entsprechend stellt der Leitfaden keine spezifischen Anforderungen an die Produk
 
 Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
 
-Vielmehr trägt der Leitfaden Best-Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben.
+Dieser Leitfaden trägt Best Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. Dabei ist zu berücksichtigen, dass eine Fokussierung allein auf diesen "State-of-the-Art" auch zur Entwicklung von Produkten mit geringem Nutzen und sogar Schaden für den Patienten führen und insofern für sich genommen kein hinreichendes Kriterium sein kann.
 
-Einige dieser Best-Practices sind nicht in allen Situationen, bei allen Produkten oder bei allen Verfahren des maschinellen Lernens anwendbar. Hersteller sollten zumindest nicht offensichtliche Ausschlüsse begründen.
+Einige dieser Best Practices sind daher nicht in allen Situationen, bei allen Produkten oder bei allen Verfahren des maschinellen Lernens anwendbar. Hersteller sollten nicht offensichtliche Ausschlüsse begründen.
 
 #### c) Verwendung des Leitfadens
 
