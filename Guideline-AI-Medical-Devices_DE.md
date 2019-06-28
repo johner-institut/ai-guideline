@@ -399,7 +399,7 @@ In diesem Kapitel sind Trainings-, Validierungs- und Testdaten gemeint, wenn von
 | Der Hersteller hat das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum approximiert. | Dies lässt sich als Best Practice nicht generell einfordern. |
 | Der Hersteller hat das Modell mit Zufallswerten geprüft.     |                                                              |
 
-[^C.4.c.1]: Bei Klassifikationsaufgaben ist sich das Modell bei Wahrscheinlichkeiten um die 0,5 besonders unsicher.
+[^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
 
 [^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.
 
