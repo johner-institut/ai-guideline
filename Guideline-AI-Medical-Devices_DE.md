@@ -178,7 +178,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                                   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Der Hersteller hat die vorgesehenen Nutzer charakterisiert z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |
-| Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert z.B. anhand physikalischer Eigenschaften (Helligkeit, Lautstärke, Temperatur, Verschmutzung, Feuchtigkeit), anhand der sozialen Umgebung (Stress, Schichtbetrieb, häufig wechselnde Kollegen) sowie weiterer Parameter (z.B. Tragen von Handschuhen) | Diese Charakterisierung fordert auch die IEC 62366-1.        |
+
 
 #### c) Stakeholder-Anforderungen
 
