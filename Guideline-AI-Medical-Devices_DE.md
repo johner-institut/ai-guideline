@@ -258,7 +258,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Bei Continuous Learning Systems hat der Hersteller quantitativ dargelegt, weshalb das Nutzen-Risiko-Verhältnis besser als bei nicht kontinuierliche lernenden Systemen ist. |                                                              |
 
 
-[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Stand der Wissenschaft und damit dem Goldstandard ("Ground Truth"). D.h. dass die Anforderungen an das System geringer sind als bei einem Goldstandard. Das ist inbesondere wahrscheinlich, insofern der Goldstandard ein invasives oder sehr kostenintensives Verfahren bedingt.
+[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Goldstandard ("Ground Truth"). D.h. die Anforderungen an das System können geringer sein als bei einem Goldstandard, inbesondere, insofern der Goldstandard ein invasives oder sehr kostenintensives Verfahren bedingt.
 
 ### 3. Datenmanagement
 
