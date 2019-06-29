@@ -262,26 +262,28 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 ### 3. Datenmanagement
 
-In diesem Kapitel sind Trainings-, Validierungs- und Testdaten gemeint, wenn von Daten gesprochen wird.
+Daten sind grundsätzlich zu unterscheiden in Trainings-, Validierungs- und Testdaten, an welche unterschiedliche Anforderungen gestellt werden können. Während zu Trainingsdaten selten a priori eine Aussage getroffen werden kann, sind Umgang mit und Kriterien für Testdaten maßgeblich, um Aussagen über die Performanz eines Modells zu treffen.
+
+Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Daten" alle drei Arten mit ein.
 
 #### a) Sammlung der Daten
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. |                                                              |
-| Der Hersteller hat spezifiziert, welche Daten pro Datensatz er benötigt, um den Algorithmus zu trainieren. |                                                              |
-| Der Hersteller hat die Ein- und Ausschlusskriterien von Patientendaten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. |                                                              |
+| Der Hersteller hat die Anzahl der Testdatensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. |                                                              |
+| Der Hersteller hat spezifiziert, welche Daten pro Trainingsdatensatz er benötigt, um den Algorithmus zu trainieren. |                                                              |
+| Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. |                                                              |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
-| Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Verfahren schließt eine Software-gestützte Bewertung mit ein. Diese Software ist zu validieren. |
+| Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
 | Der Hersteller hat die gesammelten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/). |
-| Der Hersteller hat begründet, wo er die Daten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik oder von Registern verglichen. |                                                              |
-| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Daten verursachen könnten. |                                                              |
+| Der Hersteller hat begründet, wo er Testdaten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik oder von Registern verglichen. |                                                              |
+| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Validierungs- und Testdaten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
-| Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisierten bzw. pseudonymisiert werden. |                                                              |
+| Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert werden. |                                                              |
 | Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. |                                                              |
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
-[^C.3.a.1]: Eine generelle Vorgabe für die Anzahl der Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
+[^C.3.a.1]: Eine generelle Vorgabe für die Anzahl von Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
 
 [^C.3.a.2]: z.B. demographische Daten (Alter, Geschlecht), körperliche Parameter (Größe, Gewicht), Erkrankungen, Vitalparameter, Laborparameter, Vorhandensein weitere Untersuchungen, Anamnese.
 
@@ -355,7 +357,7 @@ In diesem Kapitel sind Trainings-, Validierungs- und Testdaten gemeint, wenn von
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. |                                                              |
 | Der Hersteller hat die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. |
-| Der Hersteller hat sichergestellt, dass er das Modell nur mit Daten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
+| Der Hersteller hat sichergestellt, dass er das Modell nur mit Trainingsdaten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
