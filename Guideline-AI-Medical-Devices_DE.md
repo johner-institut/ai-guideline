@@ -384,20 +384,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
 | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
 | Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |                                                              |
-| Der Hersteller hat sich für einzelne Datensätze die Feature anzeigen lassen, die das Modell besonders zur Entscheidung bewogen haben[^C.4.c.2]. |                                                              |
-| Der Hersteller hat evaluiert, wie und wie stark sich einzelne Feature ändern  müssten, damit das Modell zu einer anderen Vorhersage kommt. | Man spricht von ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html) |
-| Der Hersteller hat die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten analysiert / visualisiert[^C.4.c.3]. |                                                              |
-| Der Hersteller hat Datensätze synthetisiert, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich als Best Practice nicht generell einfordern. |
-| Der Hersteller hat das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum approximiert. | Dies lässt sich als Best Practice nicht generell einfordern. |
 | Der Hersteller hat das Modell mit Zufallswerten geprüft.     |                                                              |
 
 [^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
 
-[^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.
-
-[^C.4.c.3]: Beispiele sind Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)
-
-[^C.4.c.4]: Beispiele siehe http://yosinski.com/deepvis
 
 #### d) Dokumentation 
 
