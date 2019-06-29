@@ -361,7 +361,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugriff zu den Testdaten bekommen. |                                                              |
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
