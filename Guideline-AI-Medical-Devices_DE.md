@@ -149,7 +149,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |:--|:--|
 |Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||
 |Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|
-|Der Hersteller hat an gemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
+|Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
 |Die (Software-)Entwicklungspläne legen produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen fest|Anforderung der ISO 13485:2016|
 
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
