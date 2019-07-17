@@ -372,8 +372,14 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch.                          |
+| Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |
+| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert. |[^C.4.b.2] |
 | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
+| Der Hersteller hat - soweit sinnvoll - mehrere Modelltypen trainiert und verglichen (darunter auch einfachere und interpretierbare Modell). | 
                                                               |
+[^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
+
+[^C.4.b.2]: Es kann sinnvoll sein, die Abhängigkeit der Güte des Modells von der Anzahl der Epochen anhand von Learning Curves aufzuzeigen. Diese Learning Curves gibt es beispielsweise für neuronale Netzwerke und Boosting-Verfahren, nicht aber für Modelle mit numerischer Lösung (z.B. lineare Regression) oder bei einem einzigen Baum.	
 
 #### c) Bewertung
 
