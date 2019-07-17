@@ -397,7 +397,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Trainingsdaten, die Testergebnisse und deren Bewertung unter Versionskontrolle. |                                                              |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
 | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | 
-  |
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
 | Der Hersteller hat die Trainingsdaten einschließlich deren Feature beschrieben und statistisch ausgewertet. | z.B. mit ["Data Nutrition Labels"](https://ahmedhosny.github.io/datanutrition/) |
