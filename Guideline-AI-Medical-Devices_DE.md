@@ -383,7 +383,12 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
 | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
 | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
-| Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |                                                              |
+| Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |            
+| Der Hersteller hat erwogen, sich insbesondere bei tabellarischen Daten für einzelne Datensätze die Feature anzeigen zu lassen, die das Modell besonders zur Entscheidung bewogen haben[^C.4.c.2]. | Dies lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat erwogen insbesondere bei tabellarischen Daten zu evaluieren, wie und wie stark sich einzelne Feature ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. | Man spricht von ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). Dies lässt sich nicht generell als Best Practice einfordern.  |
+| Der Hersteller hat insbesondere bei tabellarischen Daten erwogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/ zu visualisieren [^C.4.c.3]. | Dies lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat erwogen, Datensätze zu synthetisieren, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich nicht generell als Best Practice einfordern. |	
+| Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat das Modell mit Zufallswerten geprüft.     |                                                              |
 
 [^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
