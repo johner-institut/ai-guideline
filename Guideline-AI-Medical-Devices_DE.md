@@ -275,7 +275,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Anzahl der Testdatensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. |                                                              |
-| Der Hersteller hat spezifiziert, welche Daten pro Trainingsdatensatz er benötigt, um den Algorithmus zu trainieren. |                                                              |
 | Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. |                                                              |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
