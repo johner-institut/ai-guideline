@@ -351,7 +351,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |
-| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems sinnvoll sein. |
 
 ### 4. Modellentwicklung
 
@@ -413,15 +412,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Trainingsdaten, die Testergebnisse und deren Bewertung unter Versionskontrolle. |                                                              |
+| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |
+| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Trainingsdaten, Testergebnisse und deren Bewertung sinnvoll sein.  |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
 | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | 
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
 | Der Hersteller hat dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. |                                                              |
 
-[^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
+[^C.4.d.1] Trainierte Modelle lassen sich serialisieren.
 
 ### 5. Produktentwicklung
 
