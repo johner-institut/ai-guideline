@@ -328,7 +328,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern.   |
 | Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern.  |
 | Dieses Verfahren spezifiziert, wie fehlende Werte innerhalb von Datensätzen erkannt und verarbeitet werden. Diese Festlegung hat der Hersteller begründet[^C.3.c.1]. | Es ist darauf achten, dass der Hersteller bei der Begründung zwischen "missing at random" und "missing not at random" unterscheidet[^C.3.c.2]. |
-| Dieses Verfahren spezifiziert, wie Outliers erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
+| Dieses Verfahren spezifiziert, wie Outliers insb. bei tabellarischen Daten erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern.         |
 | Dieses Verfahren spezifiziert, wie nicht verwendbare Datensätze erkannt werden und damit umgegangen wird.[^C.3.c.5]. Diese Festlegung hat der Hersteller begründet. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
 
 
