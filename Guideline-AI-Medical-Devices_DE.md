@@ -473,7 +473,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | --------- |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen dem Stand der Technik entspricht. |           |
-| Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob das Modell gegen den "Ground Truth" bewertet wurde. |           |
 
 ### 6. Produktfreigabe
 
