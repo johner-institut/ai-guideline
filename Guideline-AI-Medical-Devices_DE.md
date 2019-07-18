@@ -283,7 +283,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Validierungs- und Testdaten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert werden. |                                                              |
-| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. |                                                              |
+| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern.|
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl von Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen.
