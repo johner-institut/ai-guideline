@@ -361,7 +361,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. |                                                              |
 | Der Hersteller hat insb. bei tabellarischen Daten die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. | 
-| Der Hersteller hat sichergestellt, dass er das Modell nur mit Trainingsdaten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |
