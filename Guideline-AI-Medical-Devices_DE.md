@@ -275,16 +275,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Anzahl der Testdatensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. |                                                              |
-| Der Hersteller hat spezifiziert, welche Daten pro Trainingsdatensatz er benötigt, um den Algorithmus zu trainieren. |                                                              |
 | Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. |                                                              |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
 | Der Hersteller hat die gesammelten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/). |
-| Der Hersteller hat begründet, wo er Testdaten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik oder von Registern verglichen. |                                                              |
+| Der Hersteller hat begründet, wo er Testdaten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik, aus wissenschaftlichen Publikationen und von Registern verglichen. |                                                              |
 | Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Validierungs- und Testdaten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert werden. |                                                              |
-| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. |                                                              |
+| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern.|
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl von Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen.
@@ -325,11 +324,11 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |                                                              |
 | Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. |
 | Das Verfahren beschreibt, wie die Korrektheit der Zwischenschritte und der Endergebnisse überprüft wird[^C.3.c.0]. Diese Überprüfungen erfolgen risikobasiert. | Dies entspricht den Anforderungen der ISO 13485:2016 Kapitel 4.1.6. Die Risikomanagementakte muss diese Analysen enthalten. |
-| Dieses Verfahren spezifiziert, wie Werte mit verschiedenen Messskalen bzw. Einheiten erkannt und verarbeitet werden. |                                                              |
-| Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. |                                                              |
-| Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. |                                                              |
+| Dieses Verfahren spezifiziert, wie Werte mit verschiedenen Messskalen bzw. Einheiten erkannt und verarbeitet werden. |       Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern.       |
+| Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern.   |
+| Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern.  |
 | Dieses Verfahren spezifiziert, wie fehlende Werte innerhalb von Datensätzen erkannt und verarbeitet werden. Diese Festlegung hat der Hersteller begründet[^C.3.c.1]. | Es ist darauf achten, dass der Hersteller bei der Begründung zwischen "missing at random" und "missing not at random" unterscheidet[^C.3.c.2]. |
-| Dieses Verfahren spezifiziert, wie Outliers erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
+| Dieses Verfahren spezifiziert, wie Outliers insb. bei tabellarischen Daten erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern.         |
 | Dieses Verfahren spezifiziert, wie nicht verwendbare Datensätze erkannt werden und damit umgegangen wird.[^C.3.c.5]. Diese Festlegung hat der Hersteller begründet. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
 
 
@@ -352,7 +351,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |
-| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems sinnvoll sein. |
 
 ### 4. Modellentwicklung
 
@@ -361,8 +359,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. |                                                              |
-| Der Hersteller hat die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. |
-| Der Hersteller hat sichergestellt, dass er das Modell nur mit Trainingsdaten trainiert, die im "Feld" zum Zeitpunkt der Modellanwendung tatsächlich vorliegen. | Prüfen, ob keine Daten "aus der Zukunft" beim Training verwendet werden. |
+| Der Hersteller hat insb. bei tabellarischen Daten die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. | 
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |
@@ -401,7 +398,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat insbesondere bei tabellarischen Daten erwogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/ zu visualisieren [^C.4.c.3]. | Dies lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat erwogen, Datensätze zu synthetisieren, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich nicht generell als Best Practice einfordern. |	
 | Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat das Modell mit Zufallswerten geprüft.     |                                                              |
 
 [^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
 
@@ -416,16 +412,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Trainingsdaten, die Testergebnisse und deren Bewertung unter Versionskontrolle. |                                                              |
+| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |
+| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Trainingsdaten, Testergebnisse und deren Bewertung sinnvoll sein.  |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
 | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. | 
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
-| Der Hersteller hat die Trainingsdaten einschließlich deren Feature beschrieben und statistisch ausgewertet. | z.B. mit ["Data Nutrition Labels"](https://ahmedhosny.github.io/datanutrition/) |
-| Der Hersteller hat dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. |                                                              |
+| Der Hersteller hat insb. bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern.     |
 
-[^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
+[^C.4.d.1] Trainierte Modelle lassen sich serialisieren.
 
 ### 5. Produktentwicklung
 
@@ -478,7 +473,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | --------- |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen dem Stand der Technik entspricht. |           |
-| Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob das Modell gegen den "Ground Truth" bewertet wurde. |           |
 
 ### 6. Produktfreigabe
 
