@@ -108,7 +108,7 @@ The following authors created this guideline:
 - [Christoph Molnar](https://christophm.github.io/) ([LMU Munich](https://www.uni-muenchen.de/index.html))
 - TODO: Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD] (https://www.tuev-sued.de/))
 - Prof. Dr. Christian Dierks ([Dierks + Company] (https://www.dierks.company/))
-- TODO ([Merantix](https://www.merantix.com/healthcare/))
+- Stefan Bunk, CTO and Sven Piechottka, Government & Regulatory Affairs ([Merantix](https://www.merantix.com/healthcare/))
 
 The guideline is published under the [Creative Commons License] (https://creativecommons.org/licenses/?lang=de) of type [BY-NC-SA] (https://creativecommons.org/licenses/by-nc-sa/4.0/). This requires a list of names of authors (“Christian Johner, Christoph Molnar et al.”) and allows third parties to build on this work, e.g. to correct it; however only for non-commercial purposes.
 
