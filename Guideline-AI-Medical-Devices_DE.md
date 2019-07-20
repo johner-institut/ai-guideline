@@ -104,7 +104,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 
 - Prof. Dr. Christian Johner ([Johner Institut](https://www.johner-institut.de))
 - [Christoph Molnar](https://christophm.github.io/) ([LMU München](https://www.uni-muenchen.de/index.html))
-- TODO: Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/))
+- Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/))
 - Prof. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/))
 - Stefan Bunk, CTO und Sven Piechottka, Government & Regulatory Affairs ([Merantix](https://www.merantix.com/healthcare/))
 
