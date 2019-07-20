@@ -465,7 +465,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |           |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. |           |
 
-#### c) Klinische Bewertung 
+#### d) Klinische Bewertung 
 
 | Anforderung                                                  | Kommentar |
 | ------------------------------------------------------------ | --------- |
@@ -532,7 +532,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 ## E) Anhänge
 
-### 2. Weiterführende Literatur
+### 1. Weiterführende Literatur
 
 #### a) Gesetze
 
@@ -554,7 +554,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 - Johner Institut: [Videotrainings zum Machine Learning bei Medizinprodukten](www.auditgarant.de)
 - Johner Institut: Diesen [Leitfaden in anderen Formaten](https://www.johner-institut.de/ai-guideline/) z.B. als Excel-Datei zum einfachen bearbeiten
 
-### 3. Erwägungsgründe
+### 2. Erwägungsgründe
 
 1. Hersteller entwickeln immer mehr Medizinprodukte die Verfahren der künstlichen Intelligenz, insbesondere des Machine Learnings, nutzen. Viele dieser Verfahren sind noch sehr neu und Best Practices fehlen. Dadurch entstehen Risiken für Patienten, Anwender und Dritte.
 2. Die EU-Verordnungen (MDR, IVDR) fordern zwar explizit die Sicherheit der Produkte in den jeweiligen Anhängen I. Konkrete Anforderungen für diese Klasse der Produkte fehlen jedoch völlig. Daher fehlen sowohl den Herstellern als auch den Benannten Stellen und Behörden konkrete Leitlinien, wie sie die Sicherheit der Produkte bewerten können.
