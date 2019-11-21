@@ -104,11 +104,11 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - [Christoph Molnar](https://christophm.github.io/) ([LMU München](https://www.uni-muenchen.de/index.html))
 - Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/))
 - Prof. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/))
-- Stefan Bunk, CTO und Sven Piechottka, Government & Regulatory Affairs ([Merantix](https://www.merantix.com/healthcare/))
+- Stefan Bunk (CTO) und Sven Piechottka (Government & Regulatory Affairs) ([Merantix](https://www.merantix.com/healthcare/))
 
 Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("Christian Johner, Christoph Molnar et al. ") und erlaubt es Dritten, auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
-Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
+Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits und Reviews kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
 
 ### 5. Dokumentenlenkung, Dokumentenidentifikation
 
@@ -201,9 +201,9 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Der Hersteller hat die o.g. quantitativen Werte mit den entsprechenden Größen der alternativen Verfahren verglichen. | Hersteller sollten eine tabellarische Übersicht erstellen.   |
 | Der Hersteller hat begründet, weshalb Machine Learning den anderen Verfahren überlegen ist und die damit einhergehenden Risiken rechtfertigt. |                                                              |
 | Der Hersteller hat eine Liste an Risiken erstellt, die sich spezifisch durch die Anwendung der Verfahren des maschinellen Lernens ergeben. | Ist Teil der Risikomanagementakte                            |
-| Die Hersteller haben Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Nutzer das Produkt nutzen. |                                                              |
-| Die Hersteller haben Risiken analysiert, die sich ergeben durch die Nutzung in einer anderen als der spezifizierten Nutzungsumgebung. |                                                              |
-| Die Hersteller haben Risiken analysiert, die sich ergeben durch Inputs, die nicht den spezifizierten Formaten genügen. |                                                              |
+| Der Hersteller habt die Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Nutzer das Produkt nutzen. |                                                              |
+| Der Hersteller hat die Risiken analysiert, die sich ergeben durch die Nutzung in einer anderen als der spezifizierten Nutzungsumgebung. |                                                              |
+| Der Hersteller hat die Risiken analysiert, die sich ergeben durch Inputs, die nicht den spezifizierten Formaten genügen. |                                                              |
 | Die Hersteller haben Risiken analysiert, die sich ergeben durch Daten, die nicht entsprechend der spezifizierten Voraussetzungen generiert wurden. |                                                              |
 | Der Hersteller hat die Risiken bewertet, wenn das System bei einer anderen Patientenpopulation als der spezifizierten eingesetzt wird. |                                                              |
 
@@ -240,7 +240,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 | Anforderung                                                  | Kommentare                                          |
 | :----------------------------------------------------------- | :-------------------------------------------------- |
-| Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um Fehlverhalten feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein. |
+| Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein. |
 | Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechen Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                  |
 
 
@@ -260,11 +260,11 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Bei Continuous Learning Systems hat der Hersteller quantitativ dargelegt, weshalb das Nutzen-Risiko-Verhältnis besser als bei nicht kontinuierliche lernenden Systemen ist. |                                                              |
 
 
-[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Goldstandard ("Ground Truth"). D.h. die Anforderungen an das System können geringer sein als bei einem Goldstandard, inbesondere, insofern der Goldstandard ein invasives oder sehr kostenintensives Verfahren bedingt.
+[^C.2.d.1]: Der Stand der Technik (State-of-the-Art) entspricht nicht notwendigerweise dem Goldstandard, der wiederum nicht notwendigerweise dem "Ground Truth". D.h. die Anforderungen an das System können geringer sein als bei einem Goldstandard oder dem "Ground Truth", inbesondere wenn letztere ein invasives oder sehr kostenintensives Verfahren bedingen.
 
 ### 3. Datenmanagement
 
-Daten sind grundsätzlich zu unterscheiden in Trainings-, Validierungs- und Testdaten, an welche unterschiedliche Anforderungen gestellt werden können. Während zu Trainingsdaten selten a priori eine Aussage getroffen werden kann, sind Umgang mit und Kriterien für Testdaten maßgeblich, um Aussagen über die Performanz eines Modells zu treffen.
+Daten sind grundsätzlich zu unterscheiden in Trainings-, Validierungs- und Testdaten, an welche unterschiedliche Anforderungen gestellt werden können. 
 
 Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Daten" alle drei Arten mit ein.
 
@@ -278,10 +278,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
 | Der Hersteller hat die gesammelten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/). |
 | Der Hersteller hat begründet, wo er Testdaten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik, aus wissenschaftlichen Publikationen und von Registern verglichen. |                                                              |
-| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Validierungs- und Testdaten verursachen könnten. |                                                              |
+| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Trainings-, Validierungs- und Testdaten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert werden. |                                                              |
-| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern.|
+| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl von Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
@@ -300,18 +300,18 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten verstehen werden und diese Wahl begründet. |                                                              |
+| Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten versehen werden und diese Wahl begründet. |                                                              |
 | Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
 | Dieses Verfahren spezifiziert die Anforderungen an die Anzahl, Ausbildung und Kompetenz der für das Labeling verantwortlichen Personen. |                                                              |
-| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen.  |
+| Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen. |
 | Dieses Verfahren legt fest, wie die für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung überprüft wird. |                                                              |
 | Dieses Verfahren legt fest, wie die Korrektheit der Labels systematisch überprüft wird. Die Wahl dieser Begründung hat der Hersteller dokumentiert. | Der Hersteller kann identische Datensätzen mehreren Personen zum Labeling vorlegen und die Übereinstimmung der Ergebnisse bewerten. |
 | Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Datensätze mit bereits bekanntem Label erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
 
 [^C.3.b.1]: Wenn beispielsweise die Klassifizierung in gesunde und kranken Patienten erfolgen soll, muss der Hersteller die Kriterien für die spezifische Fragestellung bzw. Zweckbestimmung ableiten, wann ein Patient als gesund und als krank zu klassifizieren ist.
 
-[^C.3.a.2]: Der "Ground Truth" ist das präziseste Referenzverfahren ("Stand der Wissenschaft"), mit dem ein Größe der Klasse bestimmt ist. Für die Bestimmung einer arteriellen Hypertonie kann es z.B. eine invasive Blutdruck-Messung die genausten Ergebnisse und damit den "Ground Truth" bilden. 
+[^C.3.a.2]: Der "Ground Truth" ist das präziseste Referenzverfahren ("Stand der Wissenschaft"). Für die Bestimmung einer arteriellen Hypertonie kann es z.B. eine invasive Blutdruck-Messung die genausten Ergebnisse und damit den "Ground Truth" bilden. 
 
 [^C.3.b.3]: Das Labeling Dutzender Datensätze ist anstrengend. Eine Bezahlung pro Datensatz kann falsche Motivationsanreize setzen.
 
@@ -372,11 +372,11 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch.                          |
-| Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |
-| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert. |[^C.4.b.2] |
+| Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. |                                                              |
+| Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |                                                              |
+| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert. [^C.4.b.2] |                                                              |
 | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
-| Der Hersteller hat - soweit sinnvoll - mehrere Modelltypen trainiert und verglichen (darunter auch einfachere und interpretierbare Modell). |
+| Der Hersteller hat - soweit sinnvoll - mehrere Modelltypen trainiert und verglichen (darunter auch einfachere und interpretierbare Modell). |                                                              |
                                                               |
 [^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
 
@@ -410,15 +410,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |
-| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Trainingsdaten, Testergebnisse und deren Bewertung sinnvoll sein.  |
+| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
+| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Daten, Testergebnisse und deren Bewertung sinnvoll sein. |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. |
+| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. |                                                              |
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
-| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert.                | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten. |
-| Der Hersteller hat insb. bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern.     |
+| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
+| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
 
-[^C.4.d.1] Trainierte Modelle lassen sich serialisieren.
+[^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
 
 ### 5. Produktentwicklung
 
@@ -427,7 +427,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar                       |
 | ------------------------------------------------------------ | ------------------------------- |
 | Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1] |
-| Wenn der Hersteller das Modell in einer anderen Sprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. er wiederholt. |                                 |
+| Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. er wiederholt. |                                 |
 | Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). |                                 |
 | Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind. |                                 |
 
@@ -439,12 +439,12 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
 | Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
-| Die Gebrauchsanweisung die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen. |                                                              |
+| Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
 | Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
 | Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
 | Die Gebrauchsanweisung spezifiziert die vorgesehenen primären und sekundären Anwender gemäß Zweckbestimmung. |                                                              |
 | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
-| Die Gebrauchsanweisung benennt die Restrisiken.              |                                                              |
+| Die Gebrauchsanweisung beschreibt die Restrisiken.           |                                                              |
 | Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Feature. |
 | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
 | Die Gebrauchsanweisung benennt die Gütekriterien.            |                                                              |
@@ -497,7 +497,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
-|Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|Bei unkritischen Produkten ist die Stufe 2 vertretbar|
+|Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann||
 
 #### 2. Marktüberwachung
 
@@ -516,9 +516,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell sind.||
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgen.||
 
-[^D.2.1]: Beispiel für Feedback-Loops: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Diese wiederum beeinflusst das Reiseverhalten. Ein Algorithmus stellt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher.
+[^D.2.1]: Beispiel für Feedback-Loops: **Beispiel 1**: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Diese wiederum beeinflusst das Reiseverhalten. **Beispiel 2**: Ein Algorithmus stellt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher.
 
-[^D.2.2]: Beispiele 1 (Kriminalistik): Algorithmus schlägt Polizei Orte vor, an denen sie kontrollieren soll. Wo viel kontrolliert wird, wird viel gefunden. Beispiel 2 (Medizin): Viele Patienten, die man in die Diagnostik schickt, werden zu viel Diagnosen führen. Daher wäre es hilfreich, im Post-Market die Daten/Objekte testen, die nicht vorgeschlagen wurden.
+[^D.2.2]: Beispiele 1 (Kriminalistik)
 
 [^D.2.3]: Beispiel: Radiologen verlassen sich auf die Software und schauen sich die Bilder nicht mehr an, weshalb sie Befunde übersehen.
 
