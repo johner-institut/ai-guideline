@@ -473,7 +473,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirements                                                  |Comments                                                  |
 | ------------------------------------------------------------ | ----------------------------- |
-| The manufacturer has documented the model using the criteria listed in chapter 5.b). |                               |
+| The manufacturer has documented the model using the criteria listed in chapter 4.d). |                               |
 | The manufacturer has assessed and documented the risks as acceptable in risk management and that all of the activities specified in the risk management plan were performed. | Notes for auditors[^C.6.1] |
 | The manufacturer has shown in a "Software as a Medical Device Pre-Specifications “(SPS) report which types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |                               |
 | The manufacturer has shown in Algorithm Change Protocol (ACP) how it will perform these changes for systems that it wishes to market in the USA[^C.6.3]. |                               |
