@@ -476,7 +476,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                     |
 | ------------------------------------------------------------ | ----------------------------- |
-| Der Hersteller hat das Modell anhand der in Kapitel 5.b) genannten Kriterien dokumentiert. |                               |
+| Der Hersteller hat das Modell anhand der in Kapitel 4.d) genannten Kriterien dokumentiert. |                               |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1] |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                               |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, im Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                               |
