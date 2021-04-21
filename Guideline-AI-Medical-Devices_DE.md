@@ -401,7 +401,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 [^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.	
 
-[^C.4.c.3]: Beispiele sind Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)	
+[^C.4.c.3]: Beispiele sind Shapley-Values, ICE-Plots, Partial Dependency Plots (PDP)	
 
 [^C.4.c.4]: Beispiele siehe http://yosinski.com/deepvis
 
