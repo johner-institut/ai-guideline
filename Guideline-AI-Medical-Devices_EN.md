@@ -399,7 +399,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 [^C.4.c.2]: Approaches include LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) and Feature Summary Statistics (incl. Feature Importlands and Feature Interaction.
 
-[^C.4.c.3]: Examples of Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)
+[^C.4.c.3]: Examples of Shapley-Values, ICE-Plots, Partial Dependency Plots (PDP)
 
 [^C.4.c.4]: For examples see http://yosinski.com/deepvis
 
