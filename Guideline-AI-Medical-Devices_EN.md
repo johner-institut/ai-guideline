@@ -120,7 +120,7 @@ The released versions are labeled via one day as such in the repository. Version
 
 ## B) General requirements
 
-### 1. Processes
+### 1. Process requirements
 
 The manufacturers should cover all aspects listed below either in the procedural instructions or in the relevant plans to ensure that the safety of the product is systematically guaranteed. Normally, the following standard operating procedures or plans are affected:
 
@@ -135,7 +135,9 @@ The manufacturers should cover all aspects listed below either in the procedural
 
 If the manufacturer outsources processes, the requirements apply accordingly. Examples would be a (software) development service provider or contract research organization to be required to consider the relevant chapters of this guideline.
 
-### 2. Competencies
+The manufacturer should compile all product specific plans as required by respective regulations.
+
+### 2. Competency requirements
 
 The manufacturers must ensure and prove that they have sufficient competencies to ensure the relevant safety and performance of the products according to the state of the art. This proof is often gained most easily through internal or external training.
 
@@ -143,9 +145,9 @@ Manufacturers can use the competency of external resources.
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has created a list of all roles that are directly or indirectly concerned with AI [^B2-01]||
-|The manufacturer has determined the competencies for each role in relation to AI [^B2-02]|Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation|
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies||
+|The manufacturer has created a list of all role inside the scope of its QM system that are directly or indirectly concerned with AI [^B2-01]||
+|The manufacturer has determined the competencies for each role inside the scope of its QM system that is directly or indirectly concerned with AI [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation|
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies|Examples of training records: (self) tests, artefacts that result from practicing a particular skill, e.g. documents|
 |The (software) development plans lay out the product-specific competencies (beyond or deviating)|Requirements of ISO 13485:2016|
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
@@ -166,17 +168,21 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).|
-|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.|
+|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores). The intended use should specify the indication (e.g. disease) and the goal (e.g. diagnosis or treatment).|
+|The manufacturer has specified (possible) other positive impacts on health care.|For example: Faster patient care or reductions in workload.|
+|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.|
 |The manufacturer has set forth on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1.|
-|The intended use specifies the goal of machine learning.|Classification and regression, clustering, similarity search and recommender systems are the typical goals of methods of machine learning.|
+|The manufacturer has specified the operating principle|This includes the task the ML-model performs (e.g. segmentation), specification of the type of machine learning (e.g. supervised) and the level of autonomy of the ML-model.|
+|The manufacturer has provided explicit task description by distinguishing it from the particular algorithm used.||
 
-#### b) Intended users, intended use context
+#### b) Intended users and context of use
 
 |Requirements                                                  |Comments                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. |
 | The manufacturer has characterized the intended use environment, e.g. using physical properties (brightness, volume, temperature, contamination, moisture), using the social environment (stress, shift work, frequently changing colleagues) as well as further parameters (such as wearing gloves) | Also included in IEC 62366-1.        |
+| The manufacturer has specified the product lifetime.||
+
 
 #### c) Stakeholder requirements
 
@@ -185,18 +191,18 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has operationalized the goals listed in the intended use with quantitative values [^C.1.c.1]. | It is not unusual that these values are supplemented and revised during the course of development. |
 | The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | For apps, this characterization must be done for the app and for the server part. |
 | The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2.        |
-| The manufacturer has specified the requirements for input data. | Input data can be dependent on the method of data generation e.g. recording procedure, technical parameters such as magnetic field strength, number of deflection electrodes, direction and environmental conditions of recordings, manufacturer, medical product etc. |
+| The manufacturer has specified the requirements for input data for each inbound data interface. | Input data can be dependent on the method of data generation e.g. recording procedure, technical parameters such as magnetic field strength, number of deflection electrodes, direction and environmental conditions of recordings, manufacturer, medical product etc. |
 | The manufacture has set forth all markets and all regulatory requirements relevant to these. | Show this list.                                              |
 | The manufacturer has determined whether the system should learn further after it goes to market. If this is the case, the manufacturer has shown whether this continual training will occur globally/centrally or decentralized, e.g. per product or per hospital. |                                                              |
 
 [^C.1.c.1]: **Example**: Purpose: The software supports radiologists in diagnosing cancers using CT images of the head. Quantitative value: 95% of radiologists working with software detect the cancer.
 
 
-#### d) Input for risk management and clinical evaluation
+#### d) Risk management and clinical evaluation
 
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has listed alternative methods and assessed them with regard to benefits, safety and performance. | Discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and MDR/IVDR. |
+| The manufacturer has listed alternative methods and assessed them with regard to benefits, safety and performance. | Discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and MDR/IVDR. The alternatives should both cover other ML methods and non-ML approaches.|
 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.              |
 | The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. |                                                              |
 | The manufacturer has created a list of risks specifically associated with the use of the method of machine learning. | Is part of risk management file                              |
@@ -208,7 +214,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 
 
-### 2. Software requirements
+### 2. Product and software requirements
 
 #### a) Functionality and performance
 
@@ -227,7 +233,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 [^C.2.a.2]:  Examples: incomplete data sets, lack of data sets, wrong data format, excessive data quantities, data outside of specified value ranges, wrong temporal sequence of data.
 
-#### b) User Interface
+#### b) User interface
 
 |Requirements                                                  |Comments                                                  |
 | :----------------------------------------------------------- | :------------------------------------------------------- |
@@ -269,6 +275,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| The manufacturer has specified quality control of data.      |                                                              |
 | The manufacturer has set the number of data sets and given a reason why this is sufficient[^C.3.a.1]. |                                                              |
 | The manufacturer has specified which data is required per data set to train the algorithm. |                                                              |
 | The manufacturer has characterized the inclusion an exclusion criteria of patient data using relevant attributes[^C.3.a.2]. |                                                              |
@@ -346,6 +353,8 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------------------------- |
 | The manufacturer has described the "funnel” that allows detection of how much data originates from which data source (e.g. clinics) and at which processing step how many data sets have fallen away for which reason. |                                                   |
 | The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"]() is recommended. |
+| The manufacturer has put training, validation and test data under version control. |                                                   |
+| The manufacturer has protected all data and code from loss and unwanted changes. |                                                   |
 | The manufacturer has documented all software for data processing including the libraries used and listed under version control. |                                                   |
 ### 4. Model development
 
