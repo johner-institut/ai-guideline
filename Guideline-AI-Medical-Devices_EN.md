@@ -146,9 +146,9 @@ Manufacturers can use the competency of external resources.
 |Requirements|Comments|
 |:--|:--|
 |The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|The roles include software developers, software testers, data scientists, experts of clinical evaluations, risk managers, usability engineers and domain experts.|
-|The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation|
+|The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.|
 |The manufacturer has documented the procedure for user role training and the associated training materials.||
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|Examples of training records: (self) tests, artefacts that result from practicing a particular skill, e.g. documents|
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|Examples of training records: (self) tests, artefacts that result from practicing a particular skill, e.g. documents.|
 |The (software) development plans lay out the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016|
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
@@ -231,6 +231,7 @@ In Europe at least, there is no obligation to create a specific document that su
 |The manufacturer has derived traceable quantitative quality criteria and requirements for the software and/or the algorithm from the intended use and from the stakeholder requirements [^C.2.a.1].|There is a specification of quantitative minimum 'quality criteria' (for example specificity, sensitivity, mean absolute error). Traceability is shown particularly well with a traceability matrix that links the intended use with quantitative quality product requirements.|
 |The manufacturer has considered the following  quantitative quality criteria: For classification problems accuracy (mean or balanced accuracy), positive predictive value (precision), specificity and sensitivity: for regression problems mean absolute error and mean square error.| For unbalanced data, meaning if labels occur at very different frequencies, balanced instead of mean accuracy must be used. The selection of quality criteria strongly depends on intended use. |
 |The manufacturer has specified the expected value ranges of the inputs to the machine learning model.||
+|The manufacturer has specified the expected value ranges of the output(s) of the machine learning model.||
 |The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".|
 |The manufacturer has derived non-functional requirements from the intended use and stakeholder requirements.|Non-functional requirements include response times, data volumes to be handled, availability and security.|
 | The manufacturer has derived from the risk analysis product/software requirements for risk minimization. |Examples for measures are validation of input data, backups, and redundant design.|
@@ -306,7 +307,6 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The manufacturer has specified quality control of data.      | This includes a list of allowed / expected data sources, specification of data source requirements and a description how invalid  data are identified and excluded. |
 | The manufacturer has set the number of data sets and given a reason why this is sufficient[^C.3.a.1]. |                                                              |
-| The manufacturer has specified which data is required per data set to train the algorithm. |                                                              |
 | The manufacturer has characterized the inclusion and exclusion criteria of individual patients using relevant attributes[^C.3.a.2]. | For example: demographic attributes (age, gender), diseases, vital parameters, ... |
 | The manufacturer has specified the technical inclusion and exclusion criteria for data[^C.3.a.3]. | For example: Data ranges, types, unit of measure, precision, file formats, encodings, image parameters, language, ... |
 | The manufacturer has specified the timeframe within which data have to be collected, if applicable. |                                                              |
@@ -403,7 +403,6 @@ Data generally have to be understood as training, validation and test data. Each
 | This document specifies rules for data inclusion and exclusion. |                                                              |
 | This document provides  a rationale if additional data have been excluded or if data have been kept despite meeting the specification. |                                                              |
 | This document describes how all data can be traced back to its source. |                                                              |
-| This document describes how the validity of personnel operation is ensured. |                                                              |
 | The document describes how compliance with the requirements is verified. |                                                              |
 | The manufacturer has described the "funnel” that allows detection of how much data originates from which data source (e.g. clinics) and at which processing step how many data sets have fallen away for which reason. |                                                              |
 | The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"]() is recommended.            |
@@ -426,6 +425,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has documented how it ensures that multiple data sets for an object are in the same “bucket” (training, validation and test data). |                                                              |
 | The manufacturer has provided justification if data are not divided at random. |                                                              |
 | The manufacturer has documented how it ensures that the development team is prevented from gaining access to test data. |                                                              |
+| The manufacturer has documented how he ensures that test data are not used for model training and validation. |                                                              |
 | The manufacturer has set forth a role-based policy for data access. |                                                              |
 | The manufacturer has described when it recodes the data specifically for the model or specifically for the library[^C.4.a.2]. |                                                              |
 
@@ -438,7 +438,6 @@ Data generally have to be understood as training, validation and test data. Each
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The manufacturer has documented model specific data processing. |                                                              |
-| If there are several quality metrics, the manufacturer has documented the quality metrics for the model to which it wants to optimize the model and justified it based on the intended use. |                                                              |
 | The manufacturer performs model training, tuning of hyperparameters and model selection exclusively with the training and validation data (e.g. using cross-validation). |                                                              |
 | The manufacturer has documented and justified the choice of the hyperparameters[^C.4.b.1]. |                                                              |
 | The manufacturer has set a forth a policy forbidding the use of test data to optimize the model (only training and validation data may be used.) |                                                              |
@@ -457,13 +456,12 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The manufacturer has set forth a model evaluation plan which specifies the evaluation activities, the roles involved and the milestones at which these activities have to be performed. |                                                              |
 | The manufacturer has set forth a validation specification and validation results for the evaluation of the model with validation data set. |                                                              |
-| There manufacturer has set forth a test specification and test results for the final evaluation of the model with new test data. |                                                              |
+| The manufacturer has set forth a test specification and test results for the final evaluation of the model with new test data. |                                                              |
 | The manufacturer has documented the quality metrics for the various models, such as for a binary classification using a confusion table. | This documentation should not include only the values that the manufacturer has used to optimize the model. |
 | The manufacturer has specified values for the specified quality metrics. |                                                              |
 | The manufacturer has not only globally assessed and documented the quality metrics for the various models, but also separately for various features. |                                                              |
 | The manufacturer has examined the data sets that have exhibited good model performance versus datasets that have performed badly. | We recommend a residual analysis in which the errors are listed via the feature values. |
 | For individual data sets there may be an evaluation of the feature that the model particularly determined in the decision. |                                                              |
-| There may be an analysis/visualization of the dependency (strength, direction) of the prediction of the feature values. |                                                              |
 | The manufacturer has examined the data sets in which the model is particularly secure and particularly insecure[^C.4.c.1]. |                                                              |
 | The manufacturer has justified the ultimate selection of the model using the quality criteria and intended use and in particular shown if simpler and interpretable models were not used. |                                                              |
 | The manufacturer has considered (in particular for tabular data sets) to show for individual data sets the feature that the model particularly determined in the decision[^C.4.c.2]. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
@@ -530,7 +528,6 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has listed and uniquely identified each SOUP / OTS components. |                                 |
 | The manufacturer has specified requirements for each SOUP / OTS components |                                 |
 | The manufacturer has documented the trace between these requirements and respective tests. |                                 |
-| The manufacturer has specified prerequisites for each SOUP / OTS component. |                                 |
 | The manufacturer has described how to verify all SOUP or OTS components. |                                 |
 | The manufacturer has a validation plan for the training functionality of ML library. |                                 |
 
