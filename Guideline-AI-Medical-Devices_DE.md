@@ -548,6 +548,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Folgen falscher Referenzdaten (z.B. falscher Goldstandard, falscher Vergleich) analysiert. |           |
 
 
+
 #### c) Begleitmaterialien
 
 | Anforderung                                                  | Kommentar                                                    |
@@ -556,6 +557,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
 | Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
 | Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
+| Die Gebrauchsanweisung weist auf Limitationen hin.           |                                                              |
 | Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
 | Die Gebrauchsanweisung spezifiziert die vorgesehenen primären und sekundären Anwender gemäß Zweckbestimmung. |                                                              |
 | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
@@ -564,28 +566,51 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
 | Die Gebrauchsanweisung benennt die Gütekriterien.            |                                                              |
 | Die Gebrauchsanweisung listet die Faktoren auf, die sich negativ auf die Gütekriterien auswirken können. |                                                              |
-| Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. |                                                              |
+| Die Gebrauchsanweisung erläutert Risiken, die sich ergeben, wenn das Produkt nich den Leistungsanforderungen entspricht. |                                                              |
+| Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. Wenn es weiter trainiert wird, enthält die Gebrauchsanweisung Informationen darüber, wie das System mit der Zeit lernt. |                                                              |
 | Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |                                                              |
 | Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |                                                              |
 | Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |                                                              |
 | Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. |                                                              |
 | Die Gebrauchsanweisung nennt mögliche ethische Problematiken. |                                                              |
 | Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |                                                              |
+| Die Gebrauchsanweisung für Continuous Learning Systems beschreibt was die Aktualisierung des Algorithmus auslöst und wie man die Version dieses Algorithmus erkennt. |                                                              |
+| Die Gebrauchsanweisung für Continuous Learning Systems beschreibt wie Aktualisierungen des Algorithmus zugelassen, verzögert und rückgängig gemacht werden können. |                                                              |
+| Das Dokument mit der Gebrauchsanweisung ist unter Versionskontrolle. |                                                              |
+| Der Hersteller hat ein Verfahren festgelegt, in dem beschrieben wird, wie die Gebrauchsanweisung zu erstellen und zu überprüfen ist. |                                                              |
 
 #### c) Usability-Validierung
 
-| Anforderung                                                  | Kommentar |
-| ------------------------------------------------------------ | --------- |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. |           |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |           |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. |           |
+| Anforderung                                                  | Kommentar                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Der Hersteller hat die Risiken, die sich aus mangelhafter Usability ergibt, in der Risikomanagementakte dokumentiert. |                                                              |
+| In der Risikomanagementakte sind Risiken aufgeführt, die sich daraus ergeben, dass die visuellen Outputs des Produktes missverstanden, übersehen oder ignoriert werden. |                                                              |
+| In der Risikomanagementakte sind Risiken aufgeführt, die sich aus dem blinden Vertrauen oder Misstrauen der Benutzer in das Produkt ergeben. |                                                              |
+| In der Risikomanagementakte sind Risiken aufgeführt, die durch Unterweisung der Benutzer, z.B. durch Schulungen oder Begleitmaterial, gemindert werden müssen. |                                                              |
+| Der Plan der summative Evaluation beschreibt, wie die Wirksamkeit der Maßnahmen validiert wird. |                                                              |
+| Der Bericht über die Bewertung der Usability gibt Aufschluss darüber, ob die Gebrauchsanweisung geeignet ist die Risiken zu mindern. |                                                              |
+| Der Hersteller hat alle sicherheitsrelevanten Anwendungsszenarien bewertet. |                                                              |
+| Diese Bewertung beinhaltet eine Einschätzug der Sicherheitsrelevanz für jedes Anwendungsszenario. |                                                              |
+| Die in die summative Bewertung einbezogenen Nutzungsszenarien decken alle sicherheitsrelevanten Sicherheitsszenarien ab. |                                                              |
+| Bei der summativen Bewertung wird die Wirksamkeit aller Maßnahmen zur Risikominderung beurteilt. |                                                              |
+| Der Hersteller hat die Metriken für die Verständlichkeit, Erlernbarkeit und Bedienbarkeit des Produktes definiert und spezifiziert. | Zum Beispiel: Vollständigkeit der Produktbeschreibung, Anpassbarkeit, Verständlichkeit der Inputs und Outputs. |
+| Der Hersteller hat die "Qualität der Anwendung" definiert und spezifiziert - Metriken zur Messung des Ausmaßes, in dem das Produkt die Bedürfnisse der Zielnutzer erfüllt, um bestimmte Ziele der Effektivität, Produktivität und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen. | Zum Beispiel: Vervollständigung von Aufgaben, Fehlerhäufigkeit, Wartezeit, ... |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. |                                                              |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |                                                              |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. |                                                              |
 
 #### d) Klinische Bewertung 
 
 | Anforderung                                                  | Kommentar |
 | ------------------------------------------------------------ | --------- |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
+| Die klinische Bewertung enthält die vom Hersteller angegebenen medizinischen Vorteile. |           |
+| Die klinische Bewertung listet die Daten / Datenquellen auf, die ausgewertet wurden und die die Hypothese, dass der Nutzen erreicht wurde, stützen oder widerlegen. |           |
+| Wurden die Daten von anderen Produkte erhoben, so wird in der klinische Bewertung die klinische und technische Gleichwertigkeit der anderen Produkte erörtert. |           |
+| Bei der klinischen Bewertung werden die Auswirkungen der Güteparameter auf das Erreichen des medizinischen Nutzens beurteilt. |           |
 | Der Hersteller bewertet im Rahmen der klinischen Bewertung, ob der versprochene medizinische Nutzen dem Stand der Technik entspricht. |           |
+| In der klinischen Bewertung werden alternative Methoden, Technologien oder Verfahren aufgeführt. |           |
+| In der klinischen Bewertung werden die Risiken und Vorteile dieser Alternativen verglichen. |           |
 
 ### 6. Produktfreigabe
 
@@ -593,6 +618,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | ----------------------------- |
 | Der Hersteller hat das Modell anhand der in Kapitel 4.d) genannten Kriterien dokumentiert. |                               |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1] |
+| Es gibt einen Bericht über die Bewertung der Usability, in dem festgestellt wird, dass alle Aktivitäten des formativen und summativen Bewertungsplan durchgeführt wurden. |                               |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                               |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, im Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                               |
 | Der Hersteller hat einen Post-Market Surveillance Plan erstellt (s.u.). |                               |
@@ -609,17 +635,35 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 |Anforderung|Kommentare|
 |:--|:--|
+|Der Hersteller hat Versions- und Konfigurationskontrolle angewendet.|Der Versions- und Konfigurationskontrolle gilt sowohl für Software als auch für Begleitmaterialien wie Installations- und Gebrauchsanweisungen.|
+|Der Hersteller hat dafür gesorgt, dass das Produkte eine eindeutige Kennzeichnung (ID) hat.|In der EU und in den USA sind in der Regel eine UID-DI und eine UDI-PI erforderlich.|
+|Der Hersteller hat dafür gesorgt, dass eine Stückliste vorhanden ist.|Diese Stückliste enthält auch die gesamte SOUP / OTS- Software|
 |Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
+|Der Hersteller hat Installation, Aktualisierung und Außerbetriebnahme des Produktes beschrieben.||
+|Diese Anleitung spezifizieren die Laufzeitumgebung.||
+|In dieser Anleitung wird beschrieben wie die korrekte Installation überpüft werden kann.||
 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
-|Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
+|Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind.|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann||
+|Der Hersteller hat eine SOP für die Kommunikation mit den Kunden einschließlich der Bearbeitung von Kundenbeschwerden erstellt.||
+|Der Hersteller hat eine Webseite eingerichtet, die Informationen über die neuesten Produktveröffentlichungen und Neuigkeiten in Bezug auf Sicherheitslücken enthält.||
+|Diese Website bietet die Möglichkeit die Software herunterzuladen.||
+|Die Gebrauchsanweisung verweist auf diese Website.||
+|Die Gebrauchsanweisung und die Website enthalten Kontaktinformationen, z.B. E-Mail, Telefonnummer und/oder ein Kontaktformular.||
 
 #### 2. Marktüberwachung
 
 |Anforderung|Kommentare|
 |:--|:--|
-|Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.||
+|Der Hersteller hat speziell für das Produkt einen Post-Market Surveillance (PMS) Plan erstellt.||
+|Der Hersteller hat eine SOP erstellt in der festgelegt ist, wie die Pläne PMS Pläne zu erstellen sind.||
+|Das PMS deckt alle relevanten Datenquellen zur Überwachung ab.|Zu diesen Quellen gehören Informationen von SOUP-Herstellern (auch von ML-Bibliotheken) und auch Bekanntgaben von Sicherheitslücken.|
 |Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.||
+|Der Hersteller hat die Daten, die er sammeln und analysieren möchte, im PMS-Plan spezifiziert.||
+|Der PMS-Plan beschreibt für jede Datenquelle, wie, wie oft und von wem die Daten erhoben werden.||
+|Der PMS-Plan legt fest, wie die Daten analysiert werden müssen.||
+|Der PMS-Plan sieht vor, dass Gütemaße wie Sensitivität und Spezifizität überwacht werden.||
+|Der PMS-Plan sieht vor, dass Daten gesammelt und analysiert werden, um zu bewerten, wie sich die Nutzung des Systems im Laufe der Zeit ändert.||
 |Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.||
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Feedback-Loops die Schwellenwerte selbst beeinflussen können[^D.2.1].||
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Self-Fullfilling-Prophecies die Schwellenwerte selbst beeinflussen können[^D.2.2].||
@@ -628,8 +672,25 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu weiteren "unerwünschten Nebenwirkungen" sammelt und bewertet[^D.2.4].||
 |Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen sammelt, um bewerten zu können, ob die Daten im Feld den erwarteten Daten bzw. den Trainingsdaten entsprechen[^D.2.5].|Hinweis für Auditoren[^D.2.6]|
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob das Produkt noch dem State-of-the-Art genügt.|Hinweis für Auditoren[^D.2.7]|
+|Der Hersteller, der Continuous Learning Systems, verwendet, hat im PMS-Plan beschrieben, ob und wie oft welche Datensätze nach Algorithmus-Updates erneut getestet werden müssen.||
+|Der Hersteller hat im PMS-Plan beschrieben, wie und wie häufig Änderungen von Algorithmus-Updates bewertet werden müssen.||
+|Der Hersteller hat im PMS-Plan Schwellenwerte aufgeführt, die Maßnahmen auslösen.|Diese Schwellenwerte betreffen Gütekriterien und Features.|
+|Der Hersteller hat im PMS-Plan die Häufigkeit und den Inhalt der Erstellung von Berichten zur Überwachung nach dem Inverkehrbringen festgelegt.||
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell sind.||
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgen.||
+|Der Hersteller führt Post Market Surveillance durch und fertigt Berichte an, beides gemäß des PMS-Planes.||
+|Pro Produkt bzw. Produkttyp gibt es jeweils einen PMS-Bericht.||
+|In diesem PMS-Bericht werden die jeweiligen Produkte eindeutig über ihre ID identifiziert.||
+| In diesem PMS-Bericht werden die Daten nach Inverkehrbringung ermittelt und festgestellt, ob Maßnahmen erforderlich sind. ||
+| Der Hersteller hat ein System für das Risikomanagement nach dem Inverkehrbringen eingerichtet. |Es ist möglich das Risikomanagement nach dem Inverkehrbringen und die Überwachung nach dem Inverkehrbringen zu kombinieren.|
+| Der Hersteller hat festgelegt, wie, wie oft und von wem der Stand der Technik überwacht und neu bewertet wird. ||
+| Diese Bewertung des neusten Stand der Technik berücksichtigt die neuesten Algorithmen für maschinelles Lernen und zur Verbesserung der Interpretierbarkeit. ||
+| Diese Bewertung des neuesten Stands der Technik berücksichtigt Alternativen für die Ground Truth bzw. den Goldstandard. ||
+| Der Hersteller hat festgelegt, wie, wie oft und vom wem die Daten nach dem Inverkehrbringen auf neue oder veränderte Gefahren, Gefahrensituationen und Risiken hin bewertet werden. ||
+| Bei der Risikoanalyse nach dem Inverkehrbringen wird nach (nachteiligen) Verhaltensänderungen und (vorhersehbarem) Missbrauch gesucht. ||
+| Für Produkte, die seit mehr als einem Jahr auf dem Markt sind, hat der Hersteller die Risikomanagementaktivität nach dem Inverkehrbringen dokumentiert. ||
+| Für Produkte, die in den USA vermarktet werden, hat der Hersteller ein Algorithmus-Änderungsprotokoll (CA) und eine "SaMD Pre-Specifications" (SPS) erstellt. ||
+| Der Hersteller hat die Designänderungen beschrieben und ihre Auswirkungen analysiert. ||
 
 [^D.2.1]: Beispiel für Feedback-Loops: **Beispiel 1**: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Diese wiederum beeinflusst das Reiseverhalten. **Beispiel 2**: Ein Algorithmus stellt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher.
 
@@ -645,6 +706,21 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 [^D.2.7]: Sich vom Hersteller beispielsweise den Prozess erklären lassen, wie er sich systematisch über neue Entwicklungen im Machine Learning informiert, wie er diese Entwicklungen bewertet sowie darauf reagiert.
 
+
+
+#### 2. Außerbetriebnahme
+
+|Anforderung|Kommentare|
+|:--|:--|
+|Der Hersteller hat vor der Außerbetriebnahme des Medizinprodukts einen Plan erstellt.||
+|Dieser Plan beschreibt wie Nutzer und Betreiber informiert werden.||
+|Dieser Plan beschreibt die Entsorgung des Produkts.||
+|Dieser Plan beschreibt die Archivierung von Produkten und Daten (z.B. Schulungs-, Test-, und Validierungsdaten), Software und Dokumentation unter Berücksichtigung von Sicherheits- und Datenschutzbelangen.||
+|Der Hersteller hat die Risiken der Außerbetriebnahme analysiert.||
+|Bei dieser Risikoanalyse wurden die Risiken für Patienten bewertet, die durch ein nicht mehr erhältliches Produkt entstehen.||
+|Bei dieser Risikoanalyse wurden die Risken bewertet, die sich aus den negativen Auswirkungen auf andere Systeme ergeben.||
+
+
 ## E) Anhänge
 
 ### 1. Weiterführende Literatur
@@ -659,6 +735,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 - **IEC 62304/AMD1**, Medical device software – Software life cycle processes
 - **IEC 82304-1**, Health software – Part 1: General requirements for product safety
 - [FDA Guidance Documents zum Machine Learning](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
+- WHO/ITU: [Good practices for health applications of machine learning: Considerations for manufacturers and regulators](https://aiaudit.org/assets/pdf/standards/FGAI4H-K-039.pdf) 
 
 #### b) Fachliteratur, Lehrbücher
 
