@@ -183,7 +183,7 @@ In Europe at least, there is no obligation to create a specific document that su
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. |
-| The manufacturer has characterized the intended use environment, e.g. using physical properties (brightness, volume, temperature, contamination, moisture), using the social environment (stress, shift work, frequently changing colleagues) as well as the work environment (such as wearing gloves, usage of tools and physical stress) | Also included in IEC 62366-1.                                |
+| The manufacturer has characterized the intended use environment, e.g. using physical properties (brightness, volume, temperature, contamination, moisture), using the social environment (stress, shift work, frequently changing colleagues) as well as the work environment (such as wearing gloves, usage of tools and physical stress). | Also included in IEC 62366-1.                                |
 | The manufacturer has specified the product lifetime.         | The product lifetime may depend on implemented technologies, the technical environment, development of the state-of-the-art and competitive products. |
 
 
@@ -211,13 +211,12 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has done a clinical evaluation.             | The clinical evaluation lists alternative products, technologies and/ or procedures and assesses alternatives with respect to clinical benefits, safety / risks, performance. |
 | The manufacturer has provided a statement confirming that the product reflects the state-of-the-art. |                                                              |
 | The manufacturer has created a list of risks specifically associated with the use of the method of machine learning. | The risk management file should contain an analysis of hazards and related harms with related probabilities and severities resulting from ML models not meeting the requirements. |
-| The manufacturer has conducted an FMEA that analyses the effects of ML models that do not meet the performance requirements. |                                                              |
+| The manufacturer has conducted an FMEA that analyzes the effects of ML models that do not meet the performance requirements. |                                                              |
 | The manufacture has analyzed the risks arising if persons other than the specified users use the product. |                                                              |
 | The manufacturer has analyzed the risks arising through use in an environment different than that specified. |                                                              |
 | The manufacturer has assessed the risks if the system is used for another patient population than that specified. |                                                              |
 | The manufacturer has analyzed the risks arising from inputs not in the specified format. |                                                              |
 | The manufacturer has analyzed the risks arising from reasonably foreseeable misuse. |                                                              |
-| The manufacturer has analyzed the risks arising from data that do not meet the specified requirements. |                                                              |
 | The manufacturer has analyzed the risks arising from hardware failure. |                                                              |
 | The manufacturer has analyzed the risks arising from data that was not generated under the specified conditions. |                                                              |
 
@@ -236,7 +235,7 @@ In Europe at least, there is no obligation to create a specific document that su
 |The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".|
 |The manufacturer has derived non-functional requirements from the intended use and stakeholder requirements.|Non-functional requirements include response times, data volumes to be handled, availability and security.|
 | The manufacturer has derived from the risk analysis product/software requirements for risk minimization. |Examples for measures are validation of input data, backups, and redundant design.|
-| The manufacturer has specified a list of steps on how to identify and evaluate cyber-security threats and vulnerabilities, control security risks, and monitor the efficacy of these controls ||
+  | The manufacturer has specified a list of steps on how to identify and evaluate cyber-security threats and vulnerabilities, control security risks, and monitor the efficacy of these controls. ||
 | The manufacturer has specified repeatable, reproducible, testing-oriented criteria to assess a device’s cyber vulnerabilities, fight malware, and test the security measures ||
 |The manufacturer has determined how the system behaves if the inputs do not meet the specified requirements[^C.2.a.2].|This is an aspect of robustness, which must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2. The specification describes how the system reacts to conflicting, adulterated, incomplete and missing data, to wrong data format, excessive data quantities (amount, frequency), data outside of specified value ranges, wrong temporal sequence of data, etc..|
 |The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".|
@@ -287,12 +286,12 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has assessed the risk arising if the system is unavailable. |                                                              |
 | The manufacturer has analyzed risks if (run-time) environment does not meet the specifications. | The risk analysis assesses risk from: insufficient or faulty hardware; software or network environments not meeting the specifications; interfaces not meeting the specifications. |
 | The manufacturer has identified use related risks.           | Examples for risks caused by users: not following the instructions for use, not understanding warnings and explanations, using the system in a technical or social environment that does not meet the specifications. |
-| The manufacturer has analysed risks from malicious / adversarial attacks. | The list includes an analysis of potential attackers and motivation, a list of attack vector and a vulnerability analysis. |
+| The manufacturer has analyzed risks from malicious / adversarial attacks. | The list includes an analysis of potential attackers and motivation, a list of attack vector and a vulnerability analysis. |
 | With Continuous Learning Systems, the manufacturer should mitigate risks that are specific to continuously learning systems. |                                                              |
 | With Continuous Learning Systems, the manufacturer has considered the option of resetting the system to a known status. | Check risk table.                                            |
 | With Continuous Learning Systems, the manufacturer has shown quantitatively why the risk-benefit analysis is better than for non-continuously learning systems. |                                                              |
 | The manufacturer has implemented measures to mitigate aforementioned risks. |                                                              |
-| If the manufacturer uses self-tests, it has shown which of the specific quality criteria will be reviewed and which risks are managed by this. |                                                              |
+| If the manufacturer uses self-tests, he has shown which of the specific quality criteria will be reviewed and which risks are managed by this. |                                                              |
 | The manufacturer should repeat these risk management activities after training of the model as well as prior to product release. |                                                              |
 
 
@@ -348,9 +347,9 @@ Data generally have to be understood as training, validation and test data. Each
 | This procedure specifies and justifies the quantitative classification / segmentation criteria for data annotation. |                                                              |
 | This procedure specifies how and how frequently the correctness of the labelling is monitored. |                                                              |
 | The procedure specifies how to deal with inconsistency of data annotation from multiple annotators. |                                                              |
-| This procedure specifies the data format and/or syntactic and or standards (e.g. coding system) for annotations |                                                              |
+  | This procedure specifies the data format and/or syntactic and or standards (e.g. coding system) for annotations. |                                                              |
 | This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |
-| This procedure specifies a detailed instruction for the task including background information and prototypical examples |                                                              |
+  | This procedure specifies a detailed instruction for the task including background information and prototypical examples. |                                                              |
 | This procedure specifies the requirements for the number, training and competency for the people responsible for labeling. |                                                              |
 | This procedure sets forth how the competencies of the persons responsible for labeling is tested. | This can be done by the labeling of selected data sets.      |
 | This procedure sets forth how the persons responsible for labeling are trained and how the success of this training is evaluated. |                                                              |
@@ -369,7 +368,7 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The manufacturer has set a procedure that describes the pre-processing of the data before data is used to train or test the model. |                                                              |
 | This procedure describes the individual processing steps such as conversion, transformation, aggregation, normalization, format conversion, calculation of feature, conversion of numerical data into categories. | A graphic representation creates a rapid overview. The conversion of numerical to categorical values requires a justification. |
-| The procedure describes how the correctness of the interim steps and the final results are assessed[^C.3.c.0] through risk-based evaluations. | This is consistent with the requirements of ISO 13485:2016 chapter 4.1.6. The risk management file must contain these analyses. |
+| The procedure describes how the correctness of the interim steps and the final results are assessed[^C.3.c.0] through risk-based evaluations. | This is consistent with the requirements of ISO 13485:2016 chapter 4.1.6. The risk management file must contain these analyzes. |
 | This procedure specifies how values with various measurement scales or units are detected and processed. |                                                              |
 | This procedure specifies how values are detected and processed that have been collected with various measurement methods. |                                                              |
 | This procedure specifies how values or metadata with the same names (such as in column headers) are detected and processed. | This, however, depends on the ML method (e.g. tabular data, image data) and cannot be demanded as a general best practice. |
@@ -424,7 +423,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has documented and justified the ratio that it divides up the data into training, validation and test data. |                                                              |
 | The manufacturer has documented the stratification it uses to divide up the data in to training, validation and test data[^C.4.a.1]. |                                                              |
 | The manufacturer has documented how it ensures that multiple data sets for an object are in the same “bucket” (training, validation and test data). |                                                              |
-| The manufacturer has provided justification if data are not divided at random. |                                                              |
+  | The manufacturer has provided justification if data are not split at random. |                                                              |
 | The manufacturer has documented how it ensures that the development team is prevented from gaining access to test data. |                                                              |
 | The manufacturer has documented how he ensures that test data are not used for model training and validation. |                                                              |
 | The manufacturer has set forth a role-based policy for data access. |                                                              |
@@ -475,7 +474,7 @@ Data generally have to be understood as training, validation and test data. Each
 | This documentation includes a comparison of these models (architectures). |                                                              |
 | This comparison includes quality metrics.                    |                                                              |
 | This documentation shows that clearly designed, representative datasets and model performance on those datasets is adequate following an assessment criterion e.g. an acceptable risk-benefit-ratio. |                                                              |
-| The manufacturer has done a s a risk-benefit assessment that discusses interpretability, performance (e.g. quality metrics, efficiency) and robustness. |                                                              |
+| The manufacturer has done a risk-benefit assessment that discusses interpretability, performance (e.g. quality metrics, efficiency) and robustness. |                                                              |
 
 [^C.4.c.1]: For classification tasks, the model is particularly insecure with probabilities around 0.5.
 
@@ -525,8 +524,8 @@ Data generally have to be understood as training, validation and test data. Each
 | After changes to the software the tests are repeated unless the manufacturer can provide a rationale for skipping test activities. |                                 |
 | The manufacturer has ensured that tests are reproducible.    |                                 |
 | The manufacturer tests the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device) and has verified that the specified that the performance requirements are met. |                                 |
-| The manufacturer has listed and uniquely identified each SOUP / OTS components. |                                 |
-| The manufacturer has specified requirements for each SOUP / OTS components |                                 |
+| The manufacturer has listed and uniquely identified each SOUP / OTS component. |                                 |
+  | The manufacturer has specified requirements for each SOUP / OTS component. |                                 |
 | The manufacturer has documented the trace between these requirements and respective tests. |                                 |
 | The manufacturer has described how to verify all SOUP or OTS components. |                                 |
 | The manufacturer has a validation plan for the training functionality of ML library. |                                 |
@@ -546,7 +545,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has analyzed the risk for the most important components of the chosen software architecture at least. |          |
 | The manufacturer has analyzed the risks that are specific to chosen technologies. |          |
 | The manufacturer has listed all steps of data processing and annotation and analyzed the errors that can occur in each step, and analyzed the risks arising from these errors. |          |
-| The manufacturer has analyzed the consequences of porting the software and data to the target system- |          |
+  | The manufacturer has analyzed the consequences of porting the software and data to the target system. |          |
 | The manufacturer has analyzed the consequences of model bias. |          |
 | The manufacturer has analyzed consequences of wrong reference data (e.g. wrong gold standard, wrong comparison). |          |
 
@@ -595,7 +594,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The plan of the summative evaluation describes how the effectiveness of these measures is validated. ||
 | The usability evaluation report reveals whether the instructions for use are adequate to mitigate risks. ||
 | The manufacturer has evaluated all safety relevant use scenarios. ||
-| This evaluation contains is an assessment of safety relevance for each use scenario. ||
+| This evaluation contains an assessment of safety relevance for each use scenario. ||
 | The use scenarios included in the summative evaluation cover all safety relevant use scenarios. ||
 | The summative evaluation evaluates the effectiveness cover all risk mitigation measure. ||
 | The manufacturer has defined and specified the usability metrics for (a) understandability, (b) learnability and (c) operability of the product. | For example: production description completeness, customizability, input and output understandability, ... |
@@ -642,15 +641,15 @@ Data generally have to be understood as training, validation and test data. Each
 |The manufacturer has applied version- and configuration control.|Version and configuration control apply to the software as well to accompanying materials such as instructions for installation and use.|
 |The manufacturer has ensured that the product has a unique identification (ID).|In EU and in the US, there is typically the need for a UID-DI and UDI-PI.|
 |The manufacturer has ensured that there is a bill of materials.|The bill of material also contains all SOUP/OTS Software.|
-|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered|This is configuration management. Also relevant to downloads or AppStores.|
+|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.|
 |The manufacturer has described installation, update and decommissioning of the product.||
 | These instructions specify the runtime environment.          ||
 | These instructions specify how the correct installation can be verified. ||
-|The manufacturer has described how the persons responsible for installation know which is the most current version and how mistakes in installation can be ruled out|This is only relevant to stand-alone software. A SOP or work instruction would be expected here.|
-|The manufacturer has described how one ensures during installation that the requirements specified in the accompanying material are actually fulfilled (see above) |A SOP or work instruction would be expected here.|
+|The manufacturer has described how the persons responsible for installation know which is the most current version and how mistakes in installation can be ruled out.|This is only relevant to stand-alone software. A SOP or work instruction would be expected here.|
+|The manufacturer has described how one ensures during installation that the requirements specified in the accompanying material are actually fulfilled (see above).|A SOP or work instruction would be expected here.|
 |The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner||
 |The manufacturer set forth an SOP  covering customer communication including handling of customer complaints.||
-| The manufacturer has set up  a website that contains information about latest product releases and news related to security vulnerabilities ||
+| The manufacturer has set up  a website that contains information about latest product releases and news related to security vulnerabilities .||
 | This website provides the means to download the software.    ||
 | The instructions for use reference this website.             ||
 | The instructions for use and the website reveal contact information e.g. e-mail, phone number, and/or a contact form. ||
@@ -661,12 +660,12 @@ Data generally have to be understood as training, validation and test data. Each
 |:--|:--|
 |The manufacturer has created a Post-Market Surveillance (PMS) Plan specifically for the product.||
 |The manufacturer has created a SOP specifying how to compile post-market surveillance plans.||
-|The PMS all relevant data sources to be monitored.|These sources include information from SOUP manufacturers (also of ML libraries) and also includes security disclosures by those vendors|
+|The PMS lists all relevant data sources to be monitored.|These sources include information from SOUP manufacturers (also of ML libraries) and also includes security disclosures by those vendors|
 |The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.||
 |The PMS plan describes for each data source how, how often and by whom data are collected.||
-|The PMS plan specifies how data has to be analysed.||
+|The PMS plan specifies how data has to be analyzed.||
 |The PMS plan requires that quality metrics such as sensitivity and specificity are monitored.||
-|The PMS plan requires to collect and analyse data to assess how the use of the system changes over time.||
+|The PMS plan requires to collect and analyze data to assess how the use of the system changes over time.||
 |The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.||
 |The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].||
 |The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].||
@@ -675,9 +674,9 @@ Data generally have to be understood as training, validation and test data. Each
 |In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].||
 |The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]|
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]|
-|In the PMS plan, the manufacturer has specified for continuous learning systems whether and if how often which data sets have to be retested after algorithm updates.||
+|In the PMS plan, the manufacturer has specified for continuous learning systems whether and how often which data sets have to be retested after algorithm updates.||
 |In the PMS plan, the manufacturer has specified how and how frequently changes in algorithm updates are assessed.||
-|In the PMS plan, the manufacturer has listed threshold values that trigger actions|The threshold values include quality metrics and features.|
+|In the PMS plan, the manufacturer has listed threshold values that trigger actions.|The threshold values include quality metrics and features.|
 |In the PMS plan, the manufacturer has specified the frequency and content of compiling post-market surveillance reports.||
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.||
 |In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.||
@@ -687,7 +686,7 @@ Data generally have to be understood as training, validation and test data. Each
 |These PMS reports identify the post-market data and conclude whether activities are required.||
 |The manufacturer has established a post-market risk management system.|It is possible to combine post-market risk management and post-market surveillance.|
 |The manufacturer has specified how, how often and by whom the state of the art is monitored and re-assessed.||
-|This state-of-the-art assessment takes latest algorithms for machine learning and for improving interpretability into account||
+|This state-of-the-art assessment takes latest algorithms for machine learning and for improving interpretability into account.||
 |This state-of-the-art assessment takes alternatives for the "ground-truth" respectively the gold standard.||
 |The manufacturer has specified how, how often and by whom post-market data are evaluated for new or changed hazards, hazardous situations, and risks.||
 |The post-market risk analysis searches for (adverse) behavioural changes or (foreseeable) misuse.||

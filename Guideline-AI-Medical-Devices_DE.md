@@ -143,7 +143,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 |Anforderung|Kommentare|
 |:--|:--|
-|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]|Die Rollen umfassen Softwareentwickler, Softwaretester, Datenwissenschaftler, Experten für klinische Bewertungen, Risikomanager, Usability-Ingenieure und Fachexperten.|
+|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]|Die Rollen umfassen Softwareentwickler, Softwaretester, Data Scientists, Experten für klinische Bewertungen, Risikomanager, Usability-Ingenieure und Fachexperten.|
 |Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung.|
 | Der Hersteller hat die Schulungsverfahren der Rollen und die entsprechenden Schulungsunterlagen dokumentiert. ||
 |Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen|Beispiele für Schulungsunterlagen: (Selbst-)Tests, Artefakte, die beim Üben einer bestimmten Fertigkeit entstehen, z. B. Dokumente.|
@@ -173,8 +173,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
 |Der Hersteller hat die Aufgabe beschrieben, die das maschinelle Lernen erfüllen soll.|Typische Aufgaben für ML-Modelle sind Segmentierung, Recommendation, Mustererkennung und Klassifizierung.|
 |Der Hersteller hat die Art des maschinellen Lernens angegeben.|Arten des maschinellen Lernens sind: "supervised learning", "semi-supervised learning" und "unsupervised learning".|
-|Der Hersteller hat spezifiziert, ob ein Eingriff des Anwenders vor der Behandlung oder Diagnose notwendig, möglich oder nicht möglich ist.|Ein Eingreifen vor der Behandlung oder Diagnose it entweder nicht möglich, durch Überschreiben möglich, nur mit Genehmigung möglich, oder eine direkte Behandlung oder Diagnose ist mit dem System nicht möglich.|
-|Der Hersteller hat die Aufgabe, unabhängig von dem spezifischen Algorithmus, explizit beschrieben.|Die Beschreibung umfasst eine Review der Evidenz, den Zweck der Aufgabe, alle relevanten Definitionen und eine Diskussion von Einschränkungen und Sonderfällen.|
+|Der Hersteller hat spezifiziert, ob ein Eingriff des Anwenders vor der Behandlung oder Diagnose notwendig, möglich oder nicht möglich ist.|Ein Eingreifen vor der Behandlung oder Diagnose ist entweder nicht möglich, durch Überschreiben möglich, nur mit Genehmigung möglich, oder eine direkte Behandlung oder Diagnose ist mit dem System nicht möglich.|
+|Der Hersteller hat die Aufgabe, unabhängig von dem spezifischen Algorithmus, explizit beschrieben.|Die Beschreibung umfasst ein Review der Evidenz, den Zweck der Aufgabe, alle relevanten Definitionen und eine Diskussion von Einschränkungen und Sonderfällen.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
@@ -190,7 +190,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                                   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Der Hersteller hat die in der Zweckbestimmung genannten Ziele mit quantitativen Werten operationalisiert [^C.1.c.1]. | Die Dokumentation sollte Benutzeranforderungen (z.B. 95% der Radiologen, die mit dem System arbeiten, erkennen den Krebs) und quantitative Leistungsanforderungen (z.B. das System soll eine Sensitivity von 97% haben) enthalten. Es ist nicht unüblich, dass diese Werte im Lauf der Entwicklung ergänzt und angepasst werden. |
-| Der Hersteller hat die Laufzeitumgebung des Produkts bezüglich Hardware (Bildschirmgröße, Bildschirmauflösung, Speicher, Netzwerkanbindung etc.) und Software (z.B. Betriebssystem, Browser, Run-time Environments wie Java Run-time Environment oder .NET) bestimmt. | Es soll angegeben werden, ob die Software in einem medizinischen Gerät, als mobile App, als tragbares Gerät, als Desktopanwendung, in der Cloud oder einer anderen Umgebung läuft. Zu den Hardwareanforderungen gehören z.B. CPU, RAM, Bildschirmgröße und so weiter. Zu den Softwareanforderungen gehöre Betriebssystem inklusive Version, Browser, usw.. Bei Apps kann es sein, dass diese Charakterisierung für die App und für den Server-Teil erfolgen muss. |
+| Der Hersteller hat die Laufzeitumgebung des Produkts bezüglich Hardware (Bildschirmgröße, Bildschirmauflösung, Speicher, Netzwerkanbindung etc.) und Software (z.B. Betriebssystem, Browser, Run-time Environments wie Java Run-time Environment oder .NET) bestimmt. | Es soll angegeben werden, ob die Software in einem medizinischen Gerät, als mobile App, als tragbares Gerät, als Desktopanwendung, in der Cloud oder einer anderen Umgebung läuft. Zu den Hardwareanforderungen gehören z.B. CPU, RAM, Bildschirmgröße und so weiter. Zu den Softwareanforderungen gehören Betriebssystem inklusive Version, Browser, usw.. Bei Apps kann es sein, dass diese Charakterisierung für die App und für den Server-Teil erfolgen muss. |
 | Der Hersteller hat die Datenschnittstellen anhand der Ebenen des  [Interoperabilitätsmodells](https://www.johner-institut.de/blog/tag/interoperabilitat/) spezifiziert und dabei auch die Formate und bei Bildern deren spezifischen Eigenschaften (Größe, Auflösung, Farbkodierung) festgelegt. | Diese wird auch gemäß IEC 62304 Kapitel 5.2.2 benötigt. Die List der Datenschnittstellen kann auch in einem Kontextdiagramm angegeben werden. Die Liste umfasst Protokolle, Formate und semantische Standards. |
 | Der Hersteller hat die Anforderungen an die Input-Daten für jede eingehende Datenschnittstelle spezifiziert. | Die Input-Daten können auch von der Generierung der Daten abhängen z.B. vom Aufnahmeverfahren, von technischen Parametern (Magnetfeldstärken, Anzahl der Ableit-Elektroden, Richtung), von Umgebungsbedingungen bei den Aufnahmen, vom Hersteller, vom Medizinprodukt usw... |
 | Der Hersteller hat alle Märkte und alle dort relevanten regulatorischen Anforderungen festgelegt. | Diese Liste sich zeigen lassen.                              |
@@ -215,8 +215,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Der Hersteller hat die Risiken bewertet, wenn das System bei einer anderen Patientenpopulation als der spezifizierten eingesetzt wird. |                                                              |
 | Der Hersteller hat die Risiken analysiert, die sich ergeben durch Inputs, die nicht den spezifizierten Formaten genügen. |                                                              |
 | Der Hersteller hat die Risiken analysiert, die sich ergeben durch eine hinreichend vorhersehbare Fehlanwendung. |                                                              |
-| Der Hersteller hat die Risiken analysiert, die sich ergeben durch Daten, die nicht entsprechend der spezifizierten Voraussetzungen generiert wurden. |                                                              |
-| Der Hersteller hat die Risiken analysiert die sich ergeben aus dem Ausfall der Hardware. |                                                              |
+| Der Hersteller hat die Risiken analysiert, die sich ergeben aus dem Ausfall der Hardware. |                                                              |
 | Der Hersteller hat die Risiken analysiert, die sich aus den Daten ergeben, die nicht unter den angegebenen Bedingungen gewonnen wurden. |                                                              |
 
 
@@ -272,18 +271,18 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                                   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Der Hersteller hat die Risiken an jeder Schnittstelle bewertet, die entstehen, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2]. | Die Risikoanalyse berücksichtigt all relevanten Arten von Fehleingaben. |
-| Der Hersteller hat bewertet, welche Inputs und Kombinationen von Inputs des Inputsraumes eine (unerwünschte) Auswirkung auf die Ausgabe des Systems haben. |                                                              |
+| Der Hersteller hat bewertet, welche Inputs und Kombinationen von Inputs des Inputraumes eine (unerwünschte) Auswirkung auf die Ausgabe des Systems haben. |                                                              |
 | Der Hersteller hat das Risiko eines Drifts in der Datenverteilung bewertet. |                                                              |
 | Der Hersteller hat die Werte oder Bereiche für Qualitätskennzahlen ermittelt, die eingehalten werden müssen, um unannehmbare Risiken zu vermeiden. |                                                              |
 | Der Hersteller hat die Risiken mangelnder Robustheit, z.B. bei Angriffen durch Angreifer, bewertet. | Es wurden negative Beispiel definiert, die zu einem inakzeptablem Risiko führen und die in Tests bewertet werden müssen. |
 | Der Hersteller hat die quantitativen Güterkriterien anhand des Stands der Technik abgeleitet. | Der Hersteller muss die Gütekriterien für alternative Technologien und Verfahren benennen und argumentieren können, wenn das Medizinprodukt den Alternativen bezüglich der Gütekriterien nicht überlegen ist[^C.2.d.1]. |
 | Der Hersteller hat den Goldstandard festgelegt und dessen Wahl begründet, mit dem die Gütekriterien überprüft werden sollen. |                                                              |
 | Der Hersteller hat in der klinischen Bewertung Alternativen aufgeführt und diese im Hinblick auf die spezifizierten Gütekriterien verglichen. |                                                              |
-| Der Hersteller hat Risiken analysiert, die sich ergeben, wenn die Outputs nicht den spezifiziert Gütekriterien entsprechen. | Dokumentiert in in der Risikomanagementakte oder einer Risikotabelle. |
+| Der Hersteller hat Risiken analysiert, die sich ergeben, wenn die Outputs nicht den spezifiziert Gütekriterien entsprechen. | Dokumentiert in der Risikomanagementakte oder einer Risikotabelle. |
 | Der Hersteller hat die Folgen bewertet, wenn das System sozial inakzeptable Outputs liefert (z.B. diskriminierend). | Diese "Folgen" sind nicht notwendigerweise Risiken im Sinne der ISO 14971. Die Bewertung umfasst die Kostenabschätzung für falsche klinische Entscheidungen und eine Feststellung der KI-Autonomiestufe und die damit verbundenen Risikoakzeptanzkritieren auf der Grundlage dessen wie kritisch der klinische Anwendungsfall und die Umgebung sind. |
-| Der Hersteller hat das Risiko bewertet, das entsteht, wenn das System die festgelegten nicht-funktionalen Anforderungen nicht erfüllt. | Dazu gehören Risiken, die sich aus mangelnder Verfügbarkeit, mangelnder Robustheit, langsamen Reaktionszeiten, Interoperabilitätsproblemen und falls die Software mehr Hardware-Ressourcen (CPU, RAM, ...) als angegeben verbraucht. |
+| Der Hersteller hat das Risiko bewertet, das entsteht, wenn das System die festgelegten nicht-funktionalen Anforderungen nicht erfüllt. | Dazu gehören Risiken, die sich ergeben aus mangelnder Verfügbarkeit, mangelnder Robustheit, langsamen Reaktionszeiten, Interoperabilitätsproblemen und falls die Software mehr Hardware-Ressourcen (CPU, RAM, ...) als angegeben verbraucht. |
 | Der Hersteller hat die Risiken bewertet, wenn das System nicht verfügbar ist. |                                                              |
-| Der Hersteller hat das Risiko bewertet, wenn die (Laufzeit-)Umgebung nicht den Spezifikationen entspricht. | Bei der Risikoanalyse werden folgenden Risiken bewertet: unzureichende oder fehlerhafte Hardware; Software- oder Netzwerkumgebungen, die nicht den Spezifikationen entsprechen; Schnittstellen, die nicht den Spezifikationen entsprechen. |
+| Der Hersteller hat das Risiko bewertet, wenn die (Laufzeit-)Umgebung nicht den Spezifikationen entspricht. | Bei der Risikoanalyse werden folgende Risiken bewertet: unzureichende oder fehlerhafte Hardware; Software- oder Netzwerkumgebungen, die nicht den Spezifikationen entsprechen; Schnittstellen, die nicht den Spezifikationen entsprechen. |
 | Der Hersteller hat anwendungsbezogene Risiken ermittelt.     | Beispiele für von Benutzern verursachte Risiken: Nichtbeachtung der Gebrauchsanweisung, Nichtverstehen von Warnhinweisen und Erklärungen, Verwendung des Systems in einem technischen oder sozialen Umfeld, das nicht den Spezifikationen entspricht. |
 | Der Hersteller hat die Risiken von böswilligen/feindlichen Angriffen analysiert. | Die Liste enthält eine Analyse der potentiellen Angreifer und ihrer Motivation, eine Liste der Angriffsvektoren und eine Schwachstellenanalyse. |
 | Bei Continuous Learning Systems hat der Hersteller die Risiken die für kontinuierliche lernende Systeme spezifisch sind, abgemildert. |                                                              |
@@ -308,7 +307,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Der Hersteller hat eine Qualitätskontrolle der Daten festgelegt. | Dazu gehören eine Liste der zulässigen / erwarteten Datenquellen, eine Spezifikation der Anforderungen an die Datenquellen und eine Beschreibung, wie ungültige Daten identifiziert und ausgeschlossen werden. |
 | Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. |                                                              |
-| Der Hersteller hat die Ein- und Ausschlusskriterien von der einzelnen Patienten anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Zum Beispiel: demografische Merkmale (Alter, Geschlecht), Krankheiten, Vitalparameter, ... |
+| Der Hersteller hat die Kriterien für den Ein- und Ausschluss von einzelnen Patienten anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Zum Beispiel: demografische Merkmale (Alter, Geschlecht), Krankheiten, Vitalparameter, ... |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. | Zum Beispiel: Datenbereiche, Datentypen, Maßeinheiten, Genauigkeit, Dateiformate, Kodierungen, Bildparameter, Sprache, ... |
 | Der Hersteller hat gegebenenfalls den Zeitrahmen angegeben, innerhalb dessen die Daten erhoben werden müssen. |                                                              |
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
@@ -322,7 +321,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | In dieser Datenschutzrichtlinie werden die Rollen einschließlich ihrer Zugriffsarten und Datenrechte (Erstellen, Löschen, Ändern, Lesen) beschrieben. |                                                              |
 | In dieser Datenschutzrichtlinie wird beschrieben wie Daten entfernt werden können. |                                                              |
 | In dieser Datenschutzrichtlinie wird beschrieben wie Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert werden. |                                                              |
-| Der Hersteller hat sichergestellt, dass Data Scientist keinen Zugang zu geschützten Daten haben. |                                                              |
+| Der Hersteller hat sichergestellt, dass Data Scientists keinen Zugang zu geschützten Daten haben. |                                                              |
 | Der Hersteller hat einen Datenschutzbeauftragten ernannt.    |                                                              |
 | Der Hersteller hat eine Ethik-Genehmigung erhalten (z.B. für genetische Daten), sofern dies gesetzlich vorgeschrieben ist. |                                                              |
 
@@ -374,7 +373,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie fehlende Werte innerhalb von Datensätzen erkannt und verarbeitet werden. Diese Festlegung hat der Hersteller begründet[^C.3.c.1]. | Es ist darauf achten, dass der Hersteller bei der Begründung zwischen "missing at random" und "missing not at random" unterscheidet[^C.3.c.2]. |
-| Dieses Verfahren legt fest, wie unbrauchbare Datensätze identifiziert und gemäß der Einschluss- und Ausschlusskritieren von Daten behandelt wird. |                                                              |
+| Dieses Verfahren legt fest, wie unbrauchbare Datensätze identifiziert und gemäß der Ein- und Ausschlusskritieren von Daten behandelt wird. |                                                              |
 | Dieses Verfahren beschreibt, wie die Daten für Training, Test und Validierung getrennt aufbewahrt werden. |                                                              |
 | Dieses Verfahren beschreibt, wie neue Daten hinzugefügt werden können, nachdem die initiale Verarbeitung erfolgt ist (falls zutreffend). |                                                              |
 | Dieses Verfahren beschreibt wie die Eindeutigkeit der Daten sichergestellt wird. |                                                              |
@@ -399,209 +398,210 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Datenquellen aufgelistet.             |                                                              |
-| Der Hersteller hat alle im vorangegangenen Kapitel genannten Schritte der Datenverarbeitung dokumentiert. |                                                              |
-| In diesem Dokument werden die Regeln für Einschluss und Ausschluss von Daten festgelegt. |                                                              |
-| Dieses Dokument enthält eine Begründung, wenn zusätzliche Daten ausgeschlossen wurden oder wenn Daten trotz Erfüllung der Spezifikation beibehalten wurden. |                                                              |
-| In diesem Dokument wird beschrieben, wie alle Daten zu ihrer Quelle zurückverfolgt werden können. |                                                              |
-| In diesem Dokument wird beschrieben, wie die Einhaltung der Anforderungen überprüft wird. |                                                              |
-| Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
-| Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
-| Der Hersteller hat die Trainings-, Validierungs- und Testdaten unter Versionskontrolle gestellt. |                                                              |
-| Der Hersteller hat alle Daten und den Code vor Verlust und unerwünschten Änderungen geschützt. | Dazu gehören ein dokumentiertes Verfahren für die Sicherung und Wiederherstellung sowie Sicherungsaufzeichnungen. |
-| Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
-| Der Hersteller hat eine Richtlinie (z.B. SOP) festgelegt, die den Prozess der Konfigurations- und Versionskontrolle spezifiziert. |                                                              |
-| Der Hersteller hat Aufzeichnungen geführt, die belegen, dass die Software tatsächlich unter Versionskontrolle steht. |                                                              |
+  | Der Hersteller hat die Datenquellen aufgelistet.             |                                                              |
+  | Der Hersteller hat alle im vorangegangenen Kapitel genannten Schritte der Datenverarbeitung dokumentiert. |                                                              |
+  | In diesem Dokument werden die Regeln für Einschluss und Ausschluss von Daten festgelegt. |                                                              |
+  | Dieses Dokument enthält eine Begründung, wenn zusätzliche Daten ausgeschlossen wurden oder wenn Daten trotz Erfüllung der Spezifikation beibehalten wurden. |                                                              |
+  | In diesem Dokument wird beschrieben, wie alle Daten zu ihrer Quelle zurückverfolgt werden können. |                                                              |
+  | In diesem Dokument wird beschrieben, wie die Einhaltung der Anforderungen überprüft wird. |                                                              |
+  | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
+  | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
+  | Der Hersteller hat die Trainings-, Validierungs- und Testdaten unter Versionskontrolle gestellt. |                                                              |
+  | Der Hersteller hat alle Daten und den Code vor Verlust und unerwünschten Änderungen geschützt. | Dazu gehören ein dokumentiertes Verfahren für die Sicherung und Wiederherstellung sowie Sicherungsaufzeichnungen. |
+  | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
+  | Der Hersteller hat eine Richtlinie (z.B. SOP) festgelegt, die den Prozess der Konfigurations- und Versionskontrolle spezifiziert. |                                                              |
+  | Der Hersteller hat Aufzeichnungen geführt, die belegen, dass die Software tatsächlich unter Versionskontrolle steht. |                                                              |
 
-### 4. Modellentwicklung
+  ### 4. Modellentwicklung
 
-#### a) Vorbereitung des Modells
+  #### a) Vorbereitung des Modells
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Listen Sie die Features und begründen Sie, warum diese Features berücksichtigt wurden. |
-| Der Hersteller hat insb. bei tabellarischen Daten die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
-| Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
-| Der Hersteller hat begründet wenn die Daten nicht nach dem Zufallsprinzip aufgeteilt wurden. |                                                              |
-| Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugang zu den Testdaten erhält. |                                                              |
-| Der Hersteller hat dokumentiert wie er sicherstellt, dass die Testdaten nicht beim Training und Validieren des Modells verwendet wurden. |                                                              |
-| Der Hersteller hat eine rollenbasierte Policy für den Zugang zu den Daten festgelegt. |                                                              |
-| Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Zählen Sie die Features auf und begründen Sie, warum diese Features berücksichtigt wurden. |
+  | Der Hersteller hat insb. bei tabellarischen Daten die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
+  | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
+  | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) zugeordnet sind. |                                                              |
+  | Der Hersteller hat begründet wenn die Daten nicht nach dem Zufallsprinzip aufgeteilt wurden. |                                                              |
+  | Der Hersteller hat dokumentiert, wie er sicherstellt, dass das Entwicklungsteam keinen Zugang zu den Testdaten erhält. |                                                              |
+  | Der Hersteller hat dokumentiert wie er sicherstellt, dass die Testdaten nicht beim Training und Validieren des Modells verwendet wurden. |                                                              |
+  | Der Hersteller hat eine rollenbasierte Policy für den Zugang zu den Daten festgelegt. |                                                              |
+  | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
-[^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
+  [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
 
-[^C.4.a.2]: Beispiele dafür sind Normalisierung, Wahl von Klassen-Labels (z.B. 0 oder 1), Wahl von Spaltennamen, Aufteilung von kategoriellen Werten auf mehrere Spalten.
+  [^C.4.a.2]: Beispiele dafür sind Normalisierung, Wahl von Klassen-Labels (z.B. 0 oder 1), Wahl von Spaltennamen, Aufteilung von kategoriellen Werten auf mehrere Spalten.
 
-#### b) Training des Modells
+  #### b) Training des Modells
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat modellspezifische Schritte der Datenverarbeitung dokumentiert. |                                                              |
-| Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. |                                                              |
-| Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |                                                              |
-| Der Hersteller hat eine Richtlinie festgelegt, die die Verwendung von Testdaten zur Optimierung des Modells verbietet (nur Trainings- und Validierungdaten dürfen verwendet werden). |                                                              |
-| Der Hersteller hat ggf. die Wahl der Epochen dokumentiert, wenn neuronale Netze verwendet wurden. [^C.4.b.2] | Wenn möglich, zeigen Sie die Lernkurven an.                  |
-| Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
-| Der Hersteller hat mehrere Modell mit verschiedenen Hyperparemetern trainiert (einschließlich einfacher und interpretierbarer Modelle). |                                                              |
-| Der Hersteller hat sichergestellt, das während dem Training das Modell tatsächlich trainiert wird. | Dokumentieren Sie, dass der Trainingsprozess die Leistung des Modells verbessert. |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Der Hersteller hat modellspezifische Schritte der Datenverarbeitung dokumentiert. |                                                              |
+  | Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. |                                                              |
+  | Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |                                                              |
+  | Der Hersteller hat eine Richtlinie festgelegt, die die Verwendung von Testdaten zur Optimierung des Modells verbietet (nur Trainings- und Validierungdaten dürfen verwendet werden). |                                                              |
+  | Der Hersteller hat ggf. die Wahl der Epochen dokumentiert, wenn neuronale Netze verwendet wurden. [^C.4.b.2] | Wenn möglich, zeigen Sie die Lernkurven an.                  |
+  | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | Die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
+  | Der Hersteller hat mehrere Modelle mit verschiedenen Hyperparemetern trainiert (einschließlich einfachere und interpretierbarere Modelle). |                                                              |
+  | Der Hersteller hat sichergestellt, das während dem Training das Modell tatsächlich trainiert wird. | Dokumentieren Sie, dass der Trainingsprozess die Leistung des Modells verbessert. |
 
-[^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
+  [^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
 
-[^C.4.b.2]: Es kann sinnvoll sein, die Abhängigkeit der Güte des Modells von der Anzahl der Epochen anhand von Learning Curves aufzuzeigen. Diese Learning Curves gibt es beispielsweise für neuronale Netzwerke und Boosting-Verfahren, nicht aber für Modelle mit numerischer Lösung (z.B. lineare Regression) oder bei einem einzigen Baum.	
+  [^C.4.b.2]: Es kann sinnvoll sein, die Abhängigkeit der Güte des Modells von der Anzahl der Epochen anhand von Learning Curves aufzuzeigen. Diese Learning Curves gibt es beispielsweise für neuronale Netzwerke und Boosting-Verfahren, nicht aber für Modelle mit numerischer Lösung (z.B. lineare Regression) oder bei einem einzigen Baum.	
 
-#### c) Bewertung des Modells
+  #### c) Bewertung des Modells
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat einen Modellevaluierungsplan erstellt, der  die Aktivitäten der Evaluierung, die beteiligten Rollen, und die Milestones, zu denen diese Aktivitäten durchgeführt werden müssen,  festlegt. |                                                              |
-| Der Hersteller die Spezifikation und Ergebnisse für die Bewertung des Modells mit dem Validierungsdatensatz vorgelegt. |                                                              |
-| Der Hersteller die Spezifikation und Ergebnisse für die Bewertung des Modells mit dem Testdatensatz vorgelegt. |                                                              |
-| Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
-| Der Hersteller hat Werte für die angegebenen Gütemaße festgelegt. |                                                              |
-| Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
-| Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
-| Für einzelne Datensätze kann es eine Auswertung der Features geben, die die Vorhersage des Modells am stärksten beeinflusst haben. |                                                              |
-| Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
-| Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarer Modelle nicht zur Anwendung kamen. |                                                              |
-| Der Hersteller hat erwogen, sich insbesondere bei tabellarischen Daten für einzelne Datensätze die Feature anzeigen zu lassen, die das Modell besonders zur Entscheidung bewogen haben[^C.4.c.2]. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat erwogen insbesondere bei tabellarischen Daten zu evaluieren, wie und wie stark sich einzelne Feature ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. | Man spricht von ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat insbesondere bei tabellarischen Daten erwogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/ zu visualisieren [^C.4.c.3]. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat erwogen, Datensätze zu synthetisieren, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat die Auswahl des Modells auf der Grundlage dessen Leistung auf einem repräsentativen Datensatz dokumentiert und begründet. |                                                              |
-| In dieser Dokumentation sind die verschiedenen Modelle aufgeführt, welche verglichen wurden. |                                                              |
-| Die Dokumentation enthält einen Vergleich dieser Modelle (Architekturen). |                                                              |
-| Dieser Vergleich enthält auch die Gütemaße.                  |                                                              |
-| Diese Dokumentation zeigt, dass klar konzipierte, repräsentative Datensätze und die Performanz des Modells auf diesen Datensätzen nach einem Bewertungskriterium, z.B. einem akzeptablem Nutzen-Risiko-Verhältnis angemessen sind. |                                                              |
-| Der Hersteller hat eine Nutzen-Risiko-Bewertung durchgeführt, in der die Interpretierbarkeit, die Performanz (z.B. Qualitätskennzahlen, Effizienz) und die Robustheit diskutiert werden. |                                                              |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Der Hersteller hat einen Modellevaluierungsplan erstellt, der  die Aktivitäten der Evaluierung, die beteiligten Rollen, und die Milestones, zu denen diese Aktivitäten durchgeführt werden müssen,  festlegt. |                                                              |
+  | Der Hersteller die Spezifikation und Ergebnisse für die Bewertung des Modells mit dem Validierungsdatensatz vorgelegt. |                                                              |
+  | Der Hersteller die Spezifikation und Ergebnisse für die Bewertung des Modells mit dem Testdatensatz vorgelegt. |                                                              |
+  | Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
+  | Der Hersteller hat Werte für die angegebenen Gütemaße festgelegt. |                                                              |
+  | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
+  | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
+  | Für einzelne Datensätze kann es eine Auswertung der Features geben, die die Vorhersage des Modells am stärksten beeinflusst haben. |                                                              |
+  | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
+  | Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarer Modelle nicht zur Anwendung kamen. |                                                              |
+  | Der Hersteller hat erwogen, sich insbesondere bei tabellarischen Daten für einzelne Datensätze die Feature anzeigen zu lassen, die das Modell besonders zur Entscheidung bewogen haben[^C.4.c.2]. | Dies lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat erwogen insbesondere bei tabellarischen Daten zu evaluieren, wie und wie stark sich einzelne Feature ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. | Man spricht von ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). Dies lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat insbesondere bei tabellarischen Daten erwogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/ zu visualisieren [^C.4.c.3]. | Dies lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat erwogen, Datensätze zu synthetisieren, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat die Auswahl des Modells auf der Grundlage dessen Leistung auf einem repräsentativen Datensatz dokumentiert und begründet. |                                                              |
+  | In dieser Dokumentation sind die verschiedenen Modelle aufgeführt, welche verglichen wurden. |                                                              |
+  | Die Dokumentation enthält einen Vergleich dieser Modelle (Architekturen). |                                                              |
+  | Dieser Vergleich enthält auch die Gütemaße.                  |                                                              |
+  | Diese Dokumentation zeigt, dass klar konzipierte, repräsentative Datensätze und die Performanz des Modells auf diesen Datensätzen nach einem Bewertungskriterium, z.B. einem akzeptablem Nutzen-Risiko-Verhältnis angemessen sind. |                                                              |
+  | Der Hersteller hat eine Nutzen-Risiko-Bewertung durchgeführt, in der die Interpretierbarkeit, die Performanz (z.B. Qualitätskennzahlen, Effizienz) und die Robustheit diskutiert werden. |                                                              |
 
-[^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
+  [^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
 
-[^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.	
+  [^C.4.c.2]: zu den Ansätzen zählen LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importlande und Feature Interaktion.	
 
-[^C.4.c.3]: Beispiele sind Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)	
+  [^C.4.c.3]: Beispiele sind Sharpley-Values, ICE-Plots, Partial Dependency Plots (PDP)	
 
-[^C.4.c.4]: Beispiele siehe http://yosinski.com/deepvis
-
-
-#### d) Dokumentation des Modells
-
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Daten, Testergebnisse und deren Bewertung sinnvoll sein. |
-| Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. |                                                              |
-| Der Hersteller hat die Trainingsdaten dokumentiert.          |                                                              |
-| Der Hersteller hat mögliche Probleme (z.B. Biases) und Limitationen dokumentiert. |                                                              |
-| Der Hersteller hat die verwendeten Softwarebibliotheken und Frameworks (SOUPs) dokumentiert. |                                                              |
-| Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
-| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
-| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat eine Arbeitsanweisung für die Dokumentation und/oder Versions- und Konfigurationskonstrolle von Softwarecode und -bibliotheken, Konfigurationsdateien, Hyperparemetern, Test- und Bewertungsergebnissen (einschließlich Gütemaße), Softwarebibliotheken und Frameworks festgelegt. |                                                              |
-
-[^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
-
-### 5. Produktentwicklung
-
-#### a) Software-Entwicklung
-
-| Anforderung                                                  | Kommentar                                       |
-| ------------------------------------------------------------ | ----------------------------------------------- |
-| Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]                 |
-| Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. er wiederholt. |                                                 |
-| Der Hersteller hat einen Prüfplan aufgestellt der Software-Systemtests vorsieht. |                                                 |
-| Der Hersteller hat die Software-Sicherheitsklasse (alternativ den Level of Concern) festgelegt. |                                                 |
-| Der Hersteller hat eine Software-Anforderungsspezifikation (SRS) erstellt. |                                                 |
-| Die SRS spezifiziert die Anforderungen an die Benutzerschnittstellen. |                                                 |
-| Der Hersteller hat die Software-Architektur dokumentiert.    |                                                 |
-| Der Hersteller hat Software Unit-, Integration- und Systemtests durchgeführt. | Dies beinhaltet Bericht über die Testabdeckung. |
-| Der Hersteller hat die Strategie für die Blackbox-Tests dokumentiert. |                                                 |
-| Die Tests decken alle Sotware-/Produktanforderungen ab (einschließlich nicht-funktionaler Anforderungen). |                                                 |
-| Mit den Tests wird überprüft, ob die Maßnahmen zur Risikominderung wirksam sind. |                                                 |
-| Die Tests belegen, dass das System unbemerkte Sicherheitsangriffe sicher bewältigt. |                                                 |
-| Der Hersteller hat die Softwareversion, die Testdaten, die Testumgebung (z.B. die Hardware), das Testgerät und die Auswertung der Testergebnisse dokumentiert. |                                                 |
-| Nach Änderung an der Software werden die Tests wiederholt, es sei denn, der Hersteller kann eine Begründung für das Überspringen der Testaktivitäten liefern. |                                                 |
-| Der Hersteller hat sichergestellt, dass die Tests reproduzierbar sind. |                                                 |
-| Der Hersteller hat die Leistung (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät) getestet und überprüft, dass die angegebenen Leistungsanforderungen erfüllt werden. |                                                 |
-| Der Hersteller hat alle SOUP / OTS-Komponenten aufgelistet und eindeutig identifiziert. |                                                 |
-| Der Hersteller hat für jede SOUP / OTS-Komponente bestimmte Anforderungen festgelegt. |                                                 |
-| Der Hersteller hat den Zusammenhang (trace) zwischen diesen Anforderungen und den entsprechenden Prüfungen dokumentiert. |                                                 |
-| Der Hersteller hat beschrieben, wie alle SOUP- oder OTS-Komponenten überprüft werden können. |                                                 |
-| Der Hersteller hat  einen Validierungsplan für die Trainingsfunktionen der ML-Bibliothek festgelegt. |                                                 |
-
-[^C.5.a.1]: Die Hersteller sollten die üblichen Best-Practices einhalten wie das Einhalten von Coding-Guidelines, die Überprüfung des Codes durch Code-Reviews anhand definierte Kriterien, das Testen des Codes durch Unit-Tests mit einem definierten Abdeckungsgrad usw.
+  [^C.4.c.4]: Beispiele siehe http://yosinski.com/deepvis
 
 
-#### b) Risikomanagement
+  #### d) Dokumentation des Modells
 
-| Anforderung                                                  | Kommentar |
-| ------------------------------------------------------------ | --------- |
-| Der Hersteller hat die Funktionalitäten der gewählten ML-Bibliotheken, die für das Training verwendet werden, festgelegt. |           |
-| Der Hersteller hat die Funktionalitäten der gewählten ML-Bibliotheken, die für die Vorhersage verwendet werden, festgelegt. |           |
-| Der Hersteller hat die Risiken einer nicht den Spezifikationen entsprechenden Trainingsfunktion analysiert. |           |
-| Der Hersteller hat die Risiken einer nicht den Spezifikationen entsprechenden Vorhersagefunktion analysiert. |           |
-| Der Hersteller hat das Risiko zumindest für die wichtigsten Komponenten der gewählten Softwarearchitektur analysiert. |           |
-| Der Hersteller hat die Risiken analysiert, die mit den gewählten Technologien verbunden sind. |           |
-| Der Hersteller hat alle Schritte der Datenverarbeitung und des Labelings aufgezählt und die Fehler, die bei jedem Schritt auftreten können, sowie die Risiken, die sich aus diesen Fehlern ergeben, analysiert. |           |
-| Der Hersteller hat die Folgen der Portierung der Software und der Daten auf das Zielsystem analysiert. |           |
-| Der Hersteller hat die Folgen von Bias im Modell analysiert. |           |
-| Der Hersteller hat die Folgen falscher Referenzdaten (z.B. falscher Goldstandard, falscher Vergleich) analysiert. |           |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. |                                                              |
+  | Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu kann der Einsatz eines Versionsverwaltungssystems für Daten, Testergebnisse und deren Bewertung sinnvoll sein. |
+  | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
+  | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Hyperparameter dokumentiert. |                                                              |
+  | Der Hersteller hat die Trainingsdaten dokumentiert.          |                                                              |
+  | Der Hersteller hat mögliche Probleme (z.B. Biases) und Limitationen dokumentiert. |                                                              |
+  | Der Hersteller hat die verwendeten Softwarebibliotheken und Frameworks (SOUPs) dokumentiert. |                                                              |
+  | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
+  | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
+  | Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
+  | Der Hersteller hat eine Arbeitsanweisung für die Dokumentation und/oder Versions- und Konfigurationskonstrolle von Softwarecode und -bibliotheken, Konfigurationsdateien, Hyperparemetern, Test- und Bewertungsergebnissen (einschließlich Gütemaße), Softwarebibliotheken und Frameworks festgelegt. |                                                              |
+
+  [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
+
+  ### 5. Produktentwicklung
+
+  #### a) Software-Entwicklung
+
+  | Anforderung                                                  | Kommentar                                       |
+  | ------------------------------------------------------------ | ----------------------------------------------- |
+  | Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]                 |
+  | Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. er wiederholt. |                                                 |
+  | Der Hersteller hat einen Prüfplan aufgestellt der Software-Systemtests vorsieht. |                                                 |
+  | Der Hersteller hat die Software-Sicherheitsklasse (alternativ den Level of Concern) festgelegt. |                                                 |
+  | Der Hersteller hat eine Software-Anforderungsspezifikation (SRS) erstellt. |                                                 |
+  | Die SRS spezifiziert die Anforderungen an die Benutzerschnittstellen. |                                                 |
+  | Der Hersteller hat die Software-Architektur dokumentiert.    |                                                 |
+  | Der Hersteller hat Software Unit-, Integration- und Systemtests durchgeführt. | Dies beinhaltet Bericht über die Testabdeckung. |
+  | Der Hersteller hat die Strategie für die Blackbox-Tests dokumentiert. |                                                 |
+  | Die Tests decken alle Sotware-/Produktanforderungen ab (einschließlich nicht-funktionaler Anforderungen). |                                                 |
+  | Mit den Tests wird überprüft, ob die Maßnahmen zur Risikominderung wirksam sind. |                                                 |
+  | Die Tests belegen, dass das System unbemerkte Sicherheitsangriffe sicher bewältigt. |                                                 |
+  | Der Hersteller hat die Softwareversion, die Testdaten, die Testumgebung (z.B. die Hardware), das Testgerät und die Auswertung der Testergebnisse dokumentiert. |                                                 |
+  | Nach Änderung an der Software werden die Tests wiederholt, es sei denn, der Hersteller kann eine Begründung für das Überspringen der Testaktivitäten liefern. |                                                 |
+  | Der Hersteller hat sichergestellt, dass die Tests reproduzierbar sind. |                                                 |
+  | Der Hersteller hat die Leistung (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät) getestet und überprüft, dass die angegebenen Leistungsanforderungen erfüllt werden. |                                                 |
+  | Der Hersteller hat alle SOUP / OTS-Komponenten aufgelistet und eindeutig identifiziert. |                                                 |
+  | Der Hersteller hat für jede SOUP / OTS-Komponente bestimmte Anforderungen festgelegt. |                                                 |
+  | Der Hersteller hat den Zusammenhang (trace) zwischen diesen Anforderungen und den entsprechenden Prüfungen dokumentiert. |                                                 |
+  | Der Hersteller hat beschrieben, wie alle SOUP- oder OTS-Komponenten überprüft werden können. |                                                 |
+  | Der Hersteller hat  einen Validierungsplan für die Trainingsfunktionen der ML-Bibliothek festgelegt. |                                                 |
+
+  [^C.5.a.1]: Die Hersteller sollten die üblichen Best-Practices einhalten wie das Einhalten von Coding-Guidelines, die Überprüfung des Codes durch Code-Reviews anhand definierte Kriterien, das Testen des Codes durch Unit-Tests mit einem definierten Abdeckungsgrad usw.
+
+
+  #### b) Risikomanagement
+
+  | Anforderung                                                  | Kommentar |
+  | ------------------------------------------------------------ | --------- |
+  | Der Hersteller hat die Funktionalitäten der gewählten ML-Bibliotheken, die für das Training verwendet werden, festgelegt. |           |
+  | Der Hersteller hat die Funktionalitäten der gewählten ML-Bibliotheken, die für die Vorhersage verwendet werden, festgelegt. |           |
+  | Der Hersteller hat die Risiken einer nicht den Spezifikationen entsprechenden Trainingsfunktion analysiert. |           |
+  | Der Hersteller hat die Risiken einer nicht den Spezifikationen entsprechenden Vorhersagefunktion analysiert. |           |
+  | Der Hersteller hat das Risiko zumindest für die wichtigsten Komponenten der gewählten Softwarearchitektur analysiert. |           |
+  | Der Hersteller hat die Risiken analysiert, die mit den gewählten Technologien verbunden sind. |           |
+  | Der Hersteller hat alle Schritte der Datenverarbeitung und des Labelings aufgezählt und die Fehler, die bei jedem Schritt auftreten können, sowie die Risiken, die sich aus diesen Fehlern ergeben, analysiert. |           |
+  | Der Hersteller hat die Folgen der Portierung der Software und der Daten auf das Zielsystem analysiert. |           |
+  | Der Hersteller hat die Folgen von Bias im Modell analysiert. |           |
+  | Der Hersteller hat die Folgen falscher Referenzdaten (z.B. falscher Goldstandard, falscher Vergleich) analysiert. |           |
 
 
 
-#### c) Begleitmaterialien
+  #### c) Begleitmaterialien
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
-| Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
-| Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
-| Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
-| Die Gebrauchsanweisung weist auf Limitationen hin.           |                                                              |
-| Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
-| Die Gebrauchsanweisung spezifiziert die vorgesehenen primären und sekundären Anwender gemäß Zweckbestimmung. |                                                              |
-| Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
-| Die Gebrauchsanweisung beschreibt die Restrisiken.           |                                                              |
-| Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Feature. |
-| Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
-| Die Gebrauchsanweisung benennt die Gütekriterien.            |                                                              |
-| Die Gebrauchsanweisung listet die Faktoren auf, die sich negativ auf die Gütekriterien auswirken können. |                                                              |
-| Die Gebrauchsanweisung erläutert Risiken, die sich ergeben, wenn das Produkt nicht den Leistungsanforderungen entspricht. |                                                              |
-| Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. Wenn es weiter trainiert wird, enthält die Gebrauchsanweisung Informationen darüber, wie das System mit der Zeit lernt. |                                                              |
-| Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |                                                              |
-| Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |                                                              |
-| Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |                                                              |
-| Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. |                                                              |
-| Die Gebrauchsanweisung nennt mögliche ethische Problematiken. |                                                              |
-| Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |                                                              |
-| Die Gebrauchsanweisung für Continuous Learning Systems beschreibt was die Aktualisierung des Algorithmus auslöst und wie man die Version dieses Algorithmus erkennt. |                                                              |
-| Die Gebrauchsanweisung für Continuous Learning Systems beschreibt wie Aktualisierungen des Algorithmus zugelassen, verzögert und rückgängig gemacht werden können. |                                                              |
-| Das Dokument mit der Gebrauchsanweisung ist unter Versionskontrolle. |                                                              |
-| Der Hersteller hat ein Verfahren festgelegt, in dem beschrieben wird, wie die Gebrauchsanweisung zu erstellen und zu überprüfen ist. |                                                              |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
+  | Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
+  | Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
+  | Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
+  | Die Gebrauchsanweisung weist auf Limitationen hin.           |                                                              |
+  | Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
+  | Die Gebrauchsanweisung spezifiziert die vorgesehenen primären und sekundären Anwender gemäß Zweckbestimmung. |                                                              |
+  | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
+  | Die Gebrauchsanweisung beschreibt die Restrisiken.           |                                                              |
+  | Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Feature. |
+  | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
+  | Die Gebrauchsanweisung benennt die Gütekriterien.            |                                                              |
+  | Die Gebrauchsanweisung listet die Faktoren auf, die sich negativ auf die Gütekriterien auswirken können. |                                                              |
+  | Die Gebrauchsanweisung erläutert Risiken, die sich ergeben, wenn das Produkt nicht den Leistungsanforderungen entspricht. |                                                              |
+  | Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. Wenn es weiter trainiert wird, enthält die Gebrauchsanweisung Informationen darüber, wie das System mit der Zeit lernt. |                                                              |
+  | Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |                                                              |
+  | Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |                                                              |
+  | Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |                                                              |
+  | Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. |                                                              |
+  | Die Gebrauchsanweisung nennt mögliche ethische Problematiken. |                                                              |
+  | Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |                                                              |
+  | Die Gebrauchsanweisung für Continuous Learning Systems beschreibt was die Aktualisierung des Algorithmus auslöst und wie man die Version dieses Algorithmus erkennt. |                                                              |
+  | Die Gebrauchsanweisung für Continuous Learning Systems beschreibt wie Aktualisierungen des Algorithmus zugelassen, verzögert und rückgängig gemacht werden können. |                                                              |
+  | Das Dokument mit der Gebrauchsanweisung ist unter Versionskontrolle. |                                                              |
+  | Der Hersteller hat ein Verfahren festgelegt, in dem beschrieben wird, wie die Gebrauchsanweisung zu erstellen und zu überprüfen ist. |                                                              |
+### Produkt-Validierung
 
-#### c) Usability-Validierung
+  #### a) Usability-Validierung
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Risiken, die sich aus mangelhafter Usability ergibt, in der Risikomanagementakte dokumentiert. |                                                              |
-| In der Risikomanagementakte sind Risiken aufgeführt, die sich daraus ergeben, dass die visuellen Outputs des Produktes missverstanden, übersehen oder ignoriert werden. |                                                              |
-| In der Risikomanagementakte sind Risiken aufgeführt, die sich aus dem blinden Vertrauen oder Misstrauen der Benutzer in das Produkt ergeben. |                                                              |
-| In der Risikomanagementakte sind Risiken aufgeführt, die durch Unterweisung der Benutzer, z.B. durch Schulungen oder Begleitmaterial, gemindert werden müssen. |                                                              |
-| Der Plan der summative Evaluation beschreibt, wie die Wirksamkeit der Maßnahmen validiert wird. |                                                              |
-| Der Bericht über die Bewertung der Usability gibt Aufschluss darüber, ob die Gebrauchsanweisung geeignet ist die Risiken zu mindern. |                                                              |
-| Der Hersteller hat alle sicherheitsrelevanten Anwendungsszenarien bewertet. |                                                              |
-| Diese Bewertung beinhaltet eine Einschätzung der Sicherheitsrelevanz für jedes Anwendungsszenario. |                                                              |
-| Die in die summative Bewertung einbezogenen Nutzungsszenarien decken alle sicherheitsrelevanten Sicherheitsszenarien ab. |                                                              |
-| Bei der summativen Bewertung wird die Wirksamkeit aller Maßnahmen zur Risikominderung beurteilt. |                                                              |
+  | Anforderung                                                  | Kommentar                                                    |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | Der Hersteller hat die Risiken, die sich aus mangelhafter Usability ergeben, in der Risikomanagementakte dokumentiert. |                                                              |
+  | In der Risikomanagementakte sind Risiken aufgeführt, die sich daraus ergeben, dass die visuellen Outputs des Produktes missverstanden, übersehen oder ignoriert werden. |                                                              |
+  | In der Risikomanagementakte sind Risiken aufgeführt, die sich aus dem blinden Vertrauen oder Misstrauen der Benutzer in das Produkt ergeben. |                                                              |
+  | In der Risikomanagementakte sind Risiken aufgeführt, die durch Unterweisung der Benutzer, z.B. durch Schulungen oder Begleitmaterial, gemindert werden müssen. |                                                              |
+  | Der Plan der summativen Evaluation beschreibt, wie die Wirksamkeit der Maßnahmen validiert wird. |                                                              |
+  | Der Bericht über die Bewertung der Usability gibt Aufschluss darüber, ob die Gebrauchsanweisung geeignet ist die Risiken zu mindern. |                                                              |
+  | Der Hersteller hat alle sicherheitsrelevanten Anwendungsszenarien bewertet. |                                                              |
+  | Diese Bewertung beinhaltet eine Einschätzung der Sicherheitsrelevanz für jedes Anwendungsszenario. |                                                              |
+  | Die in die summative Bewertung einbezogenen Nutzungsszenarien decken alle sicherheitsrelevanten Sicherheitsszenarien ab. |                                                              |
+  | Bei der summativen Bewertung wird die Wirksamkeit aller Maßnahmen zur Risikominderung beurteilt. |                                                              |
 | Der Hersteller hat die Metriken für die Verständlichkeit, Erlernbarkeit und Bedienbarkeit des Produktes definiert und spezifiziert. | Zum Beispiel: Vollständigkeit der Produktbeschreibung, Anpassbarkeit, Verständlichkeit der Inputs und Outputs. |
 | Der Hersteller hat die "Qualität der Anwendung" definiert und spezifiziert - Metriken zur Messung des Ausmaßes, in dem das Produkt die Bedürfnisse der Zielnutzer erfüllt, um bestimmte Ziele der Effektivität, Produktivität und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen. | Zum Beispiel: Vervollständigung von Aufgaben, Fehlerhäufigkeit, Wartezeit, ... |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. |                                                              |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. |                                                              |
 
-#### d) Klinische Bewertung 
+#### b) Klinische Bewertung 
 
 | Anforderung                                                  | Kommentar |
 | ------------------------------------------------------------ | --------- |
@@ -639,12 +639,12 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |:--|:--|
 |Der Hersteller hat Versions- und Konfigurationskontrolle angewendet.|Der Versions- und Konfigurationskontrolle gilt sowohl für Software als auch für Begleitmaterialien wie Installations- und Gebrauchsanweisungen.|
 |Der Hersteller hat dafür gesorgt, dass das Produkte eine eindeutige Kennzeichnung (ID) hat.|In der EU und in den USA sind in der Regel eine UID-DI und eine UDI-PI erforderlich.|
-|Der Hersteller hat dafür gesorgt, dass eine Stückliste vorhanden ist.|Diese Stückliste enthält auch die gesamte SOUP / OTS- Software|
+|Der Hersteller hat dafür gesorgt, dass eine Stückliste vorhanden ist.|Diese Stückliste enthält auch die gesamte SOUP / OTS- Software.|
 |Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
 |Der Hersteller hat Installation, Aktualisierung und Außerbetriebnahme des Produktes beschrieben.||
 |Diese Anleitung spezifizieren die Laufzeitumgebung.||
 |In dieser Anleitung wird beschrieben wie die korrekte Installation überprüft werden kann.||
-|Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
+|Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten.|
 |Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind.|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann||
 |Der Hersteller hat eine SOP für die Kommunikation mit den Kunden einschließlich der Bearbeitung von Kundenbeschwerden erstellt.||
@@ -685,7 +685,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | In diesem PMS-Bericht werden die Daten nach Inverkehrbringung ermittelt und festgestellt, ob Maßnahmen erforderlich sind. ||
 | Der Hersteller hat ein System für das Risikomanagement nach dem Inverkehrbringen eingerichtet. |Es ist möglich das Risikomanagement nach dem Inverkehrbringen und die Überwachung nach dem Inverkehrbringen zu kombinieren.|
 | Der Hersteller hat festgelegt, wie, wie oft und von wem der Stand der Technik überwacht und neu bewertet wird. ||
-| Diese Bewertung des neusten Stand der Technik berücksichtigt die neuesten Algorithmen für maschinelles Lernen und zur Verbesserung der Interpretierbarkeit. ||
+| Diese Bewertung des neuesten Stand der Technik berücksichtigt die neuesten Algorithmen für maschinelles Lernen und zur Verbesserung der Interpretierbarkeit. ||
 | Diese Bewertung des neuesten Stands der Technik berücksichtigt Alternativen für die Ground Truth bzw. den Goldstandard. ||
 | Der Hersteller hat festgelegt, wie, wie oft und vom wem die Daten nach dem Inverkehrbringen auf neue oder veränderte Gefahren, Gefahrensituationen und Risiken hin bewertet werden. ||
 | Bei der Risikoanalyse nach dem Inverkehrbringen wird nach (nachteiligen) Verhaltensänderungen und (vorhersehbarem) Missbrauch gesucht. ||
