@@ -203,7 +203,7 @@ In Europe at least, there is no obligation to create a specific document that su
 #### d) Risk management and clinical evaluation
 
 | Requirements                                                 | Comments                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The manufacturer has listed alternative to the given product and assessed them with regard to benefits, safety and performance. | Discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and MDR/IVDR. The alternatives should both cover other ML methods and non-ML approaches. |
 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.              |
 | The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. |                                                              |
@@ -217,6 +217,7 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has assessed the risks if the system is used for another patient population than that specified. |                                                              |
 | The manufacturer has analyzed the risks arising from inputs not in the specified format. |                                                              |
 | The manufacturer has analyzed the risks arising from reasonably foreseeable misuse. |                                                              |
+| The manufacturer has analyzed the risks arising from data that do not meet the specified requirements. |                                                              |
 | The manufacturer has analyzed the risks arising from hardware failure. |                                                              |
 | The manufacturer has analyzed the risks arising from data that was not generated under the specified conditions. |                                                              |
 
@@ -315,7 +316,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. |                                                              |
 | The manufacturer has listed and discussed factors that could cause a bias in the data. |                                                              |
 | The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |                                                              |
-| The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. |                                                              |
+| The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
 | The manufacturer that uses surveys has justified the selection of the surveys, the time of survey and possibly the method for their assessment, in particular if no standardized survey exists. |                                                              |
 | The manufacturer has specified a patient data protection policy. |                                                              |
 | This data protection policy describes the roles including their type of access and data rights (create, delete, change read). |                                                              |
@@ -467,7 +468,6 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has considered (in particular for tabular data sets) to show for individual data sets the feature that the model particularly determined in the decision[^C.4.c.2]. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
 | The manufacturer has considered to evaluate how and how strongly individual features had to change for the model to come to another prediction. | This is referred to as ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). This, however, depends on the ML method and cannot be demanded as a general best practice. |
 | The manufacturer has analyzed/visualized the dependency (strength, direction) of the prediction of the feature values[^C.4.c.3]. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
-| The manufacturer has considered (in particular for tabular data sets) to evaluate / visualize the dependency (magnitude, direction) of predictions on feature values | This, however, depends on the ML method and cannot be demanded as a general best practice. |
 | The manufacturer has considered to synthesize data sets that activate the model particularly strong[^C.4.c.4]. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
 | The manufacturer has approximated the model using a simplified surrogate model such as a decision tree. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
 | The manufacturer has documented and justified the selection of the model based on its performance on a representative dataset. |                                                              |
@@ -598,7 +598,7 @@ Data generally have to be understood as training, validation and test data. Each
 | This evaluation contains is an assessment of safety relevance for each use scenario. ||
 | The use scenarios included in the summative evaluation cover all safety relevant use scenarios. ||
 | The summative evaluation evaluates the effectiveness cover all risk mitigation measure. ||
-| The manufacturer has defined and specified y the usability metrics for (a) understandability, (b) learnability and (c) operability of the product. | For example: production description completeness, customizability, input and output understandability, ... |
+| The manufacturer has defined and specified the usability metrics for (a) understandability, (b) learnability and (c) operability of the product. | For example: production description completeness, customizability, input and output understandability, ... |
 | The manufacturer has defined and specified the ‘quality in use’- metrics to measure the extent to which the product meets the needs of target users to achieve specified goals of effectiveness, productivity, and satisfaction in a specified context of use. | For example: task completion, error frequency, user wait time, ... |
 | The manufacturer assesses whether the users understand the instructions for use. |           |
 | The manufacturer assesses whether the users correctly detect and understand the results during usability validation. |           |
@@ -643,7 +643,7 @@ Data generally have to be understood as training, validation and test data. Each
 |The manufacturer has ensured that the product has a unique identification (ID).|In EU and in the US, there is typically the need for a UID-DI and UDI-PI.|
 |The manufacturer has ensured that there is a bill of materials.|The bill of material also contains all SOUP/OTS Software.|
 |The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered|This is configuration management. Also relevant to downloads or AppStores.|
-|The manufacturer has described installation, update and decommissioning.||
+|The manufacturer has described installation, update and decommissioning of the product.||
 | These instructions specify the runtime environment.          ||
 | These instructions specify how the correct installation can be verified. ||
 |The manufacturer has described how the persons responsible for installation know which is the most current version and how mistakes in installation can be ruled out|This is only relevant to stand-alone software. A SOP or work instruction would be expected here.|
@@ -663,8 +663,8 @@ Data generally have to be understood as training, validation and test data. Each
 |The manufacturer has created a SOP specifying how to compile post-market surveillance plans.||
 |The PMS all relevant data sources to be monitored.|These sources include information from SOUP manufacturers (also of ML libraries) and also includes security disclosures by those vendors|
 |The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.||
-|The PMS plan describes for each data source how, how often and by whom data are collected||
-|The PMS plan specifies how data has to be analysed||
+|The PMS plan describes for each data source how, how often and by whom data are collected.||
+|The PMS plan specifies how data has to be analysed.||
 |The PMS plan requires that quality metrics such as sensitivity and specificity are monitored.||
 |The PMS plan requires to collect and analyse data to assess how the use of the system changes over time.||
 |The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.||
@@ -681,9 +681,9 @@ Data generally have to be understood as training, validation and test data. Each
 |In the PMS plan, the manufacturer has specified the frequency and content of compiling post-market surveillance reports.||
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.||
 |In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.||
-|The manufacturer should perform PM and compile reports, both according to the post-market surveillance plan.||
+|The manufacturer should perform PMS and compile reports, both according to the post-market surveillance plan.||
 |There is a PMS report for each product respectively product type.||
-|These PMS reports clearly identify the respective products via its UDI.||
+|These PMS reports clearly identify the respective products via its ID.||
 |These PMS reports identify the post-market data and conclude whether activities are required.||
 |The manufacturer has established a post-market risk management system.|It is possible to combine post-market risk management and post-market surveillance.|
 |The manufacturer has specified how, how often and by whom the state of the art is monitored and re-assessed.||
@@ -717,7 +717,7 @@ Data generally have to be understood as training, validation and test data. Each
 |Requirements|Comments|
 |:--|:--|
 | The manufacturer has established a plan before decommissioning the medical device. ||
-| This plan describes information of users and operators .     ||
+| This plan describes how  users and operators are informed. ||
 | This plan describes the disposal of the product.             ||
 | This plan describes archiving of product and data (e.g. training, test, validation data), software, documentation, considering security and privacy concerns. ||
 | The manufacturer has analyzed risks of decommissioning.      ||
