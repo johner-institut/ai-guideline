@@ -581,7 +581,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The  document on instructions for use is under version control. |                                                              |
 | The manufacturer has set forth a procedure specifying how to develop and verify the instructions for use. |                                                              |
 
-### Product validation
+### 6. Product validation
 
 #### a) Usability validation
 
@@ -615,7 +615,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The clinical evaluation lists alternative methods, technologies or procedures. | |
 | The clinical evaluation compares the risks and benefits of these alternatives. | |
 
-### 6. Product release
+### 7. Product release
 
 | Requirements                                                 | Comments                   |
 | ------------------------------------------------------------ | -------------------------- |
@@ -710,7 +710,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 
 
-## 3. Decommissioning
+### 3. Decommissioning
 
 
 |Requirements|Comments|
