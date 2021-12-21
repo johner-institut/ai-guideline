@@ -580,7 +580,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
   | Die Gebrauchsanweisung für Continuous Learning Systems beschreibt wie Aktualisierungen des Algorithmus zugelassen, verzögert und rückgängig gemacht werden können. |                                                              |
   | Das Dokument mit der Gebrauchsanweisung ist unter Versionskontrolle. |                                                              |
   | Der Hersteller hat ein Verfahren festgelegt, in dem beschrieben wird, wie die Gebrauchsanweisung zu erstellen und zu überprüfen ist. |                                                              |
-### Produkt-Validierung
+### 6. Produkt-Validierung
 
   #### a) Usability-Validierung
 
@@ -614,7 +614,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | In der klinischen Bewertung werden alternative Methoden, Technologien oder Verfahren aufgeführt. |           |
 | In der klinischen Bewertung werden die Risiken und Vorteile dieser Alternativen verglichen. |           |
 
-### 6. Produktfreigabe
+### 7. Produktfreigabe
 
 | Anforderung                                                  | Kommentar                     |
 | ------------------------------------------------------------ | ----------------------------- |
@@ -633,7 +633,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 ## D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 
-#### 1. Produktion, Distribution, Installation
+### 1. Produktion, Distribution, Installation
 
 |Anforderung|Kommentare|
 |:--|:--|
@@ -653,7 +653,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Die Gebrauchsanweisung verweist auf diese Website.||
 |Die Gebrauchsanweisung und die Website enthalten Kontaktinformationen, z.B. E-Mail, Telefonnummer und/oder ein Kontaktformular.||
 
-#### 2. Marktüberwachung
+### 2. Marktüberwachung
 
 |Anforderung|Kommentare|
 |:--|:--|
@@ -709,7 +709,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 
 
-#### 2. Außerbetriebnahme
+### 3. Außerbetriebnahme
 
 |Anforderung|Kommentare|
 |:--|:--|
