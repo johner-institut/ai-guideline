@@ -429,7 +429,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
 | Der Hersteller hat die Konfidenzintervalle für die Güteparameter abhängig für die Inputdaten angegeben. | Gerade an den Rändern der erlaubten Input-Daten sinkt häufig die Konfidenz stark ab. Diese Information sollte auch den Anwendern in den Begleitmaterialen zur Verfügung gestellt werden. |
 | Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
+| Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür, die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
 
 [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
 
@@ -453,15 +453,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
 | Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
-| Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
+| Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter, wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
 | Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
 | Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
 | Die Gebrauchsanweisung spezifiziert die vorgesehenen primären und sekundären Anwender gemäß Zweckbestimmung. |                                                              |
 | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
-| Die Gebrauchsanweisung beschreibt, wie das Produkt genutzt werden soll. | Das schließt auch das Verhalten im Fehlerfall und die sekundäre Nutzung wie die Installation, das Upgrade und die Konfiguration mit ein. |
+| Die Gebrauchsanweisung beschreibt, wie das Produkt genutzt werden soll. | Das schließt auch das Verhalten im Fehlerfall und die sekundäre Nutzung, wie die Installation, das Upgrade und die Konfiguration mit ein. |
 | Die Gebrauchsanweisung beschreibt die möglichen Outputs.     | Das schließt auch die Erklärungen des Produkts ("Explainability") mit ein. |
 | Die Gebrauchsanweisung beschreibt die Restrisiken.           |                                                              |
-| Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Feature. |
+| Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Features. |
 | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
 | Die Gebrauchsanweisung benennt die Gütekriterien.            | Hier auch Konfidenz-Bereiche angeben.                        |
 | Die Gebrauchsanweisung listet die Faktoren auf, die sich negativ auf die Gütekriterien auswirken können. |                                                              |
@@ -488,15 +488,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Risiken bewertet, die sich ergeben, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2]. |                                                              |
 | Der Hersteller hat die quantitativen Güterkriterien anhand des Stands der Technik abgeleitet. | Der Hersteller muss die Gütekriterien für alternative Technologien und Verfahren benennen und argumentieren können, wenn das Medizinprodukt den Alternativen bezüglich der Gütekriterien nicht überlegen ist[^C.5.d.1]. |
 | Der Hersteller hat den Goldstandard festgelegt und dessen Wahl begründet, mit dem die Gütekriterien überprüft werden sollen. |                                                              |
-| Der Hersteller hat Risiken identifiziert, bewertet und beherrscht, die sich ergeben, wenn die Outputs nicht den spezifiziert Gütekriterien entsprechen. | Bei dieser Analyse betrachtet der Hersteller auch die spezifischen Eigenschaften des gewählten Modells sowie die beim Testen bestimmten Konfidenz-Intervalle der Output-Werte. |
+| Der Hersteller hat Risiken identifiziert, bewertet und beherrscht, die sich ergeben, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. | Bei dieser Analyse betrachtet der Hersteller auch die spezifischen Eigenschaften des gewählten Modells sowie die beim Testen bestimmten Konfidenz-Intervalle der Output-Werte. |
 | Der Hersteller hat die Folgen bewertet, wenn das System sozial inakzeptable Outputs liefert (z.B. diskriminierend). | Diese "Folgen" sind nicht notwendigerweise Risiken im Sinne der ISO 14971. |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, wenn das System nicht verfügbar ist. |                                                              |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die durch Software-Fehler entstehen. | Das beinhaltet auch Fehler in SOUP sowie in der Software, die für das "Pre-Processing" der Daten und für das Training des Modells verwendet wird. |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die durch die spezifische Wahl der Modell-Architektur entstehen. | Dabei sollten die Hersteller auch analysieren, ob die Modelle auf die richtigen Vorgaben hin optimiert wurden. |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die durch die spezifische Wahl der Zielplattform entstehen. | Beispielsweise könnte die Zielplattform nicht die benötigte Rechenleistung bereitstellen oder zum Absturz der Software führen. |
-| Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die durch die Auswahl der Trainings-, Validierungs- und Testdaten ergeben. | Das betrifft sowohl die Quellen dieser Daten (wie Patienten, Institutionen) als auch die Aufteilung dieser Daten in Trainings-, Validierungs- und Testdaten. So sollten die Hersteller prüfen, dass kein Overfitting und kein Bias der Daten vorliegt. |
+| Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die durch die Auswahl der Trainings-, Validierungs- und Testdaten ergeben. | Das betrifft sowohl die Quellen dieser Daten (wie Patienten, Institutionen) als auch die Aufteilung dieser Daten in Trainings-, Validierungs- und Testdaten. So sollten die Hersteller prüfen, dass kein Overfitting und kein Bias der Daten vorliegen. |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die sich dadurch ergeben, dass die Outputs (Vorhersagen, Klassifikationen etc.) nur zufällig richtig sind. | Mit Hilfe der "Interpretability" können Hersteller darlegen, weshalb ein ML-Modell eine konkrete Entscheidung getroffen hat. |
-| Der Hersteller hat die Risiken identifiziert, die sich dadurch ergeben, dass die Vorhersagen selbst die vorhergesagten Ergebnisse ändern. | Bei diesem Phänomen wird das Model vom Beobachter zum Akteur[^C.5.d.2]. Es nennt sich "Performative Prediction". Die Hersteller sollten die möglichen Auswirkungen auf Menschen oder Systeme untersuchen und z.B. mit einem DAC ("directed acyclic graph") beschreiben, einen möglichen "Distribution Shift" und ggf. eine nicht beeinflusste Kontrollgruppe beobachten und bei Bedarf Maßnahmen ergreifen wie z.B. ein anderes Model wählen oder das bestehende Modell neu trainieren. |
+| Der Hersteller hat die Risiken identifiziert, die sich dadurch ergeben, dass die Vorhersagen selbst die vorhergesagten Ergebnisse ändern. | Bei diesem Phänomen wird das Model vom Beobachter zum Akteur[^C.5.d.2]. Es nennt sich "Performative Prediction". Die Hersteller sollten die möglichen Auswirkungen auf Menschen oder Systeme untersuchen und z.B. mit einem DAC ("directed acyclic graph") beschreiben, einen möglichen "Distribution Shift" und ggf. eine nicht beeinflusste Kontrollgruppe beobachten und bei Bedarf Maßnahmen ergreifen, wie z.B. ein anderes Model wählen oder das bestehende Modell neu trainieren. |
 | Falls der Hersteller Selbsttests verwendet, hat er dargelegt, welche der spezifizierten Gütekriterien damit überprüft werden und welche Risiken dadurch beherrscht sind. |                                                              |
 | Der Hersteller hat die Risiken durch Nutzungsfehler identifiziert, bewertet und beherrscht. | Diese Risiken sollten auch berücksichtigen, dass Anwender die Erklärung der Outputs ("Explainability") nicht oder falsch erkennen bzw. verstehen. |
 | Der Hersteller hat die sonstigen Risiken identifiziert, bewertet und beherrscht, die das Kapitel C.1.d) nennt. |                                                              |
@@ -509,7 +509,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung                                                  | Kommentar |
 | ------------------------------------------------------------ | --------- |
 | Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
-| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken dem Stand der Technik entsprechen. |           |
+| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken, dem Stand der Technik entsprechen. |           |
 
 ### 6. Produktfreigabe
 
@@ -534,8 +534,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Anforderung|Kommentare|
 |:--|:--|
 |Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
-|Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechslungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
-|Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.) tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
+|Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechselungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
+|Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.), tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann||
 
 #### 2. Überwachung nach der Inverkehrbringung
@@ -544,7 +544,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |:--|:--|
 |Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.||
 |Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.||
-|Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.||
+|Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung, insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.||
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Feedback-Loops die Schwellenwerte selbst beeinflussen können[^D.2.1].|Diese Analyse dient auch als Maßnahme gegen das o.g. Risiko durch "Performance Prediction".|
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Self-Fullfilling-Prophecies die Schwellenwerte selbst beeinflussen können[^D.2.2].||
 |De Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu unerwünschten medizinischen Nebenwirkungen sammelt und bewertet.||
@@ -552,9 +552,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen zu weiteren "unerwünschten Nebenwirkungen" sammelt und bewertet[^D.2.4].||
 |Der Hersteller hat im PMS-Plan beschrieben, wie er welche Informationen sammelt, um bewerten zu können, ob die Daten im Feld den erwarteten Daten bzw. den Trainingsdaten entsprechen[^D.2.5].|Hinweis für Auditoren[^D.2.6]|
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob das Produkt noch dem State-of-the-Art genügt.|Hinweis für Auditoren[^D.2.7]|
-|Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell sind.||
+|Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er Informationen darüber sammeln will, ob der "Ground Truth" bzw. der Goldstandard noch aktuell ist.||
 |Der Hersteller hat im PMS-Plan beschrieben, wie und wie oft er überprüft, dass Änderungen konform dem Algorithm Change Protocol (ACP) und innerhalb der „SaMD Pre-Specifications“ (SPS) erfolgen.||
-|Die in den Plänen geforderten Berichte liegen zu den darin bestimmten Zeitpunkten vor.|zBsp. PSUR|
+|Die in den Plänen geforderten Berichte liegen zu den darin bestimmten Zeitpunkten vor.|z.B. PSUR|
 
 [^D.2.1]: Beispiel für Feedback-Loops: **Beispiel 1**: Eine Reise-Empfehlungs-App verschickt abhängig von Feature (letzte Reise) gezielte Werbung. Diese wiederum beeinflusst das Reiseverhalten. **Beispiel 2**: Ein Algorithmus stellt Prognosen. Daher behandelt der Arzt die Patienten besser oder früher.
 
@@ -611,11 +611,11 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 ### 2. Erwägungsgründe
 
-1. Hersteller entwickeln immer mehr Medizinprodukte die Verfahren der künstlichen Intelligenz, insbesondere des Machine Learnings, nutzen. Viele dieser Verfahren sind noch sehr neu und Best Practices fehlen. Dadurch entstehen Risiken für Patienten, Anwender und Dritte.
+1. Hersteller entwickeln immer mehr Medizinprodukte, die Verfahren der künstlichen Intelligenz, insbesondere des Machine Learnings, nutzen. Viele dieser Verfahren sind noch sehr neu und Best Practices fehlen. Dadurch entstehen Risiken für Patienten, Anwender und Dritte.
 2. Die EU-Verordnungen (MDR, IVDR) fordern zwar explizit die Sicherheit der Produkte in den jeweiligen Anhängen I. Konkrete Anforderungen für diese Klasse der Produkte fehlen jedoch völlig. Daher fehlen sowohl den Herstellern als auch den Benannten Stellen und Behörden konkrete Leitlinien, wie sie die Sicherheit der Produkte bewerten können.
 3. Im Gegensatz zu den meisten anderen grundlegenden Anforderungen sind keine Normen zum Thema KI harmonisiert. Daher gibt es keinen kanonischen Katalog an Anforderungen, der anerkannt den geforderten Stand der Technik reflektiert.
 4. Die FDA hat begonnen, Anforderungen an den Umgang mit Continuous Learning Systems CLS zu formulieren. Diese Vorgaben sind ungeeignet, um bereits bei der Produktentwicklung ausreichend konkrete Anforderungen an die Produkte und Prozesse zu stellen. 
-5. Die Sicherheit der Medizinprodukte muss in allen Phasen des Produkt-Lebenszyklusprozessen berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend. Dieser Tatsache müssen Best Practices und Leitfäden gerecht werden. 
+5. Die Sicherheit der Medizinprodukte muss in allen Phasen des Produkt-Lebenszyklusprozesses berücksichtigt werden. Eine Beschränkung auf das Testen ist unzureichend. Dieser Tatsache müssen Best Practices und Leitfäden gerecht werden. 
 9. Es ist zu hoffen, dass Normen zur Sicherheit von KI-basierten Medizinprodukten entwickelt und harmonisiert werden. Das wird jedoch noch Jahre in Anspruch nehmen. Daher bedarf es eines Leitfadens (nur) in dieser Zwischenphase. 
 10. Dieser Leitfaden soll zeitnah (bis Juli 2019) zur Verfügung stehen, um rasch den Herstellern als Orientierung zu dienen und es ihnen zu ermöglichen, sofort zu handeln. Die hohe Geschwindigkeit seiner Entwicklung macht Kompromisse bezüglich der Abstimmung mit möglichst vielen Parteien unumgänglich.
 11. Der technologische Fortschritt im Bereich der künstlichen Intelligenz ist immens. Neue Verfahren und Technologien werden kontinuierlich publiziert. Einerseits soll ein Leitfaden so spezifisch wie möglich sein. Andererseits darf er nicht zu spezifisch auf ein Verfahren oder eine Technologie ausgerichtet sein, um eine sinnvolle "Haltbarkeitsdauer" zu erreichen. Daher muss ein Leitfaden allgemeine Konzepte adressieren und kann nie einen Anspruch auf Vollständigkeit erheben.
