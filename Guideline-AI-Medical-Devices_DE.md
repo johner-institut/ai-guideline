@@ -20,7 +20,7 @@ Dieser Leitfaden ist nur für Medizinprodukte anwendbar, die Verfahren der KI, i
 
 - **Hersteller** dieser Produkte
 - deren Dienstleister (z.B. **Entwicklungsdienstleister**)
-- Personen und Organisation, die die Sicherheit dieser Produkte bewerten müssen, wie beispielsweise Auditoren, **Behörden** und **Benannte Stellen**.
+- Personen und Organisationen, die die Sicherheit dieser Produkte bewerten müssen, wie beispielsweise Auditoren, **Behörden** und **Benannte Stellen**.
 
 ### 3. Hinweise zur Verwendung
 
@@ -42,13 +42,13 @@ Entsprechend stellt der Leitfaden keine spezifischen Anforderungen an die Produk
    4. Modellentwicklung
    5. Produktentwicklung
    6. Produktfreigabe
-3. Anforderungen an die der Entwicklung nachgelagerten Phasen
+3. Anforderungen an die, der Entwicklung nachgelagerten Phasen
 
 #### b) Verbindlichkeit des Leitfadens
 
 Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte Norm. Entsprechend unterscheidet er auch nicht zwischen normativen und informativen Elementen.
 
-Dieser Leitfaden trägt Best Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. Dabei ist zu berücksichtigen, dass eine Fokussierung allein auf diesen "State-of-the-Art" auch zur Entwicklung von Produkten mit geringem Nutzen und sogar Schaden für den Patienten führen und insofern für sich genommen kein hinreichendes Kriterium sein kann.
+Dieser Leitfaden trägt Best Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. Dabei ist zu berücksichtigen, dass eine Fokussierung allein auf diesen "State-of-the-Art" auch zur Entwicklung von Produkten mit geringem Nutzen und sogar Schaden für den Patienten führen und insofern für sich genommen, kein hinreichendes Kriterium sein kann.
 
 Einige dieser Best Practices sind nicht in allen Situationen, bei allen Produkten oder bei allen Verfahren des maschinellen Lernens anwendbar. Hersteller sollten nicht offensichtliche Ausschlüsse begründen.
 
@@ -83,10 +83,10 @@ Für diese Aufgaben sind üblicherweise die folgenden Rollen zuständig:
 
 #### d) Struktur des Leitfadens
 
-Der Leitfaden ist eine  nach den oben erwähnten Kapitel gruppierte Liste an Überprüfungskriterien. Jedes Listenelement enthält die folgenden Attribute:
+Der Leitfaden ist eine nach dem oben erwähnten Kapitel gruppierte Liste an Überprüfungskriterien. Jedes Listenelement enthält die folgenden Attribute:
 
 - Eindeutige ID
-- Überprüfungskriterium, des möglichst einfach und binär als erfüllt oder nicht-erfüllt bewertet werden kann
+- Überprüfungskriterium, das möglichst einfach und binär als erfüllt oder nicht-erfüllt bewertet werden kann
 - Kommentare
 
 Die Kommentare enthalten beispielsweise:
@@ -106,13 +106,13 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 - Prof. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/))
 - Stefan Bunk (CTO) und Sven Piechottka (Government & Regulatory Affairs) ([Merantix](https://www.merantix.com/healthcare/))
 
-Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("Christian Johner, Christoph Molnar et al. ") und erlaubt es Dritten, auf diesem Werk aufzubauen z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
+Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("Christian Johner, Christoph Molnar et al. ") und erlaubt es Dritten, auf diesem Werk aufzubauen, z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
-Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits und Reviews kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen z.B. in Form eines Verkaufs als Broschüre.
+Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits und Reviews kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen, z.B. in Form eines Verkaufs als Broschüre.
 
 ### 5. Dokumentenlenkung, Dokumentenidentifikation
 
-Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform GitHub verwaltet. Einzig die in diesem Repository genannten Dokumente sind gültig.
+Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform GitHub verwaltet. Einzig, die in diesem Repository genannten Dokumente sind gültig.
 
 Die Versionshistorie einschließlich der jeweiligen Autoren kann der Dokumentenhistorie entnommen werden.
 
@@ -139,14 +139,14 @@ Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprec
 
 Die Hersteller müssen alle regulatorisch geforderten produktspezifischen Pläne erstellt haben:
 
-* Entwicklungsplan (inkl. Verifizierung und Validierungsplanung )
+* Entwicklungsplan (inkl. Verifizierung und Validierungsplanung)
 * Post-Market-Surveillance Plan
 * Risikomanagementplan
 * Plan für die klinische Bewertung
 
 ### 3. Kompetenzen
 
-Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend Kompetenzen verfügen, um eine dem Stand der Technik entsprechende Sicherheit und Leistungsfähigkeit der Produkte zu gewährleisten. Diese Nachweise gelingen oft am leichtesten durch interne oder externe Schulungen.
+Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend Kompetenzen verfügen, um eine, dem Stand der Technik entsprechende Sicherheit und Leistungsfähigkeit der Produkte zu gewährleisten. Diese Nachweise gelingen oft am leichtesten durch interne oder externe Schulungen.
 
 Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
@@ -155,7 +155,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 |Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||
 |Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|
 |Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
-|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüber hinausgehenden oder abweichenden) Kompetenzen festgelegt|Anforderung der ISO 13485:2016|
+|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüberhinausgehenden oder abweichenden) Kompetenzen festgelegt|Anforderung der ISO 13485:2016|
 
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
 
@@ -165,7 +165,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 Die Hersteller sollten den Nachweis führen können, die relevanten Anforderungen dieser Leitlinie beachtet zu haben. Es gibt keine spezifischen Anforderungen an die Dokumentation und "Objective Evidence".
 
-Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
+Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten, wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
 
 ## C) Anforderungen an die Produktentwicklung
 
@@ -175,17 +175,17 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|
 |:--|:--|
-|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
+|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
 |Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens. Die Beschreibung der Rolle des maschinellen Lernens ist notwendig, um die Anforderung nach der Beschreibung des "physikalischen Prinzips" zu erfüllen.|
-|Der Hersteller hat die vorgesehene Lebensdauer des Medizinprodukts festgelegt.|Diese Lebensdauer bestimmen beispielsweise der Stand der Technik (zBsp. medizinischer Fortschritt, neue ML-Methoden, Wettbewerbsprodukte) und die Geschwindigkeit, mit der die technische Umgebung und Bibliotheken weiterentwickelt werden.|
+|Der Hersteller hat die vorgesehene Lebensdauer des Medizinprodukts festgelegt.|Diese Lebensdauer bestimmen beispielsweise der Stand der Technik (z.B. medizinischer Fortschritt, neue ML-Methoden, Wettbewerbsprodukte) und die Geschwindigkeit, mit der die technische Umgebung und Bibliotheken weiterentwickelt werden.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
 | Anforderung                                                  | Kommentare                                                   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| Der Hersteller hat die vorgesehenen Nutzer charakterisiert z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |
+| Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |
 | Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |
 | Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben können auch die Use Scenarios abgeleitet werden, welche die Hersteller laut IEC 62366-1 spezifizieren müssen. |
 
@@ -197,7 +197,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Der Hersteller hat die in der Zweckbestimmung genannten Ziele mit quantitativen Werten operationalisiert [^C.1.c.1]. | Es ist nicht unüblich, dass diese Werte im Lauf der Entwicklung ergänzt und angepasst werden. |
 | Der Hersteller hat die Laufzeitumgebung des Produkts bezüglich Hardware (Bildschirmgröße, Bildschirmauflösung, Speicher, Netzwerkanbindung etc.) und Software (z.B. Betriebssystem, Browser, Run-time Environments wie Java Run-time Environment oder .NET) bestimmt. | Bei Apps kann es sein, dass diese Charakterisierung für die App und für den Server-Teil erfolgen muss. |
 | Der Hersteller hat die Datenschnittstellen anhand der Ebenen des  [Interoperabilitätsmodells](https://www.johner-institut.de/blog/tag/interoperabilitat/) spezifiziert und dabei auch die Formate und bei Bildern deren spezifischen Eigenschaften (Größe, Auflösung, Farbkodierung) festgelegt. | Diese wird auch gemäß IEC 62304 Kapitel 5.2.2 benötigt. |
-| Der Hersteller hat die Anforderungen an die Input-Daten spezifiziert | Die Input-Daten können auch von der Generierung der Daten abhängen z.B. vom Aufnahmeverfahren, von technischen Parametern (Magnetfeldstärken, Anzahl der Ableit-Elektroden, Richtung), von Umgebungsbedingungen bei den Aufnahmen, vom Hersteller, vom Medizinprodukt usw... |
+| Der Hersteller hat die Anforderungen an die Input-Daten spezifiziert | Die Input-Daten können auch von der Generierung der Daten abhängen z.B. vom Aufnahmeverfahren, von technischen Parametern (Magnetfeldstärken, Anzahl der Ableit-Elektroden, Richtung), von Umgebungsbedingungen bei den Aufnahmen, vom Hersteller, vom Medizinprodukt usw..|
 | Der Hersteller hat alle Märkte und alle dort relevanten regulatorischen Anforderungen festgelegt. | Diese Liste sich zeigen lassen.                              |
 | Der Hersteller hat festgelegt, ob das System nach der Inverkehrbringung weiter dazulernen soll. Falls dies der Fall ist, hat der Hersteller dargelegt, ob dieses kontinuierliche Training global/zentral oder dezentral (z.B. pro Produkt oder pro Krankenhaus) sowie online oder offline erfolgt. |                                                              |
 
@@ -229,7 +229,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 |Der Hersteller hat beispielsweise die folgenden quantitativen Gütekriterien bzw. Anforderungen in Betracht gezogen: für Klassifikationsprobleme Genauigkeit (Mean oder Balanced Accuracy), positiver prädikativer Wert (Precision), Spezifität und Sensitivität; für Regressionsprobleme Mean Absoute Error und Mean Square Error.| Bei unbalancierten Daten, d.h. wenn Labels sehr unterschiedlich häufig vorkommen, sollte Balanced statt Mean Accuracy verwendet werden. Die Wahl der Gütekriterien hängt jedoch stark von der Zweckbestimmung ab. |
 |Der Hersteller hat die erwarteten Wertebereiche der Outputs spezifiziert.||
 |Der Hersteller hat die Anforderungen bezüglich der Wiederholbarkeit und Reproduzierbarkeit von Anforderungen spezifiziert.|Dies ist besonders bei "Continuous Learning Systems" relevant.|
-|Der Hersteller hat festgelegt wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
+|Der Hersteller hat festgelegt, wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
 |Der Hersteller hat festgelegt, welche Selbsttests das System durchführen muss, und wie es sich verhält, wenn diese nicht erfolgreich sind.|Dies ist besonders bei "Continuous Learning Systems" relevant.|
 |Der Hersteller hat festgelegt, wie schnell das System die Outputs erzeugen muss.|Diese Festlegung kann ggf. abhängig von der Größe und Menge der Daten erfolgen.|
 |Der Hersteller hat die Verfügbarkeit des Medizinprodukts spezifiziert.|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.|
@@ -243,7 +243,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                               |
 | :----------------------------------------------------------- | :------------------------------------------------------- |
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). |                                                          |
-| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Output nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
+| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
 | Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. |
 
 #### c) Weitere Software-Anforderungen
@@ -251,7 +251,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Anforderung                                                  | Kommentare                                                   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein.          |
-| Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechen Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                           |
+| Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechenden Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                           |
 | Der Hersteller hat die Anforderungen bestimmt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | Die IT-Sicherheit ist nicht Gegenstand dieser Leitlinie, sondern der [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/). |
 
 #### d) Besondere Anforderungen an kontinuierliche lernende Systeme
@@ -286,7 +286,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Trainings-, Validierungs- und Testdaten verursachen könnten. |                                                              |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem er gewährleistet, dass die Anforderungen an den Datenschutz erfüllt sind. | Beispielsweise werden die Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert. Hierzu sollte der Datenschutzbeauftragte einbezogen werden. |
-| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller, der Fragebögen verwendet, hat die Wahl der Fragen, den Zeitpunkt der Befragung und ggf. die Methode zu deren Auswertung begründet, insbesondere wenn kein standardisierter Fragebogen vorliegt. |                                                              |
 
 [^C.3.a.1]: Eine generelle Vorgabe für die Anzahl von Daten kann es nicht geben. Diese hängt u.a. vom "Signal-Noise-Ratio" ab. Beispielsweise würde bei einem Gendatensatz der Prozentsatz relevanter Gene und die Stärke und Häufigkeit des vorherzusagenden Effekts die Anzahl beeinflussen. Bei Daten, die klassifiziert werden sollen, ist die Anzahl der Datensätze mit der selteneren Klasse (z.B. die Prävalenz von Krankheiten) entscheidend.
@@ -312,7 +312,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen. |
 | Dieses Verfahren legt fest, wie die für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung überprüft wird. |                                                              |
 | Dieses Verfahren legt fest, wie die Korrektheit der Labels systematisch überprüft wird. Die Wahl dieser Begründung hat der Hersteller dokumentiert. | Der Hersteller kann identische Datensätzen mehreren Personen zum Labeling vorlegen und die Übereinstimmung der Ergebnisse bewerten. |
-| Dieses Verfahren legt fest, wie überwacht wird, dass die das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Datensätze mit bereits bekanntem Label erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
+| Dieses Verfahren legt fest, wie überwacht wird, dass die für das Labeling verantwortlichen Personen auch während des Labelings dauerhaft leistungsfähig und leistungswillig sind[^C.3.b.3]. | Dies kann durch Datensätze mit bereits bekanntem Label erfolgen, die beim Labeling für die Person unmerklich eingeschoben werden. |
 
 [^C.3.b.1]: Wenn beispielsweise die Klassifizierung in gesunde und kranken Patienten erfolgen soll, muss der Hersteller die Kriterien für die spezifische Fragestellung bzw. Zweckbestimmung ableiten, wann ein Patient als gesund und als krank zu klassifizieren ist.
 
@@ -327,11 +327,11 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |                                                              |
 | Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. |
 | Das Verfahren beschreibt, wie die Korrektheit der Zwischenschritte und der Endergebnisse überprüft wird[^C.3.c.0]. Diese Überprüfungen erfolgen risikobasiert. | Dies entspricht den Anforderungen der ISO 13485:2016 Kapitel 4.1.6. Die Risikomanagementakte muss diese Analysen enthalten. |
-| Dieses Verfahren spezifiziert, wie Werte mit verschiedenen Messskalen bzw. Einheiten erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
-| Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
-| Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML Verfahren (zBsp. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
+| Dieses Verfahren spezifiziert, wie Werte mit verschiedenen Messskalen bzw. Einheiten erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML-Verfahren (z.B. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
+| Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML-Verfahren (z.B. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
+| Dieses Verfahren spezifiziert, wie Werte bzw. Metadaten mit gleichem Namen (z.B. in Spaltenköpfen) erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML-Verfahren (z.B. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie fehlende Werte innerhalb von Datensätzen erkannt und verarbeitet werden. Diese Festlegung hat der Hersteller begründet[^C.3.c.1]. | Es ist darauf achten, dass der Hersteller bei der Begründung zwischen "missing at random" und "missing not at random" unterscheidet[^C.3.c.2]. |
-| Dieses Verfahren spezifiziert, wie Outliers insb. bei tabellarischen Daten erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. |
+| Dieses Verfahren spezifiziert, wie Outliers insb. bei tabellarischen Daten erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie nicht verwendbare Datensätze erkannt werden und damit umgegangen wird.[^C.3.c.5]. Diese Festlegung hat der Hersteller begründet. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die sich durch die Datenverarbeitung ergeben. | Risiken können beispielsweise verursacht werden durch Software-Fehler, Rundungsfehler, Re-Sampling und Komprimierung von Daten sowie das Aussortieren ungültiger Daten. |
 
@@ -352,10 +352,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
+| Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt, wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Das sollte Teil der Architektur dieser Software sein.        |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
-| Der Hersteller hat alle Software zur Datenverarbeitung einschließlich der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
+| Der Hersteller hat alle Software zur Datenverarbeitung einschließlich, der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
 
 ### 4. Modellentwicklung
 
@@ -363,12 +363,12 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung                                                  | Kommentar                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Feature voraus.                   |
-| Der Hersteller hat insb. bei tabellarischen Daten die Abhängigkeit der Feature untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML Verfahren und lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Features voraus.                   |
+| Der Hersteller hat insb. bei tabellarischen Daten, die Abhängigkeit der Features untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
-| Der Hersteller hat dokumentiert wie er sicherstellt, dass die Testdaten nicht beim Training und Validieren des Modells verwendet wurden. |                                                              |
+| Der Hersteller hat dokumentiert, wie er sicherstellt, dass die Testdaten nicht beim Training und Validieren des Modells verwendet wurden. |                                                              |
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: Bei Daten mit seltenen Feature oder Labels kann es notwendig sein, die Daten nicht ausschließlich nach dem Zufallsprinzip zu verteilen.
@@ -383,7 +383,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |                                                              |
 | Der Hersteller hat ggf. die Wahl der Epochen dokumentiert. [^C.4.b.2] |                                                              |
 | Der Hersteller hat die Gütemaße bestimmt, dokumentiert und anhand der Zweckbestimmung begründet, für die er das Modell optimieren will. | D.h. die Wahl dieser Gütemaße ist spezifisch für die Zweckbestimmung. |
-| Der Hersteller hat - soweit sinnvoll - mehrere Modelltypen trainiert und verglichen (darunter auch einfachere und interpretierbare Modell). |                                                              |
+| Der Hersteller hat - soweit sinnvoll - mehrere Modelltypen trainiert und verglichen (darunter auch einfachere und interpretierbare Modelle). |                                                              |
 [^C.4.b.1]: Beispiele: Loss-Funktion, Optimizer, Lernrate, Anzahl Epochen
 
 [^C.4.b.2]: Es kann sinnvoll sein, die Abhängigkeit der Güte des Modells von der Anzahl der Epochen anhand von Learning Curves aufzuzeigen. Diese Learning Curves gibt es beispielsweise für neuronale Netzwerke und Boosting-Verfahren, nicht aber für Modelle mit numerischer Lösung (z.B. lineare Regression) oder bei einem einzigen Baum.	
@@ -398,12 +398,12 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat aufgezeigt, wie er ein Overfitting erkennen und so vermeiden kann. |                                                              |
 | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
 | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
-| Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztlich Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |                                                              |
+| Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztliche Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |                                                              |
 | Der Hersteller hat erwogen, sich insbesondere bei tabellarischen Daten für einzelne Datensätze die Feature anzeigen zu lassen, die das Modell besonders zur Entscheidung bewogen haben[^C.4.c.2]. | Dies lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat erwogen insbesondere bei tabellarischen Daten zu evaluieren, wie und wie stark sich einzelne Feature ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. | Man spricht von ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). Dies lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat insbesondere bei tabellarischen Daten erwogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/ zu visualisieren [^C.4.c.3]. | Dies lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat erwogen, Datensätze zu synthetisieren, die das Modell besonders aktivieren[^C.4.c.4]. | Dies lässt sich nicht generell als Best Practice einfordern. |
-| Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat erwogen, das Modell durch ein vereinfachtes Surrogat-Modell, wie einen Entscheidungsbaum zu approximieren. | Dies lässt sich nicht generell als Best Practice einfordern. |
 
 [^C.4.c.1]: Bei Klassifikationsaufgaben ist der aktuelle Stand der Forschung zu berücksichtigen.
 
@@ -421,14 +421,14 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Das schließt Scripts und Build-Files mit ein.                |
 | Der Hersteller hat seinen Code gemäß einer Policy dokumentiert. | Üblicherweise sind zumindest öffentliche Klasse, Methoden mit Übergabe- und Rückgabewerten sowie Attribute zu dokumentieren |
 | Der Hersteller hat beschrieben, welche Datensätze er für das Training, für die Validierung und das Testen des Modells verwendet hat. |                                                              |
-| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu ist der Einsatz eines Versionsverwaltungssystems nicht nur für den  Code, sondern auch für Daten, Testergebnisse und deren Bewertung sinnvoll. Es empfiehlt sich, auch die bei der Datenverarbeitung und dem Training verwendete Infrastruktur (Hardware, Betriebssystem, Virtualisierungsschichten wie Docker) zu dokumentieren. Abweichende Ergebnisse sind zu begründen (zBsp. Hardware, Zufallsgeneratoren,  Rundungsfehler). Absolute Pfade und betriebssystemspezifische Befehle sind zu vermeiden. Eine README-Datei im .txt oder Markdown-Format hilft, sich in der Dokumentation schneller zurecht zu finden. |
+| Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu ist der Einsatz eines Versionsverwaltungssystems nicht nur für den  Code, sondern auch für Daten, Testergebnisse und deren Bewertung sinnvoll. Es empfiehlt sich, auch die bei der Datenverarbeitung und dem Training verwendete Infrastruktur (Hardware, Betriebssystem, Virtualisierungsschichten wie Docker) zu dokumentieren. Abweichende Ergebnisse sind zu begründen (z.B. Hardware, Zufallsgeneratoren,  Rundungsfehler). Absolute Pfade und betriebssystemspezifische Befehle sind zu vermeiden. Eine README-Datei im .txt oder Markdown-Format hilft, sich in der Dokumentation schneller zurecht zu finden. |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Algorithmen und Hyperparameter dokumentiert. | Beispielsweise sollte bei einem CNN u.a. die Anzahl und Art der Schichten, die Verknüpfung der Neuronen bzw. Schichten, die Aktivierungsfunktion, der Optimizer und anderer Parameter inklusive deren Wertebereiche dokumentiert werden. Zur Dokumentation des Modells zählt auch die Spezifikation der Outputs wie die Anzahl der Outputs, die jeweiligen Datentypen, Wertebereiche, Einheiten usw.. |
+| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Algorithmen und Hyperparameter dokumentiert. | Beispielsweise sollte bei einem CNN u.a. die Anzahl und Art der Schichten, die Verknüpfung der Neuronen bzw. Schichten, die Aktivierungsfunktion, der Optimizer und anderer Parameter inklusive deren Wertebereiche dokumentiert werden. Zur Dokumentation des Modells zählt auch die Spezifikation der Outputs, wie die Anzahl der Outputs, die jeweiligen Datentypen, Wertebereiche, Einheiten usw.. |
 | Der Hersteller hat beschrieben, wie er die Architekturen ausgewählt, die Modelle trainiert und die Hyperparameter optimiert, und dieses Vorgehen begründet. | Prüfer möchten nachvollziehen können, wie die Hersteller vorgegangen sind und weshalb die gewählte Lösung die beste ist. Die IEC 62304 und die FDA wünschen keine "ad hoc design decisions". |
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
 | Der Hersteller hat die Konfidenzintervalle für die Güteparameter abhängig für die Inputdaten angegeben. | Gerade an den Rändern der erlaubten Input-Daten sinkt häufig die Konfidenz stark ab. Diese Information sollte auch den Anwendern in den Begleitmaterialen zur Verfügung gestellt werden. |
-| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML Modell und lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
 
 [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
