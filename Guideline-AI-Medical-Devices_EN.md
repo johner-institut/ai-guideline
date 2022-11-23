@@ -135,9 +135,16 @@ The manufacturers should cover all aspects listed below either in the procedural
 
 If the manufacturer outsources processes, the requirements apply accordingly. Examples would be a (software) development service provider or contract research organization to be required to consider the relevant chapters of this guideline.
 
+### 2. Plans
+
 The manufacturer should compile all product specific plans as required by respective regulations.
 
-### 2. Competency requirements
+- Development plan (incl. verification and validation planning)
+- Post-market surveillance plan
+- Risk management plan
+- Clinical evaluation plan
+
+### 3. Competency requirements
 
 The manufacturers must ensure and prove that they have sufficient competencies to ensure the relevant safety and performance of the products according to the state of the art. This proof is often gained most easily through internal or external training.
 
@@ -155,7 +162,7 @@ Manufacturers can use the competency of external resources.
 
 [^B2-02]: Competencies (level if understanding, capability to perform tasks) should be listed, not primary subjects
 
-### 3. Documentation
+### 4. Documentation
 
 The manufacturers should keep evidence that they have followed the relevant requirements of this guideline. There are no specific requirements for documentation and “objective evidence”.
 
