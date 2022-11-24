@@ -733,7 +733,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 ## E) Annexes
 
-### 2. Additional literature
+### 1. Additional literature
 
 #### a) Laws
 
@@ -747,7 +747,7 @@ Data generally have to be understood as training, validation and test data. Each
 - [FDA Guidance Documents on Machine Learning](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
 - WHO/ITU: [Good practices for health applications of machine learning: Considerations for manufacturers and regulators](https://aiaudit.org/assets/pdf/standards/FGAI4H-K-039.pdf) 
 
-#### b) Industry literature, textbooks
+#### c) Industry literature, textbooks
 
 - Christoph Molnar: [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
 - Patrick Hall: [Machine Learning Interpretability
@@ -755,7 +755,7 @@ Data generally have to be understood as training, validation and test data. Each
 - Patrick Hall: [On the Art and Science of Machine Learning Explanations](https://arxiv.org/pdf/1810.02909.pdf)
 - Johner Institute: [Video training on machine learning for medical products](www.auditgarant.de)
 
-### 3. Recitals
+### 2. Recitals
 
 1. Manufacturers are increasingly developing medical products that use the process of artificial intelligence, in particular machine learning. Many of these procedures are still very new, and lack best practices. This creates new risks for patients, users and third parties.
 2. The EU directives (MDR, IVDR) explicitly require the safety of the products in the relevant annexes I. Bu concrete requirements for these classes of products are completely lacking. Therefore, both the manufacturers and the notified bodies and authorities lack concrete guidelines on how to evaluate the safety of the products.
