@@ -6,7 +6,7 @@
 
 The objective of this guideline is to provide medical device manufacturers, authorities and notified bodies instructions and to provide them with a concrete checklist to
 
-- understand what the expectations of the notified bodies andauthorities are,
+- understand what the expectations of the notified bodies and authorities are,
 - to promote step-by-step implementation of safety of medical devices, that implement artificial intelligence methods, in particular machine learning,
 - to compensate for the lack of a harmonized standard (in the interim) to the greatest extent possible.
 
@@ -175,7 +175,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).|
+|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).|
 |The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.|
 |The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.|
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".|
