@@ -4,9 +4,9 @@
 
 ### 1. Objective of the guideline
 
-The objective of this guideline is to provide medical device manufacturers and notified bodies instructions and to provide them with a concrete checklist to
+The objective of this guideline is to provide medical device manufacturers, authorities and notified bodies instructions and to provide them with a concrete checklist to
 
-- understand what the expectations of the notified bodies are,
+- understand what the expectations of the notified bodies andauthorities are,
 - to promote step-by-step implementation of safety of medical devices, that implement artificial intelligence methods, in particular machine learning,
 - to compensate for the lack of a harmonized standard (in the interim) to the greatest extent possible.
 
@@ -152,11 +152,10 @@ Manufacturers can use the competency of external resources.
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|The roles include software developers, software testers, data scientists, experts of clinical evaluations, risk managers, usability engineers and domain experts.|
+|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]||
 |The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.|
-|The manufacturer has documented the procedure for user role training and the associated training materials.||
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|Examples of training records: (self) tests, artefacts that result from practicing a particular skill, e.g. documents.|
-|The (software) development plans lay out the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016|
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.||
+|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016|
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
 
@@ -176,14 +175,12 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores). The intended use should specify the indication (e.g. disease) and the goal (e.g. diagnosis or treatment).|
-|The manufacturer has specified (possible) other positive impacts on health care.|Faster patient care or reductions in workload are examples of positive impacts on health care.|
+|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).|
 |The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.|
 |The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.|
-|The manufacturer has described the task the machine learning model may perform.|Typical tasks for ML-models include segmentation,  recommendation, detection and  classification.|
-|The manufacturer has specified the type of machine learning.|Types of learning are, for example, supervised, semi-supervised, unsupervised and reinforcement learning.|
-|The manufacturer has specified whether an intervention of the user before treatment or diagnosis is necessary, possible, not possible.|Intervention before treatment or diagnosis is either not possible, possible by overriding, necessary by approval, or direct treatment or diagnosis  is not possible with the system.|
-|The manufacturer has provided explicit task description by distinguishing it from the particular algorithm used.|The description includes a review of the evidence, the purpose of the task, all relevant definitions and discussion of limitations and special cases.|
+|The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".|
+|The manufacturer has determined the intended lifetime of the medical device.|This lifetime is determined, for example, by the state of the art (e.g., medical advances, new ML-methods, competitive products) and the speed at which the technical environment and libraries evolve.|
+
 
 #### b) Intended users and context of use
 
