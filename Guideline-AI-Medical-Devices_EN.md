@@ -187,46 +187,41 @@ In Europe at least, there is no obligation to create a specific document that su
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. |
-| The manufacturer has characterized the intended use environment, e.g. using physical properties (brightness, volume, temperature, contamination, moisture), using the social environment (stress, shift work, frequently changing colleagues) as well as the work environment (such as wearing gloves, usage of tools and physical stress). | Also included in IEC 62366-1.                                |
-| The manufacturer has specified the product lifetime.         | The product lifetime may depend on implemented technologies, the technical environment, development of the state-of-the-art and competitive products. |
+| The manufacturer has characterized the intended use environment (also social environment such as stress, shift work, frequently changing colleagues)| This characterization is also required by IEC 62366-1. It is also relevant in the context of the explainability of AI. |
+|The manufacturer has described the core tasks that the medical device is to support. | The use scenarios that manufacturers must specify according to IEC 62366-1 can also be derived from these core tasks.|
 
 
 #### c) Stakeholder requirements
 
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has operationalized the goals listed in the intended use with quantitative values [^C.1.c.1]. | The documentation should include user requirements (e.g. 95% of radiologists working with the system detect the cancer) and quantitative performance requirements (e.g. the system shall have a sensitivity of 97%). It is not unusual that these values are supplemented and revised during the course of development. |
-| The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | It is specified whether the software runs inside a medical device, as mobile app, as wearable device, as desktop application, in the cloud or another environment.  Hardware requirements may include CPU, RAM, screen size and so on. Software requirements include operating system with version, browser and so on. For apps, this characterization must be done for the app and for the server part. |
-| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. The list of data interfaces may be specified in a context diagram as well. The list includes protocols, formats and semantic standards. |
-| The manufacturer has specified the requirements for input data for each inbound data interface. | The input data specifications may include value ranges, data types, sensor requirements, type of data capturing device, precision of data, and type and technical parameters of recording procedure such as magnetic field strength, number of deflection electrodes, direction and environmental conditions of recordings, manufacturer, medical product etc. |
-| The manufacture has set forth all markets and all regulatory requirements relevant to these. | Show this list.                                              |
+| The manufacturer has operationalized the goals listed in the intended use with quantitative values [^C.1.c.1]. | It is not unusual that these values are supplemented and revised during the course of development. |
+| The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | For apps, this characterization must be done for the app and for the server part. |
+| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. |
+|The manufacturer has specified the requirements for the input data. | The input data may also depend on the generation of the data, e.g. on the recording method, on technical parameters (magnetic field strengths, number of conductive electrodes, direction), on environmental conditions during the recordings, on the manufacturer, on the medical device, etc.... 
+| The manufacture has set forth all markets and all regulatory requirements relevant to these. | Show this list.  
+|The manufacturer has specified whether the system should continue to learn after it has been placed on the market. If this is the case, the manufacturer has specified whether this continuous training will be global/centralized or decentralized (e.g., per product or per hospital) and online or offline. | 
 
 [^C.1.c.1]: **Example**: Purpose: The software supports radiologists in diagnosing cancers using CT images of the head. Quantitative value: 95% of radiologists working with software detect the cancer.
 
 
-#### d) Risk management and clinical evaluation
+#### d) Input for risk management and clinical evaluation
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has listed alternative to the given product and assessed them with regard to benefits, safety and performance. | Discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and MDR/IVDR. The alternatives should both cover other ML methods and non-ML approaches. |
+| The manufacturer has listed alternative procedures and evaluated them in terms of benefit, safety, and performance. | The discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and the MDR/IVDR. |
 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.              |
 | The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. |                                                              |
-| The manufacturer has created a search protocol revealing how the manufacturer was searching for alternatives. |                                                              |
-| The manufacturer has done a clinical evaluation.             | The clinical evaluation lists alternative products, technologies and/ or procedures and assesses alternatives with respect to clinical benefits, safety / risks, performance. |
-| The manufacturer has provided a statement confirming that the product reflects the state-of-the-art. |                                                              |
-| The manufacturer has created a list of risks specifically associated with the use of the method of machine learning. | The risk management file should contain an analysis of hazards and related harms with related probabilities and severities resulting from ML models not meeting the requirements. |
-| The manufacturer has conducted an FMEA that analyzes the effects of ML models that do not meet the performance requirements. |                                                              |
-| The manufacture has analyzed the risks arising if persons other than the specified users use the product. |                                                              |
-| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |                                                              |
-| The manufacturer has assessed the risks if the system is used for another patient population than that specified. |                                                              |
-| The manufacturer has analyzed the risks arising from inputs not in the specified format. |                                                              |
-| The manufacturer has analyzed the risks arising from reasonably foreseeable misuse. |                                                              |
-| The manufacturer has analyzed the risks arising from hardware failure. |                                                              |
-| The manufacturer has analyzed the risks arising from data that was not generated under the specified conditions. |                                                              |
+|The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file |                                                                                                                                                    
+|The manufacturer has analyzed the risks that arise when patients other than those specified are diagnosed, treated, or monitored with the product. |    |
+| The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              |
+| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |                                                              |                                                         |
+| The manufacturer has analyzed the risks arising from inputs not in the specified format. |                                                              |                                                             |                                                             |
+| Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
+|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. |
 
 
-
-### 2. Product and software requirements
+### 2. Software requirements
 
 #### a) Functionality and performance
 
