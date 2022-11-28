@@ -227,21 +227,14 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has derived traceable quantitative quality criteria and requirements for the software and/or the algorithm from the intended use and from the stakeholder requirements [^C.2.a.1].|There is a specification of quantitative minimum 'quality criteria' (for example specificity, sensitivity, mean absolute error). Traceability is shown particularly well with a traceability matrix that links the intended use with quantitative quality product requirements.|
-|The manufacturer has considered the following  quantitative quality criteria: For classification problems accuracy (mean or balanced accuracy), positive predictive value (precision), specificity and sensitivity: for regression problems mean absolute error and mean square error.| For unbalanced data, meaning if labels occur at very different frequencies, balanced instead of mean accuracy must be used. The selection of quality criteria strongly depends on intended use. |
-|The manufacturer has specified the expected value ranges of the inputs to the machine learning model.||
-|The manufacturer has specified the expected value ranges of the output(s) of the machine learning model.||
+|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended purpose [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.|
+|The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. |
+|The manufacturer has specified the expected value ranges of the outputs.||
 |The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".|
-|The manufacturer has derived non-functional requirements from the intended use and stakeholder requirements.|Non-functional requirements include response times, data volumes to be handled, availability and security.|
-| The manufacturer has derived from the risk analysis product/software requirements for risk minimization. |Examples for measures are validation of input data, backups, and redundant design.|
-  | The manufacturer has specified a list of steps on how to identify and evaluate cyber-security threats and vulnerabilities, control security risks, and monitor the efficacy of these controls. ||
-| The manufacturer has specified repeatable, reproducible, testing-oriented criteria to assess a device’s cyber vulnerabilities, fight malware, and test the security measures ||
-|The manufacturer has determined how the system behaves if the inputs do not meet the specified requirements[^C.2.a.2].|This is an aspect of robustness, which must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2. The specification describes how the system reacts to conflicting, adulterated, incomplete and missing data, to wrong data format, excessive data quantities (amount, frequency), data outside of specified value ranges, wrong temporal sequence of data, etc..|
+|The manufacturer has specified how the system will behave if the inputs do not meet the specified conditions [^C.2.a.2].|This is an aspect of robustness to be specified according to ISO 25010 and IEC 62304 Chapter 5.2. |
 |The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".|
 |The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.|
 |The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.|
-|For continuous learning systems the manufacturer has specified a range within changes to the algorithm and to system output are permitted.|The description includes how algorithms are changed over time, the amount of change, and how these changes are related to changes to the output.|
-|For continuous learning systems the manufacturers has specified how changes to the algorithm are controlled.|The specification should cover: system self-checks on performance; functionality to enforce, prevent, delay or roll-back changes to algorithms; change reports, change/audit-logs; control of versions of the algorithms; boundaries of autonomous learning.|
 
 [^C.2.a.1]: Examples:  **Example 1**: The stakeholder requirement states that 95% of radiologists must be able to detect a cancer with the product. The requirement of the algorithm states that it must display a sensitivity of 97%. **Example 2**: The stakeholder requirements state that arterial calcification must be able to be detected at a sensitivity of 92%. The requirements of the algorithm state that it must be able to exactly predict the strength of the plaques in the blood to 0.2 mm.
 
@@ -251,48 +244,30 @@ In Europe at least, there is no obligation to create a specific document that su
 
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has specified what the user interface must display if the conditions are not met[^C.2.a.2], to operate the system safely (e.g. invalid or unexpected inputs). |                                                              |
-| The manufacturer has specified what the user interface must display in case of internal errors. |                                                              |
+| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |                                                              |                                                          |
 | The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |                                                              |
-| For continuous learning systems the manufacturer should specify how the user is informed about significant changes to algorithms. | The specification covers user interface parts that provide information that an algorithm change was or will be performed, and that give the user the option to reject, delay or roll-back an algorithm change. |
-| The manufacturer has determined whether there is a need for instructions for use and training materials. | The MDR / IVDR allow exceptions from the obligation.         |
+| The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. |
 
 #### c) Additional software requirements
 
 | Requirements                                                 | Comments                                    |
 | :----------------------------------------------------------- | :------------------------------------------ |
 | The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. |
-| The manufacturer has specified how manufacturers or service technicians can gain access to internal errors. |                                             |
-| The manufacturer has checked that the patients are not exposed to decisions through the specified system that are exclusively based on automatic data processing. | Requirements of Art. 22 of the GDPR.        |
+| According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  |                                             |
+| The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  |
 
 
 
-#### d) Risk management and clinical evaluation
+#### d) Special requirements for continuous learning systems
 
 | Requirements                                                 | Comments                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has assessed the risks  at each data interface arising if the inputs do not meet the specified requirements[^C.2.a.2]. | The risk analysis considers all relevant types of wrong inputs. |
-| The manufacturer has assessed which inputs and combinations of inputs of the input space have an (undesirable) impact on the system’s output. |                                                              |
-| The manufacturer has assessed the risk from a drift in the data distribution. |                                                              |
-| The manufacturer has assessed the values or ranges for quality metrics that have to be met in order to avoid unacceptable risks. |                                                              |
-| The manufacturer has assessed risks from lack of robustness e.g. for adversarial attacks. | There are adversarial examples defined that lead to unacceptable risk and that have to be evaluated in testing. |
-| The manufacturer has derived the quantitative quality criteria using the state of the art. | The manufacturer must list the quality criteria for alternative technologies and methods and be able to argue if the medical product is not superior to alternatives with regard to quality criteria[^C.2.d.1]. |
-| The manufacturer has set the gold standard against which the quality criteria can be reviewed and justified the choice. |                                                              |
-| The manufacturer has listed alternatives in the clinical evaluation, and compares these alternatives with respect to specified quality criteria. |                                                              |
-| The manufacturer has analyzed the risks arising if the outputs do not meet the specified quality criteria. | Documented in a risk assessment report or risk table.        |
-| The manufacturer has assessed the consequences if the system provides socially unacceptable outputs (e.g. discriminatory). | These "consequences” are not necessarily risks in terms of ISO 14971. The assessment includes the cost estimation for wrong clinical decision making and an AI autonomy level assignment and its associated risk acceptance criteria based on criticality of the clinical use case and environment. |
-| The manufacturer has assessed the risk arising if the system does not meet the specified non-functional requirements. | This includes risks arising from lack of availability, lack of robustness, slow response time, interoperability issues and software using more hardware resources (CPU, RAM, ...) than specified. |
-| The manufacturer has assessed the risk arising if the system is unavailable. |                                                              |
-| The manufacturer has analyzed risks if (run-time) environment does not meet the specifications. | The risk analysis assesses risk from: insufficient or faulty hardware; software or network environments not meeting the specifications; interfaces not meeting the specifications. |
-| The manufacturer has identified use related risks.           | Examples for risks caused by users: not following the instructions for use, not understanding warnings and explanations, using the system in a technical or social environment that does not meet the specifications. |
-| The manufacturer has analyzed risks from malicious / adversarial attacks. | The list includes an analysis of potential attackers and motivation, a list of attack vector and a vulnerability analysis. |
-| With Continuous Learning Systems, the manufacturer should mitigate risks that are specific to continuously learning systems. |                                                              |
-| With Continuous Learning Systems, the manufacturer has considered the option of resetting the system to a known status. | Check risk table.                                            |
-| With Continuous Learning Systems, the manufacturer has shown quantitatively why the risk-benefit analysis is better than for non-continuously learning systems. |                                                              |
-| The manufacturer has implemented measures to mitigate aforementioned risks. |                                                              |
-| If the manufacturer uses self-tests, he has shown which of the specific quality criteria will be reviewed and which risks are managed by this. |                                                              |
-| The manufacturer should repeat these risk management activities after training of the model as well as prior to product release. |                                                              |
-
+| The manufacturer has defined when and how often the model is updated. | For this purpose, the manufacturer should define the "triggers" of these updates. He must also describe whether these updates take place per individual medical device or for all medical devices of the type.  |                                                              |
+| The manufacturer has specified how the additional data will be quality assured and how incorrect, missing or implausible data will be dealt with. |   
+| The manufacturer has defined in which range the output data may change. | This requires a description of how the algorithms change.  |  
+| The manufacturer has described how it continues to ensure the correctness and accuracy of the output data and what happens if this can no longer be guaranteed. | Self-checks, the possibility of roll-backs, limiting outputs are possible approaches. |
+|The manufacturer has described whether and how users are informed about changes to the algorithm and whether they can decide about them. | |
+|The manufacturer has identified and managed the specific risks arising from continuous learning. | To this end, the manufacturer must justify that it achieves a better risk-benefit ratio through continuous learning. |
 
 [^C.2.d.1]: The state-of-the-art of technology is not necessarily consistent with the state of science and thus the gold standard nor with the “Ground Truth”. This means that the system requirements are lower than with a gold standard respectively the "Ground Truth". This would be the case in particular if the latter require an invasive or very cost-intensive procedure.
 
