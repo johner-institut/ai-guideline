@@ -227,7 +227,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended purpose [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.|
+|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.|
 |The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. |
 |The manufacturer has specified the expected value ranges of the outputs.||
 |The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".|
@@ -279,25 +279,18 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has specified quality control of data.      | This includes a list of allowed / expected data sources, specification of data source requirements and a description how invalid  data are identified and excluded. |
-| The manufacturer has set the number of data sets and given a reason why this is sufficient[^C.3.a.1]. |                                                              |
-| The manufacturer has characterized the inclusion and exclusion criteria of individual patients using relevant attributes[^C.3.a.2]. | For example: demographic attributes (age, gender), diseases, vital parameters, ... |
-| The manufacturer has specified the technical inclusion and exclusion criteria for data[^C.3.a.3]. | For example: Data ranges, types, unit of measure, precision, file formats, encodings, image parameters, language, ... |
-| The manufacturer has specified the timeframe within which data have to be collected, if applicable. |                                                              |
+| The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. |
+|The manufacturer has characterized the inclusion and exclusion criteria of data by relevant attributes [^C.3.a.2]. | This includes documentation of data types, units and value range. |
+|The manufacturer has specified technical inclusion and exclusion criteria for data[^C.3.a.3]. ||
 | The manufacturer has described the procedure by which it ensures that data sets that do not meet the inclusion criteria or should be excluded are actually excluded. | Procedure includes a software supported assessment. This software must be validated. |
 | The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is an recommended option. |
 | The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. |                                                              |
-| The manufacturer has listed and discussed factors that could cause a bias in the data. |                                                              |
-| The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |                                                              |
+| The manufacturer has listed and discussed factors that could cause a bias in the data. |                                                              
+| The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |  
+|The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |
 | The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
 | The manufacturer that uses surveys has justified the selection of the surveys, the time of survey and possibly the method for their assessment, in particular if no standardized survey exists. |                                                              |
-| The manufacturer has specified a patient data protection policy. |                                                              |
-| This data protection policy describes the roles including their type of access and data rights (create, delete, change read). |                                                              |
-| This data protection policy  describes how to decommission data. |                                                              |
-| This data protection policy describes the method by which data are anonymized or pseudonomized before testing and training. |                                                              |
-| The manufacturer has ensured that data scientists have no access to protected data. |                                                              |
-| The manufacturer has appointed a data protection officer.    |                                                              |
-| The manufacturer has received ethical approval (e.g. for genetic data), if legally required. |                                                              |
+                                                           |
 
 [^C.3.a.1]: A specification for the number of data is hardly possible. This depends on the “signal-noise-ratio” among other things. For example, for one data set, the percentage of relevant genes and the strength and frequency of the predicted effects affect the number. For data to be classified, the number of the data sets with the rare class (e.g. the prevalence of diseases) is decisive.
 
@@ -311,7 +304,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 [^C.3.a.6]: These are data in which non-causal information are found in the data via the label, e.g. in the sorting (e.g. first the data of healthy persons, then of ill persons), in the hospital (from one the severe cases originate), in images (e.g. for skin cancer, one must always see a ruler). An additional example would be multiple CT images of a patient, in which the model learns using the patient and not the disease. This could happen if a rib fracture can be seen in addition to the cancer on multiple images.
 
-#### b) Data annotation
+#### b) Data labeling
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
