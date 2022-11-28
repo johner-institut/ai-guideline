@@ -290,7 +290,6 @@ Data generally have to be understood as training, validation and test data. Each
 |The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |
 | The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
 | The manufacturer that uses surveys has justified the selection of the surveys, the time of survey and possibly the method for their assessment, in particular if no standardized survey exists. |                                                              |
-                                                           |
 
 [^C.3.a.1]: A specification for the number of data is hardly possible. This depends on the “signal-noise-ratio” among other things. For example, for one data set, the percentage of relevant genes and the strength and frequency of the predicted effects affect the number. For data to be classified, the number of the data sets with the rare class (e.g. the prevalence of diseases) is decisive.
 
