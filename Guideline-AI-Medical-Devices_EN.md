@@ -307,15 +307,9 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer using “supervised learning” has derived the labels from the intended use and justified this selection. |                                                              |
-| The manufacturer using “supervised learning” has described how the ground truth is derived. |                                                              |
-| The manufacturer using "supervised learning"  has specified a procedure to ensure correct labelling. |                                                              |
-| This procedure specifies and justifies the quantitative classification / segmentation criteria for data annotation. |                                                              |
-| This procedure specifies how and how frequently the correctness of the labelling is monitored. |                                                              |
-| The procedure specifies how to deal with inconsistency of data annotation from multiple annotators. |                                                              |
-  | This procedure specifies the data format and/or syntactic and or standards (e.g. coding system) for annotations. |                                                              |
-| This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |
-  | This procedure specifies a detailed instruction for the task including background information and prototypical examples. |                                                              |
+|  In the case of "Supervised Learning", the manufacturer has derived the labels from the intended use with which the training data are provided and justified this choice. |                                                              |
+| The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | |                                                        |
+| This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |                                                            |
 | This procedure specifies the requirements for the number, training and competency for the people responsible for labeling. |                                                              |
 | This procedure sets forth how the competencies of the persons responsible for labeling is tested. | This can be done by the labeling of selected data sets.      |
 | This procedure sets forth how the persons responsible for labeling are trained and how the success of this training is evaluated. |                                                              |
@@ -332,20 +326,16 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has set a procedure that describes the pre-processing of the data before data is used to train or test the model. |                                                              |
+| The manufacturer has set a procedure that describes the pre-processing of the data. |                                                              |
 | This procedure describes the individual processing steps such as conversion, transformation, aggregation, normalization, format conversion, calculation of feature, conversion of numerical data into categories. | A graphic representation creates a rapid overview. The conversion of numerical to categorical values requires a justification. |
 | The procedure describes how the correctness of the interim steps and the final results are assessed[^C.3.c.0] through risk-based evaluations. | This is consistent with the requirements of ISO 13485:2016 chapter 4.1.6. The risk management file must contain these analyzes. |
-| This procedure specifies how values with various measurement scales or units are detected and processed. |                                                              |
-| This procedure specifies how values are detected and processed that have been collected with various measurement methods. |                                                              |
-| This procedure specifies how values or metadata with the same names (such as in column headers) are detected and processed. | This, however, depends on the ML-method (e.g. tabular data, image data) and cannot be demanded as a general best practice. |
-| This procedure specifies how missing values within data sets are detected and processed. The manufacturer gives a rationale for the decision[^C.3.c.1]. | Make sure that the rationale differentiates between “missing at random” and “missing not at random”[^C.3.c.2]. |
-| This procedure specifies how unusable data sets are detected and handled as per the data inclusion and exclusion criteria. |                                                              |
-| This procedure describes how data for training, testing and validation are kept separately. |                                                              |
-| This procedure describes how new data can be added after initial processing already has been performed (if applicable). |                                                              |
-| The procedure describes how uniqueness of data is ensured.   |                                                              |
-| This procedure specifies how outliers are detected and processed[^C.3.c.3]. The manufacturer gives a rationale for the decision[^C.3.c.4]. | Show example of a date / feature. This, however, depends on the ML method (e.g. tabular data, image data) and cannot be demanded as a general best practice. |
+| This procedure specifies how values with various measurement scales or units are detected and processed. | This depends on the ML-method used (e.g. tabular data / image data) and cannot be demanded as a general best practice.  |                                                            |
+| This procedure specifies how values are detected and processed that have been collected with various measurement methods. | This depends on the ML- method used (e.g. tabular data / image data) and cannot be demanded as a general best practice.       |                                                     |
+| This procedure specifies how values or metadata with the same names (such as in column headers) are detected and processed. | This, however, depends on the ML-method used (e.g. tabular data / image data) and cannot be demanded as a general best practice. |
+| This procedure specifies how missing values within data sets are detected and processed. The manufacturer gives a rationale for the decision[^C.3.c.1]. | Make sure that the rationale differentiates between “missing at random” and “missing not at random”[^C.3.c.2]. |                                                        |
+| This procedure specifies how outliers are detected and processed[^C.3.c.3]. The manufacturer gives a rationale for the decision[^C.3.c.4]. | Show example of a date / feature. This, however, depends on the ML-method used (e.g. tabular data / image data) and cannot be demanded as a general best practice. |
 | This procedure specifies how unusable data sets are detected and handled[^C.3.c.5]. The determination was justified by the manufacturer. | Request example of a date / feature.                         |
-| The manufacturer has analyzed and mitigated all risks caused by data processing. |                                                              |
+| The manufacturer has identified, assessed, and managed the risks arising from data processing. | Risks can be caused, for example, by software errors, rounding errors, re-sampling and compression of data, and the sorting out of invalid data. |                                                              |
 
 
 [^C.3.c.0]: Options include software tests and redundant or alternative calculations such as with Excel.
@@ -364,19 +354,10 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has listed the data sources.                |                                                              |
-| The manufacturer has documented all data processing steps mentioned in the previous chapter. |                                                              |
-| This document specifies rules for data inclusion and exclusion. |                                                              |
-| This document provides  a rationale if additional data have been excluded or if data have been kept despite meeting the specification. |                                                              |
-| This document describes how all data can be traced back to its source. |                                                              |
-| The document describes how compliance with the requirements is verified. |                                                              |
-| The manufacturer has described the "funnel” that allows detection of how much data originates from which data source (e.g. clinics) and at which processing step how many data sets have fallen away for which reason. |                                                              |
-| The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"]() is recommended.            |
-| The manufacturer has put training, validation and test data under version control. |                                                              |
-| The manufacturer has protected all data and code from loss and unwanted changes. | This includes a documented procedure for backups and restoring, and backup records. |
-| The manufacturer has documented all software for data processing including the libraries used and listed under version control. |                                                              |
-| The manufacturer has set forth a policy (e.g. SOP) specifying the configuration and version control process. |                                                              |
-| The manufacturer has kept records demonstrating that the software actually is under version control. |                                                              |
+|  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |
+| The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |                                                              
+| The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|                                                              
+| The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control.     ||                                                        |
 
 ### 4. Model development requirements
 
