@@ -380,7 +380,7 @@ Data generally have to be understood as training, validation and test data. Each
 #### b) Training
 
 | Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |                                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |                         
 | The manufacturer performs model training, tuning of hyperparameters and model selection exclusively with the training and validation data (e.g. using cross-validation). |  The manufacturer should also show that the training actually improves the quality of the model.   |                                                         |
 | The manufacturer tried different sets of hyperparameters and documented his final choice.[^C.4.b.1]. |                                                              |                                                           |
 | The manufacturer has documented the choice of epochs[^C.4.b.2].  |       |
