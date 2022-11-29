@@ -359,71 +359,56 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|                                                              
 | The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control.     ||                                                        |
 
-### 4. Model development requirements
+### 4. Model development 
 
-#### a) Model preparation
+#### a) Preparation
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has justified the selection of the features considered during training. | List the features and rationales why these features were taken into account. |
-| The manufacturer has described the dependency of the features among each other. | A Directed Acyclic Graph (DAG) helps in visualization. This, however, depends on the ML-method and cannot be demanded as a general best practice. |
+| The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  |
+| The manufacturer has described the dependency of the features among each other, especially for tabular data. | A Directed Acyclic Graph (DAG) helps with the visualization. This depends on the applied ML-method and cannot be demanded as a general best practice. |
 | The manufacturer has documented and justified the ratio that it divides up the data into training, validation and test data. |                                                              |
 | The manufacturer has documented the stratification it uses to divide up the data in to training, validation and test data[^C.4.a.1]. |                                                              |
-| The manufacturer has documented how it ensures that multiple data sets for an object are in the same “bucket” (training, validation and test data). |                                                              |
-  | The manufacturer has provided justification if data are not split at random. |                                                              |
-| The manufacturer has documented how it ensures that the development team is prevented from gaining access to test data. |                                                              |
-| The manufacturer has documented how he ensures that test data are not used for model training and validation. |                                                              |
-| The manufacturer has set forth a role-based policy for data access. |                                                              |
+| The manufacturer has documented how he ensures that multiple data sets for an object are in the same “bucket” (training, validation and test data). |                                                                                                  |                                                     |
+| The manufacturer has documented how he ensures that test data are not used for model training and validation. |                                                              |                                                            |
 | The manufacturer has described when it recodes the data specifically for the model or specifically for the library[^C.4.a.2]. |                                                              |
 
 [^C.4.a.1]: For data with rare features or labels, it may be necessary to distribute the data not just at random.
 
 [^C.4.a.2]: Examples of this are normalization, selection of class labels (e.g. 0 or 1), selection of column names, distribution of categorical values over multiple columns.
 
-#### b) Model training
+#### b) Training
 
 | Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has documented model specific data processing. |                                                              |
-| The manufacturer performs model training, tuning of hyperparameters and model selection exclusively with the training and validation data (e.g. using cross-validation). |                                                              |
-| The manufacturer has documented and justified the choice of the hyperparameters[^C.4.b.1]. |                                                              |
-| The manufacturer has set a forth a policy forbidding the use of test data to optimize the model (only training and validation data may be used.) |                                                              |
-| The manufacturer has documented and justified the choice of epochs[^C.4.b.2], if neural networks were used. | Where possible, display  learning curves.                    |
-| The manufacturer has determined and documented the quality metrics for which it wants to optimize the model and justified it based on the intended use. | The selection of these quality metrics is specific to the intended use. |
-| The manufacturer has trained multiple models with multiple hyperparameters (including simpler and interpretable models). |                                                              |
-| The manufacturer has verified that the training actually trains the model. | Document that the training process improves the model's performance. |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |                                                            |
+| The manufacturer performs model training, tuning of hyperparameters and model selection exclusively with the training and validation data (e.g. using cross-validation). |  The manufacturer should also show that the training actually improves the quality of the model.   |                                                         |
+| The manufacturer tried different sets of hyperparameters and documented his final choice.[^C.4.b.1]. |                                                              |                                                           |
+| The manufacturer has documented the choice of epochs[^C.4.b.2].  |       |
+| The manufacturer has determined, documented and justified the quality dimensions on the basis of the intended use for which he wants to optimize the model. | This means that the choice of these quality parameters is specific to the intended use. |
+| The manufacturer has - as far as reasonable - trained and compared several model types (including simpler and interpretable model). |   |
 
 [^C.4.b.1]: Examples: Loss function, optimizer, learning rate, number of epochs
 
-[^C.4.b.2]: It might be helpful to illustrate the dependency between the quality of the model on the one hand and number of epochs on the other hand e.g. using learning curves. These learning curves, however, exist for neuronal networks and boosting procedures, for example, but not for models with numerical solution (e.g. linear regression) or for a single tree.
+[^C.4.b.2]: It can be useful to show the dependence of the quality of the model on the number of epochs by means of learning curves. These learning curves exist, for example, for neural networks and boosting methods, but not for models with numerical solution (e.g. linear regression) or with a single tree.	
 
-#### c) Model evaluation
+#### c) Evaluation
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has set forth a model evaluation plan which specifies the evaluation activities, the roles involved and the milestones at which these activities have to be performed. |                                                              |
-| The manufacturer has set forth a validation specification and validation results for the evaluation of the model with validation data set. |                                                              |
-| The manufacturer has set forth a test specification and test results for the final evaluation of the model with new test data. |                                                              |
-| The manufacturer has documented the quality metrics for the various models, such as for a binary classification using a confusion table. | This documentation should not include only the values that the manufacturer has used to optimize the model. |
-| The manufacturer has specified values for the specified quality metrics. |                                                              |
-| The manufacturer has not only globally assessed and documented the quality metrics for the various models, but also separately for various features. |                                                              |
-| The manufacturer has examined the data sets that have exhibited good model performance versus datasets that have performed badly. | We recommend a residual analysis in which the errors are listed via the feature values. |
-| For individual data sets there may be an evaluation of the feature that the model particularly determined in the decision. |                                                              |
-| The manufacturer has examined the data sets in which the model is particularly secure and particularly insecure[^C.4.c.1]. |                                                              |
-| The manufacturer has justified the ultimate selection of the model using the quality criteria and intended use and in particular shown if simpler and interpretable models were not used. |                                                              |
-| The manufacturer has considered (in particular for tabular data sets) to show for individual data sets the feature that the model particularly determined in the decision[^C.4.c.2]. | This, however, depends on the ML-method and cannot be demanded as a general best practice. |
-| The manufacturer has considered to evaluate how and how strongly individual features had to change for the model to come to another prediction. | This is referred to as ["Counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). This, however, depends on the ML-method and cannot be demanded as a general best practice. |
-| The manufacturer has analyzed/visualized the dependency (strength, direction) of the prediction of the feature values[^C.4.c.3]. | This, however, depends on the ML-method and cannot be demanded as a general best practice. |
-| The manufacturer has considered to synthesize data sets that activate the model particularly strong[^C.4.c.4]. | This, however, depends on the ML-method and cannot be demanded as a general best practice. |
-| The manufacturer has approximated the model using a simplified surrogate model such as a decision tree. | This, however, depends on the ML-method and cannot be demanded as a general best practice. |
-| The manufacturer has documented and justified the selection of the model based on its performance on a representative dataset. |                                                              |
-| This documentation lists the various models that have been compared. |                                                              |
-| This documentation includes a comparison of these models (architectures). |                                                              |
-| This comparison includes quality metrics.                    |                                                              |
-| This documentation shows that clearly designed, representative datasets and model performance on those datasets is adequate following an assessment criterion e.g. an acceptable risk-benefit-ratio. |                                                              |
-| The manufacturer has done a risk-benefit assessment that discusses interpretability, performance (e.g. quality metrics, efficiency) and robustness. |                                                              |
+|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. |
+|The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. |
+|The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | |
+|The manufacturer has shown how to recognize and thus avoid overfitting. | |
+|The manufacturer has examined the data sets that were predicted particularly well and those that were predicted particularly poorly. | A residuals analysis is recommended, in which the errors are plotted against the feature values, if applicable. |
+|The manufacturer has examined the data sets for which the model is particularly safe and particularly unsafe[^C.4.c.1]. | |
+|The manufacturer has justified the ultimate choice of model on the basis of the quality criteria and the intended use, and has explained in particular when simpler and more interpretable models were not used. |  |
+|The manufacturer has considered, especially for tabular data for individual data sets, to have the model show the features that particularly influenced the decision [^C.4.c.2]. | This cannot be claimed as a general best practice. |
+|The manufacturer has considered evaluating, especially for tabular data, how and how much individual features would have to change for the model to come to a different prediction. | This is referred to as ["counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). This cannot generally be claimed as a best practice. 
+|The manufacturer has considered analyzing/visualizing the dependence (strength, direction) of the predictions on the feature values, especially for tabular data [^C.4.c.3]. | This cannot be claimed as a best practice in general. |
+|The manufacturer has considered synthesizing data sets that particularly activate the model[^C.4.c.4]. | This cannot be generally claimed as best practice. |
+|The manufacturer has considered approximating the model with a simplified surrogate model such as a decision tree. | This cannot generally be claimed as best practice. |
 
-[^C.4.c.1]: For classification tasks, the model is particularly insecure with probabilities around 0.5.
+[^C.4.c.1]: Classification tasks must take into account the current state of research.
 
 [^C.4.c.2]: Approaches include LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) and Feature Summary Statistics (incl. Feature Importance and Feature Interaction).
 
