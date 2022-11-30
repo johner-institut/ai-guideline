@@ -416,21 +416,21 @@ Data generally have to be understood as training, validation and test data. Each
 
 [^C.4.c.4]: For examples see http://yosinski.com/deepvis
 
-#### d) Model documentation
+#### d) Documentation
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. |                                                              |
-| The manufacturer can reproduce test and validation results.  | This can prompt for version and configuration control of data, test results and assessments. |
+| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.                                                           |
+| The manufacturer has documented his code according to a policy. | Usually at least public class, methods with pass and return values as well as attributes are to be documented |
+| The manufacturer has described which data sets it used for training, validation and testing of the model. |                                                              |
+| The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |                                                              
 | The manufacturer has the SOUP (libraries and frameworks) under version and configuration control. |                                                              |
-| The manufacturer has documented the architecture of the model, the model itself including its hyperparameters. |                                                              |
-| The manufacturer has documented the data the model has been trained on. |                                                              |
-| The manufacturer has documented potential problems (e.g. biases) and limitations. |                                                              |
-| The manufacturer has documented the used software libraries and frameworks (SOUPs). |                                                              |
+| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. |                                                              |
+| The manufacturer has described how it selected the architectures, trained the models, and optimized the hyperparameters, and justified this procedure. | Auditors want to be able to understand how the manufacturer has proceeded and why the chosen solution is the best. IEC 62304 and the FDA do not want "ad hoc design decisions".  |                                                              
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
-| The manufacturer has documented the quality metrics and the evaluation results, e.g. of performance and robustness as specified in the model evaluation requirements. | This quality metrics relate to the testing with the test data. |
-| The manufacturer has documented (in particular when using tabular data) the limits (such as feature values) within which the model has achieved the quality metrics. | This, however, depends on the ML method and cannot be demanded as a general best practice. |
-| The manufacturer has set forth a SOP for documentation and/or version and configuration control of: software code and libraries, configuration files, hyperparameters, test and evaluation results (including quality metrics), software libraries and frameworks. |                                                              |
+| The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. |
+| The manufacturer has specified the confidence intervals for the quality parameters depending on the input data. | Especially at the edges of the allowed input data, the confidence often decreases strongly. This information should also be provided to the users in the accompanying materials. |
+| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |                                                              | The manufacturer has tried out several models and their hyperparameters and documented the aspects mentioned in this section for them. | This documentation serves the manufacturer to compare different models and to justify his choice of a model. This is necessary to fulfill the requirement of ISO 14971 to maximize the risk-benefit ratio. |
 
 [^C.4.d.1]: Trained models can be serialized.
 
