@@ -430,7 +430,8 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
 | The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. |
 | The manufacturer has specified the confidence intervals for the quality parameters depending on the input data. | Especially at the edges of the allowed input data, the confidence often decreases strongly. This information should also be provided to the users in the accompanying materials. |
-| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |                                                              | The manufacturer has tried out several models and their hyperparameters and documented the aspects mentioned in this section for them. | This documentation serves the manufacturer to compare different models and to justify his choice of a model. This is necessary to fulfill the requirement of ISO 14971 to maximize the risk-benefit ratio. |
+| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |                                           
+| The manufacturer has tried out several models and their hyperparameters and documented the aspects mentioned in this section for them. | This documentation serves the manufacturer to compare different models and to justify his choice of a model. This is necessary to fulfill the requirement of ISO 14971 to maximize the risk-benefit ratio. |
 
 [^C.4.d.1]: Trained models can be serialized.
 
@@ -442,119 +443,87 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------- |
 | The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1]    |
 | If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |                                 |
-| The manufacturer has set forth a verification plan that requires software system tests. |                                 |
-| The manufacturer has determined the software safety class (alternatively the Level of Concern). |                                 |
-| The manufacturer has set forth a software requirement specification (SRS). |                                 |
-| The SRS specifies user interfaces related requirements.      |                                 |
-| The manufacturer has documented the software architecture.   |                                 |
-| The manufacturer has performed software unit, integration and system tests. | This includes coverage reports. |
-| The manufacturer has documented the strategy for black box testing. |                                 |
-| The tests cover all software / product requirements (including non-functional requirements). |                                 |
-| The tests  verify risk mitigation measures are effective.    |                                 |
-| The tests verify that the system safely manages unseen security attacks. |                                 |
-| The manufacturer has  described the software version, test data, test environment (e.g. hardware), tester and evaluation of test results. |                                 |
-| After changes to the software the tests are repeated unless the manufacturer can provide a rationale for skipping test activities. |                                 |
-| The manufacturer has ensured that tests are reproducible.    |                                 |
-| The manufacturer tests the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device) and has verified that the specified that the performance requirements are met. |                                 |
-| The manufacturer has listed and uniquely identified each SOUP / OTS component. |                                 |
-  | The manufacturer has specified requirements for each SOUP / OTS component. |                                 |
-| The manufacturer has documented the trace between these requirements and respective tests. |                                 |
-| The manufacturer has described how to verify all SOUP or OTS components. |                                 |
-| The manufacturer has a validation plan for the training functionality of ML library. |                                 |
+| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | |
+|The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | |
+|The manufacturer has attached the prescribed license conditions to the software and ensured the legality of the use of third-party software (e.g., open source software). | Manufacturers often use open source software, which may only be used within the scope of licenses and copy right statements. |
 
-[^C.5.a.1]: The manufacturers should adhere to the normal best practices such as adherence to coding guidelines, review of code by code reviews using defined criteria, testing to code with unit tests with a defined coverage, etc.
+[^C.5.a.1]: The manufacturers should adhere to the normal best practices such as adherence to coding guidelines, review of code by code reviews using defined criteria, testing to code with unit tests with a defined coverage, etc.  A description of the code (architecture) should make it easy to understand which code performs which task.
 
 
-
-####  b) Risk management
-
-| Requirements                                                 | Comments |
-| ------------------------------------------------------------ | -------- |
-| The manufacturer has specified the functionalities of the chosen ML libraries that are used for training. |          |
-| The manufacturer has specified the functionalities of the chosen ML libraries that are used for prediction. |          |
-| The manufacturer has analyzed the risks of a training function not meeting the specifications. |          |
-| The manufacturer has analyzed the risks of predict function not meeting the specifications. |          |
-| The manufacturer has analyzed the risk for the most important components of the chosen software architecture at least. |          |
-| The manufacturer has analyzed the risks that are specific to chosen technologies. |          |
-| The manufacturer has listed all steps of data processing and annotation and analyzed the errors that can occur in each step, and analyzed the risks arising from these errors. |          |
-  | The manufacturer has analyzed the consequences of porting the software and data to the target system. |          |
-| The manufacturer has analyzed the consequences of model bias. |          |
-| The manufacturer has analyzed consequences of wrong reference data (e.g. wrong gold standard, wrong comparison). |          |
-
-
-
-#### c) Accompanying materials
+#### b) Accompanying materials
 
 | Requirements                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | The instructions for use clearly identify the version of the product. | If possible, indicate the UDI                                |
 | The instructions for use describe the intended use of the product including the expected medical benefit. |                                                              |
 | The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. |                                                              |
-| The instructions for use explicitly list the patients / data / use case for which the product may not be used. |                                                              |
-| The instructions for use reveal limitations.                 |                                                              |
+| The instructions for use explicitly list the patients / data / use case for which the product may not be used. |                                                                                 |
 | The instructions for use document the requirements of the input data (including formats, resolutions, value ranges, etc.). |                                                              |
 | The instruction for use specify the intended primary and secondary users pursuant to intended use. |                                                              |
-| The instructions for use describe the other conditions applicable to the product (e.g. runtime environment, use environment). |                                                              |
+| The instructions for use describe the other conditions applicable to the product (e.g. runtime environment, use environment). |    
+| The instructions for use describe how the product is to be used. | This also includes behavior in the event of an error and secondary use such as installation, upgrade and configuration. |
+| The instructions for use describe the possible outputs. | This also includes the explanations of the product ("Explainability"). |
 | The instructions for use describe the residual risks.        |                                                              |
 | The instructions for use indicate the data with which the model was trained. | This is related both to the patient collective and to the features used. |
 | The instructions for use describe the model and algorithms.  |                                                              |
-| The instructions for use name the quality metrics.           |                                                              |
+| The instructions for use name the quality metrics.   |  Also specify confidence ranges here.                                                         |
 | The instructions for use list the factors that could have a negative effect on the product's performance. |                                                              |
-| The instructions for use explain risks arising from a product not meeting the performance requirements. |                                                              |
-| The instructions for use specify whether the product is further trained during use. If it is further trained, the instructions for use provide information how the system learns over time. |                                                              |
+| The instructions for use specify whether the product is further trained during use. | Please observe notes in the chapter on continuous learning systems.  |                                                              |                                                              |
 | The instructions for use describe how to update the product. |                                                              |
 | The instructions for use contain references to additional literature. |                                                              |
 | The instructions for use contain references to licensing rights. |                                                              |
-| The instructions for use identify the manufacturer and lists channels for posing questions. |                                                              |
+| The instructions for use identify the manufacturer and lists channels for posing questions. |                                                        |
 | The instructions for use list possible ethical problems.     |                                                              |
-| The instructions for use contain the URL under which the most current versions of the instruction of use can be found. |                                                              |
-| The instructions for use of continuous learning systems describe what triggers algorithm updates and how to identify the version of this algorithm. |                                                              |
-| The instructions for use of continuous learning systems describe how to permit, delay and roll-back algorithm updates. |                                                              |
-| The  document on instructions for use is under version control. |                                                              |
-| The manufacturer has set forth a procedure specifying how to develop and verify the instructions for use. |                                                              |
+| The instructions for use contain the URL under which the most current versions of the instruction of use can be found. |     
 
-### 6. Product validation
 
-#### a) Usability validation
+#### c) Usability validation
 
 |Requirements                                                  |Comments|
 | ------------------------------------------------------------ | --------- |
-|The manufacturer has documented risk arising from a lack of usability in the risk management file. ||
-| The risk management file lists risks that arise from misunderstanding, overlooking or ignoring the product’s visual output. ||
-| The risk management file lists risks that arise from users blindly trusting or mistrusting the product. ||
-| The risk management file lists the risks that have to be mitigated by instructing users e.g. by training or accompanying materials. ||
-| The plan of the summative evaluation describes how the effectiveness of these measures is validated. ||
-| The usability evaluation report reveals whether the instructions for use are adequate to mitigate risks. ||
-| The manufacturer has evaluated all safety relevant use scenarios. ||
-| This evaluation contains an assessment of safety relevance for each use scenario. ||
-| The use scenarios included in the summative evaluation cover all safety relevant use scenarios. ||
-| The summative evaluation evaluates the effectiveness cover all risk mitigation measure. ||
-| The manufacturer has defined and specified the usability metrics for (a) understandability, (b) learnability and (c) operability of the product. | For example: production description completeness, customizability, input and output understandability, ... |
-| The manufacturer has defined and specified the ‘quality in use’- metrics to measure the extent to which the product meets the needs of target users to achieve specified goals of effectiveness, productivity, and satisfaction in a specified context of use. | For example: task completion, error frequency, user wait time, ... |
-| The manufacturer assesses whether the users understand the instructions for use. |           |
-| The manufacturer assesses whether the users correctly detect and understand the results during usability validation. |           |
+| As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  |
+| As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. |
+| As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. |
 
-#### b) Clinical evaluation
+
+####  d) Risk management
+
+| Requirements                                                 | Comments |
+| ------------------------------------------------------------ | -------- |
+| The manufacturer has evaluated the risks that arise if the inputs do not meet the specified requirements[^C.2.a.2]. |       |          
+| The manufacturer has derived the quantitative quality criteria based on the state of the art. | The manufacturer shall be able to name the quality criteria for alternative technologies and procedures and to argue if the medical device is not superior to the alternatives with respect to the quality criteria [^C.5.d.1]. | |       |          |
+| The manufacturer has defined the gold standard and justified its choice, which will be used to verify the quality criteria. |   
+| The manufacturer has identified, evaluated, and managed risks that arise when outputs do not meet the specified quality criteria. | In this analysis, the manufacturer also considers the specific properties of the selected model as well as the confidence intervals of the output values determined during testing. | 
+| The manufacturer has evaluated the consequences if the system provides socially unacceptable outputs (e.g. discriminatory). | These "consequences" are not necessarily risks in the sense of ISO 14971. |   
+| The manufacturer has identified, evaluated and managed the risks if the system is not available. |   
+| The manufacturer has identified, evaluated and managed the risks arising from software errors. | This includes errors in SOUP as well as in the software used for "pre-processing" the data and for training the model. | 
+| The manufacturer has identified, evaluated and managed the risks arising from the specific choice of model architecture. | In doing so, manufacturers should also analyze whether the models have been optimized to the right specifications. |
+| The manufacturer has identified, evaluated, and managed the risks posed by the specific choice of target platform. | For example, the target platform might not provide the required computing power or might cause the software to crash. |
+| The manufacturer has identified, evaluated and managed the risks arising from the selection of training, validation and test data. | This concerns both the sources of these data (such as patients, institutions) and the division of these data into training, validation and test data. For example, manufacturers should check that there is no overfitting or bias of the data. |
+| The manufacturer has identified, evaluated and managed the risks of outputs (predictions, classifications, etc.) being correct only by chance. | Interpretability allows manufacturers to demonstrate why an ML-model has made a specific decision. |
+| The manufacturer has identified the risks posed by the fact that the predictions themselves change the predicted outcomes. | In this phenomenon, the model changes from observer to actor [^C.5.d.2]. It is called "performative prediction." Producers should investigate the possible effects on people or systems and describe them e.g. with a DAC ("directed acyclic graph"), observe a possible "distribution shift" and, if necessary, an unaffected control group, and take action if necessary such as choosing a different model or re-training the existing model. |
+| If the manufacturer uses self-tests, he has explained which of the specified quality criteria are checked with them and which risks are thereby controlled. | |
+| The manufacturer has identified, evaluated and managed the risks from usage errors. | These risks should also take into account that users do not recognize or misunderstand the explanation of the outputs ("Explainability"). |
+| The manufacturer has identified, evaluated and controlled the other risks mentioned in chapter C.1.d). |   | 
+
+[^C.5.d.1]: State-of-the-Art does not necessarily correspond to the Gold Standard, which in turn does not necessarily correspond to the Ground Truth. I.e., the system requirements may be lower than for a gold standard or ground truth, especially if the latter requires an invasive or very costly procedure.    
+[^C.5.2.d]: Examples of this phenomenon can be found [here](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive).  
+
+#### e) Clinical evaluation
 
 |Requirements                                                  |Comments|
 | ------------------------------------------------------------ | --------- |
-| The manufacturer assesses whether the promised medical benefit is achieved with the quality parameters. |           |
-| The clinical evaluation contains the medical benefits the manufacturer claims. | |
-| The clinical evaluation lists the data (sources) that have been evaluated and that support and that contradict the hypothesis, that the benefits have been achieved | |
-| If the data have been collected from other products, than the clinical evaluation discusses the clinical and technical equivalence of the other products. | |
-| The clinical evaluation evaluates the impact of quality parameters on the achievement of the medical benefit. | |
-| The manufacturer assesses whether the promised medical benefit is achieved is consistent with the state of the art. |           |
-| The clinical evaluation lists alternative methods, technologies or procedures. | |
-| The clinical evaluation compares the risks and benefits of these alternatives. | |
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. ||
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | |
 
-### 7. Product release
 
-| Requirements                                                 | Comments                   |
-| ------------------------------------------------------------ | -------------------------- |
-| The manufacturer has documented the model using the criteria listed in chapter 4.d). |                            |
-| The manufacturer has assessed and documented the risks as acceptable in risk management and that all of the activities specified in the risk management plan were performed. | Notes for auditors[^C.6.1] |
-| There is a usability evaluation report concluding that all activities to formative and summative evaluation plan have been performed. |                            |
-| The manufacturer has shown in a "Software as a Medical Device Pre-Specifications “(SPS) report which types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |                            |
+### 6. Product release
+
+|Requirements                                                  |Comments|
+| ------------------------------------------------------------ | --------- |
+| The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). |
+| The manufacturer has assessed the risks as acceptable in risk management and documented that all activities specified in the risk management plan have been carried out. | Note for auditors [^C.6.1] |
+|The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |  
 | The manufacturer has shown in Algorithm Change Protocol (ACP) how it will perform these changes for systems that it wishes to market in the USA[^C.6.3]. |                            |
 | The manufacturer has created a Post-Market Surveillance Plan, see below. |                            |
 
