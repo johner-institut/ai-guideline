@@ -539,7 +539,6 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirement|Comments|
 |:--|:--|
-|
 |The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.|
 |The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.|
 |The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.|
