@@ -150,8 +150,8 @@ Die Hersteller müssen sicherstellen und nachweisen, dass sie über ausreichend 
 
 Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
-|Anforderung|Kommentare|
-|:--|:--|
+|Anforderung|Kommentare|Regulatorische Referenzen|
+|:--|:--|:--|
 |Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||
 |Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|
 |Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||
