@@ -206,8 +206,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### d) Input für Risikomanagement und die klinische Bewertung
 
-| Anforderung                                         | Kommentare                                              | Regulatorische Referenzen|
-| :---------------------------------------------------| :-------------------------------------------------------|:---|
+| Anforderung                                       | Kommentare                                              | Regulatorische Referenzen|
+| :-------------------------------------------------| :-------------------------------------------------------|:---|
 | Der Hersteller hat alternative Verfahren aufgelistet und bezüglich Nutzen, Sicherheit und Leistungsfähigkeit bewertet. | Die Diskussion des State-of-the-Art ist eine Forderung der MEDDEV 2.7/1 und der MDR/IVDR. |
 | Der Hersteller hat die o.g. quantitativen Werte mit den entsprechenden Größen der alternativen Verfahren verglichen. | Hersteller sollten eine tabellarische Übersicht erstellen.   |
 | Der Hersteller hat begründet, weshalb Machine Learning den anderen Verfahren überlegen ist und die damit einhergehenden Risiken rechtfertigt. |                                                              |
@@ -223,8 +223,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### a) Funktionalität und Leistungsfähigkeit
 
-|Anforderung|Kommentare|
-|:--|:--|
+|Anforderung|Kommentare|Regulatorische Referenzen|
+|:--|:--|:--|
 |Der Hersteller hat aus der Zweckbestimmung nachvollziehbar quantitative Gütekriterien bzw. Anforderungen an die Software oder/und den Algorithmus abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich mit einer Traceability-Matrix besonders gut  darstellen.|
 |Der Hersteller hat beispielsweise die folgenden quantitativen Gütekriterien bzw. Anforderungen in Betracht gezogen: für Klassifikationsprobleme Genauigkeit (Mean oder Balanced Accuracy), positiver prädikativer Wert (Precision), Spezifität und Sensitivität; für Regressionsprobleme Mean Absoute Error und Mean Square Error.| Bei unbalancierten Daten, d.h. wenn Labels sehr unterschiedlich häufig vorkommen, sollte Balanced statt Mean Accuracy verwendet werden. Die Wahl der Gütekriterien hängt jedoch stark von der Zweckbestimmung ab. |
 |Der Hersteller hat die erwarteten Wertebereiche der Outputs spezifiziert.||
@@ -240,24 +240,24 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### b) User Interface
 
-| Anforderung                                                  | Kommentare                                               |
-| :----------------------------------------------------------- | :------------------------------------------------------- |
+| Anforderung                                          | Kommentare                                       | Regulatorische Referenzen|
+| :----------------------------------------------------| :------------------------------------------------|:-------------------------|
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). |                                                          |
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
 | Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. |
 
 #### c) Weitere Software-Anforderungen
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung                                          | Kommentare                                        | Regulatorische Referenzen|
+| :----------------------------------------------------| :-------------------------------------------------|:-------------------------|
 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein.          |
 | Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechenden Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                           |
 | Der Hersteller hat die Anforderungen bestimmt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | Die IT-Sicherheit ist nicht Gegenstand dieser Leitlinie, sondern der [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/). |
 
 #### d) Besondere Anforderungen an kontinuierliche lernende Systeme
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung                                             | Kommentare                                       | Regulatorische Referenzen|
+| :-------------------------------------------------------| :------------------------------------------------|:-------------------------|
 | Der Hersteller hat festgelegt, wann und wie häufig das Modell aktualisiert wird. | Hierzu sollte der Hersteller die "Trigger" dieser Updates festlegen. Er muss auch beschreiben, ob diese Updates pro einzelnem Medizinprodukt oder für alle Medizinprodukte des Typs erfolgen. |
 | Der Hersteller hat festgelegt, wie die zusätzlichen Daten qualitätsgesichert werden und wie mit falschen, fehlenden oder umplausiblen Daten umgegangen wird. |                                                              |
 | Der Hersteller hat festgelegt, in welchem Bereich sich die Output-Daten ändern dürfen. | Das setzt eine Beschreibung voraus, wie sich die Algorithmen ändern. |
