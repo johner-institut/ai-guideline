@@ -437,8 +437,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### a) Software-Entwicklung
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :--| :-- |:-- |
 | Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]                              |
 | Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. wiederholt. |                                                              |
 | Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). |                                                              |
@@ -449,8 +449,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### b) Begleitmaterialien
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :-- | :-- |:-- |
 | Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
 | Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
 | Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter, wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
@@ -475,16 +475,16 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### c) Usability-Validierung
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :-- | :-- |:-- |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. | Das schließt andere Begleitmaterialien mit ein.              |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |                                                              |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. | Das schließt auch die Anzeige von Fehlern und die Erklärungen ("Explainability") mit ein. Hersteller sollten alle sicherheitsbezogenen Use Scenarios bei der Validierung und alle risikominimierenden Maßnahmen am Interface einbeziehen. |
 
 #### d) Risikomanagement
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung| Kommentare| Regulatorische Referenzen|
+| :-- | :--| :--|
 | Der Hersteller hat die Risiken bewertet, die sich ergeben, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2]. |                                                              |
 | Der Hersteller hat die quantitativen Güterkriterien anhand des Stands der Technik abgeleitet. | Der Hersteller muss die Gütekriterien für alternative Technologien und Verfahren benennen und argumentieren können, wenn das Medizinprodukt den Alternativen bezüglich der Gütekriterien nicht überlegen ist[^C.5.d.1]. |
 | Der Hersteller hat den Goldstandard festgelegt und dessen Wahl begründet, mit dem die Gütekriterien überprüft werden sollen. |                                                              |
@@ -506,15 +506,15 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### e) Klinische Bewertung 
 
-| Anforderung                                                  | Kommentar |
-| ------------------------------------------------------------ | --------- |
+| Anforderung| Kommentar | Regulatorische Referenzen|
+| :-- | :-- |:-- |
 | Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           |
 | Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken, dem Stand der Technik entsprechen. |           |
 
 ### 6. Produktfreigabe
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :-- |:-- |:-- |
 | Der Hersteller hat sichergestellt, dass alle o.g. Dokumentation vorliegt. | Das betrifft u.a. die  in den Kapitel 3.d), 4.d und 5.b) geforderte Dokumentation. |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1]                                |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                                                              |
@@ -531,8 +531,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### 1. Produktion, Distribution, Installation
 
-|Anforderung|Kommentare|
-|:--|:--|
+|Anforderung|Kommentare|Regulatorische Referenzen|
+|:--|:--|:--|
 |Der Hersteller hat beschrieben, wie sichergestellt ist, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version im Produkt oder als Produkt ausgeliefert werden|Hier geht es ums Konfigurationsmanagement. Auch bei Downloads oder AppStores relevant|
 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechselungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
 |Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.), tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten|
@@ -540,8 +540,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### 2. Überwachung nach der Inverkehrbringung
 
-|Anforderung|Kommentare|
-|:--|:--|
+|Anforderung|Kommentare|Regulatorische Referenzen|
+|:--|:--|:--|
 |Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.||
 |Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.||
 |Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung, insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.||
@@ -572,8 +572,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### 3. Außerbetriebnahme
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung| Kommentare|Regulatorische Referenzen|
+| :-- | :-- |:-- |
 | Der Hersteller hat einen Plan für die Außerbetriebnahme erstellt, bevor er sein Produkt aus dem Markt nimmt. | Solch ein Plan legt z.B. fest, ob und wie die Software deinstalliert werden muss, ob Daten gesichert oder exportiert werden müssen, wie die Vertraulichkeit der Daten gewährleistet bleibt, wer für diese Aktivitäten verantwortlich ist, wie der Fortschritt der Außerbetriebnahme überwacht und sichergestellt wird und welche Organisationen wie zu informieren sind. |
 | Der Hersteller identifiziert, bewertet und beherrscht die Risiken, die sich aus der Außerbetriebnahme ergeben. | Dies ist in der Risikomanagementakte zu bewerten. Risiken durch die Nichtverfügbarkeit des Produkts, durch Nutzungsfehler und durch einen Einfluss auf andere Produkte sollten dabei betrachtet werden. |
 
