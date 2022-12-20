@@ -186,8 +186,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |
-| Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |
+| Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. | IEC 62366-1, 5.1.|
+| Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |IEC 62366-1, 5.1., vorletzter Absatz|
 | Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben können auch die Use Scenarios abgeleitet werden, welche die Hersteller laut IEC 62366-1 spezifizieren müssen. |
 
 
