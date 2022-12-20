@@ -240,24 +240,24 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### b) User Interface
 
-| Anforderung                                          | Kommentare                                       | Regulatorische Referenzen|
-| :----------------------------------------------------| :------------------------------------------------|:-------------------------|
+| Anforderung| Kommentare| Regulatorische Referenzen|
+| :--| :--|:--|
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). |                                                          |
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
 | Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. |
 
 #### c) Weitere Software-Anforderungen
 
-| Anforderung                                          | Kommentare                                        | Regulatorische Referenzen|
-| :----------------------------------------------------| :-------------------------------------------------|:-------------------------|
+| Anforderung| Kommentare| Regulatorische Referenzen|
+| :--| :--|:--|
 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein.          |
 | Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechenden Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                           |
 | Der Hersteller hat die Anforderungen bestimmt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | Die IT-Sicherheit ist nicht Gegenstand dieser Leitlinie, sondern der [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/). |
 
 #### d) Besondere Anforderungen an kontinuierliche lernende Systeme
 
-| Anforderung                                             | Kommentare                                       | Regulatorische Referenzen|
-| :-------------------------------------------------------| :------------------------------------------------|:-------------------------|
+| Anforderung| Kommentare| Regulatorische Referenzen|
+| :--| :---|:--|
 | Der Hersteller hat festgelegt, wann und wie häufig das Modell aktualisiert wird. | Hierzu sollte der Hersteller die "Trigger" dieser Updates festlegen. Er muss auch beschreiben, ob diese Updates pro einzelnem Medizinprodukt oder für alle Medizinprodukte des Typs erfolgen. |
 | Der Hersteller hat festgelegt, wie die zusätzlichen Daten qualitätsgesichert werden und wie mit falschen, fehlenden oder umplausiblen Daten umgegangen wird. |                                                              |
 | Der Hersteller hat festgelegt, in welchem Bereich sich die Output-Daten ändern dürfen. | Das setzt eine Beschreibung voraus, wie sich die Algorithmen ändern. |
@@ -275,8 +275,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### a) Sammlung der Daten
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| --| --|| --|
 | Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. | Das betrifft die Datensätze für Training, Validierung und Test. |
 | Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Das schließt eine Dokumentation der Datentypen, Einheiten und Wertebereich mit ein. |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
@@ -303,8 +303,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### b) Labeling von Daten
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| --| -- | -- |
 | Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten versehen werden und diese Wahl begründet. |                                                              |
 | Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
@@ -322,8 +322,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### c) Verfahren zur (Vor-)Verarbeitung von Daten 
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| --| -- | -- |
 | Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |                                                              |
 | Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. |
 | Das Verfahren beschreibt, wie die Korrektheit der Zwischenschritte und der Endergebnisse überprüft wird[^C.3.c.0]. Diese Überprüfungen erfolgen risikobasiert. | Dies entspricht den Anforderungen der ISO 13485:2016 Kapitel 4.1.6. Die Risikomanagementakte muss diese Analysen enthalten. |
@@ -350,8 +350,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### d) Dokumentation und Versionskontrolle
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| -- | -- | -- |
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt, wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Das sollte Teil der Architektur dieser Software sein.        |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
