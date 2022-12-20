@@ -173,8 +173,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### a) Zweckbestimmung
 
-|Anforderung|Kommentare|
-|:--|:--|
+|Anforderung|Kommentare|Regulatorische Referenzen|
+|:--|:--|:--|
 |Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
 |Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
@@ -183,8 +183,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung                               | Kommentare                                              |Regulatorische Referenzen|
+| :---------------------------------------- | :---------------------------------------------------|:--|
 | Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |
 | Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |
 | Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben können auch die Use Scenarios abgeleitet werden, welche die Hersteller laut IEC 62366-1 spezifizieren müssen. |
