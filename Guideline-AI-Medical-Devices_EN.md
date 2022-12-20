@@ -533,67 +533,36 @@ Data generally have to be understood as training, validation and test data. Each
 
 [^C.6.3]: The approach must, for example, address handling data, re-training, the performance and the updates.
 
-## D) Post-market requirements
+## D) Requirements for the phases downstream of development
 
-### 1. Production, Distribution, Installation
+#### 1. Production, Distribution, Installation
 
 |Requirement|Comments|
 |:--|:--|
-|The manufacturer has applied version- and configuration control.|Version and configuration control apply to the software as well to accompanying materials such as instructions for installation and use.|
-|The manufacturer has ensured that the product has a unique identification (ID).|In EU and in the US, there is typically the need for a UID-DI and UDI-PI.|
-|The manufacturer has ensured that there is a bill of materials.|The bill of material also contains all SOUP/OTS Software.|
+|
 |The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.|
-|The manufacturer has described installation, update and decommissioning of the product.||
-| These instructions specify the runtime environment.          ||
-| These instructions specify how the correct installation can be verified. ||
-|The manufacturer has described how the persons responsible for installation know which is the most current version and how mistakes in installation can be ruled out.|This is only relevant to stand-alone software. A SOP or work instruction would be expected here.|
-|The manufacturer has described how one ensures during installation that the requirements specified in the accompanying material are actually fulfilled (see above).|A SOP or work instruction would be expected here.|
-|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner||
-|The manufacturer set forth an SOP  covering customer communication including handling of customer complaints.||
-| The manufacturer has set up  a website that contains information about latest product releases and news related to security vulnerabilities .||
-| This website provides the means to download the software.    ||
-| The instructions for use reference this website.             ||
-| The instructions for use and the website reveal contact information e.g. e-mail, phone number, and/or a contact form. ||
+|The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.|
+|The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.|
+|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner.||
 
-### 2. Post-Market Surveillance
+
+#### 2. Post-Market Surveillance
 
 |Requirements|Comments|
 |:--|:--|
-|The manufacturer has created a Post-Market Surveillance (PMS) Plan specifically for the product.||
-|The manufacturer has created a SOP specifying how to compile post-market surveillance plans.||
-|The PMS lists all relevant data sources to be monitored.|These sources include information from SOUP manufacturers (also of ML libraries) and also includes security disclosures by those vendors|
+|The manufacturer has created a Post-Market Surveillance (PMS) Plan.||
 |The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.||
-|The PMS plan describes for each data source how, how often and by whom data are collected.||
-|The PMS plan specifies how data has to be analyzed.||
-|The PMS plan requires that quality metrics such as sensitivity and specificity are monitored.||
-|The PMS plan requires to collect and analyze data to assess how the use of the system changes over time.||
 |The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.||
-|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].||
+|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".|
 |The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].||
 |In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.||
 |In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].||
 |In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].||
 |The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]|
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]|
-|In the PMS plan, the manufacturer has specified for continuous learning systems whether and how often which data sets have to be retested after algorithm updates.||
-|In the PMS plan, the manufacturer has specified how and how frequently changes in algorithm updates are assessed.||
-|In the PMS plan, the manufacturer has listed threshold values that trigger actions.|The threshold values include quality metrics and features.|
-|In the PMS plan, the manufacturer has specified the frequency and content of compiling post-market surveillance reports.||
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.||
 |In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.||
-|The manufacturer should perform PMS and compile reports, both according to the post-market surveillance plan.||
-|There is a PMS report for each product respectively product type.||
-|These PMS reports clearly identify the respective products via its ID.||
-|These PMS reports identify the post-market data and conclude whether activities are required.||
-|The manufacturer has established a post-market risk management system.|It is possible to combine post-market risk management and post-market surveillance.|
-|The manufacturer has specified how, how often and by whom the state of the art is monitored and re-assessed.||
-|This state-of-the-art assessment takes latest algorithms for machine learning and for improving interpretability into account.||
-|This state-of-the-art assessment takes alternatives for the "ground-truth" respectively the gold standard.||
-|The manufacturer has specified how, how often and by whom post-market data are evaluated for new or changed hazards, hazardous situations, and risks.||
-|The post-market risk analysis searches for (adverse) behavioural changes or (foreseeable) misuse.||
-|For products that have been placed on the market for more than one-year, the manufacturer has documented post-market risk management activities.||
-|For products marketed in the US the manufacturer has created an Algorithm Change Protocol (ACP) and a "SaMD Pre-Specifications" (SPS).||
-|The manufacturers has described design changes and analyzed their impacts.||
+|The reports required by the plans are available at the times specified therein.|zBsp. PSUR|
 
 [^D.2.1]: Examples for these feedback loops: **Example 1**: A travel recommendation app sends targeted advertising depending on feature (last trip). This influences travel behavior. **Example 2**: An algorithm provides prognoses. Therefore, the physician will treat the patients better or earlier...
 
@@ -611,18 +580,13 @@ Data generally have to be understood as training, validation and test data. Each
 
 
 
-### 3. Decommissioning
+#### 3. Decommissioning
 
 
 |Requirements|Comments|
 |:--|:--|
-| The manufacturer has established a plan before decommissioning the medical device. ||
-| This plan describes how  users and operators are informed. ||
-| This plan describes the disposal of the product.             ||
-| This plan describes archiving of product and data (e.g. training, test, validation data), software, documentation, considering security and privacy concerns. ||
-| The manufacturer has analyzed risks of decommissioning.      ||
-| This risk analysis assesses risks for patients due to a product that is no longer available. ||
-| This risk analysis assesses risks due to negative impact on other systems. ||
+|The manufacturer has created a decommissioning plan before withdrawing its product from the market. | Such a plan specifies, for example, whether and how the software must be uninstalled, whether data must be backed up or exported, how the confidentiality of the data remains guaranteed, who is responsible for these activities, how the progress of the decommissioning is monitored and ensured, and which organizations must be informed and how.|
+|The manufacturer identifies, evaluates and controls the risks arising from decommissioning. | This is to be evaluated in the risk management file. Risks from the unavailability of the product, from usage errors and from an influence on other products should be considered.|
 
 
 ## E) Annexes
@@ -639,7 +603,6 @@ Data generally have to be understood as training, validation and test data. Each
 - **IEC 62304/AMD1**, Medical device software – Software life cycle processes
 - **IEC 82304-1**, Health software – Part 1: General requirements for product safety
 - [FDA Guidance Documents on Machine Learning](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
-- WHO/ITU: [Good practices for health applications of machine learning: Considerations for manufacturers and regulators](https://aiaudit.org/assets/pdf/standards/FGAI4H-K-039.pdf) 
 
 #### c) Industry literature, textbooks
 
@@ -649,6 +612,14 @@ Data generally have to be understood as training, validation and test data. Each
 - Patrick Hall: [On the Art and Science of Machine Learning Explanations](https://arxiv.org/pdf/1810.02909.pdf)
 - Johner Institute: [Video training on machine learning for medical products](www.auditgarant.de)
 
+#### d) Sources and checklists for reproducibility
+
+- https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist-v2.0.pdf
+- https://epub.ub.uni-muenchen.de/92151/1/92151.pdf
+- https://github.com/craig-willis/reproducibility-checklist/
+- https://2020.emnlp.org/call-for-papers#new-reproducibility-criteria
+- https://onlinelibrary.wiley.com/pb-assets/assets/15214036/RR_Guideline.pdf
+
 ### 2. Recitals
 
 1. Manufacturers are increasingly developing medical products that use the process of artificial intelligence, in particular machine learning. Many of these procedures are still very new, and lack best practices. This creates new risks for patients, users and third parties.
@@ -656,11 +627,11 @@ Data generally have to be understood as training, validation and test data. Each
 3. Contrary to most other fundamental requirements, no standards on the subject of AI are harmonized. Therefore, there is no canonical catalog of requirements that reflects the recognized state of the art of technology.
 4. The FDA has started to formulate requirements on using Continuous Learning Systems, CLS. These specifications are unsuitable to sufficiently set requirements for the products and processes as early as the product development stage.
 5. The safety of medical products must be considered in all phases of the product life cycle processes. A limitation to testing is insufficient. This fact must be in line with best practices and guidelines.
-9. One hopes that standards for the safety of AI-based medical products will be developed and harmonized. This will still take years. Therefore, we need a guideline (only) in this interim phase.
-10. This guideline should be available very soon (by July 2019) to be able to quickly serve the manufacturers as an orientation and enable them to act immediately. The high speed of development makes compromises regarding harmonization with the most parties possible inevitable.
-11. The technological advancement in the area of artificial intelligence is immense. New procedures and technologies are continuously being published. On the one hand, a guideline should be a specific as possible. On the other, it cannot be so specifically targeted toward one procedure or technology, to achieve a sensible “shelf life”. Therefore, a guideline must address general concepts. However, it cannot claim to be complete.
-12. Such a guideline must take into consideration the specifics of medical products, which includes the principles of patient safety (safety) and a risk-based approach. In a concrete case, selected actions for information security ("controls”) will be in conflict with the fundamental requirements. For this reason, there can be no set list of “controls” for medical products. The manufacturer's intended use of the product is critical.
-14. The simple intelligibility and practicability is essential to the desired positive influence of a guideline on the safety of AI-based medical products. Therefore, there must be the least abstract or “high level” requirements possible but “binary decisive” test criteria.
-15. Do increase practicability, the authors have avoided collating many requirements to the greatest extent possible. Rather, they have limited themselves to those that they consider particularly relevant and implementable.
-16. And to promote distribution and the level of familiarity, the guideline must be available and remain available at no cost.
-17. The guideline should be available in German and English.
+6. One hopes that standards for the safety of AI-based medical products will be developed and harmonized. This will still take years. Therefore, we need a guideline (only) in this interim phase.
+7. This guideline should be available very soon (by July 2019) to be able to quickly serve the manufacturers as an orientation and enable them to act immediately. The high speed of development makes compromises regarding harmonization with the most parties possible inevitable.
+8. The technological advancement in the area of artificial intelligence is immense. New procedures and technologies are continuously being published. On the one hand, a guideline should be a specific as possible. On the other, it cannot be so specifically targeted toward one procedure or technology, to achieve a sensible “shelf life”. Therefore, a guideline must address general concepts. However, it cannot claim to be complete.
+9. Such a guideline must take into consideration the specifics of medical products, which includes the principles of patient safety (safety) and a risk-based approach. In a concrete case, selected actions for information security ("controls”) will be in conflict with the fundamental requirements. For this reason, there can be no set list of “controls” for medical products. The manufacturer's intended use of the product is critical.
+10. The simple intelligibility and practicability is essential to the desired positive influence of a guideline on the safety of AI-based medical products. Therefore, there must be the least abstract or “high level” requirements possible but “binary decisive” test criteria.
+11. Do increase practicability, the authors have avoided collating many requirements to the greatest extent possible. Rather, they have limited themselves to those that they consider particularly relevant and implementable.
+12. And to promote distribution and the level of familiarity, the guideline must be available and remain available at no cost.
+13. The guideline should be available in German and English.
