@@ -276,7 +276,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 #### a) Sammlung der Daten
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
-| --| --|| --|
+| :--| :--| :--|
 | Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. | Das betrifft die Datensätze für Training, Validierung und Test. |
 | Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Das schließt eine Dokumentation der Datentypen, Einheiten und Wertebereich mit ein. |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
@@ -304,7 +304,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 #### b) Labeling von Daten
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
-| --| -- | -- |
+| :--| :-- | :-- |
 | Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten versehen werden und diese Wahl begründet. |                                                              |
 | Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
