@@ -209,16 +209,17 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 | Anforderung                                       | Kommentare                                              | Regulatorische Referenzen|
 | :-------------------------------------------------| :-------------------------------------------------------|:---|
-| Der Hersteller hat alternative Verfahren aufgelistet und bezüglich Nutzen, Sicherheit und Leistungsfähigkeit bewertet. | Die Diskussion des State-of-the-Art ist eine Forderung der MEDDEV 2.7/1 und der MDR/IVDR. |
+| Der Hersteller hat alternative Verfahren aufgelistet und bezüglich Nutzen, Sicherheit und Leistungsfähigkeit bewertet. | Die Diskussion des State-of-the-Art ist eine Forderung der MEDDEV 2.7/1 und der MDR/IVDR. | 2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1., MEDDEV 2.7/1 |
 | Der Hersteller hat die o.g. quantitativen Werte mit den entsprechenden Größen der alternativen Verfahren verglichen. | Hersteller sollten eine tabellarische Übersicht erstellen.   |
-| Der Hersteller hat begründet, weshalb Machine Learning den anderen Verfahren überlegen ist und die damit einhergehenden Risiken rechtfertigt. |                                                              |
-| Der Hersteller hat eine Liste an Risiken erstellt, die sich spezifisch durch die Anwendung der Verfahren des maschinellen Lernens ergeben. | Ist Teil der Risikomanagementakte                            |
-| Der Hersteller hat die Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Patienten mit dem Produkt diagnostiziert, therapiert oder überwacht werden. |                                                              |
-| Der Hersteller hat die Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Nutzer das Produkt nutzen. |                                                              |
-| Der Hersteller hat die Risiken analysiert, die sich ergeben durch die Nutzung in einer anderen als der spezifizierten Nutzungsumgebung. |                                                              |
-| Der Hersteller hat die Risiken analysiert, die sich ergeben durch Inputs, die nicht den spezifizierten Formaten genügen. |                                                              |
+| Der Hersteller hat begründet, weshalb Machine Learning den anderen Verfahren überlegen ist und die damit einhergehenden Risiken rechtfertigt. | |2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1., MEDDEV 2.7/1 | 
+| Der Hersteller hat eine Liste an Risiken erstellt, die sich spezifisch durch die Anwendung der Verfahren des maschinellen Lernens ergeben. | Ist Teil der Risikomanagementakte|ISO 14971, 4.3., 4.4.|
+| Der Hersteller hat die Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Patienten mit dem Produkt diagnostiziert, therapiert oder überwacht werden. | | |
+| Der Hersteller hat die Risiken analysiert, die sich ergeben, wenn andere als die spezifizierten Nutzer das Produkt nutzen. |   | ISO 14971, 5. |
+| Der Hersteller hat die Risiken analysiert, die sich ergeben durch die Nutzung in einer anderen als der spezifizierten Nutzungsumgebung. | | 2017/745/EU, Annex I, 14.2.(d), 2017/746/EU, Annex I, 13.2.(d), ISO 14971, 5., IEC 82304, 4.1. (b)|
+| Der Hersteller hat die Risiken analysiert, die sich ergeben durch Inputs, die nicht den spezifizierten Formaten genügen. || ISO 14971, 5., IEC 82304, 4.1. (c)|
 | Die Hersteller haben Risiken analysiert, die sich ergeben durch Daten, die nicht entsprechend der spezifizierten Voraussetzungen generiert wurden. |                                                              |
-| Der Hersteller hat die Risiken bewertet, wenn das System bei einer anderen Patientenpopulation als der spezifizierten eingesetzt wird. |                                                              |
+| Der Hersteller hat die Risiken bewertet, wenn das System bei einer anderen Patientenpopulation als der spezifizierten eingesetzt wird. |                                                              | ISO 14971, 4.2., 4.3., 5., IEC 82304, 4.1.|
+
 
 ### 2. Software-Anforderungen
 
