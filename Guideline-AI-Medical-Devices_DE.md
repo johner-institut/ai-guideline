@@ -176,8 +176,11 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.|
-|Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.|
+|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.| ISO 13485, 4.2.3., 7.3.2.c|
+|Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.| •	2017/745/EU, Annex II, 1.1. c
+•	2017/746/EU, Annex 2, 1.1. c
+•	IEC 62366-1, 5.1., 5.3.
+•	ISO 13485, 7.3.3 a.
 |Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.|
 |Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens. Die Beschreibung der Rolle des maschinellen Lernens ist notwendig, um die Anforderung nach der Beschreibung des "physikalischen Prinzips" zu erfüllen.|
 |Der Hersteller hat die vorgesehene Lebensdauer des Medizinprodukts festgelegt.|Diese Lebensdauer bestimmen beispielsweise der Stand der Technik (z.B. medizinischer Fortschritt, neue ML-Methoden, Wettbewerbsprodukte) und die Geschwindigkeit, mit der die technische Umgebung und Bibliotheken weiterentwickelt werden.|
