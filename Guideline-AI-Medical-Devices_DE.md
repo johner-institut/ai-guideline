@@ -323,7 +323,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 #### c) Verfahren zur (Vor-)Verarbeitung von Daten 
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
-| --| -- | -- |
+| :--| :-- | :-- |
 | Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |                                                              |
 | Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. |
 | Das Verfahren beschreibt, wie die Korrektheit der Zwischenschritte und der Endergebnisse überprüft wird[^C.3.c.0]. Diese Überprüfungen erfolgen risikobasiert. | Dies entspricht den Anforderungen der ISO 13485:2016 Kapitel 4.1.6. Die Risikomanagementakte muss diese Analysen enthalten. |
@@ -351,7 +351,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 #### d) Dokumentation und Versionskontrolle
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
-| -- | -- | -- |
+| :-- | :-- | :-- |
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt, wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Das sollte Teil der Architektur dieser Software sein.        |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
@@ -361,8 +361,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### a) Vorbereitung
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar|Regulatorische Referenzen|
+| :--| :-- |:-- |
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Features voraus.                   |
 | Der Hersteller hat insb. bei tabellarischen Daten, die Abhängigkeit der Features untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
@@ -377,8 +377,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### b) Training
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :-- | :--|:--|
 | Der Hersteller führt Modelltraining, Optimierung der Hyperparameter und Modellselektion ausschließlich mit den Trainings- und Validierungsdaten (mittels Kreuzvalidierung) durch. | Dabei sollte der Hersteller auch aufzeigen, dass das Training die Güte des Modells tatsächlich verbessert. |
 | Der Hersteller hat verschiedene Sätze an Hyperparametern ausprobiert und seine abschließende Wahl dokumentiert. [^C.4.b.1]. |                                                              |
 | Der Hersteller hat ggf. die Wahl der Epochen dokumentiert. [^C.4.b.2] |                                                              |
@@ -390,9 +390,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### c) Bewertung
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Der Hersteller hat die Bewertung des Modells geplant.        | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+|:--|:--|:--|
+| Der Hersteller hat die Bewertung des Modells geplant. | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. |
 | Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
 | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
 | Der Hersteller hat aufgezeigt, wie er ein Overfitting erkennen und so vermeiden kann. |                                                              |
@@ -416,8 +416,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 #### d) Dokumentation 
 
-| Anforderung                                                  | Kommentar                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Anforderung| Kommentar| Regulatorische Referenzen|
+| :-- | :-- |:-- |
 | Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Das schließt Scripts und Build-Files mit ein.                |
 | Der Hersteller hat seinen Code gemäß einer Policy dokumentiert. | Üblicherweise sind zumindest öffentliche Klasse, Methoden mit Übergabe- und Rückgabewerten sowie Attribute zu dokumentieren |
 | Der Hersteller hat beschrieben, welche Datensätze er für das Training, für die Validierung und das Testen des Modells verwendet hat. |                                                              |
