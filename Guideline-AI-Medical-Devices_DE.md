@@ -192,8 +192,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### c) Stakeholder-Anforderungen
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung                                       | Kommentare                                                   |Regulatorische Referenzen|
+| :-------------------------------------------------| :----------------------------------------------------------- |:---|
 | Der Hersteller hat die, in der Zweckbestimmung genannten Ziele mit quantitativen Werten operationalisiert [^C.1.c.1]. | Es ist nicht unüblich, dass diese Werte im Laufe der Entwicklung ergänzt und angepasst werden. |
 | Der Hersteller hat die Laufzeitumgebung des Produkts bezüglich Hardware (Bildschirmgröße, Bildschirmauflösung, Speicher, Netzwerkanbindung etc.) und Software (z.B. Betriebssystem, Browser, Run-time Environments wie Java Run-time Environment oder .NET) bestimmt. | Bei Apps kann es sein, dass diese Charakterisierung für die App und für den Server-Teil erfolgen muss. |
 | Der Hersteller hat die Datenschnittstellen anhand der Ebenen des  [Interoperabilitätsmodells](https://www.johner-institut.de/blog/tag/interoperabilitat/) spezifiziert und dabei auch die Formate und bei Bildern deren spezifischen Eigenschaften (Größe, Auflösung, Farbkodierung) festgelegt. | Diese wird auch gemäß IEC 62304 Kapitel 5.2.2 benötigt. |
@@ -206,8 +206,8 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 #### d) Input für Risikomanagement und die klinische Bewertung
 
-| Anforderung                                                  | Kommentare                                                   |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Anforderung                                         | Kommentare                                              | Regulatorische Referenzen|
+| :---------------------------------------------------| :-------------------------------------------------------|:---|
 | Der Hersteller hat alternative Verfahren aufgelistet und bezüglich Nutzen, Sicherheit und Leistungsfähigkeit bewertet. | Die Diskussion des State-of-the-Art ist eine Forderung der MEDDEV 2.7/1 und der MDR/IVDR. |
 | Der Hersteller hat die o.g. quantitativen Werte mit den entsprechenden Größen der alternativen Verfahren verglichen. | Hersteller sollten eine tabellarische Übersicht erstellen.   |
 | Der Hersteller hat begründet, weshalb Machine Learning den anderen Verfahren überlegen ist und die damit einhergehenden Risiken rechtfertigt. |                                                              |
