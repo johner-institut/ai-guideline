@@ -244,9 +244,9 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 | Anforderung| Kommentare| Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). |                                                          |
+| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). | | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2.| 
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
-| Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. |
+| Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3. |
 
 #### c) Weitere Software-Anforderungen
 
@@ -357,7 +357,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat den "Funnel" beschrieben, der erkennen lässt, wie viele Daten aus welchen Datenquellen (z.B. Kliniken) stammen und bei welchem Verarbeitungsschritt, wie viele Datensätze aus welchem Grund weggefallen sind. |                                                              |
 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Das sollte Teil der Architektur dieser Software sein.        |
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
-| Der Hersteller hat alle Software zur Datenverarbeitung einschließlich, der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. |                                                              |
+| Der Hersteller hat alle Software zur Datenverarbeitung einschließlich, der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. | | ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 
 ### 4. Modellentwicklung
 
@@ -365,8 +365,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar|Regulatorische Referenzen|
 | :--| :-- |:-- |
-| Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Features voraus.                   |
-| Der Hersteller hat insb. bei tabellarischen Daten, die Abhängigkeit der Features untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Features voraus.                   | ISO 13485, 7.3.2., 7.3.3. |
+| Der Hersteller hat insb. bei tabellarischen Daten, die Abhängigkeit der Features untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. | ISO 13485, 7.3.2., 7.3.3. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
 | Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
@@ -420,17 +420,17 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Das schließt Scripts und Build-Files mit ein.                |
+| Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Das schließt Scripts und Build-Files mit ein. | ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 | Der Hersteller hat seinen Code gemäß einer Policy dokumentiert. | Üblicherweise sind zumindest öffentliche Klasse, Methoden mit Übergabe- und Rückgabewerten sowie Attribute zu dokumentieren |
 | Der Hersteller hat beschrieben, welche Datensätze er für das Training, für die Validierung und das Testen des Modells verwendet hat. |                                                              |
 | Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu ist der Einsatz eines Versionsverwaltungssystems nicht nur für den  Code, sondern auch für Daten, Testergebnisse und deren Bewertung sinnvoll. Es empfiehlt sich, auch die bei der Datenverarbeitung und dem Training verwendete Infrastruktur (Hardware, Betriebssystem, Virtualisierungsschichten wie Docker) zu dokumentieren. Abweichende Ergebnisse sind zu begründen (z.B. Hardware, Zufallsgeneratoren,  Rundungsfehler). Absolute Pfade und betriebssystemspezifische Befehle sind zu vermeiden. Eine README-Datei im .txt oder Markdown-Format hilft, sich in der Dokumentation schneller zurecht zu finden. |
-| Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. |                                                              |
-| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Algorithmen und Hyperparameter dokumentiert. | Beispielsweise sollte bei einem CNN u.a. die Anzahl und Art der Schichten, die Verknüpfung der Neuronen bzw. Schichten, die Aktivierungsfunktion, der Optimizer und anderer Parameter inklusive deren Wertebereiche dokumentiert werden. Zur Dokumentation des Modells zählt auch die Spezifikation der Outputs, wie die Anzahl der Outputs, die jeweiligen Datentypen, Wertebereiche, Einheiten usw.. |
+| Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. || IEC 62304, 8.1.2. |
+| Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Algorithmen und Hyperparameter dokumentiert. | Beispielsweise sollte bei einem CNN u.a. die Anzahl und Art der Schichten, die Verknüpfung der Neuronen bzw. Schichten, die Aktivierungsfunktion, der Optimizer und anderer Parameter inklusive deren Wertebereiche dokumentiert werden. Zur Dokumentation des Modells zählt auch die Spezifikation der Outputs, wie die Anzahl der Outputs, die jeweiligen Datentypen, Wertebereiche, Einheiten usw.. | ISO 13485, 4.2.3., 4.2.5. |
 | Der Hersteller hat beschrieben, wie er die Architekturen ausgewählt, die Modelle trainiert und die Hyperparameter optimiert, und dieses Vorgehen begründet. | Prüfer möchten nachvollziehen können, wie die Hersteller vorgegangen sind und weshalb die gewählte Lösung die beste ist. Die IEC 62304 und die FDA wünschen keine "ad hoc design decisions". |
-| Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. |                                                              |
-| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  |
+| Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. ||
+| Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  | ISO 13485, 4.2.3., 4.2.5. |
 | Der Hersteller hat die Konfidenzintervalle für die Güteparameter abhängig für die Inputdaten angegeben. | Gerade an den Rändern der erlaubten Input-Daten sinkt häufig die Konfidenz stark ab. Diese Information sollte auch den Anwendern in den Begleitmaterialen zur Verfügung gestellt werden. |
-| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. |
+| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. | •	ISO 13485, 4.2.3., 4.2.5. |
 | Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür, die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
 
 [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
@@ -442,9 +442,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :--| :-- |:-- |
 | Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]                              |
-| Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. wiederholt. |                                                              |
-| Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). |                                                              |
-| Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind und diese Verifizierung auch durchgeführt und dokumentiert. |                                                              |
+| Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. wiederholt. || • IEC 62304 •	IEC 82304 | 
+| Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). | | •	2017/745/EU, Annex I, 17.1., 17.3. •	2017/746/EU, Annex I, 16.1., 16.3. | 
+| Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind und diese Verifizierung auch durchgeführt und dokumentiert. |  | IEC 62304 |
 | Der Hersteller hat der Software die vorgeschriebenen Lizenzbedingungen beigefügt und die Rechtmäßigkeit der Verwendung von Software Dritter (z.B. Open Source Software) sichergestellt. | Hersteller nutzen häufig Open Source Software, welche nur im Rahmen von Lizenzen und Copy Right Angaben verwendet werden darf. |
 
 [^C.5.a.1]: Die Hersteller sollten die üblichen Best-Practices einhalten wie das Einhalten von Coding-Guidelines, die Überprüfung des Codes durch Code-Reviews anhand definierte Kriterien, das Testen des Codes durch Unit-, Integrations- und Software-System-Tests mit einem definierten Abdeckungsgrad usw. Eine Beschreibung des Codes (Architektur) sollte einfach nachvollziehbar machen, welcher Code, welche Aufgabe übernimmt.
@@ -479,9 +479,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. | Das schließt andere Begleitmaterialien mit ein.              |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |                                                              |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. | Das schließt auch die Anzeige von Fehlern und die Erklärungen ("Explainability") mit ein. Hersteller sollten alle sicherheitsbezogenen Use Scenarios bei der Validierung und alle risikominimierenden Maßnahmen am Interface einbeziehen. |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. | Das schließt andere Begleitmaterialien mit ein. | •	IEC 62366-1 |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |  | •	IEC 62366-1 |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. | Das schließt auch die Anzeige von Fehlern und die Erklärungen ("Explainability") mit ein. Hersteller sollten alle sicherheitsbezogenen Use Scenarios bei der Validierung und alle risikominimierenden Maßnahmen am Interface einbeziehen. | IEC 62366-1, 5.7. – 5.9. |
 
 #### d) Risikomanagement
 
