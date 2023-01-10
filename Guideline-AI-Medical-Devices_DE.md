@@ -22,6 +22,7 @@ Dieser Leitfaden ist nur für Medizinprodukte anwendbar, die Verfahren der KI, i
 - deren Dienstleister (z.B. **Entwicklungsdienstleister**)
 - Personen und Organisationen, die die Sicherheit dieser Produkte bewerten müssen, wie beispielsweise Auditoren, **Behörden** und **Benannte Stellen**.
 
+
 ### 3. Hinweise zur Verwendung
 
 #### a) Aufbau des Leitfadens
@@ -96,6 +97,7 @@ Die Kommentare enthalten beispielsweise:
 - Tipps für Auditor, wie die Erfüllung des Kriteriums geprüft werden kann
 - Hinweise zur Verbindlichkeit und Anwendbarkeit und Einschränkungen
 
+
 ### 4. Autoren und Nutzungsrechte
 
 Diesen Leitfaden haben die folgenden Autoren verfasst:
@@ -109,6 +111,7 @@ Diesen Leitfaden haben die folgenden Autoren verfasst:
 Der Leitfaden ist unter der [Creative Commons Lizenz](https://creativecommons.org/licenses/?lang=de) vom Typ [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) veröffentlicht. Diese erfordert die Namensnennung der Autoren ("Christian Johner, Christoph Molnar et al. ") und erlaubt es Dritten, auf diesem Werk aufzubauen, z.B. es zu verbessern; letzteres allerdings nur zu nicht-kommerziellen Zwecken.
 
 Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits und Reviews kommerziell einzusetzen. Sie untersagt es aber, dieses Werk selbst in unveränderter oder veränderter Version kommerziell zu nutzen, z.B. in Form eines Verkaufs als Broschüre.
+
 
 ### 5. Dokumentenlenkung, Dokumentenidentifikation
 
@@ -135,6 +138,7 @@ Die Hersteller sollten alle unten genannten Aspekte entweder in den Verfahrensan
 
 Nutzt der Hersteller ausgelagerte Prozesse, so gelten die Anforderungen entsprechend. Beispielsweise müsste ein (Software-)Entwicklungsdienstleister oder eine externe Auftragsforschung verpflichtet werden, die  relevanten Kapitel dieser Leitlinie zu beachten.
 
+
 ### 2. Pläne
 
 Die Hersteller müssen alle regulatorisch geforderten produktspezifischen Pläne erstellt haben:
@@ -143,6 +147,7 @@ Die Hersteller müssen alle regulatorisch geforderten produktspezifischen Pläne
 * Post-Market-Surveillance Plan
 * Risikomanagementplan
 * Plan für die klinische Bewertung
+
 
 ### 3. Kompetenzen
 
@@ -161,6 +166,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
 
 [^B2-02]: Es sollten Kompetenzen (verstehen, können) und nicht primär Themen genannt sein
+
 
 ### 4. Dokumentation
 
@@ -268,7 +274,6 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 | Der Hersteller hat die spezifischen Risiken identifiziert und beherrscht, die sich durch das kontinuierliche Lernen ergeben. | Dazu muss der Hersteller begründen, dass er durch das kontinuierliche Lernen ein besseres Nutzen-Risiko-Verhältnis erreicht. |
 
 
-
 ### 3. Datenmanagement
 
 Daten sind grundsätzlich zu unterscheiden in Trainings-, Validierungs- und Testdaten, an welche unterschiedliche Anforderungen gestellt werden können. 
@@ -359,6 +364,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die verarbeiteten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) |
 | Der Hersteller hat alle Software zur Datenverarbeitung einschließlich, der dabei verwendeten Bibliotheken dokumentiert und unter Versionskontrolle. | | ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 
+
 ### 4. Modellentwicklung
 
 #### a) Vorbereitung
@@ -434,6 +440,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür, die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
 
 [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
+
 
 ### 5. Produktentwicklung
 
@@ -514,7 +521,6 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken, dem Stand der Technik entsprechen. |           |2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
 
 
-
 ### 6. Produktfreigabe
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
@@ -531,6 +537,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 [^C.6.3]: Das Vorgehensmodell muss z.B. eingehen auf den Umgang mit Daten, auf das Re-Training, auf die Leistungsbewertung und auf die Updates.
 
+
 ## D) Anforderungen an die der Entwicklung nachgelagerten Phasen
 
 #### 1. Produktion, Distribution, Installation
@@ -541,6 +548,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welches die aktuellste Version ist und wie Verwechselungen bei der Installation ausgeschlossen werden können|Dies ist nur bei stand-alone Software relevant. Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten| ISO 13485, 7.8.3., 8.3., IEC 62304, 5.8.4. |
 |Der Hersteller hat beschrieben, wie bei der Installation sichergestellt wird, dass die Anforderungen, die in den Begleitmaterialien spezifiziert sind (s.o.), tatsächlich erfüllt sind|Hier wäre eine Verfahrens- oder Arbeitsanweisung zu erwarten| ISO 13485, 7.5.3. |
 |Der Hersteller hat Verfahren etabliert, die gewährleisten, dass er mit den Betreibern und Anwendern seiner Produkte zeitnah kommunizieren kann|| ISO 13485, 7.2.3., 8.3.3., IEC 82304, 8.4. |
+
 
 #### 2. Überwachung nach der Inverkehrbringung
 
@@ -574,12 +582,14 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 [^D.2.7]: Sich vom Hersteller beispielsweise den Prozess erklären lassen, wie er sich systematisch über neue Entwicklungen im Machine Learning informiert, wie er diese Entwicklungen bewertet sowie darauf reagiert.
 
+
 #### 3. Außerbetriebnahme
 
 | Anforderung| Kommentare|Regulatorische Referenzen|
 | :-- | :-- |:-- |
 | Der Hersteller hat einen Plan für die Außerbetriebnahme erstellt, bevor er sein Produkt aus dem Markt nimmt. | Solch ein Plan legt z.B. fest, ob und wie die Software deinstalliert werden muss, ob Daten gesichert oder exportiert werden müssen, wie die Vertraulichkeit der Daten gewährleistet bleibt, wer für diese Aktivitäten verantwortlich ist, wie der Fortschritt der Außerbetriebnahme überwacht und sichergestellt wird und welche Organisationen wie zu informieren sind. |
 | Der Hersteller identifiziert, bewertet und beherrscht die Risiken, die sich aus der Außerbetriebnahme ergeben. | Dies ist in der Risikomanagementakte zu bewerten. Risiken durch die Nichtverfügbarkeit des Produkts, durch Nutzungsfehler und durch einen Einfluss auf andere Produkte sollten dabei betrachtet werden. |
+
 
 ## E) Anhänge
 
