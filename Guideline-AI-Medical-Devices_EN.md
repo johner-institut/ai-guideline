@@ -150,12 +150,12 @@ The manufacturers must ensure and prove that they have sufficient competencies t
 
 Manufacturers can use the competency of external resources.
 
-|Requirements|Comments|
-|:--|:--|
-|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]||
+|Requirements|Comments|Regulatory references|
+|:--|:--|:--|
+|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|| •	ISO 13485, 6.2., ISO 14971, 3.3., IEC 62304 |
 |The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.|
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.||
-|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016|
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| ISO 13485, 6.2. |
+|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| •	ISO 13485, 7.3.2., ISO 82304, 6.1. |
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
 
@@ -173,11 +173,11 @@ In Europe at least, there is no obligation to create a specific document that su
 
 #### a) Intended medical use
 
-|Requirements|Comments|
-|:--|:--|
-|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).|
-|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.|
-|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.|
+|Requirements|Comments| Regulatory references|
+|:--|:--|:--|
+|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| •	ISO 13485, 4.2.3., 7.3.2. c.|
+|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| •	2017/745/EU, Annex II, 1.1. c, 2017/746/EU, Annex 2, 1.1. c, IEC 62366-1, 5.1., 5.3., ISO 13485, 7.3.3 a. |
+|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".|
 |The manufacturer has determined the intended lifetime of the medical device.|This lifetime is determined, for example, by the state of the art (e.g., medical advances, new ML-methods, competitive products) and the speed at which the technical environment and libraries evolve.|
 
