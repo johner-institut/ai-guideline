@@ -152,10 +152,10 @@ Manufacturers can use the competency of external resources.
 
 |Requirements|Comments|Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|| •	ISO 13485, 6.2., ISO 14971, 3.3., IEC 62304 |
+|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|| •	ISO 13485, 6.2., • ISO 14971, 3.3., • IEC 62304 |
 |The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.|
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| ISO 13485, 6.2. |
-|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| •	ISO 13485, 7.3.2., ISO 82304, 6.1. |
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| • ISO 13485, 6.2. |
+|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| •	ISO 13485, 7.3.2., • ISO 82304, 6.1. |
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
 
@@ -176,28 +176,27 @@ In Europe at least, there is no obligation to create a specific document that su
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
 |The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| •	ISO 13485, 4.2.3., 7.3.2. c.|
-|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| •	2017/745/EU, Annex II, 1.1. c, 2017/746/EU, Annex 2, 1.1. c, IEC 62366-1, 5.1., 5.3., ISO 13485, 7.3.3 a. |
-|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
+|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| • 2017/745/EU, Annex II, 1.1. c, • 2017/746/EU, Annex 2, 1.1. c, • IEC 62366-1, 5.1., 5.3., • ISO 13485, 7.3.3 a. |
+|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| • 2017/745/EU, Annex II, 1.1., • 2017/746/EU, Annex II, 1.1., • IEC 62366-1, 5.1.3. |
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".|
 |The manufacturer has determined the intended lifetime of the medical device.|This lifetime is determined, for example, by the state of the art (e.g., medical advances, new ML-methods, competitive products) and the speed at which the technical environment and libraries evolve.|
 
 
 #### b) Intended users and context of use
 
-| Requirements                                                 | Comments                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. |
-| The manufacturer has characterized the intended use environment (also social environment such as stress, shift work, frequently changing colleagues)| This characterization is also required by IEC 62366-1. It is also relevant in the context of the explainability of AI. |
-|The manufacturer has described the core tasks that the medical device is to support. | The use scenarios that manufacturers must specify according to IEC 62366-1 can also be derived from these core tasks.|
-
+| Requirements                                                 | Comments                                                     |Regulatory references
+| :----------------------------------------------------------- | :----------------------------------------------------------- |:--|
+| The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. | • IEC 62366-1, 5.1. |
+| The manufacturer has characterized the intended use environment (also social environment such as stress, shift work, frequently changing colleagues)| This characterization is also required by IEC 62366-1. It is also relevant in the context of the explainability of AI. | • IEC 62366-1, 5.1., second to last paragraph |
+|The manufacturer has described the core tasks that the medical device is to support. | The use scenarios that manufacturers must specify according to IEC 62366-1 can also be derived from these core tasks.| • IEC 62366-1 |
 
 #### c) Stakeholder requirements
 
-| Requirements                                                 | Comments                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Requirements                                                 | Comments                                                     |Regulatory references|
+| :----------------------------------------------------------- | :----------------------------------------------------------- |:--|
 | The manufacturer has operationalized the goals listed in the intended use with quantitative values [^C.1.c.1]. | It is not unusual that these values are supplemented and revised during the course of development. |
 | The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | For apps, this characterization must be done for the app and for the server part. |
-| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. |
+| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. |• IEC 62304, 5.2.2
 |The manufacturer has specified the requirements for the input data. | The input data may also depend on the generation of the data, e.g. on the recording method, on technical parameters (magnetic field strengths, number of conductive electrodes, direction), on environmental conditions during the recordings, on the manufacturer, on the medical device, etc.... 
 | The manufacture has set forth all markets and all regulatory requirements relevant to these. | Show this list.  
 |The manufacturer has specified whether the system should continue to learn after it has been placed on the market. If this is the case, the manufacturer has specified whether this continuous training will be global/centralized or decentralized (e.g., per product or per hospital) and online or offline. | 
@@ -207,18 +206,19 @@ In Europe at least, there is no obligation to create a specific document that su
 
 #### d) Input for risk management and clinical evaluation
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The manufacturer has listed alternative procedures and evaluated them in terms of benefit, safety, and performance. | The discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and the MDR/IVDR. |
+| Requirements                                                 | Comments                                                     | Regulatory References| 
+| :------------------------------------------------------------ | :------------------------------------------------------------ |:--|
+| The manufacturer has listed alternative procedures and evaluated them in terms of benefit, safety, and performance. | The discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and the MDR/IVDR. | • 2017/745/EU, Annex I, 1. • 2017/746/EU, Annex I, 1. • MEDDEV 2.7/1 |
 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.              |
-| The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. |                                                              |
-|The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file |                                                                                                                                                    
+| The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. | | •2017/745/EU, Annex I, 1. •	2017/746/EU, Annex I, 1. •	MEDDEV 2.7/1 |
+|The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file | • ISO 14971, 4.3., 4.4. |                                                                                                                                 
 |The manufacturer has analyzed the risks that arise when patients other than those specified are diagnosed, treated, or monitored with the product. |    |
-| The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              |
-| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |                                                              |                                                         |
-| The manufacturer has analyzed the risks arising from inputs not in the specified format. |                                                              |                                                             |                                                             |
+| The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              | • ISO 14971, 5. |
+| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  • 2017/745/EU, Annex I, 14.2.(d) •	2017/746/EU, Annex I, 13.2.(d) •	ISO 14971, 5. •IEC 82304, 4.1. (b)  |
+| The manufacturer has analyzed the risks arising from inputs not in the specified format. | | •	ISO 14971, 5. •	IEC 82304, 4.1. (c)|                                                             
 | Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
-|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. |
+|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | |  •	ISO 14971, 4.2., 4.3., 5.
+•	IEC 82304, 4.1. |
 
 
 ### 2. Software requirements
