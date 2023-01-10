@@ -217,24 +217,22 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  • 2017/745/EU, Annex I, 14.2.(d) •	2017/746/EU, Annex I, 13.2.(d) •	ISO 14971, 5. •IEC 82304, 4.1. (b)  |
 | The manufacturer has analyzed the risks arising from inputs not in the specified format. | | •	ISO 14971, 5. •	IEC 82304, 4.1. (c)|                                                             
 | Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
-|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | |  •	ISO 14971, 4.2., 4.3., 5.
-•	IEC 82304, 4.1. |
+|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | |  •	ISO 14971, 4.2., 4.3., 5. •	IEC 82304, 4.1. |
 
 
 ### 2. Software requirements
 
 #### a) Functionality and performance
 
-|Requirements|Comments|
-|:--|:--|
-|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.|
-|The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. |
-|The manufacturer has specified the expected value ranges of the outputs.||
-|The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".|
-|The manufacturer has specified how the system will behave if the inputs do not meet the specified conditions [^C.2.a.2].|This is an aspect of robustness to be specified according to ISO 25010 and IEC 62304 Chapter 5.2. |
-|The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".|
-|The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.|
-|The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.|
+|Requirements|Comments|Regulatory references|
+|:--|:--|:--|
+|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.| •	ISO 13485, 7.3.3.|
+|The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. | • ISO 13485, 7.3.3., 7.3.4. • IEC 62304, 5.2. |
+|The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".| • 2017/745/EU, Annex I, 17.1. •	2017/746/EU, Annex I, 16.1. •	ISO 13485, 7.3.3., 7.3.4 |
+|The manufacturer has specified how the system will behave if the inputs do not meet the specified conditions [^C.2.a.2].|This is an aspect of robustness to be specified according to ISO 25010 and IEC 62304 Chapter 5.2. | • ISO 25010, •	IEC 62304, 5.2. |
+|The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".| • ISO 13485, 7.3.3. |
+|The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.| • 2017/745/EU, Annex I, 17.1., • 2017/746/EU, Annex I, 16.1., •	ISO 13485, 7.3.3. |
+|The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.| • ISO 25010, • IEC 62304, 5.2., •	ISO 14971, 4.3., • ISO 13485, 7.3.3. |
 
 [^C.2.a.1]: Examples:  **Example 1**: The stakeholder requirement states that 95% of radiologists must be able to detect a cancer with the product. The requirement of the algorithm states that it must display a sensitivity of 97%. **Example 2**: The stakeholder requirements state that arterial calcification must be able to be detected at a sensitivity of 92%. The requirements of the algorithm state that it must be able to exactly predict the strength of the plaques in the blood to 0.2 mm.
 
