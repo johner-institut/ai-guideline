@@ -240,16 +240,16 @@ In Europe at least, there is no obligation to create a specific document that su
 
 #### b) User interface
 
-| Requirements                                                 | Comments                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
-| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |                                                              |                                                          |
-| The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |                                                              |
-| The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :--|
+| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  |  •	2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2.  |
+| The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    | •	2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., 5.3. |
+| The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | | •	2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3. |
 
 #### c) Additional software requirements
 
-| Requirements                                                 | Comments                                    |
-| :----------------------------------------------------------- | :------------------------------------------ |
+| Requirements                                                 | Comments                                    | Regulatory references|
+| :----------------------------------------------------------- | :------------------------------------------ |:--|
 | The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. |
 | According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  |                                             |
 | The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  |
@@ -258,8 +258,8 @@ In Europe at least, there is no obligation to create a specific document that su
 
 #### d) Special requirements for continuous learning systems
 
-| Requirements                                                 | Comments                                                     |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Requirements                                                 | Comments                                                     | Regulatory references |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |:--|
 | The manufacturer has defined when and how often the model is updated. | For this purpose, the manufacturer should define the "triggers" of these updates. He must also describe whether these updates take place per individual medical device or for all medical devices of the type.  |                                                              |
 | The manufacturer has specified how the additional data will be quality assured and how incorrect, missing or implausible data will be dealt with. |   
 | The manufacturer has defined in which range the output data may change. | This requires a description of how the algorithms change.  |  
@@ -275,8 +275,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### a) Data collection
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :------------------------------------------------------------| :------------------------------------------------------------|:--|
 | The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. |
 |The manufacturer has characterized the inclusion and exclusion criteria of data by relevant attributes [^C.3.a.2]. | This includes documentation of data types, units and value range. |
 |The manufacturer has specified technical inclusion and exclusion criteria for data[^C.3.a.3]. ||
@@ -303,8 +303,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### b) Data labeling
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :------------------------------------------------------------| :------------------------------------------------------------|:--|
 |  In the case of "Supervised Learning", the manufacturer has derived the labels from the intended use with which the training data are provided and justified this choice. |                                                              |
 | The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | |                                                        |
 | This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |                                                            |
@@ -322,8 +322,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### c) Procedure for (pre-)processing of data
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :------------------------------------------------------------| :------------------------------------------------------------|:--|
 | The manufacturer has set a procedure that describes the pre-processing of the data. |                                                              |
 | This procedure describes the individual processing steps such as conversion, transformation, aggregation, normalization, format conversion, calculation of feature, conversion of numerical data into categories. | A graphic representation creates a rapid overview. The conversion of numerical to categorical values requires a justification. |
 | The procedure describes how the correctness of the interim steps and the final results are assessed[^C.3.c.0] through risk-based evaluations. | This is consistent with the requirements of ISO 13485:2016 chapter 4.1.6. The risk management file must contain these analyzes. |
@@ -350,8 +350,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### d) Documentation and version control
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :------------------------------------------------------------| :------------------------------------------------------------|:--|
 |  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |
 | The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |                                                              
 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|                                                              
@@ -361,8 +361,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### a) Preparation
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| :------------------------------------------------------------| :------------------------------------------------------------|:--|
 | The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  |
 | The manufacturer has described the dependency of the features among each other, especially for tabular data. | A Directed Acyclic Graph (DAG) helps with the visualization. This depends on the applied ML-method and cannot be demanded as a general best practice. |
 | The manufacturer has documented and justified the ratio that it divides up the data into training, validation and test data. |                                                              |
@@ -391,8 +391,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### c) Evaluation
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |--|
 |The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. |
 |The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. |
 |The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | |
@@ -416,8 +416,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### d) Documentation
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     |Regulatory references|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |--|
 | The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.                                                           |
 | The manufacturer has documented his code according to a policy. | Usually at least public class, methods with pass and return values as well as attributes are to be documented |
 | The manufacturer has described which data sets it used for training, validation and testing of the model. |                                                              |
@@ -437,9 +437,9 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### a) Software development
 
-| Requirements                                                 | Comments                        |
-| ------------------------------------------------------------ | ------------------------------- |
-| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1]    |
+| Requirements                                                 | Comments                        | Regulatory references|
+| ------------------------------------------------------------ | ------------------------------- |--|
+| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1]    c
 | If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |                                 |
 | The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | |
 |The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | |
@@ -450,8 +450,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### b) Accompanying materials
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |--|
 | The instructions for use clearly identify the version of the product. | If possible, indicate the UDI                                |
 | The instructions for use describe the intended use of the product including the expected medical benefit. |                                                              |
 | The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. |                                                              |
@@ -477,8 +477,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### c) Usability validation
 
-|Requirements                                                  |Comments|
-| ------------------------------------------------------------ | --------- |
+|Requirements                                                  |Comments| Regulatory references|
+| ------------------------------------------------------------ | --------- |--|
 | As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  |
 | As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. |
 | As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. |
@@ -486,8 +486,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 ####  d) Risk management
 
-| Requirements                                                 | Comments |
-| ------------------------------------------------------------ | -------- |
+| Requirements                                                 | Comments | Regulatory references|
+| ------------------------------------------------------------ | -------- |--|
 | The manufacturer has evaluated the risks that arise if the inputs do not meet the specified requirements[^C.2.a.2]. |       |          
 | The manufacturer has derived the quantitative quality criteria based on the state of the art. | The manufacturer shall be able to name the quality criteria for alternative technologies and procedures and to argue if the medical device is not superior to the alternatives with respect to the quality criteria [^C.5.d.1]. | |       |          |
 | The manufacturer has defined the gold standard and justified its choice, which will be used to verify the quality criteria. |   
@@ -509,16 +509,16 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### e) Clinical evaluation
 
-|Requirements                                                  |Comments|
-| ------------------------------------------------------------ | --------- |
+|Requirements                                                  |Comments| Regulatory references|
+| ------------------------------------------------------------ | --------- |--|
 | As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. ||
 | As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | |
 
 
 ### 6. Product release
 
-|Requirements                                                  |Comments|
-| ------------------------------------------------------------ | --------- |
+|Requirements                                                  |Comments| Regulatory references|
+| ------------------------------------------------------------ | --------- |--|
 | The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). |
 | The manufacturer has assessed the risks as acceptable in risk management and documented that all activities specified in the risk management plan have been carried out. | Note for auditors [^C.6.1] |
 |The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |  
@@ -535,8 +535,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### 1. Production, Distribution, Installation
 
-|Requirement|Comments|
-|:--|:--|
+|Requirement|Comments| Regulatory references|
+|:--|:--|:--|
 |The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.|
 |The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.|
 |The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.|
@@ -545,8 +545,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### 2. Post-Market Surveillance
 
-|Requirements|Comments|
-|:--|:--|
+|Requirements|Comments| Regulatory references|
+|:--|:--|:--|
 |The manufacturer has created a Post-Market Surveillance (PMS) Plan.||
 |The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.||
 |The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.||
@@ -580,8 +580,8 @@ Data generally have to be understood as training, validation and test data. Each
 #### 3. Decommissioning
 
 
-|Requirements|Comments|
-|:--|:--|
+|Requirements|Comments| Regulatory references|
+|:--|:--|:--|
 |The manufacturer has created a decommissioning plan before withdrawing its product from the market. | Such a plan specifies, for example, whether and how the software must be uninstalled, whether data must be backed up or exported, how the confidentiality of the data remains guaranteed, who is responsible for these activities, how the progress of the decommissioning is monitored and ensured, and which organizations must be informed and how.|
 |The manufacturer identifies, evaluates and controls the risks arising from decommissioning. | This is to be evaluated in the risk management file. Risks from the unavailability of the product, from usage errors and from an influence on other products should be considered.|
 
