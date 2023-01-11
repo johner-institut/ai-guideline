@@ -355,7 +355,7 @@ Data generally have to be understood as training, validation and test data. Each
 |  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |
 | The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |                                                              
 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|                                                              
-| The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control.     ||                                                        |
+| The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control. || • ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 
 ### 4. Model development 
 
@@ -363,7 +363,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-| The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  |
+| The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  | • ISO 13485, 7.3.2., 7.3.3. |
 | The manufacturer has described the dependency of the features among each other, especially for tabular data. | A Directed Acyclic Graph (DAG) helps with the visualization. This depends on the applied ML-method and cannot be demanded as a general best practice. |
 | The manufacturer has documented and justified the ratio that it divides up the data into training, validation and test data. |                                                              |
 | The manufacturer has documented the stratification it uses to divide up the data in to training, validation and test data[^C.4.a.1]. |                                                              |
@@ -377,8 +377,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 #### b) Training
 
-| Requirements                                                 | Comments                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |                         
+| Requirements                                                 | Comments                                                     | Regulatory references|
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -- |                    
 | The manufacturer performs model training, tuning of hyperparameters and model selection exclusively with the training and validation data (e.g. using cross-validation). |  The manufacturer should also show that the training actually improves the quality of the model.   |                                                         |
 | The manufacturer tried different sets of hyperparameters and documented his final choice.[^C.4.b.1]. |                                                              |                                                           |
 | The manufacturer has documented the choice of epochs[^C.4.b.2].  |       |
@@ -418,17 +418,17 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     |Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.                                                           |
+| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.   | •	ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 | The manufacturer has documented his code according to a policy. | Usually at least public class, methods with pass and return values as well as attributes are to be documented |
 | The manufacturer has described which data sets it used for training, validation and testing of the model. |                                                              |
-| The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |                                                              
+| The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |                                                               
 | The manufacturer has the SOUP (libraries and frameworks) under version and configuration control. |                                                              |
-| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. |                                                              |
+| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | •	ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has described how it selected the architectures, trained the models, and optimized the hyperparameters, and justified this procedure. | Auditors want to be able to understand how the manufacturer has proceeded and why the chosen solution is the best. IEC 62304 and the FDA do not want "ad hoc design decisions".  |                                                              
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
-| The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. |
+| The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. | • ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has specified the confidence intervals for the quality parameters depending on the input data. | Especially at the edges of the allowed input data, the confidence often decreases strongly. This information should also be provided to the users in the accompanying materials. |
-| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |                                           
+| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |  • ISO 13485, 4.2.3., 4.2.5. |                         
 | The manufacturer has tried out several models and their hyperparameters and documented the aspects mentioned in this section for them. | This documentation serves the manufacturer to compare different models and to justify his choice of a model. This is necessary to fulfill the requirement of ISO 14971 to maximize the risk-benefit ratio. |
 
 [^C.4.d.1]: Trained models can be serialized.
@@ -439,11 +439,11 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                        | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------- |--|
-| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1]    c
-| If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |                                 |
-| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | |
-|The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | |
-|The manufacturer has attached the prescribed license conditions to the software and ensured the legality of the use of third-party software (e.g., open source software). | Manufacturers often use open source software, which may only be used within the scope of licenses and copy right statements. |
+| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1] | •	IEC 62304, IEC 82304   |
+| If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |  | • IEC 62304, IEC 82304 |
+| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | | •	2017/745/EU, Annex I, 17.1., 17.3., 2017/746/EU, Annex I, 16.1., 16.3. |
+| The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | | IEC 62304 |
+| The manufacturer has attached the prescribed license conditions to the software and ensured the legality of the use of third-party software (e.g., open source software). | Manufacturers often use open source software, which may only be used within the scope of licenses and copy right statements. |
 
 [^C.5.a.1]: The manufacturers should adhere to the normal best practices such as adherence to coding guidelines, review of code by code reviews using defined criteria, testing to code with unit tests with a defined coverage, etc.  A description of the code (architecture) should make it easy to understand which code performs which task.
 
@@ -452,10 +452,10 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI                                |
-| The instructions for use describe the intended use of the product including the expected medical benefit. |                                                              |
-| The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. |                                                              |
-| The instructions for use explicitly list the patients / data / use case for which the product may not be used. |                                                                                 |
+| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI. | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
+| The instructions for use describe the intended use of the product including the expected medical benefit. |   | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
+| The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. | | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
+| The instructions for use explicitly list the patients / data / use case for which the product may not be used. |   | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
 | The instructions for use document the requirements of the input data (including formats, resolutions, value ranges, etc.). |                                                              |
 | The instruction for use specify the intended primary and secondary users pursuant to intended use. |                                                              |
 | The instructions for use describe the other conditions applicable to the product (e.g. runtime environment, use environment). |    
@@ -479,9 +479,9 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
-| As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  |
-| As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. |
-| As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. |
+| As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  | • IEC 62366-1 |
+| As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. | | • IEC 62366-1 |
+| As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. | • IEC 62366-1 |
 
 
 ####  d) Risk management
@@ -511,8 +511,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
-| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. ||
-| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | |
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. || • 2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | | • 2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
 
 
 ### 6. Product release
@@ -537,28 +537,28 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirement|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.|
-|The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.|
-|The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.|
-|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner.||
+|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.| •	IEC 62304, 5.8.8. |
+|The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.| •	ISO 13485, 7.8.3., 8.3.,  IEC 62304, 5.8.4. |
+|The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.| •	ISO 13485, 7.5.3. |
+|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner.|| •	ISO 13485, 7.2.3., 8.3.3., IEC 82304, 8.4. |
 
 
 #### 2. Post-Market Surveillance
 
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a Post-Market Surveillance (PMS) Plan.||
-|The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.||
-|The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.||
-|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".|
-|The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].||
-|In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.||
-|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].||
-|In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].||
-|The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]|
-|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]|
-|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.||
-|In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.||
+|The manufacturer has created a Post-Market Surveillance (PMS) Plan.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |The reports required by the plans are available at the times specified therein.|zBsp. PSUR|
 
 [^D.2.1]: Examples for these feedback loops: **Example 1**: A travel recommendation app sends targeted advertising depending on feature (last trip). This influences travel behavior. **Example 2**: An algorithm provides prognoses. Therefore, the physician will treat the patients better or earlier...
