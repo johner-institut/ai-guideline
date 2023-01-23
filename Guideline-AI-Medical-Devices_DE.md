@@ -157,10 +157,10 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||ISO 13485, 6.2., ISO 14971, 3.3., IEC 62304|
-|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|ISO 13485, 6.2., ISO 82304, 6.1.|
+|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||ISO 13485, 5.5.1, 6.2., ISO 14971, 3.3., IEC 62304, 2017/745/ EU Artikel 10.9, 21 CFR part 820.30 (b)|
+|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|ISO 13485, 6.2., ISO 14971:2019, 4.3, ISO 13485:2016, 7.3.2, IEC 82304, 6.1.|
 |Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||ISO 13485, 6.2.|
-|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüberhinausgehenden oder abweichenden) Kompetenzen festgelegt|Anforderung der ISO 13485:2016| ISO 13485, 7.3.2., ISO 82304, 6.1.|
+|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüberhinausgehenden oder abweichenden) Kompetenzen festgelegt|Anforderung der ISO 13485:2016| ISO 13485, 7.3.2., IEC 82304, 6.1.|
 
 
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
@@ -182,19 +182,19 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.| ISO 13485, 4.2.3., 7.3.2.c|
-|Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.| 2017/745/EU, Annex II, 1.1. c, 2017/746/EU, Annex 2, 1.1. c, IEC 62366-1, 5.1., 5.3., ISO 13485, 7.3.3 a.|
-|Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.| 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3.|
-|Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens. Die Beschreibung der Rolle des maschinellen Lernens ist notwendig, um die Anforderung nach der Beschreibung des "physikalischen Prinzips" zu erfüllen.|
+|Der Hersteller hat festgelegt, für welches medizinische Ziel (Diagnose, Therapie, Überwachung, Vorhersage) das Medizinprodukt eingesetzt werden soll.|Die Zweckbestimmung ist nicht mit der Beschreibung von Funktionalität (z.B. Berechnung von Scores)  zu verwechseln.| •	ISO 13485, 4.2.3. und 7.3.2. c., 2017/745/EU Anhang II (1.1), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR part 820.30(c)|
+|Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung schließt Indikationen, Kontraindikationen und Begleiterkrankungen mit ein.|Diese Charakterisierung fordert auch die IEC 62366-1. Patienten können gleichzeitig auch Nutzer (Anwender) des Produkts sein.| 2017/745/EU, Anhang I, 23.4 und Anhang II, 1.1. c, 2017/746/EU, Anhang 2, 1.1. c, IEC 62366-1, 5.1. und 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i)|
+|Der Hersteller hat festgelegt, an welcher Körperstelle das Produkt angewendet wird bzw. von welcher Körperstelle diese Daten stammen.|Diese Festlegung fordert auch die IEC 62366-1.| 2017/745/EU, Anhang II, 1.1., 2017/746/EU, Anhang II, 1.1., IEC 62366-1, 5.1.3.|
+|Die Zweckbestimmung lässt auch erkennen, welches Ziel die Verfahren des maschinellen Lernens verfolgen.|Klassifikation und Regression, Clustering, Similarity Search und Recommender Systems sind typischen Ziele von Verfahren des maschinellen Lernens. Die Beschreibung der Rolle des maschinellen Lernens ist notwendig, um die Anforderung nach der Beschreibung des "physikalischen Prinzips" zu erfüllen.|IEC 62366-1, 5.1, 2017/745/EU Anhang II, 1.1, 21 CFR part 814.20, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
 |Der Hersteller hat die vorgesehene Lebensdauer des Medizinprodukts festgelegt.|Diese Lebensdauer bestimmen beispielsweise der Stand der Technik (z.B. medizinischer Fortschritt, neue ML-Methoden, Wettbewerbsprodukte) und die Geschwindigkeit, mit der die technische Umgebung und Bibliotheken weiterentwickelt werden.|
 
 #### b) Vorhergesehene Nutzer, vorhergesehener Nutzungskontext
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. | IEC 62366-1, 5.1.|
-| Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |IEC 62366-1, 5.1., vorletzter Absatz|
-| Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben können auch die Use Scenarios abgeleitet werden, welche die Hersteller laut IEC 62366-1 spezifizieren müssen. |
+| Der Hersteller hat die vorgesehenen Nutzer charakterisiert, z.B. anhand demographischer Merkmale (Alter, Geschlecht), bezüglich der Ausbildung, der Erfahrung in der medizinischen Domäne, bezüglich der technischen Kenntnisse, körperlichen und geistigen Einschränkungen, sprachlichen Fähigkeiten und kulturellem Hintergrund. | Wenn der Hersteller keine Einschränkungen bezüglich dieser Attribute vorsieht, muss er das auch dokumentieren. |2017/745/EU, Anhang I, 5 und Anhang II, 1.1, IEC 62366-1, 5.1., XAVIER University "Building Explainability and Trust for AI in Healthcare"|
+| Der Hersteller hat die vorgesehene Nutzungsumgebung charakterisiert (auch soziale Umgebung wie Stress, Schichtbetrieb, häufig wechselnde Kollegen). | Diese Charakterisierung fordert auch die IEC 62366-1. Sie ist auch im Kontext der Erklärbarkeit von KI relevant. |2017/745/EU, Anhang I, 5, IEC 62366-1, 5, XAVIER University "Building Explainability and Trust for AI in Healthcare"|
+| Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben können auch die Use Scenarios abgeleitet werden, welche die Hersteller laut IEC 62366-1 spezifizieren müssen. | IEC 62366-1 |
 
 
 #### c) Stakeholder-Anforderungen
