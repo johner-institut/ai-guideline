@@ -227,13 +227,13 @@ FDA Proposed Regulatory Framework for Modifications to Artificial
 
 |Requirements|Comments|Regulatory references|
 |:--|:--|:--|
-|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.| •	ISO 13485, 7.3.3.|
-|The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. | • ISO 13485, 7.3.3., 7.3.4. • IEC 62304, 5.2. |
-|The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".| • 2017/745/EU, Annex I, 17.1. •	2017/746/EU, Annex I, 16.1. •	ISO 13485, 7.3.3., 7.3.4 |
-|The manufacturer has specified how the system will behave if the inputs do not meet the specified conditions [^C.2.a.2].|This is an aspect of robustness to be specified according to ISO 25010 and IEC 62304 Chapter 5.2. | • ISO 25010, •	IEC 62304, 5.2. |
-|The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".| • ISO 13485, 7.3.3. |
-|The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.| • 2017/745/EU, Annex I, 17.1., • 2017/746/EU, Annex I, 16.1., •	ISO 13485, 7.3.3. |
-|The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.| • ISO 25010, • IEC 62304, 5.2., •	ISO 14971, 4.3., • ISO 13485, 7.3.3. |
+|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.| ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on "Software Validation", chapter 5.2.2|
+|The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. |
+|The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".| 2017/745/EU, Annex I, 17.1. , 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3., 7.3.4 |
+|The manufacturer has specified how the system will behave if the inputs do not meet the specified conditions [^C.2.a.2].|This is an aspect of robustness to be specified according to ISO 25010 and IEC 62304 Chapter 5.2. | ISO 25010,, IEC 62304, 5.2., ISO 14971:2019, 5.4, FDA guidance on "Software Validation" chapter 5.2.2, FDA digital health criteria|
+|The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".| ISO 13485, 7.3.3. |
+|The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.| 2017/745/EU, Annex I, 17.1., 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3. |
+|The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.| ISO 25010, IEC 62304, 5.2., ISO 14971, 4.3., ISO 13485, 7.3.3. |
 
 [^C.2.a.1]: Examples:  **Example 1**: The stakeholder requirement states that 95% of radiologists must be able to detect a cancer with the product. The requirement of the algorithm states that it must display a sensitivity of 97%. **Example 2**: The stakeholder requirements state that arterial calcification must be able to be detected at a sensitivity of 92%. The requirements of the algorithm state that it must be able to exactly predict the strength of the plaques in the blood to 0.2 mm.
 
@@ -243,16 +243,19 @@ FDA Proposed Regulatory Framework for Modifications to Artificial
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :--|
-| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  |  •	2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2.  |
-| The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    | •	2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., 5.3. |
-| The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | | •	2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3. |
+| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2.  |
+| The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., 5.3. |
+| The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120 |
+
+ |
 
 #### c) Additional software requirements
 
 | Requirements                                                 | Comments                                    | Regulatory references|
 | :----------------------------------------------------------- | :------------------------------------------ |:--|
-| The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. |
-| According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  |                                             |
+| The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. | 2017/745/EU, Annex I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 and 7.1,
+ISO 149781:2019, 5.4, FDA guidance on software validation e.g. chapter 5.2.2, 5.2.3 and 5.2.4, GMLP Guiding Principles (by FDA et al) #2 (data integrity)  |
+| According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  | Art. 22 of the GDPR. |  |
 | The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  |
 
 
@@ -278,13 +281,14 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-| The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. |
-|The manufacturer has characterized the inclusion and exclusion criteria of data by relevant attributes [^C.3.a.2]. | This includes documentation of data types, units and value range. |
+| The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. | ISO 13485, 7.3.7 |
+|The manufacturer has characterized the inclusion and exclusion criteria of data by relevant attributes [^C.3.a.2]. | This includes documentation of data types, units and value range. | ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
 |The manufacturer has specified technical inclusion and exclusion criteria for data[^C.3.a.3]. ||
 | The manufacturer has described the procedure by which it ensures that data sets that do not meet the inclusion criteria or should be excluded are actually excluded. | Procedure includes a software supported assessment. This software must be validated. |
 | The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is an recommended option. |
 | The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. |                                                              |
-| The manufacturer has listed and discussed factors that could cause a bias in the data. |                                                              
+| The manufacturer has listed and discussed factors that could cause a bias in the data. |   | ISO 24028 e.g. 10.5, DAISAM |
+                                                           
 | The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |  
 |The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |
 | The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
@@ -307,9 +311,9 @@ Data generally have to be understood as training, validation and test data. Each
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
 |  In the case of "Supervised Learning", the manufacturer has derived the labels from the intended use with which the training data are provided and justified this choice. |                                                              |
-| The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | |                                                        |
+| The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | | ISO 13485, 4.1 |
 | This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |                                                            |
-| This procedure specifies the requirements for the number, training and competency for the people responsible for labeling. |                                                              |
+| This procedure specifies the requirements for the number, training and competency for the people responsible for labeling. |   ISO 13485, 6.2 and 7.3.2, FDA 21 CFR part 820.25  |                                                         |
 | This procedure sets forth how the competencies of the persons responsible for labeling is tested. | This can be done by the labeling of selected data sets.      |
 | This procedure sets forth how the persons responsible for labeling are trained and how the success of this training is evaluated. |                                                              |
 | This procedure sets forth how the correctness of the label is systematically reviewed. The selection of this justification has been documented by the manufacturer. | The manufacturer can provide identical data sets of multiple persons and assess the consistency of the results. |
@@ -325,8 +329,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-| The manufacturer has set a procedure that describes the pre-processing of the data. |                                                              |
-| This procedure describes the individual processing steps such as conversion, transformation, aggregation, normalization, format conversion, calculation of feature, conversion of numerical data into categories. | A graphic representation creates a rapid overview. The conversion of numerical to categorical values requires a justification. |
+| The manufacturer has set a procedure that describes the pre-processing of the data. |   | ISO 13485:2016, 4.1.6, 7.3.6, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.70(i)   |
+| This procedure describes the individual processing steps such as conversion, transformation, aggregation, normalization, format conversion, calculation of feature, conversion of numerical data into categories. | A graphic representation creates a rapid overview. The conversion of numerical to categorical values requires a justification. | | ISO 13485:2016, 4.1.6, 7.3.6, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.70(i)     |
 | The procedure describes how the correctness of the interim steps and the final results are assessed[^C.3.c.0] through risk-based evaluations. | This is consistent with the requirements of ISO 13485:2016 chapter 4.1.6. The risk management file must contain these analyzes. |
 | This procedure specifies how values with various measurement scales or units are detected and processed. | This depends on the ML-method used (e.g. tabular data / image data) and cannot be demanded as a general best practice.  |                                                            |
 | This procedure specifies how values are detected and processed that have been collected with various measurement methods. | This depends on the ML- method used (e.g. tabular data / image data) and cannot be demanded as a general best practice.       |                                                     |
@@ -334,8 +338,7 @@ Data generally have to be understood as training, validation and test data. Each
 | This procedure specifies how missing values within data sets are detected and processed. The manufacturer gives a rationale for the decision[^C.3.c.1]. | Make sure that the rationale differentiates between “missing at random” and “missing not at random”[^C.3.c.2]. |                                                        |
 | This procedure specifies how outliers are detected and processed[^C.3.c.3]. The manufacturer gives a rationale for the decision[^C.3.c.4]. | Show example of a date / feature. This, however, depends on the ML-method used (e.g. tabular data / image data) and cannot be demanded as a general best practice. |
 | This procedure specifies how unusable data sets are detected and handled[^C.3.c.5]. The determination was justified by the manufacturer. | Request example of a date / feature.                         |
-| The manufacturer has identified, assessed, and managed the risks arising from data processing. | Risks can be caused, for example, by software errors, rounding errors, re-sampling and compression of data, and the sorting out of invalid data. |                                                              |
-
+| The manufacturer has identified, assessed, and managed the risks arising from data processing. | Risks can be caused, for example, by software errors, rounding errors, re-sampling and compression of data, and the sorting out of invalid data. |  AI4H-DAISAM | 
 
 [^C.3.c.0]: Options include software tests and redundant or alternative calculations such as with Excel.
 
