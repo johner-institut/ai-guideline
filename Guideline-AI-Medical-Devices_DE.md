@@ -233,11 +233,11 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat aus der Zweckbestimmung nachvollziehbar quantitative Gütekriterien bzw. Anforderungen an die Software oder/und den Algorithmus abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich mit einer Traceability-Matrix besonders gut  darstellen.| ISO 13485, 7.3.3. |
+|Der Hersteller hat aus der Zweckbestimmung nachvollziehbar quantitative Gütekriterien bzw. Anforderungen an die Software oder/und den Algorithmus abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich mit einer Traceability-Matrix besonders gut  darstellen.| ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on "Software Validation", Kapitel 5.2.2 |
 |Der Hersteller hat beispielsweise die folgenden quantitativen Gütekriterien bzw. Anforderungen in Betracht gezogen: für Klassifikationsprobleme Genauigkeit (Mean oder Balanced Accuracy), positiver prädikativer Wert (Precision), Spezifität und Sensitivität; für Regressionsprobleme Mean Absoute Error und Mean Square Error.| Bei unbalancierten Daten, d.h. wenn Labels sehr unterschiedlich häufig vorkommen, sollte Balanced statt Mean Accuracy verwendet werden. Die Wahl der Gütekriterien hängt jedoch stark von der Zweckbestimmung ab. | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. |
 |Der Hersteller hat die erwarteten Wertebereiche der Outputs spezifiziert.|| ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. |
 |Der Hersteller hat die Anforderungen bezüglich der Wiederholbarkeit und Reproduzierbarkeit von Anforderungen spezifiziert.|Dies ist besonders bei "Continuous Learning Systems" relevant.| 2017/745/EU, Annex I, 17.1., 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3., 7.3.4 |
-|Der Hersteller hat festgelegt, wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.| ISO 25010, IEC 62304, 5.2. |
+|Der Hersteller hat festgelegt, wie sich das System verhält, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2].|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.| ISO 25010,, IEC 62304, 5.2., ISO 14971:2019, 5.4, FDA guidance on "Software Validation" Kapitel 5.2.2, FDA digital health criteria| |
 |Der Hersteller hat festgelegt, welche Selbsttests das System durchführen muss, und wie es sich verhält, wenn diese nicht erfolgreich sind.|Dies ist besonders bei "Continuous Learning Systems" relevant.|
 |Der Hersteller hat festgelegt, wie schnell das System die Outputs erzeugen muss.|Diese Festlegung kann ggf. abhängig von der Größe und Menge der Daten erfolgen.| 2017/745/EU, Annex I, 17.1., 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3.|
 |Der Hersteller hat die Verfügbarkeit des Medizinprodukts spezifiziert.|Dies ist ein Aspekt der Robustheit, der gemäß ISO 25010 und IEC 62304 Kapitel 5.2 zu spezifizieren ist.| ISO 25010, IEC 62304, 5.2., ISO 14971, 4.3., ISO 13485, 7.3.3.|
@@ -250,16 +250,16 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 | Anforderung| Kommentare| Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). | | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2.| 
+| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). | | 2017/745/EU, Annex I, 5., 2017/746/EU, Anhang 1, 5., IEC 62366-1, 5.2.| 
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
-| Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3. |
+| Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. | 2017/745/EU, Anhang I, 23., 2017/746/EU, Anhang I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120|
 
 #### c) Weitere Software-Anforderungen
 
 | Anforderung| Kommentare| Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein.          |
-| Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechenden Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO.                           |
+| Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um ein Fehlverhalten des Systems feststellen zu können. | Könnten ein Auditlog oder ein Monitoring-Port sein. | 2017/745/EU, Anhang I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 und 7.1, ISO 149781:2019, 5.4, FDA guidance on software validation e.g. Kapitel 5.2.2, 5.2.3 und 5.2.4, GMLP Guiding Principles (by FDA et al) #2 (data integrity) |
+| Gemäß DSGVO dürfen Patienten durch das spezifizierte System nicht Entscheidungen ausgesetzt sein, welche ausschließlich auf automatischer Datenverarbeitung beruhen. Hersteller sollten sich mit der entsprechenden Vorgabe auseinandersetzen und die gewählte rechtliche Grundlage begründen können. | Anforderung des Art. 22 der DSGVO. | Artikel 22, DSGVO |
 | Der Hersteller hat die Anforderungen bestimmt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | Die IT-Sicherheit ist nicht Gegenstand dieser Leitlinie, sondern der [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/). |
 
 #### d) Besondere Anforderungen an kontinuierliche lernende Systeme
@@ -284,13 +284,13 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :--| :--| :--|
-| Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. | Das betrifft die Datensätze für Training, Validierung und Test. |
-| Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Das schließt eine Dokumentation der Datentypen, Einheiten und Wertebereich mit ein. |
+| Der Hersteller hat die Anzahl der Datensätze festgelegt und eine Begründung gegeben, weshalb diese ausreichend ist[^C.3.a.1]. | Das betrifft die Datensätze für Training, Validierung und Test. | ISO 13485, 7.3.7 |
+| Der Hersteller hat die Ein- und Ausschlusskriterien von Daten  anhand relevanter Attribute[^C.3.a.2] charakterisiert. | Das schließt eine Dokumentation der Datentypen, Einheiten und Wertebereich mit ein. | ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
 | Der Hersteller hat technische Ein- und Ausschlusskriterien für Daten spezifiziert[^C.3.a.3]. |                                                              |
 | Der Hersteller hat das Verfahren beschrieben, mit dem er sicherstellt, dass Datensätze, die nicht den Einschlusskriterien genügen bzw. ausgeschlossen werden sollen, tatsächlich ausgeschlossen werden. | Das Verfahren schließt eine softwaregestützte Bewertung mit ein. Diese Software ist zu validieren. |
 | Der Hersteller hat die gesammelten Daten mit Hilfe einer deskriptiven Statistik beschrieben[^C.3.a.4]. | Empfehlenswert ist das ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/). |
 | Der Hersteller hat begründet, wo er Testdaten sammelt und weshalb diese repräsentativ für die Zielpopulation sind. So sinnvoll, haben sie diese mit Daten des Bundesamts für Statistik, aus wissenschaftlichen Publikationen und von Registern verglichen. |                                                              |
-| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Trainings-, Validierungs- und Testdaten verursachen könnten. |                                                              |
+| Der Hersteller hat Faktoren gelistet und diskutiert, die einen "Bias" der Trainings-, Validierungs- und Testdaten verursachen könnten. |  | ISO 24028 e.g. 10.5, DAISAM |      |
 | Der Hersteller hat analysiert, welche Einflüsse die Art und der Ort der Datensammlung auf die Daten hat[^C.3.a.5]. |                                                              |
 | Der Hersteller hat ein Verfahren etabliert, mit dem er gewährleistet, dass die Anforderungen an den Datenschutz erfüllt sind. | Beispielsweise werden die Daten vor dem Testen und Training anonymisiert bzw. pseudonymisiert. Hierzu sollte der Datenschutzbeauftragte einbezogen werden. |
 | Der Hersteller hat Möglichkeiten eines "Label Leakages" untersucht und ausgeschlossen[^C.3.a.6]. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. |
@@ -313,9 +313,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :--| :-- | :-- |
 | Der Hersteller hat beim "Supervised Learning", die Labels aus der Zweckbestimmung abgeleitet, mit denen die Trainingsdaten versehen werden und diese Wahl begründet. |                                                              |
-| Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |                                                              |
+| Der Hersteller hat beim "Supervised Learning" ein Verfahren fürs Labeling festgelegt, falls noch keine Labels in den Daten vorhanden waren. |    | ISO 13485, 4.1 |                                                   
 | Dieses Verfahren spezifiziert quantitative Klassifizierungskriterien für das Labeling. Die Wahl dieser Kriterien hat der Hersteller begründet[^C.3.b.1]. | Falls nicht der "Ground Truth"[^C.3.b.2] gewählt wird, weil dieser z.B. zu teuer oder zu invasiv ist, muss dies ebenfalls begründet sein. |
-| Dieses Verfahren spezifiziert die Anforderungen an die Anzahl, Ausbildung und Kompetenz der für das Labeling verantwortlichen Personen. |                                                              |
+| Dieses Verfahren spezifiziert die Anforderungen an die Anzahl, Ausbildung und Kompetenz der für das Labeling verantwortlichen Personen. |   ISO 13485, 6.2 and 7.3.2, FDA 21 CFR part 820.25  |
 | Dieses Verfahren legt fest, wie die Kompetenz der für das Labeling verantwortlichen Personen geprüft wird. | Dies kann durch das Labeling von ausgewählten Datensätzen erfolgen. |
 | Dieses Verfahren legt fest, wie die, für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung überprüft wird. |                                                              |
 | Dieses Verfahren legt fest, wie die Korrektheit der Labels systematisch überprüft wird. Die Wahl dieser Begründung hat der Hersteller dokumentiert. | Der Hersteller kann identische Datensätzen mehreren Personen zum Labeling vorlegen und die Übereinstimmung der Ergebnisse bewerten. |
@@ -331,8 +331,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :--| :-- | :-- |
-| Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |                                                              |
-| Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. |
+| Der Hersteller hat ein Verfahren festgelegt, das die (Vor-)Verarbeitung ("pre-processing") der Daten beschreibt. |    | ISO 13485:2016, 4.1.6, 7.3.6, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.70(i)  |
+| Dieses Verfahren beschreibt die einzelnen Verarbeitungsschritte wie Umrechnungen, Transformationen, Aggregationen, Normalisierung, Formatumwandlungen, Berechnung von Feature, Umwandlung numerischer Daten in Kategorien. | Eine graphische Darstellung verschafft einen schnellen Überblick. Die Umwandlung von numerischen in kategoriale Werte bedarf einer Begründung. | ISO 13485:2016, 4.1.6, 7.3.6, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.70(i)  |
 | Das Verfahren beschreibt, wie die Korrektheit der Zwischenschritte und der Endergebnisse überprüft wird[^C.3.c.0]. Diese Überprüfungen erfolgen risikobasiert. | Dies entspricht den Anforderungen der ISO 13485:2016 Kapitel 4.1.6. Die Risikomanagementakte muss diese Analysen enthalten. |
 | Dieses Verfahren spezifiziert, wie Werte mit verschiedenen Messskalen bzw. Einheiten erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML-Verfahren (z.B. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie Werte, die mit verschiedenen Messverfahren bestimmt wurden, erkannt und verarbeitet werden. | Dies ist abhängig von dem angewandten ML-Verfahren (z.B. tabellarischen Daten / Bilddaten) und lässt sich nicht generell als Best Practice einfordern. |
@@ -340,7 +340,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Dieses Verfahren spezifiziert, wie fehlende Werte innerhalb von Datensätzen erkannt und verarbeitet werden. Diese Festlegung hat der Hersteller begründet[^C.3.c.1]. | Es ist darauf zu achten, dass der Hersteller bei der Begründung zwischen "missing at random" und "missing not at random" unterscheidet[^C.3.c.2]. |
 | Dieses Verfahren spezifiziert, wie Outliers insb. bei tabellarischen Daten erkannt und verarbeitet werden[^C.3.c.3]. Diese Festlegung hat der Hersteller begründet[^C.3.C.4]. | Exemplarisch für ein Datum / Feature zeigen lassen. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. |
 | Dieses Verfahren spezifiziert, wie nicht verwendbare Datensätze erkannt werden und damit umgegangen wird.[^C.3.c.5]. Diese Festlegung hat der Hersteller begründet. | Exemplarisch für ein Datum / Feature zeigen lassen.          |
-| Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die sich durch die Datenverarbeitung ergeben. | Risiken können beispielsweise verursacht werden durch Software-Fehler, Rundungsfehler, Re-Sampling und Komprimierung von Daten sowie das Aussortieren ungültiger Daten. |
+| Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, die sich durch die Datenverarbeitung ergeben. | Risiken können beispielsweise verursacht werden durch Software-Fehler, Rundungsfehler, Re-Sampling und Komprimierung von Daten sowie das Aussortieren ungültiger Daten. |  AI4H-DAISAM | 
 
 
 [^C.3.c.0]: Zu den Möglichkeiten der Überprüfung zählen Software-Tests und redundante bzw. alternative Berechnungen z.B. mit Excel.
