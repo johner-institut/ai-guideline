@@ -247,7 +247,6 @@ FDA Proposed Regulatory Framework for Modifications to Artificial
 | The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., 5.3. |
 | The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120 |
 
- |
 
 #### c) Additional software requirements
 
@@ -287,8 +286,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has described the procedure by which it ensures that data sets that do not meet the inclusion criteria or should be excluded are actually excluded. | Procedure includes a software supported assessment. This software must be validated. |
 | The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is an recommended option. |
 | The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. |                                                              |
-| The manufacturer has listed and discussed factors that could cause a bias in the data. |   | ISO 24028 e.g. 10.5, DAISAM |
-                                                           
+| The manufacturer has listed and discussed factors that could cause a bias in the data. |   | ISO 24028 e.g. 10.5, DAISAM |                                                           
 | The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |  
 |The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |
 | The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
@@ -397,13 +395,14 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. |
+|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, 
+ISO 14971:2019, 10. |
 |The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. |
 |The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | |
-|The manufacturer has shown how to recognize and thus avoid overfitting. | |
+|The manufacturer has shown how to recognize and thus avoid overfitting. | | ISO 24028 9.8.2.23 |
 |The manufacturer has examined the data sets that were predicted particularly well and those that were predicted particularly poorly. | A residuals analysis is recommended, in which the errors are plotted against the feature values, if applicable. |
 |The manufacturer has examined the data sets for which the model is particularly safe and particularly unsafe[^C.4.c.1]. | |
-|The manufacturer has justified the ultimate choice of model on the basis of the quality criteria and the intended use, and has explained in particular when simpler and more interpretable models were not used. |  |
+|The manufacturer has justified the ultimate choice of model on the basis of the quality criteria and the intended use, and has explained in particular when simpler and more interpretable models were not used. |  | ISO 14971:2019, XAVIER University "Building Explainability and Trust for AI in Healthcare", DIN SPECT 2 |
 |The manufacturer has considered, especially for tabular data for individual data sets, to have the model show the features that particularly influenced the decision [^C.4.c.2]. | This cannot be claimed as a general best practice. |
 |The manufacturer has considered evaluating, especially for tabular data, how and how much individual features would have to change for the model to come to a different prediction. | This is referred to as ["counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). This cannot generally be claimed as a best practice. 
 |The manufacturer has considered analyzing/visualizing the dependence (strength, direction) of the predictions on the feature values, especially for tabular data [^C.4.c.3]. | This cannot be claimed as a best practice in general. |
@@ -424,10 +423,10 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
 | The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.   | •	ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 | The manufacturer has documented his code according to a policy. | Usually at least public class, methods with pass and return values as well as attributes are to be documented |
-| The manufacturer has described which data sets it used for training, validation and testing of the model. |                                                              |
+| The manufacturer has described which data sets it used for training, validation and testing of the model. |  |ISO 24028 9.8.2.1, DAISAM|
 | The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |                                                               
-| The manufacturer has the SOUP (libraries and frameworks) under version and configuration control. | | • IEC 62304, 8.1.2. | 
-| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | •	ISO 13485, 4.2.3., 4.2.5. |
+| The manufacturer has the SOUP (libraries and frameworks) under version and configuration control. | | IEC 62304, 8.1.2. | 
+| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has described how it selected the architectures, trained the models, and optimized the hyperparameters, and justified this procedure. | Auditors want to be able to understand how the manufacturer has proceeded and why the chosen solution is the best. IEC 62304 and the FDA do not want "ad hoc design decisions".  |                                                              
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
 | The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. | • ISO 13485, 4.2.3., 4.2.5. |
@@ -443,10 +442,10 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                        | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------- |--|
-| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1] | •	IEC 62304, IEC 82304   |
-| If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |  | • IEC 62304, IEC 82304 |
-| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | | •	2017/745/EU, Annex I, 17.1., 17.3., 2017/746/EU, Annex I, 16.1., 16.3. |
-| The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | | IEC 62304 |
+| The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1] | IEC 62304, IEC 82304, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on software validation, FDA OTS guidance  |
+| If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |  | IEC 62304, IEC 82304 |
+| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | 2017/745/EU, Annex I, 17.1., 17.3., 2017/746/EU, Annex I, 16.1., 16.3. |
+| The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | | IEC 62304, 5.3, 8.1.2, FDA OTS guidance |
 | The manufacturer has attached the prescribed license conditions to the software and ensured the legality of the use of third-party software (e.g., open source software). | Manufacturers often use open source software, which may only be used within the scope of licenses and copy right statements. |
 
 [^C.5.a.1]: The manufacturers should adhere to the normal best practices such as adherence to coding guidelines, review of code by code reviews using defined criteria, testing to code with unit tests with a defined coverage, etc.  A description of the code (architecture) should make it easy to understand which code performs which task.
