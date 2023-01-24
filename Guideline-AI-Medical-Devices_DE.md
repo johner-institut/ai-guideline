@@ -400,10 +400,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 |:--|:--|:--|
-| Der Hersteller hat die Bewertung des Modells geplant. | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. |
+| Der Hersteller hat die Bewertung des Modells geplant. | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, ISO 14971:2019, 10. |
 | Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
 | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
-| Der Hersteller hat aufgezeigt, wie er ein Overfitting erkennen und so vermeiden kann. |                                                              |
+| Der Hersteller hat aufgezeigt, wie er ein Overfitting erkennen und so vermeiden kann. | | ISO 24028 9.8.2.23 |
 | Der Hersteller hat die Datensätze untersucht, die besonders gut  und die besonders schlecht vorhergesagt wurden. | Empfehlenswert ist eine Residuen-Analyse, bei der ggf. die Fehler über die Feature-Werte aufgetragen sind. |
 | Der Hersteller hat die Datensätze untersucht, bei denen sich das Modell besonders sicher und besonders unsicher[^C.4.c.1] ist. |                                                              |
 | Der Hersteller hat anhand der Gütekriterien und der Zweckbestimmung die letztliche Wahl des Modells begründet und insbesondere dargelegt, wenn einfachere und interpretierbarere Modelle nicht zur Anwendung kamen. |                                                              |
@@ -428,7 +428,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | :-- | :-- |:-- |
 | Der Hersteller hat das Modell[^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Das schließt Scripts und Build-Files mit ein. | ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 | Der Hersteller hat seinen Code gemäß einer Policy dokumentiert. | Üblicherweise sind zumindest öffentliche Klasse, Methoden mit Übergabe- und Rückgabewerten sowie Attribute zu dokumentieren |
-| Der Hersteller hat beschrieben, welche Datensätze er für das Training, für die Validierung und das Testen des Modells verwendet hat. |                                                              |
+| Der Hersteller hat beschrieben, welche Datensätze er für das Training, für die Validierung und das Testen des Modells verwendet hat. |     | ISO 24028 9.8.2.1, DAISAM|
 | Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Dazu ist der Einsatz eines Versionsverwaltungssystems nicht nur für den  Code, sondern auch für Daten, Testergebnisse und deren Bewertung sinnvoll. Es empfiehlt sich, auch die bei der Datenverarbeitung und dem Training verwendete Infrastruktur (Hardware, Betriebssystem, Virtualisierungsschichten wie Docker) zu dokumentieren. Abweichende Ergebnisse sind zu begründen (z.B. Hardware, Zufallsgeneratoren,  Rundungsfehler). Absolute Pfade und betriebssystemspezifische Befehle sind zu vermeiden. Eine README-Datei im .txt oder Markdown-Format hilft, sich in der Dokumentation schneller zurecht zu finden. |
 | Der Hersteller hat die SOUP (Bibliotheken und Frameworks) unter Versions- und Konfigurationskontrolle. || IEC 62304, 8.1.2. |
 | Der Hersteller hat die Architektur des Modells und das Modell selbst inklusive dessen Algorithmen und Hyperparameter dokumentiert. | Beispielsweise sollte bei einem CNN u.a. die Anzahl und Art der Schichten, die Verknüpfung der Neuronen bzw. Schichten, die Aktivierungsfunktion, der Optimizer und anderer Parameter inklusive deren Wertebereiche dokumentiert werden. Zur Dokumentation des Modells zählt auch die Spezifikation der Outputs, wie die Anzahl der Outputs, die jeweiligen Datentypen, Wertebereiche, Einheiten usw.. | ISO 13485, 4.2.3., 4.2.5. |
@@ -436,7 +436,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat beschrieben, wenn er mit einem "Pretrained Model" gearbeitet hat, und dargelegt, weshalb dieses "Pre-Training" der Aufgabenstellung angemessen ist. ||
 | Der Hersteller hat die Güte der Modelle basierend auf den Gütemaßen dokumentiert. | Diese Gütemaße beziehen sich auf Prüfung mit den Testdaten.  | ISO 13485, 4.2.3., 4.2.5. |
 | Der Hersteller hat die Konfidenzintervalle für die Güteparameter abhängig für die Inputdaten angegeben. | Gerade an den Rändern der erlaubten Input-Daten sinkt häufig die Konfidenz stark ab. Diese Information sollte auch den Anwendern in den Begleitmaterialen zur Verfügung gestellt werden. |
-| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. | •	ISO 13485, 4.2.3., 4.2.5. |
+| Der Hersteller hat insbesondere bei tabellarischen Daten dokumentiert, innerhalb welcher Grenzen (z.B. Feature-Werte) das Modell, die Anforderungen an die Gütemaße erreicht. | Dies ist abhängig von dem angewandten ML-Modell und lässt sich nicht generell als Best Practice einfordern. | ISO 13485, 4.2.3., 4.2.5. |
 | Der Hersteller hat mehrere Modelle und deren Hyperparameter ausprobiert und dafür, die in diesem Abschnitt genannten Aspekte dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Nutzen-Risiko-Verhältnis zu maximieren. |
 
 [^C.4.d.1]: Trainierte Modelle lassen sich serialisieren.
@@ -448,10 +448,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :--| :-- |:-- |
-| Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]                              |
+| Der Hersteller hat alle von der IEC 62304 geforderten Aktivitäten durchgeführt und dokumentiert. | Hinweis für Auditoren[^C.5.a.1]  | IEC 62304, IEC 82304, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on software validation, FDA OTS guidance  |
 | Wenn der Hersteller das Modell in einer anderen Programmiersprache oder für eine andere Laufzeitumgebung implementiert hat, hat er einen Plan erstellt, welche der Aktivitäten gemäß Kapitel 4. wiederholt. || • IEC 62304 •	IEC 82304 | 
-| Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). | | •	2017/745/EU, Annex I, 17.1., 17.3. •	2017/746/EU, Annex I, 16.1., 16.3. | 
-| Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind und diese Verifizierung auch durchgeführt und dokumentiert. |  | IEC 62304 |
+| Der Hersteller prüft die Performance (Antwortzeiten, Ressourcenverbrauch) auf der Zielhardware (z.B. Browser, Mobilgerät). | | •	2017/745/EU, Anhang I, 17.1., 17.3. •	2017/746/EU, Anhang I, 16.1., 16.3. | 
+| Der Hersteller hat für alle SOUP- bzw. OTS-Komponenten beschrieben, wie diese zu verifizieren sind und diese Verifizierung auch durchgeführt und dokumentiert. |  | IEC 62304, 5.3, 8.1.2, FDA OTS guidance | |
 | Der Hersteller hat der Software die vorgeschriebenen Lizenzbedingungen beigefügt und die Rechtmäßigkeit der Verwendung von Software Dritter (z.B. Open Source Software) sichergestellt. | Hersteller nutzen häufig Open Source Software, welche nur im Rahmen von Lizenzen und Copy Right Angaben verwendet werden darf. |
 
 [^C.5.a.1]: Die Hersteller sollten die üblichen Best-Practices einhalten wie das Einhalten von Coding-Guidelines, die Überprüfung des Codes durch Code-Reviews anhand definierte Kriterien, das Testen des Codes durch Unit-, Integrations- und Software-System-Tests mit einem definierten Abdeckungsgrad usw. Eine Beschreibung des Codes (Architektur) sollte einfach nachvollziehbar machen, welcher Code, welche Aufgabe übernimmt.
