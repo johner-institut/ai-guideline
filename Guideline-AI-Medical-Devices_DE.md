@@ -469,7 +469,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
 | Die Gebrauchsanweisung beschreibt, wie das Produkt genutzt werden soll. | Das schließt auch das Verhalten im Fehlerfall und die sekundäre Nutzung, wie die Installation, das Upgrade und die Konfiguration mit ein. |
 | Die Gebrauchsanweisung beschreibt die möglichen Outputs.     | Das schließt auch die Erklärungen des Produkts ("Explainability") mit ein. |
-| Die Gebrauchsanweisung beschreibt die Restrisiken.           |   | 2017/745/EU, Annex 1, 23.4, ISO 14971:2019, 8, ISO 24028 e.g. 10.11.3 |
+| Die Gebrauchsanweisung beschreibt die Restrisiken.           |   | 2017/745/EU, Anhang I, 23.4, ISO 14971:2019, 8, ISO 24028 e.g. 10.11.3 |
 | Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Features. |
 | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
 | Die Gebrauchsanweisung benennt die Gütekriterien.            | Hier auch Konfidenz-Bereiche angeben.                        |
@@ -477,10 +477,10 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. | Bitte Hinweise im Kapitel zu den kontinuierliche lernenden Systemen beachten. |
 | Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |  |
 | Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |  |
-| Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |   | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
-| Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. | | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
+| Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |   | 2017/745/EU, Anhang I, 23.4, EU-Regulation 207/2012|
+| Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. | | 2017/745/EU, Anhang I, 23.4, EU-Regulation 207/2012|
 | Die Gebrauchsanweisung nennt mögliche ethische Problematiken. |                                                              |
-| Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |     | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
+| Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |     | 2017/745/EU, Anhang I, 23.4, EU-Regulation 207/2012|
 
 #### c) Usability-Validierung
 
