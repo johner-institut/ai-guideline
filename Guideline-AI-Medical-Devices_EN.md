@@ -455,16 +455,16 @@ ISO 14971:2019, 10. |
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI. | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
-| The instructions for use describe the intended use of the product including the expected medical benefit. |   | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
-| The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. | | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
+| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI. | 2017/745/EU, Annex I, chap. III, 23.1, 23.4., FD&C, FDA 21 CFR parts801 and 820.120, ISO 24028 e.g. 10.11.3 |
+| The instructions for use describe the intended use of the product including the expected medical benefit. |   | 2017/745/EU, Annex I, chap. III, 23.1, 23.4., 21 CFR part 801, 21 CFR part 814.20, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare", ISO 24028 e.g. 10.11.3|
+| The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. | | 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
 | The instructions for use explicitly list the patients / data / use case for which the product may not be used. |   | • 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
 | The instructions for use document the requirements of the input data (including formats, resolutions, value ranges, etc.). |                                                              |
 | The instruction for use specify the intended primary and secondary users pursuant to intended use. |                                                              |
 | The instructions for use describe the other conditions applicable to the product (e.g. runtime environment, use environment). |    
 | The instructions for use describe how the product is to be used. | This also includes behavior in the event of an error and secondary use such as installation, upgrade and configuration. |
 | The instructions for use describe the possible outputs. | This also includes the explanations of the product ("Explainability"). |
-| The instructions for use describe the residual risks.        |                                                              |
+| The instructions for use describe the residual risks.        |    | 2017/745/EU, Annex 1, 23.4, ISO 14971:2019, 8, ISO 24028 e.g. 10.11.3 |
 | The instructions for use indicate the data with which the model was trained. | This is related both to the patient collective and to the features used. |
 | The instructions for use describe the model and algorithms.  |                                                              |
 | The instructions for use name the quality metrics.   |  Also specify confidence ranges here.                                                         |
@@ -472,19 +472,19 @@ ISO 14971:2019, 10. |
 | The instructions for use specify whether the product is further trained during use. | Please observe notes in the chapter on continuous learning systems.  |                                                              |                                                              |
 | The instructions for use describe how to update the product. |                                                              |
 | The instructions for use contain references to additional literature. |                                                              |
-| The instructions for use contain references to licensing rights. |                                                              |
-| The instructions for use identify the manufacturer and lists channels for posing questions. |                                                        |
-| The instructions for use list possible ethical problems.     |                                                              |
-| The instructions for use contain the URL under which the most current versions of the instruction of use can be found. |     
+| The instructions for use contain references to licensing rights. |    | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
+| The instructions for use identify the manufacturer and lists channels for posing questions. |  |  2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
+| The instructions for use list possible ethical problems.     | |
+| The instructions for use contain the URL under which the most current versions of the instruction of use can be found. |    | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012| 
 
 
 #### c) Usability validation
 
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
-| As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  | • IEC 62366-1 |
-| As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. | | • IEC 62366-1 |
-| As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. | • IEC 62366-1, 5.7-5.9 |
+| As part of the usability validation, the manufacturer assesses whether users understand the instructions for use. | This includes other accompanying materials.  | IEC 62366-1, FDA HFE guidance |
+| As part of the usability validation, the manufacturer evaluates whether the users blindly trust the product or verify the results. | | IEC 62366-1 |
+| As part of the usability validation, the manufacturer evaluates whether users correctly recognize and understand the results. | This also includes the display of errors and the explanations ("explainability"). Manufacturers should include all safety-related use scenarios in the validation and all risk-minimizing measures on the interface. | IEC 62366-1, 5.7-5.9 |
 
 
 ####  d) Risk management
@@ -514,8 +514,8 @@ ISO 14971:2019, 10. |
 
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
-| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. || • 2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
-| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | | • 2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. || 2017/745/EU, Article 61, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 rev.4, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.30(g)|
+| As part of the clinical evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | | 2017/745/EU, Article 61, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 rev 4, ISO 14971:2019, 4.2  |
 
 
 ### 6. Product release
