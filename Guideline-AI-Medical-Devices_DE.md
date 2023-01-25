@@ -460,8 +460,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben                               |
-| Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |                                                              |
+| Die Gebrauchsanweisung identifiziert eindeutig die Version des Produkts. | Falls möglich, die UDI angeben  | 2017/745/EU, Anhang I, Kapitel. III, 23.1, 23.4., FD&C, FDA 21 CFR parts801 and 820.120, ISO 24028 e.g. 10.11.3 |
+| Die Gebrauchsanweisung beschreibt die Zweckbestimmung des Produkts einschließlich des erwarteten medizinischen Nutzens. |   | 2017/745/EU, Anhang I, Kapitel III, 23.1, 23.4., 21 CFR part 801, 21 CFR part 814.20, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare", ISO 24028 e.g. 10.11.3|
 | Die Gebrauchsanweisung legt die vorgesehene Patientenpopulation anhand Indikationen, Kontraindikationen und so relevant anhand weiterer Parameter, wie Alter, Geschlecht, Begleiterkrankungen oder Verfügbarkeit von Informationen fest. |                                                              |
 | Die Gebrauchsanweisung nennt explizit die Patienten / Daten  / Anwendungsfälle, bei denen das Produkt nicht verwendet werden darf. |                                                              |
 | Die Gebrauchsanweisung dokumentiert die Anforderungen an die Input-Daten (inklusive Formate, Auflösungen, Wertebereich etc.). |                                                              |
@@ -469,24 +469,24 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Die Gebrauchsanweisung beschreibt, von welchen sonstigen Voraussetzungen das Produkt ausgeht (z.B. Laufzeitumgebung, Nutzungsumgebung). |                                                              |
 | Die Gebrauchsanweisung beschreibt, wie das Produkt genutzt werden soll. | Das schließt auch das Verhalten im Fehlerfall und die sekundäre Nutzung, wie die Installation, das Upgrade und die Konfiguration mit ein. |
 | Die Gebrauchsanweisung beschreibt die möglichen Outputs.     | Das schließt auch die Erklärungen des Produkts ("Explainability") mit ein. |
-| Die Gebrauchsanweisung beschreibt die Restrisiken.           |                                                              |
+| Die Gebrauchsanweisung beschreibt die Restrisiken.           |   | 2017/745/EU, Annex 1, 23.4, ISO 14971:2019, 8, ISO 24028 e.g. 10.11.3 |
 | Die Gebrauchsanweisung gibt an, mit welchen Daten das Modell trainiert wurde. | Dies bezieht sich sowohl auf das Patientenkollektiv als auch auf die verwendeten Features. |
 | Die Gebrauchsanweisung beschreibt das Modell bzw. die Algorithmen. |                                                              |
 | Die Gebrauchsanweisung benennt die Gütekriterien.            | Hier auch Konfidenz-Bereiche angeben.                        |
 | Die Gebrauchsanweisung listet die Faktoren auf, die sich negativ auf die Gütekriterien auswirken können. |                                                              |
 | Die Gebrauchsanweisung spezifiziert, ob das Produkt während der Anwendung weiter trainiert wird. | Bitte Hinweise im Kapitel zu den kontinuierliche lernenden Systemen beachten. |
-| Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |                                                              |
-| Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |                                                              |
-| Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |                                                              |
-| Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. |                                                              |
+| Die Gebrauchsanweisung beschreibt, wie Updates erfolgen.     |  |
+| Die Gebrauchsanweisung enthält ggf. Verweise auf weiterführende Literatur. |  |
+| Die Gebrauchsanweisung enthält ggf. Hinweise zu Lizenzrechten. |   | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
+| Die Gebrauchsanweisung identifiziert den Hersteller und nennt Kanäle, über die Rückfragen zu stellen sind. | | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
 | Die Gebrauchsanweisung nennt mögliche ethische Problematiken. |                                                              |
-| Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |                                                              |
+| Die Gebrauchsanweisung benennt die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. |     | 2017/745/EU, Annex 1, 23.4, EU-Regulation 207/2012|
 
 #### c) Usability-Validierung
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. | Das schließt andere Begleitmaterialien mit ein. | •	IEC 62366-1 |
+| Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer die Gebrauchsanweisung verstehen. | Das schließt andere Begleitmaterialien mit ein. | IEC 62366-1, FDA HFE guidance |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Nutzer dem Produkt blind vertrauen oder die Ergebnisse nachprüfen. |  | IEC 62366-1 |
 | Der Hersteller bewertet im Rahmen der Usability Validierung, ob die Anwender die Ergebnisse korrekt erkennen und verstehen. | Das schließt auch die Anzeige von Fehlern und die Erklärungen ("Explainability") mit ein. Hersteller sollten alle sicherheitsbezogenen Use Scenarios bei der Validierung und alle risikominimierenden Maßnahmen am Interface einbeziehen. | IEC 62366-1, 5.7. – 5.9. |
 
@@ -517,8 +517,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar | Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |           | 2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
-| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken, dem Stand der Technik entsprechen. |           |2017/745/EU, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 |
+| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen bei den gegebenen Güteparametern erreicht wird. |    | 2017/745/EU, Artikel 61, Anhang XIV und Anhang XV, 2017/746/EU, Anhang XIII und Anhang XIV, MEDDEV 2.7/1 rev.4, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.30(g)|
+| Der Hersteller hat im Rahmen der klinischen Bewertung bewertet, ob der versprochene medizinische Nutzen und die Risiken, dem Stand der Technik entsprechen. |           |2017/745/EU, Artikel 61, Anhang XIV und Anhang XV, 2017/746/EU, Anhang XIII and Anhang XIV, MEDDEV 2.7/1 rev 4, ISO 14971:2019, 4.2  |
 
 
 ### 6. Produktfreigabe
