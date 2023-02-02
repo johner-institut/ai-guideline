@@ -522,7 +522,8 @@ ISO 14971:2019, 10. |
 
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
-| The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). |
+| The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). | 2017/745/EU, Annexes I and II, ISO 13485 e.g. 7.3.5
+FDA 21 CFR part 820.30(e)
 | The manufacturer has assessed the risks as acceptable in risk management and documented that all activities specified in the risk management plan have been carried out. | Note for auditors [^C.6.1] |
 |The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |  
 | The manufacturer has shown in Algorithm Change Protocol (ACP) how it will perform these changes for systems that it wishes to market in the USA[^C.6.3]. |                            |
@@ -585,8 +586,8 @@ ISO 14971:2019, 10. |
 
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a decommissioning plan before withdrawing its product from the market. | Such a plan specifies, for example, whether and how the software must be uninstalled, whether data must be backed up or exported, how the confidentiality of the data remains guaranteed, who is responsible for these activities, how the progress of the decommissioning is monitored and ensured, and which organizations must be informed and how.|
-|The manufacturer identifies, evaluates and controls the risks arising from decommissioning. | This is to be evaluated in the risk management file. Risks from the unavailability of the product, from usage errors and from an influence on other products should be considered.|
+|The manufacturer has created a decommissioning plan before withdrawing its product from the market. | Such a plan specifies, for example, whether and how the software must be uninstalled, whether data must be backed up or exported, how the confidentiality of the data remains guaranteed, who is responsible for these activities, how the progress of the decommissioning is monitored and ensured, and which organizations must be informed and how.| ISO 24028 |
+|The manufacturer identifies, evaluates and controls the risks arising from decommissioning. | This is to be evaluated in the risk management file. Risks from the unavailability of the product, from usage errors and from an influence on other products should be considered.|  2017/746/EU Annex I, 3., ISO 14971:2019 chapter 10 in combination with 3.8 and 3.12, ISO 24028 |
 
 
 ## E) Annexes
