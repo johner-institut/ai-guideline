@@ -494,9 +494,9 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentare| Regulatorische Referenzen|
 | :-- | :--| :--|
-| Der Hersteller hat die Risiken bewertet, die sich ergeben, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2]. |                                                              |
+| Der Hersteller hat die Risiken bewertet, die sich ergeben, wenn die Inputs nicht die spezifizierten Voraussetzungen erfüllen[^C.2.a.2]. |   | ISO 14971:2019 |
 | Der Hersteller hat die quantitativen Güterkriterien anhand des Stands der Technik abgeleitet. | Der Hersteller muss die Gütekriterien für alternative Technologien und Verfahren benennen und argumentieren können, wenn das Medizinprodukt den Alternativen bezüglich der Gütekriterien nicht überlegen ist[^C.5.d.1]. |
-| Der Hersteller hat den Goldstandard festgelegt und dessen Wahl begründet, mit dem die Gütekriterien überprüft werden sollen. |                                                              |
+| Der Hersteller hat den Goldstandard festgelegt und dessen Wahl begründet, mit dem die Gütekriterien überprüft werden sollen. |  | XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA proposed regulatory framework for modifications to AI/ML based SaMD: "reference standard" |
 | Der Hersteller hat Risiken identifiziert, bewertet und beherrscht, die sich ergeben, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. | Bei dieser Analyse betrachtet der Hersteller auch die spezifischen Eigenschaften des gewählten Modells sowie die beim Testen bestimmten Konfidenz-Intervalle der Output-Werte. |
 | Der Hersteller hat die Folgen bewertet, wenn das System sozial inakzeptable Outputs liefert (z.B. diskriminierend). | Diese "Folgen" sind nicht notwendigerweise Risiken im Sinne der ISO 14971. |
 | Der Hersteller hat die Risiken identifiziert, bewertet und beherrscht, wenn das System nicht verfügbar ist. |                                                              |
@@ -525,7 +525,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- |:-- |:-- |
-| Der Hersteller hat sichergestellt, dass alle o.g. Dokumentation vorliegt. | Das betrifft u.a. die  in den Kapitel 3.d), 4.d und 5.b) geforderte Dokumentation. |
+| Der Hersteller hat sichergestellt, dass alle o.g. Dokumentation vorliegt. | Das betrifft u.a. die  in den Kapitel 3.d), 4.d und 5.b) geforderte Dokumentation. | 2017/745/EU, Anhänge I und II, ISO 13485, 7.3.5. |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1]                                |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                                                              |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, im Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                                                              |
@@ -554,7 +554,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.|| 2017/745/EU, Artikel 10, i, Artikel 83, Anhang III, 1.1, FD&C act 522, 21 CFR part 822, IEC 62304 7.1.3, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, DIN SPECT 2, FDA proposed regulatory framework for modifications to AI/ML based SaMD chapter IV, Annex C- IT security Guidelines |
 |Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung, insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Feedback-Loops die Schwellenwerte selbst beeinflussen können[^D.2.1].|Diese Analyse dient auch als Maßnahme gegen das o.g. Risiko durch "Performance Prediction".| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
@@ -587,8 +587,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentare|Regulatorische Referenzen|
 | :-- | :-- |:-- |
-| Der Hersteller hat einen Plan für die Außerbetriebnahme erstellt, bevor er sein Produkt aus dem Markt nimmt. | Solch ein Plan legt z.B. fest, ob und wie die Software deinstalliert werden muss, ob Daten gesichert oder exportiert werden müssen, wie die Vertraulichkeit der Daten gewährleistet bleibt, wer für diese Aktivitäten verantwortlich ist, wie der Fortschritt der Außerbetriebnahme überwacht und sichergestellt wird und welche Organisationen wie zu informieren sind. |
-| Der Hersteller identifiziert, bewertet und beherrscht die Risiken, die sich aus der Außerbetriebnahme ergeben. | Dies ist in der Risikomanagementakte zu bewerten. Risiken durch die Nichtverfügbarkeit des Produkts, durch Nutzungsfehler und durch einen Einfluss auf andere Produkte sollten dabei betrachtet werden. |
+| Der Hersteller hat einen Plan für die Außerbetriebnahme erstellt, bevor er sein Produkt aus dem Markt nimmt. | Solch ein Plan legt z.B. fest, ob und wie die Software deinstalliert werden muss, ob Daten gesichert oder exportiert werden müssen, wie die Vertraulichkeit der Daten gewährleistet bleibt, wer für diese Aktivitäten verantwortlich ist, wie der Fortschritt der Außerbetriebnahme überwacht und sichergestellt wird und welche Organisationen wie zu informieren sind. | ISO 24028 |
+| Der Hersteller identifiziert, bewertet und beherrscht die Risiken, die sich aus der Außerbetriebnahme ergeben. | Dies ist in der Risikomanagementakte zu bewerten. Risiken durch die Nichtverfügbarkeit des Produkts, durch Nutzungsfehler und durch einen Einfluss auf andere Produkte sollten dabei betrachtet werden. | 2017/746/EU Anhang I, 3., ISO 14971:2019 Kapitel 10 in Kombination mit 3.8 and 3.12, ISO 24028 |
 
 
 ## E) Anhänge
