@@ -251,8 +251,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 | Requirements                                                 | Comments                                    | Regulatory references|
 | :----------------------------------------------------------- | :------------------------------------------ |:--|
-| The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. | 2017/745/EU, Annex I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 and 7.1,
-ISO 149781:2019, 5.4, FDA guidance on software validation e.g. chapter 5.2.2, 5.2.3 and 5.2.4, GMLP Guiding Principles (by FDA et al) #2 (data integrity)  |
+| The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. | 2017/745/EU, Annex I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 and 7.1, ISO 149781:2019, 5.4, FDA guidance on software validation e.g. chapter 5.2.2, 5.2.3 and 5.2.4, GMLP Guiding Principles (by FDA et al) #2 (data integrity)  |
 | According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  | Art. 22 of the GDPR. |  |
 | The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  |
 
