@@ -14,7 +14,7 @@ The guideline is **not** meant to serves as a training manual or guideline to ac
 
 The annex lists the recitals which led to the development of this guideline.
 
-### 2. Scope of applicability and target group.
+### 2. Scope of applicability and target group
 
 This guideline is only applicable to medical devices that use AI methods, in particular machine learning. The guideline applies in particular to
 
@@ -177,7 +177,7 @@ In Europe at least, there is no obligation to create a specific document that su
 |:--|:--|:--|
 |The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| ISO 13485, 4.2.3. and 7.3.2. c., 2017/745/EU Annex II (1.1), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR part 820.30(c)|
 |The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| 2017/745/EU, Annex I, 23.4 and Annex II, 1.1. c, 2017/746/EU, Annex II, 1.1. c, IEC 62366-1, 5.1. and 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i)|
-|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| • 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
+|The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".| IEC 62366-1, 5.1, 2017/745/EU Annex II, 1.1, 21 CFR part 814.20, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
 FDA Proposed Regulatory Framework for Modifications to Artificial
 |The manufacturer has determined the intended lifetime of the medical device.|This lifetime is determined, for example, by the state of the art (e.g., medical advances, new ML-methods, competitive products) and the speed at which the technical environment and libraries evolve.|
@@ -214,7 +214,7 @@ FDA Proposed Regulatory Framework for Modifications to Artificial
 | The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. | | 2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1., MEDDEV 2.7/1 |
 |The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file | ISO 14971, 5.4. and 5.5., 2017/745/EU, Annex I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risk management - Guidance for the implementation of ISO 31000 |                                                                                                                                 
 |The manufacturer has analyzed the risks that arise when patients other than those specified are diagnosed, treated, or monitored with the product. |    |
-| The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              | • ISO 14971, 5. |
+| The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              | ISO 14971, 5. |
 | The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  2017/745/EU, Annex I, 14.2.(d), 2017/746/EU, Annex I, 13.2.(d), ISO 14971, 5., IEC 82304, 4.1. (b)  |
 | The manufacturer has analyzed the risks arising from inputs not in the specified format. | | ISO 14971, 5., IEC 82304, 4.1. (c)|                                                             
 | Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
@@ -421,7 +421,7 @@ ISO 14971:2019, 10. |
 
 | Requirements                                                 | Comments                                                     |Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.   | •	ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
+| The manufacturer has the model[^C.4.d.1] and/or the training code under version and configuration control. | That includes scripts and build files.   | ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 | The manufacturer has documented his code according to a policy. | Usually at least public class, methods with pass and return values as well as attributes are to be documented |
 | The manufacturer has described which data sets it used for training, validation and testing of the model. |  |ISO 24028 9.8.2.1, DAISAM|
 | The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |                                                               
