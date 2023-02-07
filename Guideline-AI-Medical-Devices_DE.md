@@ -554,8 +554,8 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.|| 2017/745/EU, Artikel 10, i, Artikel 83, Anhang III, 1.1, FD&C act 522, 21 CFR part 822, IEC 62304 7.1.3, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, DIN SPECT 2, FDA proposed regulatory framework for modifications to AI/ML based SaMD chapter IV, Annex C- IT security Guidelines |
-|Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|Der Hersteller hat einen Post-Market Surveillance (PMS) Plan erstellt.|| 2017/745/EU, Artikel 10, i, Artikel 83, Anhang III, 1.1, FD&C act 522, 21 CFR part 822, IEC 62304 7.1.3, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, DIN SPECT 2, FDA proposed regulatory framework for modifications to AI/ML based SaMD chapter IV, Anhang C- IT security Guidelines |
+|Der Hersteller hat in diesem PMS-Plan die Daten spezifiziert, welche er sammeln und auswerten will.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII |
 |Der Hersteller hat im PMS-Plan spezifiziert, bei welchen Gütekriterien und Grenzwerten er eine Handlung, insbesondere eine Neubewertung des Nutzen-Risiko-Verhältnisses für notwendig erachtet.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII |
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Feedback-Loops die Schwellenwerte selbst beeinflussen können[^D.2.1].|Diese Analyse dient auch als Maßnahme gegen das o.g. Risiko durch "Performance Prediction".| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII |
 |Der Hersteller hat beim Festlegen dieser Schwellenwerte analysiert, welche Self-Fullfilling-Prophecies die Schwellenwerte selbst beeinflussen können[^D.2.2].|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII |
