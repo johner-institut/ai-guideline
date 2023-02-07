@@ -152,10 +152,10 @@ Manufacturers can use the competency of external resources.
 
 |Requirements|Comments|Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]|| •	ISO 13485, 5.5.1, 6.2., ISO 14971, 3.3., IEC 62304, 2017/745/ EU Article 10.9, 21 CFR part 820.30 (b)|
+|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]||	ISO 13485, 5.5.1, 6.2., ISO 14971, 3.3., IEC 62304, 2017/745/ EU Article 10.9, 21 CFR part 820.30 (b)|
 |The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.| ISO 13485, 6.2., ISO 14971:2019, 4.3, ISO 13485:2016, 7.3.2, IEC 82304, 6.1|
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| • ISO 13485, 6.2. |
-|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| •	ISO 13485, 7.3.2., IEC 82304, 6.1. |
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| ISO 13485, 6.2. |
+|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| ISO 13485, 7.3.2., IEC 82304, 6.1. |
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
 
@@ -175,8 +175,8 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| •	ISO 13485, 4.2.3. and 7.3.2. c., 2017/745/EU Annex II (1.1), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR part 820.30(c)|
-|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| • 2017/745/EU, Annex I, 23.4 and Annex II, 1.1. c, 2017/746/EU, Annex II, 1.1. c, IEC 62366-1, 5.1. and 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i)|
+|The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| ISO 13485, 4.2.3. and 7.3.2. c., 2017/745/EU Annex II (1.1), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR part 820.30(c)|
+|The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| 2017/745/EU, Annex I, 23.4 and Annex II, 1.1. c, 2017/746/EU, Annex II, 1.1. c, IEC 62366-1, 5.1. and 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i)|
 |The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| • 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".| IEC 62366-1, 5.1, 2017/745/EU Annex II, 1.1, 21 CFR part 814.20, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
 FDA Proposed Regulatory Framework for Modifications to Artificial
@@ -215,10 +215,10 @@ FDA Proposed Regulatory Framework for Modifications to Artificial
 |The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file | ISO 14971, 5.4. and 5.5., 2017/745/EU, Annex I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risk management - Guidance for the implementation of ISO 31000 |                                                                                                                                 
 |The manufacturer has analyzed the risks that arise when patients other than those specified are diagnosed, treated, or monitored with the product. |    |
 | The manufacture has analyzed the risks arising if persons other than the specified users, use the product. |                                                              | • ISO 14971, 5. |
-| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  • 2017/745/EU, Annex I, 14.2.(d) •	2017/746/EU, Annex I, 13.2.(d) •	ISO 14971, 5. •IEC 82304, 4.1. (b)  |
-| The manufacturer has analyzed the risks arising from inputs not in the specified format. | | •	ISO 14971, 5. •	IEC 82304, 4.1. (c)|                                                             
+| The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  2017/745/EU, Annex I, 14.2.(d), 2017/746/EU, Annex I, 13.2.(d), ISO 14971, 5., IEC 82304, 4.1. (b)  |
+| The manufacturer has analyzed the risks arising from inputs not in the specified format. | | ISO 14971, 5., IEC 82304, 4.1. (c)|                                                             
 | Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
-|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | |  •	ISO 14971, 4.2., 4.3., 5. •	IEC 82304, 4.1. |
+|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | | ISO 14971, 4.2., 4.3., 5., IEC 82304, 4.1. |
 
 
 ### 2. Software requirements
@@ -357,7 +357,7 @@ Data generally have to be understood as training, validation and test data. Each
 |  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |
 | The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |                                                              
 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|                                                              
-| The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control. || • ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
+| The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control. ||  ISO 13485, 4.1.6., 4.2.4., 7.5.6. |
 
 ### 4. Model development 
 
@@ -365,8 +365,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-| The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  | • ISO 13485, 7.3.2., 7.3.3. |
-| The manufacturer has described the dependency of the features among each other, especially for tabular data. | A Directed Acyclic Graph (DAG) helps with the visualization. This depends on the applied ML-method and cannot be demanded as a general best practice. | •	ISO 13485, 7.3.2., 7.3.3. |
+| The manufacturer has justified the selection of features that it considers during training. | This requires a list of all features.  | ISO 13485, 7.3.2., 7.3.3. |
+| The manufacturer has described the dependency of the features among each other, especially for tabular data. | A Directed Acyclic Graph (DAG) helps with the visualization. This depends on the applied ML-method and cannot be demanded as a general best practice. | ISO 13485, 7.3.2., 7.3.3. |
 | The manufacturer has documented and justified the ratio that it divides up the data into training, validation and test data. |                                                              |
 | The manufacturer has documented the stratification it uses to divide up the data in to training, validation and test data[^C.4.a.1]. |                                                              |
 | The manufacturer has documented how he ensures that multiple data sets for an object are in the same “bucket” (training, validation and test data). |                                                                                                  |                                                     |
@@ -429,9 +429,9 @@ ISO 14971:2019, 10. |
 | The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has described how it selected the architectures, trained the models, and optimized the hyperparameters, and justified this procedure. | Auditors want to be able to understand how the manufacturer has proceeded and why the chosen solution is the best. IEC 62304 and the FDA do not want "ad hoc design decisions".  |                                                              
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
-| The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. | • ISO 13485, 4.2.3., 4.2.5. |
+| The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. | ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has specified the confidence intervals for the quality parameters depending on the input data. | Especially at the edges of the allowed input data, the confidence often decreases strongly. This information should also be provided to the users in the accompanying materials. |
-| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |  • ISO 13485, 4.2.3., 4.2.5. |                         
+| The manufacturer has documented, especially for tabular data, within which limits (e.g. feature values) the model achieves the requirements for the quality measures. | This depends on the applied ML-model and cannot be generally claimed as best practice. |  ISO 13485, 4.2.3., 4.2.5. |                         
 | The manufacturer has tried out several models and their hyperparameters and documented the aspects mentioned in this section for them. | This documentation serves the manufacturer to compare different models and to justify his choice of a model. This is necessary to fulfill the requirement of ISO 14971 to maximize the risk-benefit ratio. |
 
 [^C.4.d.1]: Trained models can be serialized.
@@ -541,28 +541,28 @@ FDA 21 CFR part 820.30(e)
 
 |Requirement|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.| •	IEC 62304, 5.8.8. |
-|The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.| •	ISO 13485, 7.8.3., 8.3.,  IEC 62304, 5.8.4. |
-|The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.| •	ISO 13485, 7.5.3. |
-|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner.|| •	ISO 13485, 7.2.3., 8.3.3., IEC 82304, 8.4. |
+|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or AppStores.| IEC 62304, 5.8.8. |
+|The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.| ISO 13485, 7.8.3., 8.3.,  IEC 62304, 5.8.4. |
+|The manufacturer has described how it will be ensured during installation that the requirements specified in the accompanying materials (see above) are actually met.|A procedural or work instruction would be expected here.| ISO 13485, 7.5.3. |
+|The manufacturer has established procedures that ensure that it can communicate with the operators and users of its product in a timely manner.|| ISO 13485, 7.2.3., 8.3.3., IEC 82304, 8.4. |
 
 
 #### 2. Post-Market Surveillance
 
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a Post-Market Surveillance (PMS) Plan.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.|| • 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has created a Post-Market Surveillance (PMS) Plan.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the “Ground Truth” or the gold standard are still up to date.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer has described how and how often changes pursuant to the Algorithm Change Protocol (ACP) and within the “SaMD Pre-Specifications” (SPS) are made.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |The reports required by the plans are available at the times specified therein.|zBsp. PSUR|
 
 [^D.2.1]: Examples for these feedback loops: **Example 1**: A travel recommendation app sends targeted advertising depending on feature (last trip). This influences travel behavior. **Example 2**: An algorithm provides prognoses. Therefore, the physician will treat the patients better or earlier...
