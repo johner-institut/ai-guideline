@@ -393,8 +393,7 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, 
-ISO 14971:2019, 10. |
+|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, ISO 14971:2019, 10. |
 |The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. |
 |The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | |
 |The manufacturer has shown how to recognize and thus avoid overfitting. | | ISO 24028 9.8.2.23 |
