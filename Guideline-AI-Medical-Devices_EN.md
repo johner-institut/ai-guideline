@@ -441,7 +441,7 @@ Data generally have to be understood as training, validation and test data. Each
 | ------------------------------------------------------------ | ------------------------------- |--|
 | The manufacturer has performed the required activities pursuant to IEC 62304 and documented them. | Notes for auditors[^C.5.a.1] | IEC 62304, IEC 82304, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on software validation, FDA OTS guidance  |
 | If the manufacturer has implemented the model in another programming language or for another runtime environment, it has created a plan that repeats the activities pursuant to chapter 4. |  | IEC 62304, IEC 82304 |
-| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | 2017/745/EU, Annex I, 17.1., 17.3., 2017/746/EU, Annex I, 16.1., 16.3. |
+| The manufacturer checks the performance (response times, resource consumption) on the target hardware (e.g. browser, mobile device). | | 2017/745/EU, Annex I, 17.1., 17.3., 2017/746/EU, Annex I, 16.1., 16.3. |
 | The manufacturer has described how all SOUP and OTS components are to be verified and has also carried out and documented this verification. | | IEC 62304, 5.3, 8.1.2, FDA OTS guidance |
 | The manufacturer has attached the prescribed license conditions to the software and ensured the legality of the use of third-party software (e.g., open source software). | Manufacturers often use open source software, which may only be used within the scope of licenses and copy right statements. |
 
