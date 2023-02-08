@@ -400,7 +400,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 |:--|:--|:--|
-| Der Hersteller hat die Bewertung des Modells geplant. | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, ISO 14971:2019, 10. |
+| Der Hersteller hat die Bewertung des Modells geplant. | Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. | ISO 13485, 7.3.2, 7.3.6 und  7.3.7, ISO 14971:2019, 10. |
 | Der Hersteller hat für die verschiedenen Modelle die Gütemaße z.B. bei einer binären Klassifikation mit Hilfe einer Vierfeldertafel dokumentiert. | Diese Dokumentation sollte nicht nur die Werte umfassen, auf die der Hersteller das Modell optimiert hat. |
 | Der Hersteller hat die Gütemaße für die verschiedenen Modelle  nicht nur global bewertet und dokumentiert, sondern ggf. auch getrennt für verschiedene Feature. |                                                              |
 | Der Hersteller hat aufgezeigt, wie er ein Overfitting erkennen und so vermeiden kann. | | ISO 24028 9.8.2.23 |
