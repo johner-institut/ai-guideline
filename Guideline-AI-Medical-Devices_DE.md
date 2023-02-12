@@ -250,7 +250,7 @@ Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erste
 
 | Anforderung| Kommentare| Regulatorische Referenzen|
 | :--| :--|:--|
-| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). | | 2017/745/EU, Anhang I, 5., 2017/746/EU, Anhang 1, 5., IEC 62366-1, 5.2., FDA HFE guidance, FDA guidance on software validation e.g. chapter 5.2.3 | 
+| Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Voraussetzungen nicht erfüllt sind[^C.2.a.2], um das System sicher zu betreiben (z.B. nicht valide oder nicht erwartete Inputs). | | 2017/745/EU, Anhang I, 5., 2017/746/EU, Anhang 1, 5., IEC 62366-1, 5.2., FDA HFE guidance, FDA guidance on software validation, Kapitel 5.2.3 | 
 | Der Hersteller hat spezifiziert, was das User Interface anzeigen muss, wenn die Outputs nicht den spezifizierten Gütekriterien entsprechen. |                                                          |
 | Der Hersteller hat festgelegt, ob es einer Gebrauchsanweisung und Trainingsmaterialien bedarf. | Die MDR / IVDR erlauben Ausnahmen von der Verpflichtung. | 2017/745/EU, Anhang I, 23., 2017/746/EU, Anhang I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120|
 
