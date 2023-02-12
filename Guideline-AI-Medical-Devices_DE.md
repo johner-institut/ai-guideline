@@ -374,7 +374,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 | Der Hersteller hat die Auswahl der Feature begründet, die er beim Training berücksichtigt. | Das setzt eine Liste aller Features voraus.                   | ISO 13485, 7.3.2., 7.3.3. |
 | Der Hersteller hat insb. bei tabellarischen Daten, die Abhängigkeit der Features untereinander beschrieben. | Ein Directed Acyclic Graph (DAG) hilft bei der Visualisierung. Dies ist abhängig von dem angewandten ML-Verfahren und lässt sich nicht generell als Best Practice einfordern. | ISO 13485, 7.3.2., 7.3.3. |
 | Der Hersteller hat dokumentiert und begründet, in welchem Verhältnis er die Daten in Trainings-, Validierungs- und Testdaten aufteilt. |                                                              |
-| Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |    | • ISO 24028 9.8.2.1, DAISAM|
+| Der Hersteller hat dokumentiert, nach welcher Stratifizierung er die Daten in Trainings-, Validierungs- und Testdaten aufteilt[^C.4.a.1]. |    |  ISO 24028 9.8.2.1, DAISAM|
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze zu einem Objekt im gleichen "Bucket" (Trainings-, Validierungs- bzw. Testdaten) sind. |                                                              |
 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass die Testdaten nicht beim Training und Validieren des Modells verwendet wurden. |                                                              |
 | Der Hersteller hat beschrieben, wenn er die Daten spezifisch für das Modell oder spezifisch für die Bibliothek umkodiert[^C.4.a.2]. |                                                              |
