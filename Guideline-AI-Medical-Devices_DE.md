@@ -525,7 +525,7 @@ Insofern in diesem Kapitel nicht näher spezifiziert, schließt der Begriff "Dat
 
 | Anforderung| Kommentar| Regulatorische Referenzen|
 | :-- |:-- |:-- |
-| Der Hersteller hat sichergestellt, dass alle o.g. Dokumentation vorliegt. | Das betrifft u.a. die  in den Kapitel 3.d), 4.d und 5.b) geforderte Dokumentation. | 2017/745/EU, Anhänge I und II, ISO 13485, 7.3.5. |
+| Der Hersteller hat sichergestellt, dass alle o.g. Dokumentation vorliegt. | Das betrifft u.a. die  in den Kapitel 3.d), 4.d und 5.b) geforderte Dokumentation. | 2017/745/EU, Anhänge I und II, ISO 13485, 7.3.5., FDA 21 CFR part 820.30(e) |
 | Der Hersteller hat im Risikomanagement die Risiken als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan spezifizierten Aktivitäten durchgeführt wurden. | Hinweis für Auditoren[^C.6.1]                                |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, in den "Software as a Medical Device Pre-Specifications“ (SPS) dargelegt, welche Arten der Änderungen er antizipiert[^C.6.2]. |                                                              |
 | Der Hersteller hat bei Systemen, die er in den USA in den Verkehr bringen will, im Algorithm Change Protocol (ACP) dargelegt, wie er diese Änderungen durchführen will[^C.6.3]. |                                                              |
