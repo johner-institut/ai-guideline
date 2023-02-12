@@ -243,8 +243,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :--|
-| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., FDA HFE guidance
-FDA guidance on software validation e.g. chapter 5.2.3 |
+| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., FDA HFE guidance, FDA guidance on software validation e.g. chapter 5.2.3 |
 | The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    |  |
 | The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120|
 
