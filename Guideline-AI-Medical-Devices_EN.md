@@ -4,20 +4,22 @@
 
 ### 1. Objective of the guideline
 
-The objective of this guideline is to provide medical device manufacturers, authorities and notified bodies instructions and to provide them with a concrete checklist to
+The objective of this guideline is to provide medical device and IVD manufacturers, authorities and notified bodies instructions and to provide them with a concrete checklist to
 
-- understand what the expectations of the notified bodies and authorities are,
-- to promote step-by-step implementation of safety of medical devices, that implement artificial intelligence methods, in particular machine learning,
+- understand what the expectations of the notified bodies and authorities are, resulting from medical device regulations such as MDR (Regulation 2017/745) and IVDR (Regulation 2017/746) as well as from the AI Act (Regulation 2024/1689),
+- to promote step-by-step implementation of safety of medical devices and IVD, that implement artificial intelligence methods, in particular machine learning,
 - to compensate for the lack of a harmonized standard (in the interim) to the greatest extent possible.
 
-The guideline is **not** meant to serves as a training manual or guideline to achieve the safety of AI based medical devices. It is to be a guideline for its review.
+The guideline is **not** meant to serves as a training manual or guideline to achieve the safety of AI based medical devices respectively IVD. It is to be a guideline for its review.
 
 The annex lists the recitals which led to the development of this guideline.
 
 ### 2. Scope of applicability and target group
 
-This guideline is only applicable to medical devices that use AI methods, in particular machine learning. The guideline applies in particular to
+This guideline is only applicable to medical devices and IVD that use AI methods, in particular machine learning. The requirements laid out by the AI Act, though, mostly do not affect medical devices of class I and IVD of class A.
 
+
+The guideline applies in particular to
 - Manufacturers of these products
 - Their service providers (such as engineering providers)
 - People and organizations that must assess the safety of these products, such as auditors, authorities and notified bodies.
@@ -101,10 +103,10 @@ The comments may contain:
 The following authors created this guideline:
 
 - Prof. Dr. Christian Johner ([Johner Institute](https://www.johner-institut.de))
-- [Christoph Molnar](https://christophm.github.io/) ([LMU Munich](https://www.uni-muenchen.de/index.html))
-- Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/))
-- Prof. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/))
-- Stefan Bunk (CTO) and Sven Piechottka (Government & Regulatory Affairs) ([Merantix](https://www.merantix.com/healthcare/))
+- [Christoph Molnar](https://christophm.github.io/) ([LMU Munich](https://www.uni-muenchen.de/index.html)) (Version 2019)
+- Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/)) (Version 2019)
+- Prof. Dr. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/)) (Version 2019)
+- Stefan Bunk (CTO) and Sven Piechottka (Government & Regulatory Affairs) ([Merantix](https://www.merantix.com/healthcare/)) (Version 2019)
 
 The guideline is published under the ([Creative Commons License](https://creativecommons.org/licenses/?lang=de)) of type [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/). This requires a list of names of authors (“Christian Johner, Christoph Molnar et al.”) and allows third parties to build on this work, e.g. to correct it; however only for non-commercial purposes.
 
@@ -116,7 +118,7 @@ This document is managed via the version management system git or the GitHub pla
 
 The version history, including any authors may be found in the document history.
 
-The released versions are labeled via one day as such in the repository. Versions without a tag are documents in the draft stage.
+The released versions are on the main branch. Draft versions are to be found in other branches.
 
 ## B) General requirements
 
@@ -127,11 +129,15 @@ The manufacturers should cover all aspects listed below either in the procedural
 - Development
 - Risk management
 - Data management
-- Verification or validation (if not part of development)
+- Verification or validation including testing of AI models (if not part of development)
+- Labeling
+- Collection and analysis of "automatically generated logs" according to 2024/1689/EC article 19
 - Post-market surveillance and vigilance
 - Service, installation, decommissioning
 - Customer communication
 - Management review (ISO 13485:2016 requires consideration of “applicable new or revised regulatory requirements”.)
+- Data protection
+- Identification of applicable regulatory requirements (regulations, directives laws, common specifications, harmonized standards)
 
 If the manufacturer outsources processes, the requirements apply accordingly. Examples would be a (software) development service provider or contract research organization to be required to consider the relevant chapters of this guideline.
 
@@ -140,7 +146,7 @@ If the manufacturer outsources processes, the requirements apply accordingly. Ex
 The manufacturer should compile all product specific plans as required by respective regulations.
 
 - Development plan (incl. verification and validation planning)
-- Post-market surveillance plan
+- Post-market surveillance plan (s. 2017/745/EC Annex 1II, 2017/745/EC Annex IIII, 2024/1689 article 72 section 3.)
 - Risk management plan
 - Clinical evaluation plan
 
@@ -152,10 +158,11 @@ Manufacturers can use the competency of external resources.
 
 |Requirements|Comments|Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]||	ISO 13485, 5.5.1, 6.2., ISO 14971, 3.3., IEC 62304, 2017/745/ EU Article 10.9, 21 CFR part 820.30 (b)|
-|The manufacturer has documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.| ISO 13485, 6.2., ISO 14971:2019, 4.3, ISO 13485:2016, 7.3.2, IEC 82304, 6.1|
-|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| ISO 13485, 6.2. |
-|The (software) development plans have defined the product-specific competencies (beyond or deviating).|Requirements of ISO 13485:2016| ISO 13485, 7.3.2., IEC 82304, 6.1. |
+|The manufacturer has created a list of all roles inside the scope of its QM system that are directly or indirectly concerned with AI. [^B2-01]||	ISO 13485 5.5.1 and 6.2., ISO 14971 3.3., IEC 62304 5.1, 2017/745/ EU Article 10.9, 21 CFR part 820.30 (b)|
+|The manufacturer has identified and documented the competency requirements for each role inside the scope of its QM system that is directly or indirectly concerned with AI. [^B2-02]|Competencies are related to education, knowledge or skill. Examples of competencies: Machine learning, explainable AI, medicine (for relevant domains), clinical and usability validation.| ISO 13485 6.2., ISO 14971:2019 4.3, ISO 13485:2016 7.3.2, IEC 82304 6.1, 2024/1689/EU article 4 and 9 section 5. |
+|The manufacturer has appropriate records for the training, further education and competencies that allow for the conclusion that the persons actually have these competencies.|| ISO 13485 6.2. |
+|The (software) development plans have defined the product-specific competencies (beyond or deviating).|| ISO 13485 7.3.2., IEC 82304 6.1. |
+|These competency requirements are met also for external resources (contractors, outsources processes) |||
 
 [^B2-01]: Examples are: Data Scientists, Developers, Testers, Regulatory Affairs and Quality Mangers, Service and Support Employees, Product Managers, Medical Device Consultants, Physicians
 
@@ -167,6 +174,8 @@ The manufacturers should keep evidence that they have followed the relevant requ
 
 In Europe at least, there is no obligation to create a specific document that summarizes the activities especially for AI. Manufacturers can integrate these aspects into existing documents such as QM documents (e.g. standard operating procedures, work instructions) and the technical documentation (e.g. software files, risk management files, clinical evaluation, summative evaluation of the usability).
 
+Regulation 2024/1689/EU recommends to integrate the AI specific documentation into an existing technical documnetation. It requires the documentation to be kept for 10 years after the AI system has been placed on the market (article 18.1).
+
 ## C) Requirements for product development
 
 ### 1. Intended use and stakeholder requirements
@@ -177,8 +186,10 @@ In Europe at least, there is no obligation to create a specific document that su
 |:--|:--|:--|
 |The manufacturer has determined for which medical purpose (diagnosis, therapy, monitoring, predictions) the medical product should support.|The intended use / purpose should not be mistaken for the description of functionality (e.g. calculation of scores).| ISO 13485, 4.2.3. and 7.3.2. c., 2017/745/EU Annex II (1.1), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR part 820.30(c)|
 |The manufacturer has characterized the patients to be diagnosed, treated or monitored with the medical product. This characterization includes patient demographics, indications, contraindications and associated diseases.|This characterization is also included in IEC 62366-1. Patients may also simultaneously be users of the product.| 2017/745/EU, Annex I, 23.4 and Annex II, 1.1. c, 2017/746/EU, Annex II, 1.1. c, IEC 62366-1, 5.1. and 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i)|
+|The manufacturer has stated whether there are patients under the age of 18 or other vulnerable groups||2024/1689/EC article 9 section 10.|
 |The manufacturer has specified on which body locations the product will be used or from which body location the data originate.|Also called for in IEC 62366-1 clause 5.1.| 2017/745/EU, Annex II, 1.1., 2017/746/EU, Annex II, 1.1., IEC 62366-1, 5.1.3. |
 |The intended use also suggests what the goal of machine learning techniques is.|Classification and regression, clustering, similarity search and recommender systems are typical goals of machine learning methods. The description of the role of machine learning is necessary to fulfill the requirement for the description of the "physical principle".| IEC 62366-1, 5.1, 2017/745/EU Annex II, 1.1, 21 CFR part 814.20, XAVIER University "Building Explainability and Trust for AI in Healthcare"|
+|If applicable the manufacturer has described whether the device offers measuring functions|This input is needed e.g. to classify the device correctly||
 |The manufacturer has determined the intended lifetime of the medical device.|This lifetime is determined, for example, by the state of the art (e.g., medical advances, new ML-methods, competitive products) and the speed at which the technical environment and libraries evolve.|
 
 
@@ -187,6 +198,7 @@ In Europe at least, there is no obligation to create a specific document that su
 | Requirements                                                 | Comments                                                     |Regulatory references
 | :----------------------------------------------------------- | :----------------------------------------------------------- |:--|
 | The manufacturer has characterized the intended users, e.g. using demographic features (age, gender), regarding the training, experience in medical domains, regarding technical knowledge, physical and mental limitations, linguistic skills and cultural background. | If the manufacturer does not foresee any limitations regarding these attributes, it must document this. | 2017/745/EU, Annex I, 5 and Annex II, 1.1, IEC 62366-1, 5.1., XAVIER University "Building Explainability and Trust for AI in Healthcare"|
+|Does the manufacturer express whether the device is inteded to be used by lay persons|This decision has regulatory implications such as the applicability of requirements of Regulations 2017/745/EU and 2017/746/EU in Annex I||
 | The manufacturer has characterized the intended use environment (also social environment such as stress, shift work, frequently changing colleagues)| This characterization is also required by IEC 62366-1. It is also relevant in the context of the explainability of AI. | 2017/745/EU, Annex I, 5, IEC 62366-1, 5, XAVIER University "Building Explainability and Trust for AI in Healthcare"|
 |The manufacturer has described the core tasks that the medical device is to support. | The use scenarios that manufacturers must specify according to IEC 62366-1 can also be derived from these core tasks.| IEC 62366-1 |
 
@@ -195,11 +207,12 @@ In Europe at least, there is no obligation to create a specific document that su
 | Requirements                                                 | Comments                                                     |Regulatory references|
 | :----------------------------------------------------------- | :----------------------------------------------------------- |:--|
 | The manufacturer has operationalized the goals listed in the intended use with quantitative values [^C.1.c.1]. | It is not unusual that these values are supplemented and revised during the course of development. | 2017/745/EU, Annex I, 23.4 and Annex III, 1.1, FDA SW validation guidance 5.2.2, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification")| 
-| The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | For apps, this characterization must be done for the app and for the server part. | ISO 13485, 7.3.3, 2017/745/EU, Annex I, 17.3 and 17.4, IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA SW validation guidance 5.2.2, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification")|
-| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. | IEC 62304, 5.2.2, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification")|
+| The manufacturer has set forth the runtime environment of the product regarding hardware (screen size, screen resolution, storage, network connection etc.) and software (e.g. operating system, browser, runtime environments such as Java runtime environment or .NET). | For apps, this characterization must be done for the app and for the server part. | 2024/1689/EC annex IV section 1.(b), ISO 13485, 7.3.3, 2017/745/EU, Annex I, 17.3 and 17.4, IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA SW validation guidance 5.2.2, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification")|
+| The manufacturer has specified the data interfaces using the levels of the [interoperability model](https://www.johner-institut.de/blog/tag/interoperabilitat/) and set forth the formats and for images, their specific properties (size, resolution, color coding). | This is required pursuant to IEC 62304 chapter 5.2.2. | 2024/1689/EC annex IV section 1.(b), IEC 62304, 5.2.2, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification")|
 |The manufacturer has specified the requirements for the input data. | The input data may also depend on the generation of the data, e.g. on the recording method, on technical parameters (magnetic field strengths, number of conductive electrodes, direction), on environmental conditions during the recordings, on the manufacturer, on the medical device, etc.... | IEC 62304, 5.2, ISO 14971:2019, 5.3, FDA Guidance for the Content of Premarket Submissions for Software Contained in Medical Devices (s. "Software Requirements Specification") |
 | The manufacturer has set forth all markets and all regulatory requirements relevant to these. | Show this list.  | 2017/745/EU, Annex IX, 2.2, ISO 13485, 5.2 and 7.2.1 | 
 | The manufacturer has specified whether the system should continue to learn after it has been placed on the market. If this is the case, the manufacturer has specified whether this continuous training will be global/centralized or decentralized (e.g., per product or per hospital) and online or offline. | 
+|The manufacturer has documented the list of applicable regulatory requirements and the process how to identify these requirements |Regulatory requirements include regulations, directives, laws, common specifications and harmonized standards|EN ISO 13485 4.1.1, 2024/1689/EC articles 17 section 1.(e), 41 section 5. and Annex IV 7.|
 
 [^C.1.c.1]: **Example**: Purpose: The software supports radiologists in diagnosing cancers using CT images of the head. Quantitative value: 95% of radiologists working with software detect the cancer.
 
@@ -211,13 +224,13 @@ In Europe at least, there is no obligation to create a specific document that su
 | The manufacturer has listed alternative procedures and evaluated them in terms of benefit, safety, and performance. | The discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and the MDR/IVDR. | 2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1.,  MEDDEV 2.7/1, ISO 14971:2019, 4.2 and 10.9, FDA guidance on "Factors to Consider When Making Benefit-Risk Determinations in Medical Device Premarket Approval" (e.g. Part C)|
 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.  |
 | The manufacturer has justified why machine learning is superior to the other methods and thus justified the associated risks. | | 2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1., MEDDEV 2.7/1 |
-|The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file | ISO 14971, 5.4. and 5.5., 2017/745/EU, Annex I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risk management - Guidance for the implementation of ISO 31000 |                                                                                                                                 
-|The manufacturer has analyzed the risks that arise when patients other than those specified are diagnosed, treated, or monitored with the product. |    |
+|The manufacturer has drawn up a list of risks specifically arising from the application of machine learning methods. | Is part of the risk management file | ISO 14971, 5.4. and 5.5., 2017/745/EU, Annex I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risk management - Guidance for the implementation of ISO 31000 | 
 | The manufacturer has analyzed the risks arising if persons other than the specified users, use the product. |                                                              | ISO 14971, 5. |
 | The manufacturer has analyzed the risks arising through use in an environment different than that specified. |  |  2017/745/EU, Annex I, 14.2.(d), 2017/746/EU, Annex I, 13.2.(d), ISO 14971, 5., IEC 82304, 4.1. (b)  |
-| The manufacturer has analyzed the risks arising from inputs not in the specified format. | | ISO 14971, 5., IEC 82304, 4.1. (c)|                                                             
+| The manufacturer has analyzed the risks arising from inputs not meeting the specified prerequisites (e.g., quality, value range, format and unit) | | ISO 14971, 5., IEC 82304, 4.1. (c)|                                                             
 | Manufacturers have analyzed risks arising from data not generated according to the specified prerequisites. |                                                              |
-|The manufacturer has assessed the risks when the system is used in a patient population other than that specified. | | ISO 14971, 4.2., 4.3., 5., IEC 82304, 4.1. |
+|The manufacturer has assessed the risks when the system is used for patients or patient populations other than that specified. | This could be part of a forseeable misuse | ISO 14971, 4.2., 4.3., 5., IEC 82304, 4.1., 2024/1689/EC article 9 section 2.(b) |
+|The manufacturer has analysed the risk for fundamental rights.|Examples are the right to informational self-determination (data protection) and the right to the access of adquate healthcare|2024/1689/EC article 9 section 2.(a)|
 
 
 ### 2. Software requirements
@@ -226,7 +239,7 @@ In Europe at least, there is no obligation to create a specific document that su
 
 |Requirements|Comments|Regulatory references|
 |:--|:--|:--|
-|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.| ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on "Software Validation", chapter 5.2.2|
+|The manufacturer has comprehensibly derived quantitative quality criteria or requirements for the software or/and the algorithm from the intended use [^C.2.a.1].|This comprehensibility can be represented particularly well with a traceability matrix.| 2024/1689/EC annex IV, ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on "Software Validation", chapter 5.2.2|
 |The manufacturer considered for example the following quantitative quality criteria or requirements: for classification problems, accuracy (Mean or Balanced Accuracy), positive predictive value (Precision), specificity and sensitivity; for regression problems, Mean Absoute Error and Mean Square Error.| For unbalanced data, i.e. when labels occur with very different frequencies, Balanced instead of Mean Accuracy should be used. However, the choice of quality criteria depends strongly on the intended use. | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. |
 | The manufacturer has specified the expected value ranges of the outputs.| | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. |
 |The manufacturer has specified the requirements regarding repeatability and reproducibility of requirements.|This is particularly relevant with "Continuous Learning Systems".| 2017/745/EU, Annex I, 17.1. , 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3., 7.3.4 |
@@ -234,6 +247,7 @@ In Europe at least, there is no obligation to create a specific document that su
 |The manufacturer has determined which self-tests the system must perform and how it behaves if this is not successful.|This is particularly relevant for "Continuous Learning Systems".| ISO 13485, 7.3.3. |
 |The manufacturer has determined how fast the system must create the outputs.|This determination may be done depending on the size and amount of data.| 2017/745/EU, Annex I, 17.1., 2017/746/EU, Annex I, 16.1., ISO 13485, 7.3.3. |
 |The manufacturer has specified the availability of the medical device.|This is an aspect of robustness and must be specified pursuant to ISO 25010 and IEC 62304 chapter 5.2.| ISO 25010, IEC 62304, 5.2., ISO 14971, 4.3., ISO 13485, 7.3.3. |
+|The manufacturer has specified the requrirements related to audit logs. |AI Act speaks of "record keeping"|2024/1689/EC article 12|
 
 [^C.2.a.1]: Examples:  **Example 1**: The stakeholder requirement states that 95% of radiologists must be able to detect a cancer with the product. The requirement of the algorithm states that it must display a sensitivity of 97%. **Example 2**: The stakeholder requirements state that arterial calcification must be able to be detected at a sensitivity of 92%. The requirements of the algorithm state that it must be able to exactly predict the strength of the plaques in the blood to 0.2 mm.
 
@@ -243,8 +257,10 @@ In Europe at least, there is no obligation to create a specific document that su
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :--|
-| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] in order to operate the system safely (e.g., inputs not valid or not expected). |  | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., IEC 62366-1, 5.2., FDA HFE guidance, FDA guidance on software validation e.g. chapter 5.2.3 |
+|The manufacturer has specified the user interface (requirements) || 2024/1689/EC annex IV section 1.(g), IEC 62304 5.2.2 f)|
+| The manufacturer has specified what the user interface must display when the preconditions are not met[^C.2.a.2] or in case of internal errors in order to operate the system safely (e.g., inputs not valid or not expected). | AI Act requires "human oversight" which itself may lead to product / UI requirements such as monitoring information, warnings of anomalies, dysfuctions, kill switch. | 2017/745/EU, Annex I, 5., 2017/746/EU, Annex 1, 5., 2024/1689/EC article 14 section 4., IEC 62366-1, 5.2., FDA HFE guidance, FDA guidance on software validation e.g. chapter 5.2.3 |
 | The manufacturer has specified what the user interface must display if the output does not meet the specified quality criteria. |    |  |
+|The manufacturer has specified the information the UI must provide to explain the system output (results)|Or a rationale must be given that there is no need for "explainability". The target of these information is to reduce risks and to allow the "human oversight". | 2024/1689/EC article 14 section 4.(c) |
 | The manufacturer has determined whether instructions for use and training materials are required. | The MDR / IVDR allow exceptions to the obligation. | 2017/745/EU, Annex I, 23., 2017/746/EU, Annex I, 20., ISO 13485, 4.2.3., FD&C, 21 CFR parts 801 and 820.120|
 
 
@@ -254,7 +270,7 @@ In Europe at least, there is no obligation to create a specific document that su
 | :----------------------------------------------------------- | :------------------------------------------ |:--|
 | The manufacturer has set forth which requirements the system must fulfill to detect internal system errors. | Could be an audit log or a monitoring port. | 2017/745/EU, Annex I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 and 7.1, ISO 149781:2019, 5.4, FDA guidance on software validation e.g. chapter 5.2.2, 5.2.3 and 5.2.4, GMLP Guiding Principles (by FDA et al) #2 (data integrity)  |
 | According to the GDPR, the specified system must not expose patients to decisions based exclusively on automatic data processing. Manufacturers should address the corresponding requirement and be able to justify the chosen legal basis. | Requirement of Art. 22 of the GDPR.  | Art. 22 of the GDPR. |  |
-| The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  |
+| The manufacturer has determined the requirements that the software must meet in order to ensure the IT security of the product. | IT security is not the subject of this guideline, but the [IT-Sicherheits-Leitlinie](https://github.com/johner-institut/it-security-guideline/).  | 2024/1689/EC article 15 section 5. |
 
 
 
@@ -279,15 +295,16 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-| The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. | ISO 13485, 7.3.7 |
+|The manufacturer has defined a procedure that defines the data management including data collection, data processing, data analysis||2024/1689/EC articles 10 section 2 and 17 section 1.(f)|
+| The manufacturer has specified the number of data sets and given a justification why this is sufficient [^C.3.a.1]. | This concerns the data sets for training, validation and test. | ISO 13485, 7.3.7, 2024/1689/EC article 10 section 2.(b) amd (e) |
 |The manufacturer has characterized the inclusion and exclusion criteria of data by relevant attributes [^C.3.a.2]. | This includes documentation of data types, units and value range. | ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare" |
-|The manufacturer has specified technical inclusion and exclusion criteria for data[^C.3.a.3]. ||
-| The manufacturer has described the procedure by which it ensures that data sets that do not meet the inclusion criteria or should be excluded are actually excluded. | Procedure includes a software supported assessment. This software must be validated. |
-| The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is an recommended option. |
-| The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. |                                                              |
-| The manufacturer has listed and discussed factors that could cause a bias in the data. |   | ISO 24028 e.g. 10.5, DAISAM |                                                           
+|The manufacturer has specified inclusion and exclusion criteria for data [^C.3.a.3]. ||2024/1689/EC article 10 section 2.(f)|
+| The manufacturer has described the procedure by which it ensures that data sets that do not meet the inclusion criteria or should be excluded are actually excluded. | Procedure includes a software supported assessment. This software must be validated. |2024/1689/EC article 10 section 2.(f)|
+| The manufacturer has described the collected data using descriptive statistics[^C.3.a.4]. | The ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is an recommended option. | 2024/1689/EC article 10 section 2.(f) and Annex IV section 2.(d)|
+| The manufacturer has justified where the data are collected and why these are representative for the target population. As reasonable, these have been compared to scientific publications and to registers. | | 2024/1689/EC article 10 section 4. and 5.|
+| The manufacturer has listed and discussed factors that could cause a bias in the data. |   | ISO 24028 e.g. 10.5, 2024/1689/EC article 9 sections 2.(d) and 5.(a), article 10 sections 2.(f), 2.(g), 4.|                                                           
 | The manufacturer has analyzed which influences the type and location of data collection have on the data[^C.3.a.5]. |  
-|The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |
+|The manufacturer has established a procedure to ensure that data protection requirements are met. | For example, the data is anonymized or pseudonymized before testing and training. The data protection officer should be involved in this.  |2024/1689/EC article 10 section 5, 2016/679/EC|
 | The manufacturer has examined and excluded the possibility of a “label leakage”[^C.3.a.6]. | This depends on the applied ML model is not a general best practice. |
 | The manufacturer that uses surveys has justified the selection of the surveys, the time of survey and possibly the method for their assessment, in particular if no standardized survey exists. |                                                              |
 
@@ -307,8 +324,8 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|
-|  In the case of "Supervised Learning", the manufacturer has derived the labels from the intended use with which the training data are provided and justified this choice. |                                                              |
-| The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | | ISO 13485, 4.1 |
+|  In the case of "Supervised Learning", the manufacturer has derived the labels from the intended use with which the training data are provided and justified this choice. | |2024/1689/EC article 10 section 3|                                                       |
+| The manufacturer has defined a procedure for labeling in "Supervised Learning", if labels were not yet present in the data.   | | ISO 13485, 4.1, 2024/1689/EC article 10 section 2.(c) |
 | This procedure specifies quantitative classification criteria for labeling. The selection of these criteria has been justified by the manufacturer[^C.3.b.1]. | If the "Ground Truth” is not selected[^C.3.b.2], because it is too expensive or invasive, this must also be justified. |                                                            |
 | This procedure specifies the requirements for the number, training and competency for the people responsible for labeling. |  | ISO 13485, 6.2 and 7.3.2, FDA 21 CFR part 820.25  |                                                         |
 | This procedure sets forth how the competencies of the persons responsible for labeling is tested. | This can be done by the labeling of selected data sets.      |
@@ -394,12 +411,12 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, ISO 14971:2019, 10. |
-|The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. |
-|The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | |
+|The manufacturer has planned the evaluation of the model.| This plan can be part of a development or V&V plan. | ISO 13485, 7.3.2, 7.3.6 and 7.3.7, ISO 14971:2019, 10., IEC 62304 5.1 |
+|The manufacturer has documented the quality measures for the various models, e.g. in the case of a binary classification using a four-field table. | This documentation should not only include the values to which the manufacturer has optimized the model. | 2024/1689/EC article 9 section 8. and annex IV section 2.(g)| 
+|The manufacturer has not only evaluated and documented the quality measures for the different models globally, but also separately for different features, if applicable. | | 
 |The manufacturer has shown how to recognize and thus avoid overfitting. | | ISO 24028 9.8.2.23 |
 |The manufacturer has examined the data sets that were predicted particularly well and those that were predicted particularly poorly. | A residuals analysis is recommended, in which the errors are plotted against the feature values, if applicable. |
-|The manufacturer has examined the data sets for which the model is particularly safe and particularly unsafe[^C.4.c.1]. | |
+|The manufacturer has examined the data sets for which the model is particularly safe and particularly unsafe[^C.4.c.1]. | This will help identifiying limitations e.g., for certain patient groups | 2024/1689/EC annex IV section 3.|
 |The manufacturer has justified the ultimate choice of model on the basis of the quality criteria and the intended use, and has explained in particular when simpler and more interpretable models were not used. |  | ISO 14971:2019, XAVIER University "Building Explainability and Trust for AI in Healthcare", DIN SPECT 2 |
 |The manufacturer has considered, especially for tabular data for individual data sets, to have the model show the features that particularly influenced the decision [^C.4.c.2]. | This cannot be claimed as a general best practice. |
 |The manufacturer has considered evaluating, especially for tabular data, how and how much individual features would have to change for the model to come to a different prediction. | This is referred to as ["counterfactuals"](https://christophm.github.io/interpretable-ml-book/counterfactual.html). This cannot generally be claimed as a best practice. 
@@ -424,7 +441,7 @@ Data generally have to be understood as training, validation and test data. Each
 | The manufacturer has described which data sets it used for training, validation and testing of the model. |  |ISO 24028 9.8.2.1, DAISAM|
 | The manufacturer can reproduce the test and validation results. | For this purpose, it makes sense to use a version management system not only for the code, but also for data, test results and their evaluation. It is advisable to also document the infrastructure used in data processing and training (hardware, operating system, virtualization layers such as Docker). Any deviating results should be justified (e.g., hardware, random generators, rounding errors). Absolute paths and operating system specific commands are to be avoided. A README file in .txt or Markdown format helps to find your way around the documentation more quickly. |   ISO 13485, 7.3.6., 7.3.3.                      
 | The manufacturer has the SOUP (libraries and frameworks) under version and configuration control. | | IEC 62304, 8.1.2. | 
-| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | ISO 13485, 4.2.3., 4.2.5. |
+| The manufacturer has documented the architecture of the model and the model itself including its algorithms and hyperparameters. | For example, in the case of a CNN, the number and type of layers, the linkage of the neurons or layers, the activation function, the optimizer and other parameters including their value ranges should be documented, among other things. The documentation of the model also includes the specification of the outputs such as the number of outputs, the respective data types, value ranges, units, etc.. | 2024/1689/EC annex IV section 2. (b) and (c), IEC 62304 5.3, ISO 13485, 4.2.3., 4.2.5. |
 | The manufacturer has described how it selected the architectures, trained the models, and optimized the hyperparameters, and justified this procedure. | Auditors want to be able to understand how the manufacturer has proceeded and why the chosen solution is the best. IEC 62304 and the FDA do not want "ad hoc design decisions".  |                                                              
 | The manufacturer has described when it worked with a “pretrained model” and shown why this “pre-training” is suitable for the task. |                                                              |
 | The manufacturer has documented the quality of the models based on the quality measures. | These quality metrics relate to the testing with the test data. | ISO 13485, 4.2.3., 4.2.5. |
@@ -453,22 +470,21 @@ Data generally have to be understood as training, validation and test data. Each
 
 | Requirements                                                 | Comments                                                     | Regulatory references|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|
-| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI. | 2017/745/EU, Annex I, chap. III, 23.1, 23.4., FD&C, FDA 21 CFR parts801 and 820.120, ISO 24028 e.g. 10.11.3 |
+| The instructions for use clearly identify the version of the product. | If possible, indicate the UDI. | 2017/745/EU, Annex I, chap. III, 23.1, 23.4., 2024/1689/EC article 13 section 3.(b)(i), FD&C, FDA 21 CFR parts801 and 820.120, ISO 24028 e.g. 10.11.3 |
 | The instructions for use describe the intended use of the product including the expected medical benefit. |   | 2017/745/EU, Annex I, chap. III, 23.1, 23.4., 21 CFR part 801, 21 CFR part 814.20, XAVIER: "Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare", ISO 24028, XAVIER University "Building Explainability and Trust for AI in Healthcare", ISO 24028 e.g. 10.11.3|
 | The instructions for use specify the intended patient population using indications, contraindications and if relevant using other additional parameters such as age, gender, accompanying diseases or availability of information. | | 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
 | The instructions for use explicitly list the patients / data / use case for which the product may not be used. |   | 2017/745/EU, Annex I, chap. III, 23.1, 23.4. |
-| The instructions for use document the requirements of the input data (including formats, resolutions, value ranges, etc.). |                                                              |
-| The instruction for use specify the intended primary and secondary users pursuant to intended use. |                                                              |
-| The instructions for use describe the other conditions applicable to the product (e.g. runtime environment, use environment). |    
-| The instructions for use describe how the product is to be used. | This also includes behavior in the event of an error and secondary use such as installation, upgrade and configuration. |
-| The instructions for use describe the possible outputs. | This also includes the explanations of the product ("Explainability"). |
-| The instructions for use describe the residual risks.        |    | 2017/745/EU, Annex I, 23.4, ISO 14971:2019, 8, ISO 24028 e.g. 10.11.3 |
+| The instructions for use document the requirements of the input data (including formats, resolutions, value ranges, etc.). |                                                              |2024/1689/EC article 13 section 3.(b)(vi)|
+| The instruction for use specify the intended primary and secondary users pursuant to intended use. |                                                              | 2024/1689/EC article 13 section 3.(b)(v)|
+| The instructions for use describe the other preconditions applicable to the product (e.g. runtime environment, use environment). |  Runtime environment includes hardware and software prerequisites.  |2024/1689/EC article 13 section 3.(e) and annex IV sections 1.(b) and (e)|
+| The instructions for use describe how the product is to be used. | This includes behavior in the event of a problem (e.g. "human oversight", secondary use such as installation, update, upgrade and configuration as well as management of the audit-logs. |2024/1689/EC article 13 section 3.(d), (e) and (f)|
+| The instructions for use describe the possible outputs. | This also includes the explanations of the product ("Explainability"). |2024/1689/EC article 13 section 3.(b)(vii)|
+| The instructions for use describe the residual risks.        | Also risk of forseeable misuse   | 2017/745/EU, Annex I, 23.4, ISO 14971:2019, 8, 2024/1689/EC article 13 section 3.(b)(iii), ISO 24028 e.g. 10.11.3 |
 | The instructions for use indicate the data with which the model was trained. | This is related both to the patient collective and to the features used. |
 | The instructions for use describe the model and algorithms.  |                                                              |
-| The instructions for use name the quality metrics.   |  Also specify confidence ranges here.                                                         |
-| The instructions for use list the factors that could have a negative effect on the product's performance. |                                                              |
+| The instructions for use name the quality metrics.   |  Also specify confidence ranges here.                                                         | 2024/1689/EC article 13 section 3.(b)(ii)|
+| The instructions for use list the factors that could have a negative effect on the product's performance. |                                                              |2024/1689/EC article 13 section 3.(b)(iii) |
 | The instructions for use specify whether the product is further trained during use. | Please observe notes in the chapter on continuous learning systems.  |                                                              |                                                              |
-| The instructions for use describe how to update the product. |                                                              |
 | The instructions for use contain references to additional literature. |                                                              |
 | The instructions for use contain references to licensing rights. |    | 2017/745/EU, Annex I, 23.4, EU-Regulation 207/2012|
 | The instructions for use identify the manufacturer and lists channels for posing questions. |  |  2017/745/EU, Annex I, 23.4, EU-Regulation 207/2012|
@@ -490,20 +506,22 @@ Data generally have to be understood as training, validation and test data. Each
 | Requirements                                                 | Comments | Regulatory references|
 | ------------------------------------------------------------ | -------- |--|
 | The manufacturer has evaluated the risks that arise if the inputs do not meet the specified requirements[^C.2.a.2]. |       |  ISO 14971:2019, 5.4,  IEC 62304, 7.1, DIN SPEC 2, IEC 82304 4.1.c) | 
-| The manufacturer has derived the quantitative quality criteria based on the state of the art. | The manufacturer shall be able to name the quality criteria for alternative technologies and procedures and to argue if the medical device is not superior to the alternatives with respect to the quality criteria [^C.5.d.1]. | |       |          |
+| The manufacturer has derived the quantitative quality criteria based on the state of the art. | The manufacturer shall be able to name the quality criteria for alternative technologies and procedures and to argue if the medical device is not superior to the alternatives with respect to the quality criteria [^C.5.d.1]. | 2017/745/EC Annex 1 1., 2017/745/EC Annex 1 1., 2024/1689 article 8 section 1.| 
 | The manufacturer has defined the gold standard and justified its choice, which will be used to verify the quality criteria. |   | XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA proposed regulatory framework for modifications to AI/ML based SaMD: "reference standard" |
-| The manufacturer has identified, evaluated, and managed risks that arise when outputs do not meet the specified quality criteria. | In this analysis, the manufacturer also considers the specific properties of the selected model as well as the confidence intervals of the output values determined during testing. | ISO 14971:2019, 5.3, IEC 62304, 7.1, IEC 82304, 4.1.c), XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on software validation, 5.2.2 |
-| The manufacturer has evaluated the consequences if the system provides socially unacceptable outputs (e.g. discriminatory). | These "consequences" are not necessarily risks in the sense of ISO 14971. | Ethics guidelines for trustworthy AI |
-| The manufacturer has identified, evaluated and managed the risks if the system is not available. |   
-| The manufacturer has identified, evaluated and managed the risks arising from software errors. | This includes errors in SOUP as well as in the software used for "pre-processing" the data and for training the model. | 
+| The manufacturer has identified, evaluated, and managed risks that arise when outputs do not meet the specified quality criteria. | In this analysis, the manufacturer also considers the specific properties of the selected model as well as the confidence intervals of the output values determined during testing. | ISO 14971:2019, 5.3, IEC 62304, 7.1, IEC 82304, 4.1.c), XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA guidance on software validation, 5.2.2, 2024/1689/EC article 9 sections 2.(d) and 5.(a) |
+| The manufacturer has evaluated the consequences if the system provides socially unacceptable outputs (e.g. discriminatory). | These "consequences" are not necessarily risks in the sense of ISO 14971. | Ethics guidelines for trustworthy AI,  2024/1689/EC article 9 2. sections 2.(d) and 5.(a)|
+| The manufacturer has identified, evaluated and managed the risks if the system is not available. |  | 2024/1689/EC article 9 section 2.|
+| The manufacturer has identified, evaluated and managed the risks arising from software errors. | This includes errors in SOUP as well as in the software used for "pre-processing" the data and for training the model. | ||
 | The manufacturer has identified, evaluated and managed the risks arising from the specific choice of model architecture. | In doing so, manufacturers should also analyze whether the models have been optimized to the right specifications. | ISO 14971:2019 |
-| The manufacturer has identified, evaluated, and managed the risks posed by the specific choice of target platform. | For example, the target platform might not provide the required computing power or might cause the software to crash. |
-| The manufacturer has identified, evaluated and managed the risks arising from the selection of training, validation and test data. | This concerns both the sources of these data (such as patients, institutions) and the division of these data into training, validation and test data. For example, manufacturers should check that there is no overfitting or bias of the data. |
+| The manufacturer has identified, evaluated, and managed the risks posed by the specific choice of target platform. | For example, the target platform might not provide the required computing power or might cause the software to crash. | | |
+| The manufacturer has identified, evaluated and managed the risks arising from the selection of training, validation and test data. | This concerns both the sources of these data (such as patients, institutions) and the division of these data into training, validation and test data. For example, manufacturers should check that there is no overfitting or bias of the data. | 2024/1689/EC article 9 sections 2.(d) and 5.(a), article 10 sections 2.(f), 2.(g), 4. |
 | The manufacturer has identified, evaluated and managed the risks of outputs (predictions, classifications, etc.) being correct only by chance. | Interpretability allows manufacturers to demonstrate why an ML-model has made a specific decision. |
-| The manufacturer has identified the risks posed by the fact that the predictions themselves change the predicted outcomes. | In this phenomenon, the model changes from observer to actor [^C.5.d.2]. It is called "performative prediction." Producers should investigate the possible effects on people or systems and describe them e.g. with a DAC ("directed acyclic graph"), observe a possible "distribution shift" and, if necessary, an unaffected control group, and take action if necessary such as choosing a different model or re-training the existing model. |
+| The manufacturer has identified the risks posed by the fact that the predictions themselves change the predicted outcomes. | In this phenomenon, the model changes from observer to actor [^C.5.d.2]. It is called "performative prediction." Producers should investigate the possible effects on people or systems and describe them e.g. with a DAC ("directed acyclic graph"), observe a possible "distribution shift" and, if necessary, an unaffected control group, and take action if necessary such as choosing a different model or re-training the existing model. | 2024/1689/EC article 15 section 4.|
 | If the manufacturer uses self-tests, he has explained which of the specified quality criteria are checked with them and which risks are thereby controlled. | |
 | The manufacturer has identified, evaluated and managed the risks from usage errors. | These risks should also take into account that users do not recognize or misunderstand the explanation of the outputs ("Explainability"). | IEC 62366-1, 5.3f, FDA HFE guidance, FDA guidance on software validation, 5.2.3 | 
 | The manufacturer has identified, evaluated and controlled the other risks mentioned in chapter C.1.d). |   | 
+|The manufacturer has evaluated "human oversight" as one risk mitigation measure and documented the decision. |Users can intervene e.g., press a kill-swith| 2024/1689/EC article 14 and Annex IV section 2.(e)|
+|The manufacturer has analysed the records according to 2024/1689/EC for risks| |2024/1689/EC article 9 section 2.|
 
 [^C.5.d.1]: State-of-the-Art does not necessarily correspond to the Gold Standard, which in turn does not necessarily correspond to the Ground Truth. I.e., the system requirements may be lower than for a gold standard or ground truth, especially if the latter requires an invasive or very costly procedure.    
 [^C.5.2.d]: Examples of this phenomenon can be found [here](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive).  
@@ -521,9 +539,10 @@ Data generally have to be understood as training, validation and test data. Each
 |Requirements                                                  |Comments| Regulatory references|
 | ------------------------------------------------------------ | --------- |--|
 | The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). | 2017/745/EU, Annexes I and II, ISO 13485 e.g. 7.3.5, FDA 21 CFR part 820.30(e) |
+|The manufacturer has identified the software version in the documentation|| 2024/1689/EC annex IV section 1.(c)|
 | The manufacturer has assessed the risks as acceptable in risk management and documented that all activities specified in the risk management plan have been carried out. | Note for auditors [^C.6.1] |
-|The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. |  
-| The manufacturer has shown in Algorithm Change Protocol (ACP) how it will perform these changes for systems that it wishes to market in the USA[^C.6.3]. |                            |
+|The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. | | 2024/1689/EC annex IV section 2.(f) |
+| The manufacturer has shown in Algorithm Change Protocol (ACP) how it will perform these changes for systems that it wishes to market [^C.6.3]. | |2024/1689/EC annex IV section 2.(f)|
 | The manufacturer has created a Post-Market Surveillance Plan, see below. |                            |
 
 [^C.6.1]: Using examples, check that the efficacy of risk management measures was tested so that there is a traceability of risks for risk control measures.
@@ -548,13 +567,14 @@ Data generally have to be understood as training, validation and test data. Each
 
 |Requirements|Comments| Regulatory references|
 |:--|:--|:--|
-|The manufacturer has created a Post-Market Surveillance (PMS) Plan.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has created a Post-Market Surveillance (PMS) Plan.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII, 2024/1689/EC article 17 section 1.(h), article 72 |
 |The manufacturer has specified the data it wishes to collect and analyze in this PMS plan.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|The manufacturer has specified in the PMS plan, that logging information is collected analyzed |This information are the "automatically generated logs" according to 2024/1689/EC|2024/1689/EC article 12 section 2.(b)|
 |The manufacturer has specified in the PMS plan the quality criteria and threshold values that it considers necessary for handling of in particular a re-evaluation of the risk-benefit analysis.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |The manufacturer has analyzed when determining these threshold values which feedback loops the threshold values can influence[^D.2.1].|This analysis also serves as a measure against the above risk through "Performance Prediction".| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |The manufacturer has analyzed when determining these threshold values which self-fulfilling prophecies the threshold values can influence[^D.2.2].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |In the PMS plan, the manufacturer described how it collects and analyzes information on adverse medical effects.|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
-|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
+|In the PMS plan, the manufacturer described which information on (adverse) behavioral changes or (predictable) misuse is collected and analyzed[^D.2.3].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII, 2024/1689/EC article 9 section 2.(b) |
 |In the PMS plan, the manufacturer described how it collects and analyzes information on additional “adverse effects” [^D.2.4].|| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |The manufacturer has described in the PMS plan how it collects information to be able to analyze whether the data in the field is consistent with the expected data or training data[^D.2.5].|Note for auditors[^D.2.6]| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |
 |In the PMS plan, the manufacturer has described how and how often it wants to collect information on whether the product still meets the state of the art.|Note for auditors[^D.2.7]| 2017/745/EU, Chapter VII, 2017/746/EU, Chapter VII |

@@ -4,19 +4,21 @@
 
 ### 1. Ziele des Leitfadens
 
-Dieser Leitfaden hat das Ziel, Medizinprodukte-Herstellern, Behörden und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um
+Dieser Leitfaden hat das Ziel, Medizinprodukte- und IVD-Herstellern, Behörden und Benannten Stellen eine Handlungsanleitung und eine konkrete Checkliste an die Hand zu geben, um
 
-- zu verstehen, was die Erwartungen der Benannten Stellen und Behörden sind,
-- die schrittweise Umsetzung der Sicherheit von Medizinprodukten zu befördern, die Verfahren der künstlichen Intelligenz, insbesondere des maschinellen Lernens einsetzen,
+- zu verstehen, was die Erwartungen der Benannten Stellen und Behörden sind, die sich aus dem Medizinprodukterecht (z.B. MDR, IVDR) und der EU-KI-Verordnung ergeben,
+- die schrittweise Umsetzung der Sicherheit von Medizinprodukten und IVD zu befördern, die Verfahren der künstlichen Intelligenz, insbesondere des maschinellen Lernens einsetzen,
 - das Fehlen einer harmonisierten Norm (zwischenzeitlich) bestmöglich zu kompensieren.
 
-Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der Sicherheit von KI-basierten Medizinprodukten zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein.
+Der Leitfaden hat **nicht** die Zielsetzung, als Lehrbuch oder Leitfaden für das Erreichen der Sicherheit von KI-basierten Medizinprodukten und IVD zu dienen. Vielmehr möchte er ein Leitfaden für deren Überprüfung sein.
 
 Der Anhang nennt die Erwägungsgründe, die zur Entwicklung dieses Leitfadens führten.
 
 ### 2. Anwendungsbereich und Zielgruppe
 
-Dieser Leitfaden ist nur für Medizinprodukte anwendbar, die Verfahren der KI, insbesondere des maschinellen Lernens verwenden. Der Leitfaden wendet sich insbesondere an 
+Dieser Leitfaden ist nur für Medizinprodukte und IVD anwendbar, die Verfahren der KI, insbesondere des maschinellen Lernens verwenden. Allerdings betreffen die Anforderungen aus der EU-KI-Verordnung (2024/1689) Medizinprodukte der Klasse I und IVD der Klasse A von Ausnahmen abgesehen nicht. 
+
+Der Leitfaden wendet sich insbesondere an 
 
 - **Hersteller** dieser Produkte
 - deren Dienstleister (z.B. **Entwicklungsdienstleister**)
@@ -43,7 +45,7 @@ Entsprechend stellt der Leitfaden keine spezifischen Anforderungen an die Produk
    4. Modellentwicklung
    5. Produktentwicklung
    6. Produktfreigabe
-3. Anforderungen an die, der Entwicklung nachgelagerten Phasen
+3. Anforderungen an die der Entwicklung nachgelagerten Phasen
 
 #### b) Verbindlichkeit des Leitfadens
 
@@ -51,7 +53,7 @@ Dieser Leitfaden ist weder eine gesetzliche Anforderung noch eine harmonisierte 
 
 Dieser Leitfaden trägt Best Practices zusammen, um den gesetzlich geforderten "State-of-the-Art" bestmöglich zu beschreiben. Dabei ist zu berücksichtigen, dass eine Fokussierung allein auf diesen "State-of-the-Art" auch zur Entwicklung von Produkten mit geringem Nutzen und sogar Schaden für den Patienten führen und insofern für sich genommen, kein hinreichendes Kriterium sein kann.
 
-Einige dieser Best Practices sind nicht in allen Situationen, bei allen Produkten oder bei allen Verfahren des maschinellen Lernens anwendbar. Hersteller sollten nicht offensichtliche Ausschlüsse begründen.
+Einige dieser Best Practices sind daher nicht in allen Situationen, bei allen Produkten oder bei allen Verfahren des maschinellen Lernens anwendbar. Hersteller sollten nicht offensichtliche Ausschlüsse begründen.
 
 #### c) Verwendung des Leitfadens
 
@@ -115,11 +117,11 @@ Die Lizenz gestattet es, das Produkt zu Beratungszwecken einschließlich Audits 
 
 ### 5. Dokumentenlenkung, Dokumentenidentifikation
 
-Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform GitHub verwaltet. Einzig, die in diesem Repository genannten Dokumente sind gültig.
+Dieses Dokument wird über das Versionsverwaltungssystem git bzw. die Plattform GitHub verwaltet. Einzig die in diesem Repository genannten Dokumente sind gültig.
 
 Die Versionshistorie einschließlich der jeweiligen Autoren kann der Dokumentenhistorie entnommen werden.
 
-Die freigegebenen Versionen sind über einen Tag im Repository als solche gekennzeichnet. Versionen ohne Tag sind Dokumente im Entwurfsstadium.
+Die freigegebenen Versionen sind im Main Branch des Repositories. Versionen im Entwurfsstadium finden sich in den anderen Branches.
 
 ## B) Allgemeine Anforderungen
 
@@ -157,10 +159,10 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 |Anforderung|Kommentare|Regulatorische Referenzen|
 |:--|:--|:--|
-|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||ISO 13485, 5.5.1, 6.2., ISO 14971, 3.3., IEC 62304, 2017/745/ EU Artikel 10.9, 21 CFR part 820.30 (b)|
-|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|ISO 13485, 6.2., ISO 14971:2019, 4.3, ISO 13485:2016, 7.3.2, IEC 82304, 6.1.|
+|Der Hersteller hat eine Liste aller Rollen erstellt, die mit dem Thema KI direkt oder indirekt befasst sind [^B2-01]||ISO 13485, 5.5.1, 6.2.; ISO 14971, 3.3.; IEC 62304; MDR (2017/745/ EU) Artikel 10.9; 21 CFR part 820.30 (b)|
+|Der Hersteller hat für jede Rollen die Kompetenzen mit Bezug zur KI bestimmt [^B2-02]|Beispiele für Kompetenzen: Machine Learning, Explainable AI, Medizin (für entsprechende Domäne), klinische und Usability-Validierung|ISO 13485, 6.2.; ISO 14971:2019 4.3; ISO 13485:2016, 7.3.2; IEC 82304, 6.1.; KI-Verordnung (2024/1689) Artikel 4|
 |Der Hersteller hat angemessene Aufzeichnungen über die Ausbildung, Weiterbildung und Kompetenzen, die den Schluss erlauben, dass die Personen tatsächlich über diese Kompetenzen verfügen||ISO 13485, 6.2.|
-|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüberhinausgehenden oder abweichenden) Kompetenzen festgelegt|Anforderung der ISO 13485:2016| ISO 13485, 7.3.2., IEC 82304, 6.1.|
+|Die (Software-)Entwicklungspläne haben produktspezifisch die (darüberhinausgehenden oder abweichenden) Kompetenzen festgelegt|| ISO 13485, 7.3.2.; IEC 82304, 6.1.|
 
 
 [^B2-01]: Beispiele sind: Data Scientists, Entwickler, Tester, Regulatory Affairs und Qualitätsmanager, Mitarbeiter in Service und Support, Produktmanager, Medizinprodukteberater, Ärztinnen und Ärzte
@@ -172,7 +174,7 @@ Hersteller können dabei auch auf die Kompetenz externer Ressourcen zugreifen.
 
 Die Hersteller sollten den Nachweis führen können, die relevanten Anforderungen dieser Leitlinie beachtet zu haben. Es gibt keine spezifischen Anforderungen an die Dokumentation und "Objective Evidence".
 
-Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten, wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
+Es besteht zumindest in Europa keine Pflicht, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell zur KI zusammenfasst. Vielmehr können Hersteller diese Aspekte in bereits bestehenden Dokumenten wie den Vorgabedokumenten des QM-Systems und der technischen Dokumentation (z.B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
 
 ## C) Anforderungen an die Produktentwicklung
 
