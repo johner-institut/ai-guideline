@@ -28,7 +28,7 @@ Der Leitfaden gilt insbesondere für
 - Ihre Dienstleister (z. B. Entwicklungsdienstleister)
 - Personen und Organisationen, die die Sicherheit dieser Produkte bewerten müssen, wie z. B. Auditoren, Behörden und benannte Stellen.
 
-Der Leitfaden deckt nur allgemeine Sicherheits- und Leistungsanforderungen in Bezug auf KI ab. Er befasst sich z. B. nicht mit Aspekten der IT-Sicherheit, es sei denn, sie sind KI-spezifisch. Die IT-Sicherheit ist Gegenstand einer [dedizierten Leitfaden zur IT-Sicherheits](https://github.com/johner-institut/it-security-guideline/).
+Der Leitfaden deckt nur allgemeine Sicherheits- und Leistungsanforderungen in Bezug auf KI ab. Er befasst sich z. B. nicht mit Aspekten der IT-Sicherheit, es sei denn, sie sind KI-spezifisch. Die IT-Sicherheit ist Gegenstand einer [dedizierten Leitfaden zur IT-Sicherheit](https://github.com/johner-institut/it-security-guideline/).
 
 ### 3. Gebrauchsanweisung
 
@@ -97,7 +97,7 @@ Der Leitfaden ist eine gruppierte Liste von Prüfkriterien gemäß dem oben gena
 - Eindeutige ID
 - Anforderungen/Prüfkriterien, die einfach als erfüllt oder nicht erfüllt bewertet werden können
 - Kommentare
-- Regulatorischee Verweise
+- Regulatorische Verweise
 - Verweis auf die ID des [Fragebogens des Team-NB](https://www.team-nb.org/wp-content/uploads/2024/11/Team-NB-PositionPaper-AI-in-MD-Questionnaire-V1-20241125.pdf) (der auf diesem Leitfaden basiert)
 
 Die Kommentare können Folgendes enthalten:
@@ -247,7 +247,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 
 |ID|Anforderungen|Kommentare|Verweis auf Vorschriften|Team-NB-ID|
 |:--|:--|:--|---|:--|
-|C2a1|Der Hersteller hat quantitative Qualitätskriterien oder Anforderungen für die Software oder/und den Algorithmus aus der Zweckbestimmung und den Stakeholder-Anforderungen nachvollziehbar abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich besonders gut mit einer "Traceabiliy-Matrix" darstellen.| 2024/1689/EU Anhang IV, ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University „Building Explainability and Trust for AI in Healthcare“, FDA Guidance zur „Software-Validierung“, Kapitel 5.2.2 | (6.1.3.1.), 6.2.1.1. |
+|C2a1|Der Hersteller hat quantitative Qualitätskriterien oder Anforderungen für die Software oder/und den Algorithmus aus der Zweckbestimmung und den Stakeholder-Anforderungen nachvollziehbar abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich besonders gut mit einer "Traceability-Matrix" darstellen.| 2024/1689/EU Anhang IV, ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University „Building Explainability and Trust for AI in Healthcare“, FDA Guidance zur „Software-Validierung“, Kapitel 5.2.2 | (6.1.3.1.), 6.2.1.1. |
 |C2a2|Der Hersteller berücksichtigte beispielsweise die folgenden quantitativen Qualitätskriterien oder -anforderungen: bei Klassifizierungsproblemen Genauigkeit (mittlere oder ausgewogene Genauigkeit), positiver Vorhersagewert (Präzision), Spezifität und Sensitivität; bei Regressionsproblemen mittlerer absoluter Fehler und mittlerer quadratischer Fehler.| Bei unausgewogenen Daten, d. h. wenn Labels mit sehr unterschiedlichen Häufigkeiten auftreten, sollte anstelle der mittleren Genauigkeit eine ausgewogene Genauigkeit verwendet werden. Die Wahl der Qualitätskriterien hängt jedoch stark von der Zweckbestimmung ab. | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. | 6.2.1.2. |
 | C2a3 | Der Hersteller hat die erwarteten Wertebereiche der Ausgaben (Outputs) angegeben. | | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. | 6.2.1.4. |
 |C2a4|Der Hersteller hat die Anforderungen bezüglich der Wiederholbarkeit und Reproduzierbarkeit der Anforderungen festgelegt.|Dies ist besonders relevant bei „Continuous Learning Systems“ (kontinuierlichen Lernsystemen).| 2017/745/EU, Anhang I, 17.1. , 2017/746/EU, Anhang I, 16.1., ISO 13485, 7.3.3., 7.3.4 | 6.2.1.5. |
@@ -257,7 +257,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 |C2a8|Der Hersteller hat die Verfügbarkeit des Medizinprodukts angegeben.|Dies ist ein Aspekt der Robustheit und muss gemäß ISO 25010 und IEC 62304 Kapitel 5.2 angegeben werden. | ISO 25010, IEC 62304, 5.2., ISO 14971, 4.3., ISO 13485, 7.3.3. | 6.2.1.9. |
 |C2a9 |Der Hersteller hat die Anforderungen in Bezug auf "Audit Logs" festgelegt. |AI Act spricht von „Protokollen“.|2024/1689/EU Artikel 12||
 
-[^C.2.a.1]: Beispiele: **Beispiel 1**: Die Stakeholder-Anforderung (Nutzungsanforderng) besagt, dass 95 % der Radiologen in der Lage sein müssen, mit dem Produkt Krebs zu erkennen. Die Anforderung an den Algorithmus besagt, dass er eine Sensitivität von 97 % aufweisen muss. **Beispiel 2**: Die Anforderungen der Stakeholder besagen, dass eine Arterienverkalkung mit einer Sensitivität von 92 % erkannt werden können muss. Die Anforderungen an den Algorithmus besagen, dass er die Stärke der Plaques im Blut auf 0,2 mm genau vorhersagen können muss.
+[^C.2.a.1]: Beispiele: **Beispiel 1**: Die Stakeholder-Anforderung (Nutzungsanforderung) besagt, dass 95 % der Radiologen in der Lage sein müssen, mit dem Produkt Krebs zu erkennen. Die Anforderung an den Algorithmus besagt, dass er eine Sensitivität von 97 % aufweisen muss. **Beispiel 2**: Die Anforderungen der Stakeholder besagen, dass eine Arterienverkalkung mit einer Sensitivität von 92 % erkannt werden können muss. Die Anforderungen an den Algorithmus besagen, dass er die Stärke der Plaques im Blut auf 0,2 mm genau vorhersagen können muss.
 
 [^C.2.a.2]: Beispiele: unvollständige Datensätze, fehlende Datensätze, falsches Datenformat, übermäßige Datenmengen, Daten außerhalb der spezifizierten Wertebereiche, falsche zeitliche Abfolge der Daten.
 
@@ -335,7 +335,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 | ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
-| C3b1 | Im Fall von „Supervised Learning“ hat der Hersteller die Labels aus derZweckbestimmung abgeleitet, in der die Trainingsdaten bereitgestellt werden, und diese Wahl begründet. | |2024/1689/EU Artikel 10 Abschnitt 3|6.3.2.1.|
+| C3b1 | Im Fall von „Supervised Learning“ hat der Hersteller die Labels aus der Zweckbestimmung abgeleitet, in der die Trainingsdaten bereitgestellt werden, und diese Wahl begründet. | |2024/1689/EU Artikel 10 Abschnitt 3|6.3.2.1.|
 | C3b2 | Der Hersteller hat ein Verfahren zum Labeling bei „überwachten Lernen“ definiert, falls die Daten noch keine Labels enthalten. | | ISO 13485, 4.1, 2024/1689/EU Artikel 10 Abschnitt 2.(c) | 6.3.2.2. |
 | C3b3 | Dieses Verfahren legt quantitative Klassifizierungskriterien für das Labeling fest. Die Auswahl dieser Kriterien wurde vom Hersteller begründet [^C.3.b.1]. | Wenn die „Ground Truth“ nicht gewählt wird [^C.3.b.2], weil sie zu teuer oder invasiv ist, muss dies ebenfalls begründet werden. | | 6.3.2.3. |
 | C3b4 | Dieses Verfahren legt die Anforderungen an die Anzahl, Schulung und Kompetenz der für das Labeling verantwortlichen Personen fest. | | ISO 13485, 6.2 und 7.3.2, FDA 21 CFR Teil 820.25 | 6.3.2.4. |
@@ -532,7 +532,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C5d8 | Der Hersteller hat die Risiken, die sich aus Softwarefehlern ergeben, ermittelt, bewertet und gemanagt. | Dies umfasst Fehler in SOUP sowie in der Software, die für die „Vorverarbeitung“ der Daten und für das Training des Modells verwendet wird. | | |
 | C5d9 | Der Hersteller hat die Risiken, die sich aus der spezifischen Wahl der Modellarchitektur ergeben, identifiziert, bewertet und gemanagt. | Dabei sollten die Hersteller auch analysieren, ob die Modelle auf die richtigen Spezifikationen hin optimiert wurden. | ISO 14971:2019 | |
 | C5d10 | Der Hersteller hat die Risiken, die sich aus der spezifischen Wahl der Zielplattform ergeben, identifiziert, bewertet und gemanagt. | Beispielsweise könnte die Zielplattform nicht die erforderliche Rechenleistung bieten oder einen Absturz der Software verursachen. | | 6.1.4.13 |
-| C5d11 | Der Hersteller hat die Risiken, die sich aus der Auswahl der Trainings-, Validierungs- und Testdaten ergeben, ermittelt, bewertet und beherrscht. | Dies betrifft sowohl die Quellen dieser Daten (z. B. Patienten, Einrichtungen) als auch die Aufteilung dieser Daten in Trainings-, Validierungs- und Testdaten. Beispielsweise sollten Hersteller überprüfen, ob die Ergebnisse nicht "overfitted" sind oder oder einen Bias haben. | 2024/1689/EU Artikel 9 Abschnitte 2.(d) und 5.(a), Artikel 10 Abschnitte 2.(f), 2.(g), 4. | (6.1.2.5), (6.1.4.11), (6.1.4.14) |
+| C5d11 | Der Hersteller hat die Risiken, die sich aus der Auswahl der Trainings-, Validierungs- und Testdaten ergeben, ermittelt, bewertet und beherrscht. | Dies betrifft sowohl die Quellen dieser Daten (z. B. Patienten, Einrichtungen) als auch die Aufteilung dieser Daten in Trainings-, Validierungs- und Testdaten. Beispielsweise sollten Hersteller überprüfen, ob die Ergebnisse nicht "overfitted" sind oder einen Bias haben. | 2024/1689/EU Artikel 9 Abschnitte 2.(d) und 5.(a), Artikel 10 Abschnitte 2.(f), 2.(g), 4. | (6.1.2.5), (6.1.4.11), (6.1.4.14) |
 | C5d12 | Der Hersteller hat die Risiken, dass die Ergebnisse (Vorhersagen, Klassifizierungen usw.) nur zufällig korrekt sind, identifiziert, bewertet und gemanagt. | Die Interpretierbarkeit ermöglicht es Herstellern zu zeigen, warum ein ML-Modell eine bestimmte Entscheidung getroffen hat. |||
 | C5d13 | Der Hersteller hat die Risiken identifiziert, die sich daraus ergeben, dass die Vorhersagen selbst die vorhergesagten Ergebnisse verändern. | Bei diesem Phänomen wechselt das Modell vom Beobachter zum Akteur [^C.5.d.2]. Man spricht von „performative prediction“. Hersteller sollten die möglichen Auswirkungen auf Menschen oder Systeme untersuchen und sie z. B. mit einem DAC („directed acyclic graph“) beschreiben, eine mögliche „distribution shift“ und ggf. eine unbeeinflusste Kontrollgruppe beobachten und ggf. Maßnahmen ergreifen, wie die Wahl eines anderen Modells oder das erneute Training des bestehenden Modells. | 2024/1689/EU Artikel 15 Abschnitt 4| 6.1.4.17 |
 | C5d14 | Wenn der Hersteller Selbsttests verwendet, hat er erklärt, welche der festgelegten Qualitätskriterien damit überprüft werden und welche Risiken dadurch kontrolliert werden. | Diese Selbsttests entsprechen einem Mittel zur Risikominderung. |||
@@ -564,7 +564,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 |C6.2|Der Hersteller hat die Softwareversion in der Dokumentation angegeben.|| 2024/1689/EU Anhang IV Abschnitt 1.c| |
 | C6.3 | Der Hersteller hat die Risiken im Rahmen des Risikomanagements als akzeptabel bewertet und dokumentiert, dass alle im Risikomanagementplan festgelegten Maßnahmen durchgeführt wurden. | Hinweis für Auditoren [^C.6.1] ||6.6.2.|
 |C6.4| Der Hersteller hat in den Software as a Medical Device Pre-Specifications (SPS) dargelegt, welche Arten von Änderungen er für Systeme erwartet, die er in den USA vermarkten möchte [^C.6.2]. | | 2024/1689/EU Anhang IV Abschnitt 2.(f), FDA | |
-| C6.5 | Der Hersteller hat im Algorithmus-Änderungsprotokoll (ACP) dargelegt, wie er diese Änderungen für Systeme, die er vermarkten möchte, durchführen wird [^C.6.3]. | |2024/1689/EU Anhang IV Abschnitt 2.(f), FDA||
+| C6.5 | Der Hersteller hat im Predetermined Change Control Plan (PCCP) dargelegt, wie er diese Änderungen für Systeme, die er vermarkten möchte, durchführen wird [^C.6.3]. | |2024/1689/EU Anhang IV Abschnitt 2.(f), [FDA PCCP Guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence)||
 | C6.6 | Der Hersteller hat einen Plan zur Überwachung nach dem Inverkehrbringen erstellt, siehe unten. | |||
 
 [^C.6.1]: Anhand von Beispielen ist zu überprüfen, ob die Wirksamkeit der Maßnahmen zur Risikokontrolle getestet wurde, damit die Risiken zu den Maßnahmen rückverfolgbar sind.
@@ -591,7 +591,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 |:--|:--|:--|---|:--|
 |D2.1|Der Hersteller hat einen Plan zur Überwachung nach dem Inverkehrbringen (PMS) erstellt.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EG Artikel 17 Abschnitt 1.(h), Artikel 72 | 6.6.4., 7.2.1. |
 |D2.2|Der Hersteller hat die Daten angegeben, die er in diesem PMS-Plan erfassen und analysieren möchte.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.2. |
-|D2.3 |Im PMS-Plan hat der Hersteller festgelegt, dass die Informationen aus dne "Protokollen" gesammelt und analysiert werden. |Diese Informationen sind die „automatisch erstellten Protokolle“ gemäß 2024/1689/EG, Artikel 12 Absatz 2 Buchstabe b.|2024/1689/EC article 12 section 2.(b)||
+|D2.3 |Im PMS-Plan hat der Hersteller festgelegt, dass die Informationen aus den "Protokollen" gesammelt und analysiert werden. |Diese Informationen sind die „automatisch erstellten Protokolle“ gemäß 2024/1689/EG, Artikel 12 Absatz 2 Buchstabe b.|2024/1689/EC article 12 section 2.(b)||
 |D2.4|Im PMS-Plan hat der Hersteller die Qualitätskriterien und Schwellenwerte angegeben, die er für notwendig erachtet, um insbesondere eine Neubewertung der Risiko-Nutzen-Analyse vorzunehmen.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.3. |
 |D2.5|Der Hersteller hat bei der Festlegung dieser Schwellenwerte analysiert, welche Rückkopplungsschleifen ("feedback loops") die Schwellenwerte beeinflussen können[^D.2.1].|Diese Analyse dient auch als Maßnahme gegen das oben genannte Risiko durch „Performance Prediction“.| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | |
 |D2.6|Der Hersteller hat bei der Festlegung dieser Schwellenwerte analysiert, welche "self-fulfilling prophecies" die Schwellenwerte beeinflussen können[^D.2.2].|  | 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII ||
@@ -601,7 +601,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 |D2.10|Der Hersteller hat im PMS-Plan beschrieben, wie er Informationen sammelt, um analysieren zu können, ob die Daten im Feld mit den erwarteten Daten oder Trainingsdaten übereinstimmen[^D.2.5].|Hinweis für Auditoren[^D.2.6]| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.7. |
 |D2.11|Im PMS-Plan hat der Hersteller beschrieben, wie und wie oft er Informationen darüber sammeln möchte, ob das Produkt noch dem Stand der Technik entspricht.|Hinweis für Auditoren[^D.2.7]| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.8. |
 |D2.12|Im PMS-Plan hat der Hersteller beschrieben, wie und wie oft er Informationen darüber sammeln möchte, ob die „Ground Truth“ oder der Goldstandard noch aktuell sind.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.9. |
-|D2.13|Im PMS-Plan hat der Hersteller beschrieben, wie und wie oft Änderungen gemäß dem Algorithmus-Änderungsprotokoll (ACP) und innerhalb der „SaMD-Vorab-Spezifikationen“ (SPS) vorgenommen werden.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | |
+|D2.13|Im PMS-Plan hat der Hersteller beschrieben, wie und wie oft Änderungen z.B. gemäß dem Pre-determined Change Protocol (PPRP) vorgenommen werden.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII, , [FDA PCCP Guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence) | |
 |D2.14|Die in den Plänen geforderten Berichte sind zu den darin angegebenen Zeiten verfügbar.|z. B. PSUR, SSCP|2017/745/EU Artikel 85 f., 2017/747EU Artikel 80 f.|7.2.10.|
 
 [^D.2.1]: Beispiele für diese Rückkopplungsschleifen: **Beispiel 1**: Eine Reiseempfehlungs-App sendet je nach Funktion (letzte Reise) gezielte Werbung. Dies beeinflusst das Reiseverhalten. **Beispiel 2**: Ein Algorithmus liefert Prognosen. Daher wird der Arzt die Patienten besser oder früher behandeln...
@@ -644,6 +644,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 * **IEC 62304/AMD1**, Software für Medizinprodukte – Software-Lebenszyklusprozesse
 * **IEC 82304-1**, Gesundheitssoftware – Teil 1: Allgemeine Anforderungen an die Produktsicherheit
 * [FDA-Leitfäden zum maschinellen Lernen](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
+* [FDA Guidance "Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions"](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence)
 * [Position Paper of DKE UK 811.4 'Usability Engineering for Medical Devices using Artificial Intelligence and Machine Learning Technology'](https://doi.org/10.5281/zenodo.14203190)
 
 #### c) Branchenliteratur, Lehrbücher
