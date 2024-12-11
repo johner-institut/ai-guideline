@@ -20,7 +20,7 @@ Im Anhang sind die Erwägungsgründe aufgeführt, die zur Entwicklung dieses Lei
 
 ### 2. Anwendungsbereich und Zielgruppe
 
-Dieser Leitfaden gilt nur für Medizinprodukte und IVD, die KI-Methoden, insbesondere maschinelles Lernen, verwenden. Die Anforderungen der KI-Verordnung betreffen jedoch meist nicht Medizinprodukte der Klasse I und IVD der Klasse A.
+Dieser Leitfaden gilt nur für Medizinprodukte und IVD, die KI-Methoden, insbesondere maschinelles Lernen, verwenden. Die Anforderungen der KI-Verordnung an Hochrisiko-KI-Systeme betreffen jedoch grundlegend nicht Medizinprodukte der Klasse I und IVD der Klasse A.
 
 
 Der Leitfaden gilt insbesondere für
@@ -154,7 +154,7 @@ Wenn der Hersteller Prozesse auslagert, gelten die Anforderungen entsprechend. B
 Der Hersteller sollte alle produktspezifischen Pläne gemäß den jeweiligen Vorschriften zusammenstellen.
 
 - Entwicklungsplan (einschließlich Verifizierungs- und Validierungsplanung)
-- Plan zur Überwachung nach dem Inverkehrbringen (s. 2017/745/EU Anhang 1II, 2017/745/EU Anhang IIII, 2024/1689 Artikel 72 Abschnitt 3.)
+- Plan zur Überwachung nach dem Inverkehrbringen (s. 2017/745/EU Anhang III, 2017/746/EU Anhang III, 2024/1689 Artikel 72 Abschnitt 3.)
 - Risikomanagementplan
 - Plan für die klinische Bewertung
 
@@ -180,9 +180,9 @@ Hersteller können die Kompetenz externer Ressourcen nutzen.
 
 Die Hersteller sollten Nachweise darüber aufbewahren, dass sie die relevanten Anforderungen dieses Leitfadens befolgt haben. Es gibt keine KI-spezifischen Anforderungen für die Dokumentation und den „objektiven Nachweis“.
 
-Zumindest in Europa besteht keine Verpflichtung, ein spezifisches Dokument zu erstellen, das die Aktivitäten speziell für KI zusammenfasst. Hersteller können diese Aspekte in bestehende Dokumente wie QM-Dokumente (z. B. SOPs, Arbeitsanweisungen) und die technische Dokumentation (z. B. Software-Akte, Risikomanagementakte, klinische Bewertung, summative Bewertung der Gebrauchstauglichkeit) integrieren.
+Gemäß Artikel 11(1) der KI-Verordnung * „ist eine technische Dokumentation für ein KI-System mit hohem Risiko zu erstellen, bevor dieses System in Verkehr gebracht oder in Betrieb genommen wird “*, die in Anhang IV näher beschrieben wird.  Die KI-Verordnung empfiehlt jedoch, die KI-spezifische Dokumentation in eine bestehende technische Dokumentation zu integrieren. Daher können Hersteller diese Aspekte in bestehende Dokumente wie QM-Dokumente (z. B. Standardarbeitsanweisungen, Arbeitsanweisungen) und die bestehende Technische Dokumentation gemäß Anhang II der MDR/IVDR (z. B. Software- und Risikomanagementakten, klinische Bewertung, summative Bewertung der Benutzerfreundlichkeit) integrieren. 
 
-Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine bestehende technische Dokumentation zu integrieren. Sie schreibt vor, dass die Dokumentation zehn Jahre lang aufbewahrt werden muss, nachdem das KI-System auf den Markt gebracht wurde (Artikel 18.1).
+Außerdem schreibt sie vor, dass die Dokumentation zehn Jahre lang aufbewahrt werden muss, nachdem das KI-System auf den Markt gebracht wurde (Artikel 18.1).
 
 ## C) Anforderungen an die Produktentwicklung
 
@@ -194,7 +194,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 |:--|:--|:--|---|:--|
 |C1a1|Der Hersteller hat festgelegt, für welchen medizinischen Zweck (Diagnose, Therapie, Überwachung, Vorhersagen) das Medizinprodukt eingesetzt werden soll.|Der Verwendungszweck/Zweck sollte nicht mit der Beschreibung der Funktionalität (z. B. Berechnung von Scores) verwechselt werden.| ISO 13485, 4.2.3. und 7.3.2. c., 2017/745/ EU Anhang II (1.1), 2924/1689/EG Anhang IV Abschnitt 1.(a), ISO 14971:2019, 5.2, 21 CFR 814.20 (b)(3)(i), 21 CFR Teil 820.30(c) | 6.1.1.1. |
 |C1a2|Der Hersteller hat die Patienten charakterisiert, die mit dem Medizinprodukt diagnostiziert, behandelt oder überwacht werden sollen. Diese Charakterisierung umfasst die demografischen Daten der Patienten, Indikationen, Kontraindikationen und assoziierte Krankheiten.|Diese Charakterisierung ist auch in IEC 62366-1 enthalten. Patienten können gleichzeitig auch Anwender des Produkts sein. | 2017/745/EU, Anhang I, 23.4 und Anhang II, 1.1. c, 2017/746/EU, Anhang II, 1.1. c, IEC 62366-1, 5.1. und 5.3., ISO 13485, 7.3.3 a., 21 CFR 814.20 (b)(3)(i) |6.1.1.2|
-|C1a3|Der Hersteller hat angegeben, ob es Patienten unter 18 Jahren oder andere vulnerable Gruppen gibt,||2024/1689/EG Artikel 9 Abschnitt 10.||
+|C1a3|Der Hersteller hat angegeben, ob es Patienten unter 18 Jahren oder andere vulnerable Gruppen gibt,||2024/1689/EU Artikel 9 Abschnitt 9.||
 |C1a4|Der Hersteller hat angegeben, an welchen Körperstellen das Produkt verwendet wird oder von welchen Körperstellen die Daten stammen.|Auch gefordert in IEC 62366-1, Abschnitt 5.1.| 201 7/745/EU, Anhang II, 1.1., 2017/746/EU, Anhang II, 1.1., IEC 62366-1, 5.1.3. | 6.1.1.3 |
 |C1a5|Der beabsichtigte Verwendungszweck lässt erkennen, was das Ziel der/des Verfahrens  des maschinellen Lernens ist.|Klassifizierung und Regression, Clustering, Ähnlichkeitssuche und Empfehlungssysteme sind typische Ziele von maschinellen Lernmethoden. Die Beschreibung der Rolle des maschinellen Lernens ist notwendig, um die Anforderung der Beschreibung des „physikalischen Prinzips“ zu erfüllen. | IEC 62366-1, 5.1, 2017/745/EU Anhang II, 1.1, 21 CFR Teil 814.20, XAVIER University „Building Explainability and Trust for AI in Healthcare“ | 6.1.1.5 |
 |C1a6|Falls zutreffend, hat der Hersteller beschrieben, ob das Produkt Messfunktionen enthält.|Diese Eingabe wird z. B. benötigt, um die Risikoklasse des Produkts korrekt zu bestimmen.||6.1.1.4|
@@ -206,7 +206,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 | ID | Anforderungen | Kommentare |Regulatorische Referenzen|Team-NB-ID|
 | :----------------------------------------------------------- | :----------------------------------------------------------- |:--|---|:--|
 | C1b1 | Der Hersteller hat die vorgesehenen Anwender / Nutzer charakterisiert, z. B. anhand demografischer Merkmale (Alter, Geschlecht), in Bezug auf die Ausbildung, Erfahrung in medizinischen Bereichen, in Bezug auf technisches Wissen, körperliche und geistige Einschränkungen, Sprachkenntnisse und kulturellen Hintergrund. | Wenn der Hersteller keine Einschränkungen in Bezug auf diese Attribute vorsieht, muss er dies dokumentieren. | 2017/745/EU, Anhang I, 5 und Anhang II, 1.1, IEC 62366-1, 5.1., XAVIER University „Building Explainability and Trust for AI in Healthcare“| 6.1.2.1 |
-|C1b2|Der Hersteller hat angegeben, ob das Produkt für die Nutzung durch Laien vorgesehen ist.|Diese Entscheidung hat regulatorische Auswirkungen, wie z. B. die Anwendbarkeit der Anforderungen der Verordnungen 2017/745/EU und 2017/746/EU in Anhang I und 2024/1689/EU.|2017/745/EU Anhang I Abschnitt 22 und 2017/746/EU Anhang I Abschnitt 19|6.1.2.3|
+|C1b2|Der Hersteller hat angegeben, ob das Produkt für die Nutzung durch Laien vorgesehen ist.|Diese Entscheidung hat regulatorische Auswirkungen, wie z. B. die Anwendbarkeit der Anforderungen der Verordnungen 2017/745/EU und 2017/746/EU in Anhang I und 2024/1689/EU.|2017/745/EU Anhang I Abschnitt 22, 2017/746/EU Anhang I Abschnitt 19 |6.1.2.3|
 | C1b3 | Der Hersteller hat die vorgesehene Nutzungsumgebung (auch das soziale Umfeld wie Stress, Schichtarbeit, häufig wechselnde Kollegen) charakterisiert. | Diese Charakterisierung ist auch in IEC 62366-1 vorgeschrieben. Sie ist auch im Zusammenhang mit der Erklärbarkeit von KI relevant, da KI die Nutzungsumgebung, z. B. Aufgaben und Arbeitsbelastung, verändern kann. | 2017/745/EU, Anhang I, 5, IEC 62366-1, 5, XAVIER University „Building Explainability and Trust for AI in Healthcare“, UK 811.4 Positionspapier | 6.1.2.2 |
 |C1b4| Der Hersteller hat die Kernaufgaben beschrieben, die das Medizinprodukt unterstützen soll. | Aus diesen Kernaufgaben lassen sich auch die Anwendungsszenarien ableiten, die Hersteller gemäß IEC 62366-1 spezifizieren müssen.| IEC 62366-1 | |
 
@@ -278,7 +278,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 | :----------------------------------------------------------- | :------------------------------------------ |:--|---|:--|
 | C2c1 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um interne Systemfehler zu erkennen. | Dies kann ein "Audit Log2" oder ein Überwachungsschnittstelle (Port) sein. | 2017/745/EU, Anhang I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 und 7.1, ISO 149781:2019 , 5.4, FDA Guidance zur Softwarevalidierung, z. B. Kapitel 5.2.2, 5.2.3 und 5.2.4, GMLP-Leitprinzipien (von der FDA et al.) #2 (Datenintegrität) | 6.2.3.3. |
 | C2c2 | Gemäß der DSGVO darf das spezifizierte System Patienten keinen Entscheidungen aussetzen, die ausschließlich auf automatischer Datenverarbeitung basieren. Hersteller sollten die entsprechende Anforderung erfüllen und in der Lage sein, die gewählte Rechtsgrundlage zu begründen. |  | Art. 22 der DSGVO. | |
-| C2c3 | Der Hersteller hat die Anforderungen festgelegt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | IT-Sicherheit ist nicht Gegenstand dieser Richtlinie, sondern der [Leitfaden zur IT-Sicherheit](https://github.com/johner-institut/it-security-guideline/). | 2024/1689/EU Artikel 15 Absatz 5. | 6.2.4.x |
+| C2c3 | Der Hersteller hat die Anforderungen festgelegt, die die Software erfüllen muss, um die IT-Sicherheit des Produkts zu gewährleisten. | IT-Sicherheit ist nicht Gegenstand dieser Richtlinie, sondern der [Leitfaden zur IT-Sicherheit](https://github.com/johner-institut/it-security-guideline/). | 2024/1689/EU Artikel 15 Absatz 5. | 6.2.4 |
 
 
 
@@ -386,7 +386,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C3c3 | Der Hersteller hat die verarbeiteten Daten mit Hilfe deskriptiver Statistiken beschrieben [^C.3.a.4]. | [„Dataset Nutrition Label“](https://ahmedhosny.github.io/datanutrition/) wird empfohlen.|||
 | C3c4 | Der Hersteller hat die gesamte Software für die Datenverarbeitung, einschließlich der im Prozess verwendeten Bibliotheken, dokumentiert und unter Versionskontrolle. || ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
 | C3c5 | Der Hersteller hat alle Schulungs-, Validierungs- und Testdaten unter Versionskontrolle. || | 6.3.4.11. |
-| C3c6 | Der Hersteller verfügt über ein Verfahren zur Datenspeicherung und -aufbewahrung gemäß den geltenden behördlichen Anforderungen. |Diese Anforderungen legen zum einen eine Mindestaufbewahrungsfrist fest, wie z. B. 2017/745/EG, 2024/1689/EG, ISO 13485. Zum anderen gibt es Datenschutzanforderungen zur Minimierung der (Zeit) der Datenspeicherung.| | 6.3.4.14. |
+| C3c6 | Der Hersteller verfügt über ein Verfahren zur Datenspeicherung und -aufbewahrung gemäß den geltenden behördlichen Anforderungen. |Diese Anforderungen legen zum einen eine Mindestaufbewahrungsfrist fest, wie z. B. 2017/745/EG, 2024/1689/EU, ISO 13485. Zum anderen gibt es Datenschutzanforderungen zur Minimierung der (Zeit) der Datenspeicherung.| | 6.3.4.14. |
 
 
 [^C.3.d.1.]: Die Nummerierung des entsprechenden Abschnitts 6.3.4 im Team-NB-Dokument beginnt mit 9. D. h., die Nummern 6.3.4.1. bis 6.3.4.8. fehlen.
@@ -589,14 +589,14 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 |ID|Anforderungen|Kommentare| Verweise auf Vorschriften| Team-NB-ID |
 |:--|:--|:--|---|:--|
-|D2.1|Der Hersteller hat einen Plan zur Überwachung nach dem Inverkehrbringen (PMS) erstellt.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EG Artikel 17 Abschnitt 1.(h), Artikel 72 | 6.6.4., 7.2.1. |
+|D2.1|Der Hersteller hat einen Plan zur Überwachung nach dem Inverkehrbringen (PMS) erstellt.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EU Artikel 17 Abschnitt 1.(h), Artikel 72 | 6.6.4., 7.2.1. |
 |D2.2|Der Hersteller hat die Daten angegeben, die er in diesem PMS-Plan erfassen und analysieren möchte.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.2. |
-|D2.3 |Im PMS-Plan hat der Hersteller festgelegt, dass die Informationen aus den "Protokollen" gesammelt und analysiert werden. |Diese Informationen sind die „automatisch erstellten Protokolle“ gemäß 2024/1689/EG, Artikel 12 Absatz 2 Buchstabe b.|2024/1689/EC article 12 section 2.(b)||
+|D2.3 |Im PMS-Plan hat der Hersteller festgelegt, dass die Informationen aus den "Protokollen" gesammelt und analysiert werden. |Diese Informationen sind die „automatisch erstellten Protokolle“ gemäß 2024/1689/EU, Artikel 12 Absatz 2 (b).| 2024/1689/EU, Artikel 12 Absatz 2 (b).||
 |D2.4|Im PMS-Plan hat der Hersteller die Qualitätskriterien und Schwellenwerte angegeben, die er für notwendig erachtet, um insbesondere eine Neubewertung der Risiko-Nutzen-Analyse vorzunehmen.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.3. |
 |D2.5|Der Hersteller hat bei der Festlegung dieser Schwellenwerte analysiert, welche Rückkopplungsschleifen ("feedback loops") die Schwellenwerte beeinflussen können[^D.2.1].|Diese Analyse dient auch als Maßnahme gegen das oben genannte Risiko durch „Performance Prediction“.| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | |
 |D2.6|Der Hersteller hat bei der Festlegung dieser Schwellenwerte analysiert, welche "self-fulfilling prophecies" die Schwellenwerte beeinflussen können[^D.2.2].|  | 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII ||
 |D2.7|Im PMS-Plan hat der Hersteller beschrieben, wie er Informationen über unerwünschte Nebenwirkungen sammelt und analysiert.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.4. |
-|D2.8|Im PMS-Plan hat der Hersteller beschrieben, welche Informationen über (nachteilige) Verhaltensänderungen oder (vorhersehbaren) Missbrauch gesammelt und analysiert werden[^D.2.3].|| 2017/74 5/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EG Artikel 9 Abschnitt 2.(b) | 7.2.5. |
+|D2.8|Im PMS-Plan hat der Hersteller beschrieben, welche Informationen über (nachteilige) Verhaltensänderungen oder (vorhersehbaren) Missbrauch gesammelt und analysiert werden[^D.2.3].|| 2017/74 5/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EU Artikel 9 Abschnitt 2.(b) | 7.2.5. |
 |D2.9|Im PMS-Plan hat der Hersteller beschrieben, wie er Informationen über zusätzliche „unerwünschte Wirkungen“ sammelt und analysiert [^D.2.4].|  | 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII |7.2.6.|
 |D2.10|Der Hersteller hat im PMS-Plan beschrieben, wie er Informationen sammelt, um analysieren zu können, ob die Daten im Feld mit den erwarteten Daten oder Trainingsdaten übereinstimmen[^D.2.5].|Hinweis für Auditoren[^D.2.6]| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.7. |
 |D2.11|Im PMS-Plan hat der Hersteller beschrieben, wie und wie oft er Informationen darüber sammeln möchte, ob das Produkt noch dem Stand der Technik entspricht.|Hinweis für Auditoren[^D.2.7]| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.8. |
