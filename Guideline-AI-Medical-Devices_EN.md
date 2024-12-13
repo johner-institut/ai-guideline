@@ -380,12 +380,12 @@ Data generally have to be understood as training, validation and test data as we
 
 | ID                                               | Requirements                                                 | Comments                                                     | Regulatory references| Team-NB-ID [^C.3.d.1.] |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
-|  C3c1         |  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |||
-| C3c2 | The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |||
-| C3c3 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|||
-| C3c4 | The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control. ||  ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
-| C3c5 | The manufacturer has all training, validation and test data under version control. ||  | 6.3.4.11. |
-| C3c6 | The manufacturer has a procedure for data storage and retention according to applicable regulatory requirements. |These requirements specify on the one hand a minimum retention period such as 2017/745/EC, 2024/1689/EC, ISO 13485. On the other hand there are data protection requirements to minimized (time) of data storage.|  | 6.3.4.14. |
+|  C3d1         |  The manufacturer has described the "funnel", which shows how much data originates from which data sources (e.g. clinics) and at which processing step how many data records were dropped and for what reason.              |                                                              |||
+| C3d2 | The manufacturer has described which parts of the software are responsible for which processing step. | This should be part of the architecture of this software.  |||
+| C3d3 | The manufacturer has described the processed data using descriptive statistics [^C.3.a.4]. | ["Dataset Nutrition Label"](https://ahmedhosny.github.io/datanutrition/) is recommended.|||
+| C3d4 | The manufacturer has all software for data processing, including the libraries used in the process, documented and under version control. ||  ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
+| C3d5 | The manufacturer has all training, validation and test data under version control. ||  | 6.3.4.11. |
+| C3d6 | The manufacturer has a procedure for data storage and retention according to applicable regulatory requirements. |These requirements specify on the one hand a minimum retention period such as 2017/745/EC, 2024/1689/EC, ISO 13485. On the other hand there are data protection requirements to minimized (time) of data storage.|  | 6.3.4.14. |
 
 
 [^C.3.d.1.]: The numbering of the corresponding section 6.3.4 in Team-NB document starts with 9. I.e. the numbers 6.3.4.1. - 6.3.4.8. are missing.
