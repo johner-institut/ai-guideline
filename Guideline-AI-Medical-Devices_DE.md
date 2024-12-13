@@ -381,12 +381,12 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 | ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID [^C.3.d.1.] |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
-| C3c1 | Der Hersteller hat den „Trichter“ beschrieben, der zeigt, wie viele Daten aus welchen Datenquellen (z. B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund verworfen wurden. | |||
-| C3c2 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Dies sollte Teil der Architektur dieser Software sein. |||
-| C3c3 | Der Hersteller hat die verarbeiteten Daten mit Hilfe deskriptiver Statistiken beschrieben [^C.3.a.4]. | [„Dataset Nutrition Label“](https://ahmedhosny.github.io/datanutrition/) wird empfohlen.|||
-| C3c4 | Der Hersteller hat die gesamte Software für die Datenverarbeitung, einschließlich der im Prozess verwendeten Bibliotheken, dokumentiert und unter Versionskontrolle. || ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
-| C3c5 | Der Hersteller hat alle Schulungs-, Validierungs- und Testdaten unter Versionskontrolle. || | 6.3.4.11. |
-| C3c6 | Der Hersteller verfügt über ein Verfahren zur Datenspeicherung und -aufbewahrung gemäß den geltenden behördlichen Anforderungen. |Diese Anforderungen legen zum einen eine Mindestaufbewahrungsfrist fest, wie z. B. 2017/745/EG, 2024/1689/EG, ISO 13485. Zum anderen gibt es Datenschutzanforderungen zur Minimierung der (Zeit) der Datenspeicherung.| | 6.3.4.14. |
+| C3d1 | Der Hersteller hat den „Trichter“ beschrieben, der zeigt, wie viele Daten aus welchen Datenquellen (z. B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund verworfen wurden. | |||
+| C3d2 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Dies sollte Teil der Architektur dieser Software sein. |||
+| C3d3 | Der Hersteller hat die verarbeiteten Daten mit Hilfe deskriptiver Statistiken beschrieben [^C.3.a.4]. | [„Dataset Nutrition Label“](https://ahmedhosny.github.io/datanutrition/) wird empfohlen.|||
+| C3d4 | Der Hersteller hat die gesamte Software für die Datenverarbeitung, einschließlich der im Prozess verwendeten Bibliotheken, dokumentiert und unter Versionskontrolle. || ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
+| C3d5 | Der Hersteller hat alle Schulungs-, Validierungs- und Testdaten unter Versionskontrolle. || | 6.3.4.11. |
+| C3d6 | Der Hersteller verfügt über ein Verfahren zur Datenspeicherung und -aufbewahrung gemäß den geltenden behördlichen Anforderungen. |Diese Anforderungen legen zum einen eine Mindestaufbewahrungsfrist fest, wie z. B. 2017/745/EG, 2024/1689/EG, ISO 13485. Zum anderen gibt es Datenschutzanforderungen zur Minimierung der (Zeit) der Datenspeicherung.| | 6.3.4.14. |
 
 
 [^C.3.d.1.]: Die Nummerierung des entsprechenden Abschnitts 6.3.4 im Team-NB-Dokument beginnt mit 9. D. h., die Nummern 6.3.4.1. bis 6.3.4.8. fehlen.
