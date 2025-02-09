@@ -110,8 +110,8 @@ Die Kommentare können Folgendes enthalten:
 
 Die folgenden Autoren haben diesen Leitfaden erstellt:
 
-- Prof. Dr. Christian Johner ([Johner Institute](https://www.johner-institut.de)) (Version 2019 und folgende)
-- [Christoph Molnar](https://christophm.github.io/) ([LMU München](https://www.uni-muenchen.de/index.html)) (Version 2019)
+- Prof. Dr. Christian Johner ([Johner Institut](https://www.johner-institut.de))
+- [Dr. Christoph Molnar](https://christophmolnar.com) 
 - Dr. Andreas Purde, Dr. Abtin Rad ([TÜV SÜD](https://www.tuev-sued.de/)) (Version 2019)
 - Prof. Dr. Dr. Christian Dierks ([Dierks + Company](https://www.dierks.company/)) (Version 2019)
 - Stefan Bunk (CTO) und Sven Piechottka (Government & Regulatory Affairs) ([Merantix](https://www.merantix.com/healthcare/)) (Version 2019)
@@ -231,7 +231,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 | C1d1 | Der Hersteller hat alternative Verfahren aufgelistet und sie im Hinblick auf Nutzen, Sicherheit und Leistung bewertet. | Die Erörterung des Stands der Technik ist eine Anforderung von MEDDEV 2.7/1 und der MDR/IVDR. | 2017/745/EU, Anhang I, 1., 2017/746/EU, Anhang I, 1., MEDDEV 2.7/1, ISO 14971:2 019, 4.2 und 10.9, FDA Guidance „Factors to Consider When Making Benefit-Risk Determinations in Medical Device Premarket Approval“ (z. B. Teil C) | 6.1.5.1 |
 | C1d2 | Der Hersteller hat die oben genannten quantitativen Werte mit den relevanten Werten alternativer Methoden verglichen. | Die Hersteller sollten eine tabellarische Übersicht erstellen. ||(6.4.4.9.)|
 | C1d3 | Der Hersteller hat begründet, warum maschinelles Lernen den anderen Methoden überlegen ist und damit die damit verbundenen Risiken gerechtfertigt. | | 2017/745/EU, Anhang I, 1., 2017/746/EU, Anhang I, 1., MEDDEV 2.7/1 | (6.1.4.2) |
-| C1d4 | Der Hersteller hat eine Liste der Risiken erstellt, die sich speziell aus der Anwendung von Methoden des maschinellen Lernens ergeben. | Z. B. können selbstlernende Systeme und LLMs trotz unveränderter Eingabedaten eine unterschiedliche Ausgabe liefern. | ISO 14971, 5.4. und 5.5., 2017/745/EU, Anhang I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risikomanagement - Anleitung zur Umsetzung von ISO 31000, UK 811.4 Positionspapier | (6.1.2.5), 6.1.4.3 |
+| C1d4 | Der Hersteller hat eine Liste der Risiken erstellt, die sich speziell aus der Anwendung von Methoden des maschinellen Lernens ergeben. | Z. B. können selbstlernende Systeme und LLMs (Large Language Model) trotz unveränderter Eingabedaten eine unterschiedliche Ausgabe liefern. | ISO 14971, 5.4. und 5.5., 2017/745/EU, Anhang I, 3., DIN SPECT 2, ISO/TR 31004:2013 - Risikomanagement - Anleitung zur Umsetzung von ISO 31000, UK 811.4 Positionspapier | (6.1.2.5), 6.1.4.3 |
 | C1d5 | Der Hersteller hat die Risiken analysiert, die entstehen, wenn andere Personen als die vorgesehenen Benutzer das Produkt verwenden. | | ISO 14971, 5. | 6.1.4.5 |
 | C1d6 | Der Hersteller hat die Risiken analysiert, die durch eine Änderung der Nutzungsumgebung beim Einsatz eines KI-basierten Systems entstehen. |Z. B. können diese Systeme Aufgaben ändern, hinzufügen oder eliminieren oder die Arbeitsbelastung erhöhen. Ein weiteres Beispiel ist die Arbeit aus der Ferne statt in einem Krankenhaus. |UK 811.4 Positionspapier||
 | C1d7 | Der Hersteller hat die Risiken analysiert, die sich aus der Nutzung in einer anderen als der angegebenen Umgebung ergeben. | z.B. wird das Produkt unerwartet im Home-Office verwendet. | 2017/745/EU, Anhang I, 14.2.(d), 2017/746/EU, Anhang I, 13.2.(d), ISO 14971, 5., IEC 82304-1, 4.1. (b) | 6.1.4.9 |
@@ -314,8 +314,9 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C3a9 | Der Hersteller hat Faktoren aufgelistet und erörtert, die zu einer Verzerrung der Daten führen könnten. | | ISO 24028 z. B. 10.5, 2024/1689/EU Artikel 9 Abschnitte 2.(d) und 5.(a), Artikel 10 Abschnitte 2.(f), 2.(g), 4.| 6.3.1.16. |
 | C3a10 | Der Hersteller hat analysiert, welche Auswirkungen die Art und der Ort der Datenerhebung auf die Daten haben [^C.3.a.5]. |||6.3.1.17.|
 |C3a11 | Der Hersteller hat ein Verfahren festgelegt, um sicherzustellen, dass die Datenschutzanforderungen erfüllt werden. | Beispielsweise werden die Daten vor dem Testen und Training anonymisiert oder pseudonymisiert. Der Datenschutzbeauftragte sollte daran beteiligt werden. |2024/1689/EU Artikel 10 Absatz 5, 2016/679/EU|6.3.1.18.|
-| C3a12 | Der Hersteller hat die Möglichkeit eines „Label Leakage“ untersucht und ausgeschlossen. [^C.3.a.6] | Dies hängt vom angewandten ML-Modell ab und ist keine allgemeine "Best Practice". | 6.3.1.19., 6.3.1.20.||
+| C3a12 | Der Hersteller hat die Möglichkeit eines „Label Leakage“ untersucht und ausgeschlossen. [^C.3.a.6] | Dies hängt vom angewandten ML-Modell ab, ist aber beim "Supervised Machine Learning" eine allgemeine "Best Practice". | 6.3.1.19., 6.3.1.20.||
 | C3a13 | Der Hersteller, der Umfragen verwendet, hat die Auswahl der Umfragen, den Zeitpunkt der Umfrage und möglicherweise die Methode für ihre Bewertung begründet, insbesondere wenn keine standardisierte Umfrage existiert. | |||
+| C3b14 | Hersteller, welche LLMs in Verbindung mit RAG (Retrieval Augmentet Generation) nutzen, haben Anforderungen an die bereitgestellten Informationen spezifiziert. | Beispielsweise könnte ein Hersteller nur „peer-reviewed journals“ als Input für das RAG erlauben. |||
 
 [^C.3.a.1]: Eine Angabe zur Anzahl der Daten ist kaum möglich. Dies hängt unter anderem vom „Signal-Rausch-Verhältnis“ ab. Bei einem Datensatz beispielsweise beeinflussen der Prozentsatz relevanter Gene sowie die Stärke und Häufigkeit der vorhergesagten Effekte die Anzahl. Für die Klassifizierung von Daten ist die Anzahl der Datensätze mit der seltenen Klasse (z. B. die Prävalenz von Krankheiten) entscheidend.
 
@@ -343,6 +344,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C3b6 | Dieses Verfahren legt fest, wie die für das Labeling verantwortlichen Personen geschult werden und wie der Erfolg dieser Schulung bewertet wird. |  ||6.3.2.6.|
 | C3b7 | Dieses Verfahren legt fest, wie die Richtigkeit des Labelings systematisch überprüft wird. Die Auswahl dieser Begründung wurde vom Hersteller dokumentiert. | Der Hersteller kann identische Datensätze mehrerer Personen bereitstellen und die Konsistenz der Ergebnisse bewerten. | 6.3.2.7||
 | C3b8 | Dieses Verfahren legt fest, wie die Überwachung erfolgt, dass die für das Labeling verantwortlichen Personen kontinuierlich in der Lage und bereit sind, das Labeling durchzuführen [^C.3.b.3]. | Dies kann mit Datensätzen mit bereits bekannten Labels erfolgen, die unbemerkt eingefügt werden während die Person das Labeling macht. ||6.3.2.8.|
+| C3B9 | Der Hersteller hat Aufzeichnungen über alle am Labeling beteiligten Personen (einschließlich Qualifizierung), die von der jeweiligen Person gelabelten Daten. |  |||
 
 [^C.3.b.1]: Wenn beispielsweise Patienten als gesund und krank klassifiziert werden müssen, muss der Hersteller die Kriterien speziell für die Zweckbestimmung ableiten, wann ein Patient als gesund und wann als krank zu klassifizieren ist.
 
@@ -383,10 +385,11 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
 | C3d1 | Der Hersteller hat den „Trichter“ beschrieben, der zeigt, wie viele Daten aus welchen Datenquellen (z. B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund verworfen wurden. | |||
 | C3d2 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Dies sollte Teil der Architektur dieser Software sein. |||
-| C3d3 | Der Hersteller hat die verarbeiteten Daten mit Hilfe deskriptiver Statistiken beschrieben [^C.3.a.4]. | [„Dataset Nutrition Label“](https://ahmedhosny.github.io/datanutrition/) wird empfohlen.|||
+| C3d3 | Der Hersteller hat die verarbeiteten Daten mit Hilfe deskriptiver Statistiken beschrieben [^C.3.a.4]. | [„Dataset Nutrition Label“](https://ahmedhosny.github.io/datanutrition/) wird empfohlen. Die Beschreibung sollte auch die Zeitspanne beinhalten, aus der die Daten stammen. |||
 | C3d4 | Der Hersteller hat die gesamte Software für die Datenverarbeitung, einschließlich der im Prozess verwendeten Bibliotheken, dokumentiert und unter Versionskontrolle. || ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.3.4.10. |
-| C3d5 | Der Hersteller hat alle Schulungs-, Validierungs- und Testdaten unter Versionskontrolle. || | 6.3.4.11. |
+| C3d5 | Der Hersteller hat alle Trainings-, Validierungs- und Testdaten unter Versionskontrolle. || | 6.3.4.11. |
 | C3d6 | Der Hersteller verfügt über ein Verfahren zur Datenspeicherung und -aufbewahrung gemäß den geltenden behördlichen Anforderungen. |Diese Anforderungen legen zum einen eine Mindestaufbewahrungsfrist fest, wie z. B. 2017/745/EG, 2024/1689/EG, ISO 13485. Zum anderen gibt es Datenschutzanforderungen zur Minimierung der (Zeit) der Datenspeicherung.| | 6.3.4.14. |
+| C3d7 | Hersteller, welche LLMs in Verbindung mit RAG (Retrieval Augmentet Generation) nutzen, haben die bereitgestellten Informationen beschrieben. |Dabei sollten die Hersteller auf die Herkunft der Daten, deren Quantität, Qualität und Vollständigkeit eingehen.| |  |
 
 
 [^C.3.d.1.]: Die Nummerierung des entsprechenden Abschnitts 6.3.4 im Team-NB-Dokument beginnt mit 9. D. h., die Nummern 6.3.4.1. bis 6.3.4.8. fehlen.
@@ -400,16 +403,17 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C4a1 | Der Hersteller hat die Auswahl der Merkmale begründet, die er beim Training berücksichtigt. | Dies erfordert eine Liste aller Feature. | ISO 13485, 7.3.2., 7.3.3. | (6.4.1.1) |
 | C4a2 | Der Hersteller hat die Abhängigkeit der Merkmale untereinander beschrieben, insbesondere für tabellarische Daten. | Ein gerichteter azyklischer Graph (DAG) hilft bei der Visualisierung. Dies hängt von der angewandten ML-Methode ab und kann nicht als "Best Practice" gefordert werden. | ISO 13485, 7.3.2., 7.3.3. | 6.4.1.3. |
 | C4a3 | Der Hersteller hat das Verhältnis, in dem er die Daten in Trainings-, Validierungs- und Testdaten aufteilt, dokumentiert und begründet. | ||6.4.1.4.|
-| C4a4 | Der Hersteller hat die von ihm verwendete Strategie dokumentiert, um die Daten in Trainings-, Validierungs- und Testdaten aufzuteilen [^C.4.a.1]. | | ISO 24028 9.8.2.1, DAISAM | 6.4.1.5. |
+| C4a4 | Der Hersteller hat die von ihm verwendete Strategie dokumentiert, um die Daten in Trainings-, Validierungs- und Testdaten aufzuteilen [^C.4.a.1]. | In diesem Kontext sollte der Hersteller angeben, ob er eine Kreuzvalidierung durchgeführt hat. | ISO 24028 9.8.2.1, DAISAM | 6.4.1.5. |
 | C4a5 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass mehrere Datensätze für ein Objekt in demselben „Bucket“ (Trainings-, Validierungs- und Testdaten) liegen. | | | |
 | C4a6 | Der Hersteller hat dokumentiert, wie er sicherstellt, dass Testdaten nicht für das Modelltraining und die Validierung verwendet werden. | | | 6.4.1.7. |
 | C4a7 | Der Hersteller hat beschrieben, ob/wie er die Daten speziell für das Modell oder speziell für die Bibliothek neu codiert [^C.4.a.2]. | ||6.4.1.8.|
+| C4a8 | Der Hersteller hat seine Entscheidung begründet, wie er das gewählte Grundmodell („Foundation Models“ wie LLMs, vortrainierte Modelle) in seinem Medizinprodukt bzw. IVD verwendet. | Diese Auswahl erfolgt auf einem Spektrum zwischen vollständigem Trainieren eines Grundmodells über das Finetuning eines bestehenden Modells bis zum Parametrisieren und Prompten (im Fall von LLMs) eines unveränderten Modells. Diese Begründung kann auf die Verfügbarkeit von Daten oder die Eignung des unveränderten Modells eingehen. |||
 
 [^C.4.a.1]: Bei Daten mit seltenen Merkmalen oder Labels kann es erforderlich sein, die Daten nicht nur zufällig zu verteilen.
 
 [^C.4.a.2]: Beispiele hierfür sind Normalisierung, Auswahl von Klassenbezeichnungen (z. B. 0 oder 1), Auswahl von Spaltennamen, Verteilung von kategorialen Werten über mehrere Spalten.
 
-#### b) Training
+#### b) Modellierung, Training, Alignment 
 
 | ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -- | -- | -- |
@@ -418,10 +422,14 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C4b3 | Der Hersteller hat die Wahl der Epochen dokumentiert [^C.4.b.2]. | |||
 | C4b4 | Der Hersteller hat die Qualitätsparameter auf der Grundlage der Zweckbestimmung, für den er das Modell optimieren möchte, festgelegt, dokumentiert und begründet. | Dies bedeutet, dass die Wahl dieser Qualitätsparameter spezifisch für den beabsichtigten Verwendungszweck ist. ||(6.4.2.1.)|
 | C4b5 | Der Hersteller hat – soweit sinnvoll – mehrere Modelltypen (einschließlich einfacherer und interpretierbarer Modelle) trainiert und verglichen. | ||6.4.2.2.|
+| C4b6 | Hersteller, welche RLHF (Reinforcement Learning from Human Feedback) für das Fine-tunen des Modells nutzen, haben klare Kriterien für die Bewertung des Outputs des zu optimierenden Modells festgelegt und die Eignung dieser Kriterien begründet. | Beispiele für Bewertungen sind die Auswahl des besten Outputs unter mehreren Optionen und das Rating eines Outputs auf einer Skala. |||
+| C4b7 | Hersteller, welche RLHF für das Fine-tunen des Modells nutzen, haben Anforderungen an die Kompetenz der „Humans“ gestellt, die dem Modell Feedback geben. | Die Bewerter müssen die Kriterien verstehen und sich dazu ggf. in der (medizinischen) Domäne auskennen. |||
+| C4b8 | Hersteller, welche Grundmodelle Dritter verwenden (z.B. LLMs), haben die Anforderung an diese Grundmodelle spezifiziert, die sie direkt oder nach einer Weiterentwicklung (z.B. Fine-tuning) nutzen, und deren Auswahl begründet. | Die Begründung kann sich auch auf Scores bzw. Benchmarks stüzen. Es gibt spezifische Benchmarks bestimmte Anwendungszwecke, Aufgabenstellungen und Schwerpunkte z.B. Logik / Reasoning, Instruction Following. Weitere Begründungen können sich auf die Qualität und die Quantität der Daten beziehen. Die Güte der Datenquelle kann ggf. als Surrogat für die Qualität der Daten dienen [^C.4.b.3]. ||(6.4.4.5.)|
 
 [^C.4.b.1]: Beispiele: Loss-Function, Optimizer, Lernrate, Anzahl der Epochen
 
 [^C.4.b.2]: Es kann nützlich sein, die Abhängigkeit der Qualität des Modells von der Anzahl der Epochen anhand von Lernkurven darzustellen. Diese Lernkurven existieren beispielsweise für neuronale Netze und Boosting-Methoden, nicht jedoch für Modelle mit numerischer Lösung (z. B. lineare Regression) oder mit einem einzelnen Baum. 
+[^C.4.b.3]: Beispielsweise wären zu vermuten, dass Daten aus einem peer-reviewed Journal eine höhere Qualität haben als Daten aus einem Forum, in dem sich Laien über die Auswirkungen von Covid-Impfungen auf Autismus äußern.
 
 #### c) Bewertung / Evaluierung
 
@@ -429,30 +437,25 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|--|--|
 |C4c1|Der Hersteller hat die Evaluierung des Modells geplant.| Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. | ISO 13485, 7.3.2, 7.3.6 und 7.3.7, ISO 14971:2019, 10., IEC 62304 5.1 | |
 |C4c2 |Der Hersteller hat die Qualitätsmaßnahmen für die verschiedenen Modelle dokumentiert, z. B. im Falle einer binären Klassifizierung unter Verwendung einer Vierfeldertafel. | Diese Dokumentation sollte nicht nur die Werte enthalten, auf die der Hersteller das Modell optimiert hat. | 2024/1689/EU Artikel 9 Abschnitt 8. und Anhang IV Abschnitt 2.(g)| 6.4.3.1. |
-|C4c3 |Der Hersteller hat die Qualitätsmetriken nicht nur für die verschiedenen Modelle global bewertet und dokumentiert, sondern gegebenenfalls auch separat für verschiedene Funktionen. | ||6.4.3.2., 6.4.3.3., 6.4.4.9|
+|C4c3 |Der Hersteller hat die Qualitätsmetriken nicht nur für die verschiedenen Modelle global bewertet und dokumentiert, sondern gegebenenfalls auch separat für verschiedene Funktionen und Populationen. | Die ||6.4.3.2., 6.4.3.3., 6.4.4.9|
 |C4c4 |Der Hersteller hat gezeigt, wie man Overfitting erkennt und somit vermeidet. | | ISO 24028 9.8.2.23 | 6.4.3.4. |
 |C4c5 |Der Hersteller hat die Datensätze untersucht, die besonders gut und die besonders schlecht vorhergesagt wurden. | Es wird eine Residuenanalyse empfohlen, bei der die Fehler gegebenenfalls gegen die Feature-Werte aufgetragen werden. ||6.4.3.5|
 |C4c6|Der Hersteller hat die Datensätze untersucht, für die das Modell besonders sicher und besonders unsicher ist [^C.4.c.1]. | Dies hilft bei der Identifizierung von Einschränkungen, z. B. für bestimmte Patientengruppen | 2024/1689/EU Anhang IV Abschnitt 3| 6.4.3.6|
 |C4c7 |Der Hersteller hat die endgültige Wahl des Modells auf der Grundlage der Qualitätskriterien und der Zweckbestimmung begründet und insbesondere erläutert, warum keine einfacheren und besser interpretierbaren Modelle verwendet wurden. | | ISO 14971:2019, XAVIER University „Building Explainability and Trust for AI in Healthcare“, DIN SPECT 2 | 6.4.3.7. |
-|C4c8 |Der Hersteller hat insbesondere bei tabellarischen Daten für einzelne Datensätze berücksichtigt, dass das Modell die Feature anzeigt, die die Entscheidung besonders beeinflusst haben [^C.4.c.2]. | Dies kann nicht generell als "Best Practice" gefordert werden. | 6.4.3.8||
-|C4c9 |Der Hersteller hat erwogen, insbesondere für tabellarische Daten zu bewerten, wie und wie stark sich einzelne Merkmale ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. | Dies wird als [„counterfactuals“](https://christophm.github.io/interpretable-ml-book/counterfactual.html) bezeichnet. Dies kann nicht generell als "Best Practice" gefordert werden. ||6.4.3.9.|
-|C4c10 |Der Hersteller hat in Betracht gezogen, die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/visualisieren, insbesondere für tabellarische Daten [^C.4.c.3]. | Dies kann nicht generell als "Best Practice" gefordert werden. ||6.4.3.10.|
-|C4c11 |Der Hersteller hat die Synthetisierung von Datensätzen in Betracht gezogen, die das Modell besonders aktivieren [^C.4.c.4]. | Dies kann nicht generell als "Best Practice" gefordert werden. |||
-|C4c12 |Der Hersteller hat in Betracht gezogen, das Modell durch ein vereinfachtes "Surogat-Modell" wie einen Entscheidungsbaum anzunähern. | Dies kann nicht generell als "Best Practice" gefordert werden. |||
+|C4c8 |Der Hersteller hat die Methoden dokumentiert, um eine Erklärbarkeit („Transparency“) des Modells zu erreichen mit dem Ziel, unerwünschte Zusammenhänge zwischen Inputs und Outputs zu erkennen und damit Risiken für die Patienten zu minimieren [^C.4.c.3]. | Beispiele für diese Methoden sind Feature Importance“, „Feature Effect Plots“, Surogat-Modelle und die Analyse von „Counterfactuals“. ||6.4.3.8, 6.4.3.9, 6.4.3.10|
+|C4c9 |Hersteller, welche LLMs in Verbindung mit RAG (Retrieval Augmentet Generation) nutzen, haben anhand von Beispielen überprüft, dass die in den Dokumenten enthaltenen relevanten Informationen, tatsächlich für die Generierung des Outputs berücksichtigt werden. | Beispielsweise sollten die relevanten Informationen in den Dokumenten mit hoher Priorität im Input (Kontextfenster) zu finden sind. |||
 
 [^C.4.c.1]: Klassifizierungsaufgaben müssen den aktuellen Stand der Forschung berücksichtigen.
 
 [^C.4.c.2]: Zu den Ansätzen gehören LIME (Local Interpretable Model-agnostic Explanations), Beta (Black Box Explanations through Transparent Approximations), LRP (Layer-wise Relevance Propagation) und Feature Summary Statistics (inkl. Feature Importance und Feature Interaction).
 
-[^C.4.c.3]: Beispiele für Shapley-Werte, ICE-Diagramme, Partial Dependency Plots (PDP)
-
-[^C.4.c.4]: Beispiele finden Sie unter http://yosinski.com/deepvis
+[^C.4.c.3]: Beispielsweise können die Hersteller bewerten, wie und wie stark sich einzelne Merkmale ändern müssten, damit das Modell zu einer anderen Vorhersage kommt. Dies wird als [„counterfactuals“](https://christophm.github.io/interpretable-ml-book/counterfactual.html) bezeichnet. Mit Shapley-Werte, ICE-Diagramme und Partial Dependency Plots (PDP) können die Hersteller die Abhängigkeit (Stärke, Richtung) der Vorhersagen von den Feature-Werten zu analysieren/visualisieren, insbesondere für tabellarische Daten. Eine weitere Möglichkeit zur Analyse des Modells ist die Synthetisierung von Datensätzen, die das Modell besonders aktivieren. Beispiele dafür finden Sie unter http://yosinski.com/deepvis. 
 
 #### d) Dokumentation
 
 | ID | Anforderungen | Kommentare |Regulatorische Referenzen|Team-NB-ID|
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|--|--|
-| C4d1 | Der Hersteller hat das Modell [^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Dies umfasst Skripte und Build-Dateien. | ISO 13485, 4.1.6., 4.2.4., 7.5.6. | 6.4.4.1. |
+| C4d1 | Der Hersteller hat das Modell [^C.4.d.1] und/oder den Trainingscode unter Versions- und Konfigurationskontrolle. | Bei Modellen hilft dabei eine eindeutige ID (Name, Version). Auch die Grundmodelle („Foundation Models wie LLMs, vortrainierte Modelle) Dritter, die direkt oder nach einer Weiterentwicklung (z.B. Fine-tuning) genutzt werden, sollten eindeutig identifiziert sein [^C.4.d.2]. Die Versions- und Konfigurationsmodelle bezieht sich auch auf Skripte und Build-Dateien. | ISO 13485, 4.1.6., 4.2.4., 7.5.6., 2024/1689/EU Anhang IV Abschnitt 1. (a) | 6.4.4.1. |
 | C4d2 | Der Hersteller hat seinen Code gemäß seiner Vorgaben dokumentiert. | In der Regel sind mindestens die öffentliche Klasse, Methoden mit Übergabe- und Rückgabewerten sowie Attribute zu dokumentieren |||
 | C4d3 | Der Hersteller hat beschrieben, welche Datensätze er für das Training, die Validierung und das Testen des Modells verwendet hat. | |ISO 24028 9.8.2.1, DAISAM||
 | C4d4 | Der Hersteller kann die Test- und Validierungsergebnisse reproduzieren. | Zu diesem Zweck ist es sinnvoll, ein Versionsverwaltungssystem nicht nur für den Code, sondern auch für Daten, Testergebnisse und deren Auswertung zu verwenden. Es wird empfohlen, auch die bei der Datenverarbeitung und beim Training verwendete Infrastruktur (Hardware, Betriebssystem, Virtualisierungsebenen wie Docker) zu dokumentieren. Abweichende Ergebnisse sollten begründet werden (z. B. Hardware, Zufallsgeneratoren, Rundungsfehler). Absolute Pfade und betriebssystemspezifische Befehle sind zu vermeiden. | ISO 13485, 7.3.6., 7.3.3. | 6.4.4.2. |
@@ -464,8 +467,12 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C4d10 | Der Hersteller hat die Vertrauensintervalle für die Qualitätsmetriken in Abhängigkeit von den Eingabedaten angegeben. | Insbesondere an den Rändern der zulässigen Eingabedaten nimmt das Vertrauen oft stark ab. Diese Information sollte auch den Anwendern in den Begleitmaterialien zur Verfügung gestellt werden. ||6.4.4.8.|
 | C4d11 | Der Hersteller hat insbesondere für tabellarische Daten dokumentiert, innerhalb welcher Grenzen (z. B. Feature-Werte) das Modell die Anforderungen an die Qualitätsmetriken erfüllt. | Dies hängt vom angewandten ML-Modell ab und kann nicht generell als "Best Practise" gefordert werden. | ISO 13485, 4.2.3., 4.2.5. | 6.4.4.7. |
 | C4d12 | Der Hersteller hat mehrere Modelle und ihre Hyperparameter ausprobiert und die in diesem Abschnitt genannten Aspekte für sie dokumentiert. | Diese Dokumentation dient dem Hersteller dazu, verschiedene Modelle zu vergleichen und seine Wahl eines Modells zu begründen. Dies ist notwendig, um die Anforderung der ISO 14971 zu erfüllen, das Risiko-Nutzen-Verhältnis zu maximieren. |||
+| C4d13 | Hersteller, welche Grundmodelle Dritter verwenden (z.B. LLMs), haben die Parametrierung der Grundmodelle (z.B. LLMs) beschrieben und die Wahl der Parameterwerte mit Blick auf die Zweckbestimmung und die Risiken begründet. | Die Parametrisierung ist abhängig vom Typ des Modells. Beispiele für die Parametrierung sind die Temperatur, die „Top-K“ und die Repetition Penalty. |||
+| C4d14 | Hersteller, welche Prompting bei LLMs nutzen, haben die Struktur des Promptings beschrieben und dessen Eignung begründet. | Es gibt verschieden Strukturen des Promptings (z.B. Zero-, One-Shot- und Few-Shot-Prompting, Chain-of-Thought-Prompting). Die Begründung sollte darauf eingehen, weshalb der Prompt die Eingabewerte prüft oder/und die Ausgabegabe einschränkt (oder gerade nicht). Es sollte nachvollziehbar sein, weshalb die Einschränkungen beim Prompting genutzt werden und nicht durch die Trainingsdaten oder eine konventionelle Programmlogik erfolgen. |||
+| C4d15 | Hersteller, welche LLMs in Verbindung mit RAG (Retrieval Augmentet Generation) nutzen, haben das Verfahren beschrieben und die Eignung des Verfahrens begründet. | Dies Beschreibung der Verarbeitung sollte auch auf die Art des Embeddings, das Chunking, die Aufteilung der Inhalte auf Dokumente eingehen. Gründe könnten sein, dass mit RAG bessere Leistungsmetriken erzielt werden, eine höhere Flexibilität und kontext-spezifischere Vorhersagen oder eine bessere Kontrolle über die Daten möglich ist. |||
 
 [^C.4.d.1]: Trainierte Modelle können serialisiert werden.
+[^C.4.d.2]: Das ist bei Modellen schwierig, die nur über eine Schnittstelle nutzbar und nicht unter voller Kontrolle des Herstellers sind.
 
 ### 5. Produktentwicklung
 
@@ -507,6 +514,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C5b18 | Die Gebrauchsanweisung nennt den Hersteller und listet Kommunikationskanäle für Fragen auf. | | 2017/745/EU, Anhang I, 23.4, EU-Verordnung 207/2012| 6.5.2.17. |
 | C5b19 | Die Gebrauchsanweisung listet mögliche ethische Probleme auf. | |||
 | C5b20 | Die Gebrauchsanweisung enthält die URL, unter der die aktuellsten Versionen der Gebrauchsanweisung zu finden sind. | Unterschiedliche Vorschriften erlauben, verbieten oder erzwingen elektronische Gebrauchsanweisungen. | 2017/745/EU, Anhang I, 23.4, EU-Verordnung 207/2012| 6.5.2.18. |
+| C5b21 | Falls die Einsatzdauer des Produkts oder seines KI-Modells zeitlich beschränkt ist, so nennt die Gebrauchsanweisung diese Limitierung. |  | |  |
 
 
 #### c) Validierung der Gebrauchstauglichkeit
@@ -517,8 +525,9 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C5c2 | Im Rahmen der Validierung der Gebrauchstauglichkeit bewertet der Hersteller, ob die Benutzer dem Produkt blind vertrauen oder die Ergebnisse überprüfen. | | IEC 62366-1 | 6.5.3.2. |
 | C5c3 | Im Rahmen der  Validierung der Gebrauchstauglichkeit bewertet der Hersteller, ob die Benutzer die Ergebnisse richtig erkennen und verstehen. | Dies umfasst auch die Anzeige von Fehlern und die Erklärungen („Erklärbarkeit“). Hersteller sollten alle sicherheitsrelevanten Nutzungsszenarien in die Validierung und alle risikominimierenden Maßnahmen an der Schnittstelle einbeziehen. | IEC 62366-1, 5.7-5.9 | 6.5.3.3. |
 
-
 #### d) Risikomanagement
+
+##### i) Gefährdungsanalyse, Risikoanalye
 
 | ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
 | ------------------------------------------------------------ | -------- |--| ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -540,12 +549,26 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 | C5d16 | Der Hersteller hat die Risiken von Nutzungsfehlern, die durch kognitive Probleme verursacht werden, identifiziert, bewertet und gemanagt. | Beispiele sind kognitive Überlastung, mangelndes Situationsbewusstsein (situational awareness), mangelndes Bewusstsein für die Grenzen des Systems, "confirmation bias", ein fehlerhaftes mentales Modell, übermäßiges Vertrauen und Misstrauen. | IEC 62366-1, 5.3f, FDA HFE-Leitfaden, FDA Guidance zur Softwarevalidierung, 5.2.3, UK 811.4 Positionspapier | (6.1.4.17) |
 | C5d17 | Der Hersteller hat die Risiken von Nutzungsfehlern, die durch die Erläuterungen auf der Benutzeroberfläche oder in der Gebrauchsanweisung verursacht werden, identifiziert, bewertet und gemanagt. | „Erklärbarkeit“ kann ein Mittel für die Risikominderung sein, aber selbst neue Nutzungsfehlern verursachen. | IEC 62366-1, 5.3f, FDA HFE-Leitfaden, FDA Guidance zur Softwarevalidierung, 5.2.3 | (6.1.4.17) |
 | C5d18 | Der Hersteller hat die Risiken durch falsche, verspätete oder fehlende Handlungen der Nutzer ermittelt, bewertet und gemanagt. | Z. B. können KI-Systeme Angst/Zögern verursachen und dadurch Handlungen verzögern oder aufgrund von Überforderung im System zu keiner Handlung führen. | UK 811.4 Positionspapier||
-| C5d19 | Der Hersteller hat die anderen in Kapitel C.1.d) genannten Risiken ermittelt, bewertet und kontrolliert. | |||
-|C5d20 |Der Hersteller hat „menschliche Aufsicht“ als eine Maßnahme zur Risikominderung bewertet und die Entscheidung dokumentiert. |Benutzer können eingreifen, z. B. einen Not-Aus-Schalter drücken.| 2024/1689/EU Artikel 14 und Anhang IV Abschnitt 2.(e)| |
+| C5d19 | Hersteller, welche LLMs in Verbindung mit RAG nutzen, haben die Risiken analysiert, die sich dadurch ergeben, dass für eine Anfrage benötigte Informationen nicht in den bereitgestellten Dokumenten enthalten sind. | Die Hersteller könnten anhand konkreter Fälle, bei denen die relevanten Informationen in den Dokumenten fehlen, prüfen, dass der Output keine Aussagen erfindet. | ||
+| C5d20 | Der Hersteller hat die anderen in Kapitel C.1.d) genannten Risiken ermittelt, bewertet und kontrolliert. | |||
 |C5d21|Der Hersteller hat die "Protokolle" gemäß 2024/1689/EU auf Risiken analysiert.| Dies ist auch eine Pflicht zur Überwachung nach dem Inverkehrbringen. |2024/1689/EU Artikel 9 Abschnitt 2.||
+|C5d22|Hersteller, die LLMs verwenden, haben die LLM-spezifischen Risiken bewertet.| Beispiele für diese Risiken sind die Verstehbarkeit des Outputs sowie die eingeschränkte Vorhersehbarkeit der Geschwindigkeit, des Formats, der Menge und des Inhalts (z.B. Halluzinationen) des Outputs. Auch können LLMs bekannte Fehlmeidungen reproduzieren [^C.5.d.3]. |||
+|C5d23|Der Hersteller hat nicht nur die Risiken für die Sicherheit, sondern auch für die sonstigen Grundrechte analysiert.| Beispiele für diese Risiken sind Verletzungen des Datenschutzes, der Autonomie und der Gleichbehandlung von Patientengruppen z.B. bezüglich Güte und Zugang zur Gesundheitsversorgung |2024/1689/EU Artikel 9 Abschnitt 2.||
 
 [^C.5.d.1]: Der Stand der Technik entspricht nicht unbedingt dem Goldstandard, der wiederum nicht unbedingt der "ground truth" entspricht. Das heißt, die Systemanforderungen können niedriger sein als bei einem Goldstandard oder einer Grundwahrheit, insbesondere wenn letztere ein invasives oder sehr kostspieliges Verfahren erfordern. 
-[^C.5.2.d]: Beispiele für dieses Phänomen finden Sie [hier](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive). 
+[^C.5.d.2]: Beispiele für dieses Phänomen finden Sie [hier](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive). 
+[^C.5.d.3]: Beispielsweise findet sich auf Plattformen unbelegte Aussagen, Impfungen würden Autismus fördern. Da solche Aussagen Teil der Trainingsdaten werden können, sollten Hersteller untersuchen, ob diese bekannten Fehlmeinungen reproduziert werden. LLMs können dabei helfen, eine Liste möglicher Fehlmeinungen zusammenzustellen.
+
+##### ii) Risikobeherrschung
+
+| ID     | Anforderungen                                                | Kommentare                                                   | Verweise auf Vorschriften                             | Team-NB-ID |
+| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------------------------------------- | ---------- |
+| C5dii1 | Der Hersteller hat für die im Abschnitt i) genannten Risiken (so notwendig) geeignete Maßnahmen festgelegt und auf Wirksamkeit überprüft. |                                                              |                                                       |            |
+| C5dii2 | Der Hersteller hat „menschliche Aufsicht“ als eine Maßnahme zur Risikominderung bewertet und die Entscheidung dokumentiert. | Benutzer können eingreifen (z. B. einen Not-Aus-Schalter drücken) oder einen Vorschlag des Systems überschreiben | 2024/1689/EU Artikel 14 und Anhang IV Abschnitt 2.(e) |            |
+| C5dii3 | Der Hersteller nutzt eine Liste mit bewährten risikominimierenden Maßnahmen, um geeignete Maßnahmen zu nutzen. | Beispielsweise für solche Maßnahmen sind robuste Modell-Architekturen (z.B. mit Drop-Out-Layern bei neuronalen Netzwerken), Selbsttests, Warnhinweise sowie LLMs, um die Input- und Output-Daten zu überprüfen, unabhängig davon, ob das eigentliche Modell ein LLM ist [^C.5.d.ii.1]. LLMs lassen sich auch dazu nutzen, um Inputs in strukturierte und besser überprüfbare Daten zu überführen. Weitere Maßnahmen sind Wertebereichsüberprüfungen und der Abgleich von Inputs und Outputs mit Wortlisten und Patterns. |                                                       |            |
+| C5dii3 | Der Hersteller hat ein Verfahren beschrieben, mit dem er in geeigneten Intervallen sicherstellt, dass die risikominimierenden Maßnahmen weiter dem Stand der Technik entsprechen. | Die Verfahren der künstlichen Intelligenz entwickeln sich schnell weiter. Dieser Stand der Technik sollte nicht nur genutzt werden, um leistungsfähigere Modelle zu entwickeln, sondern auch diese Modelle wirksamer zu prüfen und deren Risiken besser zu beherrschen. |                                                       |            |
+
+[^C.5.d.ii.1]: Kleinere, hochspezialisierte LLMs können zum Überprüfen der Outputs großer LLMs mit breiterem Anwendungsbereich genutzt werden. Genauso eigenen sich große LLMs, um die Outputs von kleinen spezialisierten LLMs auf Plausibilität zu prüfen.
 
 #### e) Klinische Bewertung, Leistungsbewertung
 
