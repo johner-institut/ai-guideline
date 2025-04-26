@@ -552,7 +552,7 @@ Data generally have to be understood as training, validation and test data as we
 | ------------------------------------------------------------ | --------- |--| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | C5e1 | As part of the clinical / performance evaluation, the manufacturer has evaluated whether the promised medical benefit is achieved for the given quality parameters. || 2017/745/EU, Article 61, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 rev.4, XAVIER University "Building Explainability and Trust for AI in Healthcare", FDA 21 CFR part 820.30(g)| 6.5.4.1. |
 | C5e2 | As part of the clinical / performance evaluation, the manufacturer has evaluated whether the promised medical benefits and risks are in line with the state of the art. | | 2017/745/EU, Article 61, Annex XIV and Annex XV, 2017/746/EU, Annex XIII and Annex XIV, MEDDEV 2.7/1 rev 4, ISO 14971:2019, 4.2  | 6.5.4.2. |
-| C5e3 | The manufacturer has specified the PMCF / PMPF requirements. | | 2017/745/EU, Article 61 (11), 2017/746/EU, Article 56 (6, | 6.5.4.4. |
+| C5e3 | The manufacturer has specified the PMCF / PMPF requirements. | | 2017/745/EU, Article 61 (11), 2017/746/EU, Article 56 (6) | 6.5.4.4. |
 
 
 ### 6. Product release
@@ -562,7 +562,7 @@ Data generally have to be understood as training, validation and test data as we
 | C6.1 | The manufacturer has ensured that all the above documentation is available. | This concerns, among other things, the documentation required in chapters 3.d), 4.d and 5.b). | 2017/745/EU, Annexes I and II, ISO 13485 e.g. 7.3.5, FDA 21 CFR part 820.30(e) | (6.6.1) |
 |C6.2|The manufacturer has identified the software version in the documentation.|| 2024/1689/EU annex IV section 1.(c)| |
 | C6.3 | The manufacturer has assessed the risks as acceptable in risk management and documented that all activities specified in the risk management plan have been carried out. | Note for auditors [^C.6.1] ||6.6.2.|
-|C6.4 |The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. | | 2024/1689/EU annex IV section 2.(f), FDA |  |
+|C6.4 |The manufacturer has outlined in the Software as a Medical Device Pre-Specifications (SPS) what types of changes it anticipates for systems that it wishes to market in the USA[^C.6.2]. | | 2024/1689/EU annex IV section 2.(f), FDA AI/ML-based SaMD Action Plan |  |
 | C6.5 | The manufacturer has shown in Predetermined Change Control Plan (PCCP) how it will perform these changes for systems that it wishes to market [^C.6.3]. | |2024/1689/EU annex IV section 2.(f), [FDA PCCP Guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence)||
 | C6.6 | The manufacturer has created a Post-Market Surveillance Plan, see below. |                            |||
 
