@@ -245,7 +245,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 
 #### a) Funktionalität und Leistung
 
-|ID|Anforderungen|Kommentare|Verweis auf Vorschriften|Team-NB-ID|
+|ID|Anforderungen|Kommentare|Regulatorische Referenzen|Team-NB-ID|
 |:--|:--|:--|---|:--|
 |C2a1|Der Hersteller hat quantitative Qualitätskriterien oder Anforderungen für die Software oder/und den Algorithmus aus der Zweckbestimmung und den Stakeholder-Anforderungen nachvollziehbar abgeleitet [^C.2.a.1].|Diese Nachvollziehbarkeit lässt sich besonders gut mit einer "Traceability-Matrix" darstellen.| 2024/1689/EU Anhang IV, ISO 13485, 7.3.3., IEC 62304, 5.2, XAVIER University „Building Explainability and Trust for AI in Healthcare“, FDA Guidance zur „Software-Validierung“, Kapitel 5.2.2 | (6.1.3.1.), 6.2.1.1. |
 |C2a2|Der Hersteller berücksichtigte beispielsweise die folgenden quantitativen Qualitätskriterien oder -anforderungen: bei Klassifizierungsproblemen Genauigkeit (mittlere oder ausgewogene Genauigkeit), positiver Vorhersagewert (Präzision), Spezifität und Sensitivität; bei Regressionsproblemen mittlerer absoluter Fehler und mittlerer quadratischer Fehler.| Bei unausgewogenen Daten, d. h. wenn Labels mit sehr unterschiedlichen Häufigkeiten auftreten, sollte anstelle der mittleren Genauigkeit eine ausgewogene Genauigkeit verwendet werden. Die Wahl der Qualitätskriterien hängt jedoch stark von der Zweckbestimmung ab. | ISO 13485, 7.3.3., 7.3.4., IEC 62304, 5.2. | 6.2.1.2. |
@@ -274,7 +274,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 
 #### c) Zusätzliche Softwareanforderungen
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | :----------------------------------------------------------- | :------------------------------------------ |:--|---|:--|
 | C2c1 | Der Hersteller hat festgelegt, welche Anforderungen das System erfüllen muss, um interne Systemfehler zu erkennen. | Dies kann ein "Audit Log2" oder ein Überwachungsschnittstelle (Port) sein. | 2017/745/EU, Anhang I, 17, 18, 23.4, IEC 62304, 5.2, 5.3 und 7.1, ISO 149781:2019 , 5.4, FDA Guidance zur Softwarevalidierung, z. B. Kapitel 5.2.2, 5.2.3 und 5.2.4, GMLP-Leitprinzipien (von der FDA et al.) #2 (Datenintegrität) | 6.2.3.3. |
 | C2c2 | Gemäß der DSGVO darf das spezifizierte System Patienten keinen Entscheidungen aussetzen, die ausschließlich auf automatischer Datenverarbeitung basieren. Hersteller sollten die entsprechende Anforderung erfüllen und in der Lage sein, die gewählte Rechtsgrundlage zu begründen. |  | Art. 22 der DSGVO. | |
@@ -284,7 +284,7 @@ Die Verordnung 2024/1689/EU empfiehlt, die KI-spezifische Dokumentation in eine 
 
 #### d) Besondere Anforderungen an "Continuous Learning Systems"
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften | Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen | Team-NB-ID |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |:--|:--|---|
 | C2d1 | Der Hersteller hat definiert, wann und wie oft das Modell aktualisiert wird. | Zu diesem Zweck sollte der Hersteller die „Auslöser“ dieser Aktualisierungen definieren. Er muss auch beschreiben, ob diese Aktualisierungen für jedes einzelne Medizinprodukt oder für alle Medizinprodukte des Typs erfolgen. | | |
 | C2d2 | Der Hersteller hat angegeben, wie die Qualität der zusätzlichen Daten sichergestellt wird und wie mit falschen, fehlenden oder unplausiblen Daten umgegangen wird. ||||
@@ -333,7 +333,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### b) Data Labeling
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
 | C3b1 | Im Fall von „Supervised Learning“ hat der Hersteller die Labels aus der Zweckbestimmung abgeleitet, in der die Trainingsdaten bereitgestellt werden, und diese Wahl begründet. | |2024/1689/EU Artikel 10 Abschnitt 3|6.3.2.1.|
 | C3b2 | Der Hersteller hat ein Verfahren zum Labeling bei „überwachten Lernen“ definiert, falls die Daten noch keine Labels enthalten. | | ISO 13485, 4.1, 2024/1689/EU Artikel 10 Abschnitt 2.(c) | 6.3.2.2. |
@@ -379,7 +379,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### d) Dokumentation und Versionskontrolle
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID [^C.3.d.1.] |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID [^C.3.d.1.] |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
 | C3d1 | Der Hersteller hat den „Trichter“ beschrieben, der zeigt, wie viele Daten aus welchen Datenquellen (z. B. Kliniken) stammen und bei welchem Verarbeitungsschritt wie viele Datensätze aus welchem Grund verworfen wurden. | |||
 | C3d2 | Der Hersteller hat beschrieben, welche Teile der Software für welchen Verarbeitungsschritt verantwortlich sind. | Dies sollte Teil der Architektur dieser Software sein. |||
@@ -395,7 +395,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### a) Vorbereitung
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | :------------------------------------------------------------| :------------------------------------------------------------|:--|---|:--|
 | C4a1 | Der Hersteller hat die Auswahl der Merkmale begründet, die er beim Training berücksichtigt. | Dies erfordert eine Liste aller Feature. | ISO 13485, 7.3.2., 7.3.3. | (6.4.1.1) |
 | C4a2 | Der Hersteller hat die Abhängigkeit der Merkmale untereinander beschrieben, insbesondere für tabellarische Daten. | Ein gerichteter azyklischer Graph (DAG) hilft bei der Visualisierung. Dies hängt von der angewandten ML-Methode ab und kann nicht als "Best Practice" gefordert werden. | ISO 13485, 7.3.2., 7.3.3. | 6.4.1.3. |
@@ -425,7 +425,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### c) Bewertung / Evaluierung
 
-| ID | Anforderungen | Bemerkungen | Regulatorische Referenzen| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|--|--|
 |C4c1|Der Hersteller hat die Evaluierung des Modells geplant.| Dieser Plan kann Teil eines Entwicklungs- oder V&V-Plans sein. | ISO 13485, 7.3.2, 7.3.6 und 7.3.7, ISO 14971:2019, 10., IEC 62304 5.1 | |
 |C4c2 |Der Hersteller hat die Qualitätsmaßnahmen für die verschiedenen Modelle dokumentiert, z. B. im Falle einer binären Klassifizierung unter Verwendung einer Vierfeldertafel. | Diese Dokumentation sollte nicht nur die Werte enthalten, auf die der Hersteller das Modell optimiert hat. | 2024/1689/EU Artikel 9 Abschnitt 8. und Anhang IV Abschnitt 2.(g)| 6.4.3.1. |
@@ -485,7 +485,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### b) Begleitmaterialien
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |--|--|--|
 | C5b1 | Die Gebrauchsanweisung muss die Produktversion eindeutig identifizieren. | Wenn möglich, geben Sie die UDI an. | 2017/745/EU, Anhang I, Kap. III, 23.1, 23.4., 2024/1689/EU Artikel 13 Abschnitt 3.(b)(i), FD&C, FDA 21 CFR Teile 801 und 820.120, ISO 24028 z. B. 10.11.3 | 6.5.2.1 |
 | C5b2 | Die Gebrauchsanweisung beschreibt den bestimmungsgemäßen Gebrauch des Produkts einschließlich des erwarteten medizinischen Nutzens. | | 2017/745/EU, Anhang I, Kap. III, 23.1, 23.4., 21 CFR Teil 801, 21 CFR Teil 814.20, XAVIER: „Perspectives and Good Practices for AI and Continuously Learning Systems in Healthcare“, ISO 24028, XAVIER University Building Explainability and Trust for AI in Healthcare‘, ISO 24028 z. B. 10.11.3 | 6.5.2.3. |
@@ -511,7 +511,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### c) Validierung der Gebrauchstauglichkeit
 
-|ID |Anforderungen |Kommentare| Verweise auf Vorschriften| Team-NB-ID |
+|ID |Anforderungen |Kommentare| Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | --------- |--|--|--|
 | C5c1 | Im Rahmen der Validierung der Gebrauchstauglichkeit bewertet der Hersteller, ob die Benutzer die Gebrauchsanweisung verstehen. | Dies umfasst auch andere Begleitmaterialien. | IEC 62366-1, FDA HFE-Leitfaden | 6.5.3.1. |
 | C5c2 | Im Rahmen der Validierung der Gebrauchstauglichkeit bewertet der Hersteller, ob die Benutzer dem Produkt blind vertrauen oder die Ergebnisse überprüfen. | | IEC 62366-1 | 6.5.3.2. |
@@ -520,7 +520,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 #### d) Risikomanagement
 
-| ID | Anforderungen | Kommentare | Verweise auf Vorschriften| Team-NB-ID |
+| ID | Anforderungen | Kommentare | Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | -------- |--| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | C5d1 | Der Hersteller hat die Risiken bewertet, die entstehen, wenn die Eingaben nicht den festgelegten Anforderungen entsprechen [^C.2.a.2]. | | ISO 14971:2019, 5.4, IEC 62304, 7.1, DIN SPEC 2, IEC 82304-1 4.1.c) | |
 | C5d2 | Der Hersteller hat Risiken, die durch "adversarial attacks" entstehen, identifiziert und gemindert. | Diese Angriffe (in der Regel durch subtile Manipulationen der Eingabedaten) sollen dazu führen, dass das KI-System falsche Vorhersagen machen wie Fehlklassifizierungen. | | 6.2.4.6. |
@@ -545,11 +545,11 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 |C5d21|Der Hersteller hat die "Protokolle" gemäß 2024/1689/EU auf Risiken analysiert.| Dies ist auch eine Pflicht zur Überwachung nach dem Inverkehrbringen. |2024/1689/EU Artikel 9 Abschnitt 2.||
 
 [^C.5.d.1]: Der Stand der Technik entspricht nicht unbedingt dem Goldstandard, der wiederum nicht unbedingt der "ground truth" entspricht. Das heißt, die Systemanforderungen können niedriger sein als bei einem Goldstandard oder einer Grundwahrheit, insbesondere wenn letztere ein invasives oder sehr kostspieliges Verfahren erfordern. 
-[^C.5.2.d]: Beispiele für dieses Phänomen finden Sie [hier](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive). 
+[^C.5.d.2]: Beispiele für dieses Phänomen finden Sie [hier](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive). 
 
 #### e) Klinische Bewertung, Leistungsbewertung
 
-|ID |Anforderungen |Kommentare| Verweise auf Vorschriften| Team-NB-ID |
+|ID |Anforderungen |Kommentare| Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | --------- |--| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | C5e1 | Im Rahmen der klinischen Bewertung/Leistungsbewertung hat der Hersteller bewertet, ob der versprochene medizinische Nutzen für die gegebenen Qualitätsparameter erreicht wird. |  | 2017/745/EU, Artikel 61, Anhang XIV und Anhang XV, 2017/746/EU, Anhang XIII und Anhang XIV, MEDDEV 2.7/1 rev.4, XAVIER University „Building Explainability and Trust for AI in Healthcare“, FDA 21 CFR Teil 820.30(g) |6.5.4.1.|
 | C5e2 | Im Rahmen der klinischen/Leistungsbewertung hat der Hersteller beurteilt, ob die versprochenen medizinischen Vorteile und Risiken dem Stand der Technik entsprechen. | | 2017/745/EU, Artikel 61, Anhang XIV und Anhang XV, 2017/746/EU, Anhang XIII und Anhang XIV, MEDDEV 2.7/1 rev 4, ISO 14971:2019, 4.2 | 6.5.4.2. |
@@ -558,7 +558,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 ### 6. Produktfreigabe
 
-|ID |Anforderungen |Kommentare| Verweise auf Vorschriften| Team-NB-ID |
+|ID |Anforderungen |Kommentare| Regulatorische Referenzen| Team-NB-ID |
 | ------------------------------------------------------------ | --------- |--|--|--|
 | C6.1 | Der Hersteller hat sichergestellt, dass alle oben genannten Unterlagen verfügbar sind. | Dies betrifft unter anderem die in den Kapiteln 3.d), 4.d und 5.b) geforderte Dokumentation. | 2017/745/EU, Anhänge I und II, ISO 13485 z. B. 7.3.5, FDA 21 CFR Teil 820.30(e) | (6.6.1) |
 |C6.2|Der Hersteller hat die Softwareversion in der Dokumentation angegeben.|| 2024/1689/EU Anhang IV Abschnitt 1.c| |
@@ -577,7 +577,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 ### 1. Produktion, Vertrieb, Installation
 
-|ID|Anforderung|Kommentar|Regulatorische Referenzen|Team-NB-ID |
+|ID|Anforderungen|Kommentare|Regulatorische Referenzen|Team-NB-ID |
 |:--|:--|:--|---|:--|
 |D1.1|Der Hersteller hat beschrieben, wie er sicherstellt, dass nur genau die vorgesehenen Artefakte (Dateien) in genau der vorgesehenen Version des Produkts oder als Produkt ausgeliefert werden.|Dies ist das Konfigurationsmanagement. Auch relevant für Downloads oder AppStores.| IEC 62304, 5.8.8. | 7.1.1. |
 |D1.2 |Der Hersteller hat beschrieben, wie die für die Installation verantwortlichen Personen wissen, welche die neueste Version ist und wie Verwechslungen während der Installation ausgeschlossen werden können. |Dies ist nur für eigenständige Software relevant. Hier wäre eine SOP oder Arbeitsanweisung zu erwarten.| ISO 13485, 7.8.3., 8.3., IEC 62304, 5.8.4. | 7.1.2. |
@@ -587,7 +587,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 
 ### 2. Überwachung nach dem Inverkehrbringen (Post-Market Surveillance)
 
-|ID|Anforderungen|Kommentare| Verweise auf Vorschriften| Team-NB-ID |
+|ID|Anforderungen|Kommentare| Regulatorische Referenzen| Team-NB-ID |
 |:--|:--|:--|---|:--|
 |D2.1|Der Hersteller hat einen Plan zur Überwachung nach dem Inverkehrbringen (PMS) erstellt.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII, 2024/1689/EG Artikel 17 Abschnitt 1.(h), Artikel 72 | 6.6.4., 7.2.1. |
 |D2.2|Der Hersteller hat die Daten angegeben, die er in diesem PMS-Plan erfassen und analysieren möchte.|| 2017/745/EU, Kapitel VII, 2017/746/EU, Kapitel VII | 7.2.2. |
@@ -623,7 +623,7 @@ Daten sind generell als Trainings-, Validierungs- und Testdaten sowie Label zu v
 ### 3. Außerbetriebnahme
 
 
-|ID|Anforderungen|Kommentare| Verweise auf Vorschriften| Team-NB-ID |
+|ID|Anforderungen|Kommentare| Regulatorische Referenzen| Team-NB-ID |
 |:--|:--|:--|---|:--|
 |D3.1 |Der Hersteller hat einen Außerbetriebnahmeplan erstellt, bevor er sein Produkt vom Markt nimmt. | Ein solcher Plan legt beispielsweise fest, ob und wie die Software deinstalliert werden muss, ob Daten gesichert oder exportiert werden müssen, wie die Vertraulichkeit der Daten gewährleistet bleibt, wer für diese Aktivitäten verantwortlich ist, wie der Fortschritt der Außerbetriebnahme überwacht und sichergestellt wird und welche Organisationen informiert werden müssen und wie.| ISO 24028 | 7.3.1 |
 |D3.2 |Der Hersteller hat identifiziert, bewertet und kontrolliert die Risiken, die sich aus der Außerbetriebnahme ergeben. | Dies ist in der Risikomanagementakte zu bewerten. Risiken durch Nichtverfügbarkeit des Produkts, durch Anwendungsfehler und durch Beeinflussung anderer Produkte sind zu berücksichtigen. | 2017/746/EU Anhang I, 3., ISO 14971:2019 Kapitel 10 in Verbindung mit 3.8 und 3.12, ISO 24028 | 7.3.2. |
