@@ -225,7 +225,7 @@ Regulation 2024/1689/EU recommends to integrate the AI specific documentation in
 
 #### d) Input for risk management and clinical evaluation
 
-| ID                                               | Requirements                                                 | Comments                                                     | Regulatory References| Team-NB-ID |
+| ID                                               | Requirements                                                 | Comments                                                     | Regulatory references| Team-NB-ID |
 | :------------------------------------------------------------ | :------------------------------------------------------------ |:--|---|:--|
 | C1d1 | The manufacturer has listed alternative procedures and evaluated them in terms of benefit, safety, and performance. | The discussion of the state-of-the-art is a requirement of MEDDEV 2.7/1 and the MDR/IVDR. | 2017/745/EU, Annex I, 1., 2017/746/EU, Annex I, 1.,  MEDDEV 2.7/1, ISO 14971:2019, 4.2 and 10.9, FDA guidance on "Factors to Consider When Making Benefit-Risk Determinations in Medical Device Premarket Approval" (e.g. Part C)| 6.1.5.1 |
 | C1d2 | The manufacturer has compared the aforementioned quantitative values with the relevant values of alternative methods. | Manufacturers should create a tabular overview.  ||(6.4.4.9.)|
@@ -576,7 +576,7 @@ Data generally have to be understood as training, validation and test data as we
 
 ### 1. Production, Distribution, Installation
 
-|ID|Requirement|Comments| Regulatory references| Team-NB-ID |
+|ID|Requirements|Comments| Regulatory references| Team-NB-ID |
 |:--|:--|:--|---|:--|
 |D1.1|The manufacturer has described how it ensures that only exactly the intended artefacts (files) in exactly the intended version of the product or as a product are delivered.|This is configuration management. Also relevant to downloads or App <Stores.| IEC 62304, 5.8.8. | 7.1.1. |
 |D1.2 |The manufacturer has described how the persons responsible for the installation know which is the latest version and how confusion during installation can be ruled out. |This is only relevant for stand-alone software. Here, a procedure or work instruction would be expected.| ISO 13485, 7.8.3., 8.3.,  IEC 62304, 5.8.4. | 7.1.2. |
