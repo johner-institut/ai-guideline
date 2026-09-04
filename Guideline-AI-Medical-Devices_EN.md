@@ -544,7 +544,7 @@ Data generally have to be understood as training, validation and test data as we
 |C5d21|The manufacturer has analyzed the records according to 2024/1689/EU for risks.| This is also a post-market surveillance duty. |2024/1689/EU article 9 section 2.||
 
 [^C.5.d.1]: State-of-the-Art does not necessarily correspond to the Gold Standard, which in turn does not necessarily correspond to the Ground Truth. I.e., the system requirements may be lower than for a gold standard or ground truth, especially if the latter requires an invasive or very costly procedure.    
-[^C.5.2.d]: Examples of this phenomenon can be found [here](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive).  
+[^C.5.d.2]: Examples of this phenomenon can be found [here](https://mindfulmodeler.substack.com/p/correction-you-can-break-a-predictive).  
 
 #### e) Clinical evaluation, performance evaluation
 
